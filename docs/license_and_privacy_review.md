@@ -1,11 +1,11 @@
 # 许可与协作公开范围核对
 
-本文件只记录现有文件内容与需要维护者决定的发布事项，不替项目维护者选择许可证。
+本文件记录项目许可证的适用范围、第三方授权核对事项与协作材料的公开边界。
 
 ## 许可证事实
 
-- 根目录license.md目前是授权状态说明，尚未授予项目自有代码的再分发许可，也未确定版权主体与署名。维护者需要明确许可证及其适用范围；本核对不代为选择许可。
-- src/software/runtime/linux/driver/unified_npu.c 第一行是 `SPDX-License-Identifier: GPL-2.0-only`，并含 `MODULE_LICENSE("GPL")`。根目录未来的许可说明不应抹掉这一已有文件级标识。
+- 根目录 LICENSE 为 MIT 许可证，适用于项目作者拥有版权且未另行标注许可证的原创代码，具体范围见 license.md。已有单独许可证声明的文件以及第三方内容继续遵循各自授权。
+- src/software/runtime/linux/driver/unified_npu.c 第一行是 `SPDX-License-Identifier: GPL-2.0-only`，并含 `MODULE_LICENSE("GPL")`。根目录的 MIT 许可证不替代该文件已有的 GPL 声明。
 - board/hardware/ps7_init.c 首部带 Xilinx 版权及 MIT SPDX；ps7_init_gpl.c 首部是 Xilinx 版权及 GPL v2-or-later 文字。二者不是同一种授权，保留原文件声明。
 - src/third_party/yolox/neu6/license 和 coco80/license 保留 Apache-2.0 全文。第三方来源应给出处与快照身份，不用项目根目录说明覆盖原归属。
 - board/linux/userspace/python_packages.json 给出 Ubuntu ports 包来源、版本、下载地址及 SHA256。归档内含上游版权文件的事实已有原材料描述，最终打包时继续保留，不把私有运行环境误写为本队自研解释器。
