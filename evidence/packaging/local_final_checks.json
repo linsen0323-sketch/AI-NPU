@@ -97,9 +97,9 @@
       19,
       20
     ],
-    "image_directory_private": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\board_validation_cleanup\\render\\design",
+    "image_directory_private": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\design_header_update\\render",
     "format": "reference technical report",
-    "pdf_sha256": "0d75f6e5ffbd3c617342d8ff32abfdbfdd1f470b2c995f9898ccfede2041f329",
+    "pdf_sha256": "332c3b87a640652670a12d45e272bd248472e3eed52055bca7a594f4560662eb",
     "body_starts_page4": true,
     "toc_fits_page3": true
   },
@@ -121,7 +121,7 @@
     {
       "path": "report/design/design_report.pdf",
       "pages": 20,
-      "sha256": "0d75f6e5ffbd3c617342d8ff32abfdbfdd1f470b2c995f9898ccfede2041f329",
+      "sha256": "332c3b87a640652670a12d45e272bd248472e3eed52055bca7a594f4560662eb",
       "identity_text_or_metadata_matches": [],
       "page_images_visually_reviewed": [
         1,

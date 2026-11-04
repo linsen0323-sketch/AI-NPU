@@ -1464,8 +1464,8 @@
     },
     {
       "path": "evidence/packaging/local_final_checks.json",
-      "bytes": 4611,
-      "sha256": "34f40e0f667b46caa0cc64906aa0746fdad9a2895d76218f5fc1138e58e3469d"
+      "bytes": 4599,
+      "sha256": "dd3fcfd5aa1d9ad60be1afeada24805b069ac11d19898495b9a6be2c5a57c9cb"
     },
     {
       "path": "evidence/packaging/models_files.json",
@@ -1714,8 +1714,8 @@
     },
     {
       "path": "report/design/design_report.pdf",
-      "bytes": 874927,
-      "sha256": "0d75f6e5ffbd3c617342d8ff32abfdbfdd1f470b2c995f9898ccfede2041f329"
+      "bytes": 3240989,
+      "sha256": "332c3b87a640652670a12d45e272bd248472e3eed52055bca7a594f4560662eb"
     },
     {
       "path": "report/figures/.gitkeep",
