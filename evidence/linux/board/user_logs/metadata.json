@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "source": "User-visible project conversation history supplied by the user",
+  "transcription": "Complete JSON blocks or relevant exact output lines, copied from user-pasted output; prompts and repeated preflight blocks omitted.",
+  "execution_time_unknown": true,
+  "live_board_contact_during_archiving": false,
+  "no_new_execution_or_inference_claim": true,
+  "historical_paths_preserved": true,
+  "entries": [
+    {
+      "file": "boot_dt_pass.txt",
+      "original_command": "sh verify_after_boot.sh",
+      "scope": "historical boot file and live device-tree contract checks only",
+      "sha256": "e246e93a1db02a50b5a58d049a9b0f98257c9cb5b9160ed0503952b1ed158513",
+      "source_kind": "user_pasted_historical_terminal_output",
+      "execution_timestamp": null,
+      "executed_in_this_packaging_session": false
+    },
+    {
+      "file": "pl_abi_pass.json",
+      "original_command": "sudo /opt/npu100-20261102/npu100.sh check-pl",
+      "scope": "historical INFO metadata and PL CSR reads, no DDR mapping or inference",
+      "sha256": "a025c0d94fcade3046a4b1ad9cc28c905862d3b9f6cf545426dea824f882b730",
+      "source_kind": "user_pasted_historical_terminal_output",
+      "execution_timestamp": null,
+      "executed_in_this_packaging_session": false
+    },
+    {
+      "file": "model_preload_pass.json",
+      "original_command": "sudo /opt/npu100-20261102/npu100.sh load-models",
+      "scope": "historical SD-to-reserved-DDR preload and readback, no inference or camera start",
+      "sha256": "9ed4ee8b0bc61043080b9416468992f65a53cc249bcc78763f6e3b834bbd49d0",
+      "source_kind": "user_pasted_historical_terminal_output",
+      "execution_timestamp": null,
+      "executed_in_this_packaging_session": false
+    },
+    {
+      "file": "autostart_enabled.json",
+      "original_command": "sudo sh install_autostart.sh --install",
+      "scope": "historical SysV autostart installation, effective next boot or explicit start",
+      "sha256": "50e25941e0e74d5544f74a1dba0fee0b16d08cb77069016bf3fb1054c40a0a65",
+      "source_kind": "user_pasted_historical_terminal_output",
+      "execution_timestamp": null,
+      "executed_in_this_packaging_session": false
+    },
+    {
+      "file": "autostart_status_after_install.json",
+      "original_command": "sudo /etc/init.d/npu100 status",
+      "scope": "historical immediate post-install status; managed process not alive",
+      "sha256": "a3ce1494870eb8ce714884b468fe012ef935c5b1d79c013cdc014e127ca0f536",
+      "source_kind": "user_pasted_historical_terminal_output",
+      "execution_timestamp": null,
+      "executed_in_this_packaging_session": false
+    }
+  ],
+  "limitations": [
+    "Not original captured terminal files or an authenticated hardware trace.",
+    "Does not establish current running state or one continuous cold-boot session.",
+    "The enabled_at_epoch field is preserved verbatim and is not treated as a reliable wall-clock timestamp."
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "scope": "INDEPENDENT_OFFLINE_CLASSIFICATION_AND_MODEL_FILE_CROSSCHECK_OF_USER_PASTED_HISTORY",
+  "board_commands_executed": false,
+  "hardware_accessed": false,
+  "skill_fixture_receipt_modified": false,
+  "classifications": {
+    "boot_dt_pass.txt": {
+      "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+      "stages": {
+        "boot_dt": {
+          "status": "reported_pass",
+          "records": [
+            {
+              "line": 6,
+              "marker": "BOOT_DT_PASS"
+            }
+          ]
+        },
+        "driver_preflight": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_info": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_loaded": {
+          "status": "not_found",
+          "records": []
+        },
+        "pl_abi": {
+          "status": "not_found",
+          "records": []
+        },
+        "model_preload": {
+          "status": "not_found",
+          "records": []
+        },
+        "userspace_runtime": {
+          "status": "not_found",
+          "records": []
+        }
+      },
+      "errors_retained": [],
+      "inference_and_video": "requires_separate_manual_evidence",
+      "limitations": [
+        "Markers are reports, not independent verification.",
+        "Historical failures and later passes may coexist across boots.",
+        "No hardware, timing or end-to-end correctness is tested."
+      ]
+    },
+    "pl_abi_pass.json": {
+      "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+      "stages": {
+        "boot_dt": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_preflight": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_info": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_loaded": {
+          "status": "not_found",
+          "records": []
+        },
+        "pl_abi": {
+          "status": "reported_pass",
+          "records": [
+            {
+              "line": 1,
+              "marker": "PL_ABI_PASS",
+              "scope": "READ_ONLY_INFO_AND_PL_CSR_READS_NO_DDR_MAPPING",
+              "models_loaded": false,
+              "inference_tested": false
+            }
+          ]
+        },
+        "model_preload": {
+          "status": "not_found",
+          "records": []
+        },
+        "userspace_runtime": {
+          "status": "not_found",
+          "records": []
+        }
+      },
+      "errors_retained": [],
+      "inference_and_video": "requires_separate_manual_evidence",
+      "limitations": [
+        "Markers are reports, not independent verification.",
+        "Historical failures and later passes may coexist across boots.",
+        "No hardware, timing or end-to-end correctness is tested."
+      ]
+    },
+    "model_preload_pass.json": {
+      "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+      "stages": {
+        "boot_dt": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_preflight": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_info": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_loaded": {
+          "status": "not_found",
+          "records": []
+        },
+        "pl_abi": {
+          "status": "not_found",
+          "records": []
+        },
+        "model_preload": {
+          "status": "reported_pass",
+          "records": [
+            {
+              "line": 1,
+              "marker": "MODEL_PRELOAD_PASS",
+              "scope": "SD_TO_RESERVED_DDR_MODEL_STAGING_NO_INFERENCE",
+              "inference_started": false,
+              "camera_start_requested": false,
+              "model_switch_called": false
+            }
+          ]
+        },
+        "userspace_runtime": {
+          "status": "not_found",
+          "records": []
+        }
+      },
+      "errors_retained": [],
+      "inference_and_video": "requires_separate_manual_evidence",
+      "limitations": [
+        "Markers are reports, not independent verification.",
+        "Historical failures and later passes may coexist across boots.",
+        "No hardware, timing or end-to-end correctness is tested."
+      ]
+    },
+    "autostart_enabled.json": {
+      "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+      "stages": {
+        "boot_dt": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_preflight": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_info": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_loaded": {
+          "status": "not_found",
+          "records": []
+        },
+        "pl_abi": {
+          "status": "not_found",
+          "records": []
+        },
+        "model_preload": {
+          "status": "not_found",
+          "records": []
+        },
+        "userspace_runtime": {
+          "status": "not_found",
+          "records": []
+        }
+      },
+      "errors_retained": [],
+      "inference_and_video": "requires_separate_manual_evidence",
+      "limitations": [
+        "Markers are reports, not independent verification.",
+        "Historical failures and later passes may coexist across boots.",
+        "No hardware, timing or end-to-end correctness is tested."
+      ]
+    },
+    "autostart_status_after_install.json": {
+      "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+      "stages": {
+        "boot_dt": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_preflight": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_info": {
+          "status": "not_found",
+          "records": []
+        },
+        "driver_loaded": {
+          "status": "not_found",
+          "records": []
+        },
+        "pl_abi": {
+          "status": "not_found",
+          "records": []
+        },
+        "model_preload": {
+          "status": "not_found",
+          "records": []
+        },
+        "userspace_runtime": {
+          "status": "not_found",
+          "records": []
+        }
+      },
+      "errors_retained": [],
+      "inference_and_video": "requires_separate_manual_evidence",
+      "limitations": [
+        "Markers are reports, not independent verification.",
+        "Historical failures and later passes may coexist across boots.",
+        "No hardware, timing or end-to-end correctness is tested."
+      ]
+    }
+  },
+  "checks": {
+    "boot_marker_reported": true,
+    "pl_reported_without_preload": true,
+    "pl_inference_flags_preserved_false": true,
+    "preload_flags_preserved_false": true,
+    "preload_only_reported": true,
+    "three_frozen_model_files_match_historical_readback": true,
+    "autostart_does_not_claim_running": true
+  },
+  "model_crosscheck": [
+    {
+      "id": 1,
+      "path": "data/models/runtime/bundle/models/m1/model.bin",
+      "sha256_match": true,
+      "bytes_match": true,
+      "crc32_match": true,
+      "address_decimal_hex_match": true,
+      "crc32_decimal_hex_match": true
+    },
+    {
+      "id": 3,
+      "path": "data/models/runtime/bundle/models/m3/model.bin",
+      "sha256_match": true,
+      "bytes_match": true,
+      "crc32_match": true,
+      "address_decimal_hex_match": true,
+      "crc32_decimal_hex_match": true
+    },
+    {
+      "id": 4,
+      "path": "data/models/runtime/bundle/coco80/model.bin",
+      "sha256_match": true,
+      "bytes_match": true,
+      "crc32_match": true,
+      "address_decimal_hex_match": true,
+      "crc32_decimal_hex_match": true
+    }
+  ],
+  "passed": true
+}

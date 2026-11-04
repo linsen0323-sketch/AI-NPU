@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "scope": "Packaging-time isolated Vivado project recreation, BD/IP generation, structural source-to-recreated BD comparison, artifact identity and path checks only",
+  "project": "npu100",
+  "part": "xc7z020clg400-2",
+  "tool": "Vivado 2025.2",
+  "impl_run": "impl_100mhz",
+  "fclk0_mhz": 100,
+  "fclk1_mhz": 100,
+  "ip_count": 21,
+  "bd_original_user_components": 15,
+  "bd_component_parameter_port_connection_address_differences": [],
+  "source_changed_during_packaging": [],
+  "vivado_errors": [],
+  "vivado_critical_warnings": [],
+  "tcl_scripts_complete": {
+    "build/scripts/vivado/build_bitstream.tcl": true,
+    "build/scripts/vivado/create_project.tcl": true,
+    "build/scripts/vivado/export_hardware.tcl": true,
+    "sim/rtl/setup_simulations.tcl": true,
+    "hardware/block_design/create_video_system.tcl": true
+  },
+  "baremetal_build_script_python_syntax": "passed; Vitis execution not performed",
+  "synthesis_run": false,
+  "implementation_run": false,
+  "new_board_run": false,
+  "full_model_rtl_regression": false,
+  "log": "evidence/hardware/recreation.log"
+}

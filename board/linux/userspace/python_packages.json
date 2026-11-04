@@ -1,0 +1,301 @@
+{
+  "scope": "PRIVATE_ARMHF_PYTHON_RUNTIME_NO_BOARD_ACCESS",
+  "created_utc": "2026-11-02T11:35:57.426374+00:00",
+  "official_repository": "https://ports.ubuntu.com/ubuntu-ports/",
+  "indexes": [
+    {
+      "suite": "noble",
+      "inrelease_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble/InRelease",
+      "inrelease_sha256": "cdb2f31d809f589719a53c6ad15f255b27569c4059542ada282aaa21b8e164b0",
+      "signature_verified_with": "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+      "gpgv_output": "gpgv: 2024\u5e7404\u670825\u65e5 23\u664211\u520621\u79d2 CST\u306b\u65bd\u3055\u308c\u305f\u7f72\u540d\ngpgv:                RSA\u9375F6ECB3762474EDA9D21B7022871920D1991BC93C\u3092\u4f7f\u7528\ngpgv: \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\u304b\u3089\u306e\u6b63\u3057\u3044\u7f72\u540d\n",
+      "packages_index_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble/main/binary-armhf/by-hash/SHA256/f6070540252bc8d3327ed292163fb156bbd2554e39df0553bb031b303ecc6018",
+      "packages_index_sha256": "f6070540252bc8d3327ed292163fb156bbd2554e39df0553bb031b303ecc6018",
+      "packages_index_bytes": 1301616
+    },
+    {
+      "suite": "noble-updates",
+      "inrelease_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble-updates/InRelease",
+      "inrelease_sha256": "6b1d7bab86063d6f0f3c4271263c5d23302b4bfbec551335f04f0e4bf60843f4",
+      "signature_verified_with": "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+      "gpgv_output": "gpgv: 2026\u5e7411\u670802\u65e5 17\u664257\u520607\u79d2 CST\u306b\u65bd\u3055\u308c\u305f\u7f72\u540d\ngpgv:                RSA\u9375F6ECB3762474EDA9D21B7022871920D1991BC93C\u3092\u4f7f\u7528\ngpgv: \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\u304b\u3089\u306e\u6b63\u3057\u3044\u7f72\u540d\n",
+      "packages_index_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble-updates/main/binary-armhf/by-hash/SHA256/e7a35f540647f421c2494f852ee94b69f94dca28e57121bbd0ac6771e58e7ec3",
+      "packages_index_sha256": "e7a35f540647f421c2494f852ee94b69f94dca28e57121bbd0ac6771e58e7ec3",
+      "packages_index_bytes": 730848
+    },
+    {
+      "suite": "noble-security",
+      "inrelease_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble-security/InRelease",
+      "inrelease_sha256": "0d2574875d11d80c6648254ba181d1116e2b4a73864b47a9fa59260d9dd49a93",
+      "signature_verified_with": "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+      "gpgv_output": "gpgv: 2026\u5e7411\u670802\u65e5 17\u664255\u520613\u79d2 CST\u306b\u65bd\u3055\u308c\u305f\u7f72\u540d\ngpgv:                RSA\u9375F6ECB3762474EDA9D21B7022871920D1991BC93C\u3092\u4f7f\u7528\ngpgv: \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\u304b\u3089\u306e\u6b63\u3057\u3044\u7f72\u540d\n",
+      "packages_index_url": "https://ports.ubuntu.com/ubuntu-ports/dists/noble-security/main/binary-armhf/by-hash/SHA256/8c3f0405f9f21fc52a5739f7aefc4bf83a5e35cc9fce52f8402dee04e4441c35",
+      "packages_index_sha256": "8c3f0405f9f21fc52a5739f7aefc4bf83a5e35cc9fce52f8402dee04e4441c35",
+      "packages_index_bytes": 497132
+    }
+  ],
+  "packages": [
+    {
+      "package": "libbz2-1.0",
+      "version": "1.0.8-5.1ubuntu0.1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/b/bzip2/libbz2-1.0_1.0.8-5.1ubuntu0.1_armhf.deb",
+      "sha256": "058331379bcb5a735e5506b75c098c62e2de203836618972806335ebb9624354",
+      "download_bytes": 31364,
+      "depends": "libc6 (>= 2.4)",
+      "source": "bzip2"
+    },
+    {
+      "package": "libcrypt1",
+      "version": "1:4.4.36-4build1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/libx/libxcrypt/libcrypt1_4.4.36-4build1_armhf.deb",
+      "sha256": "198990e999add09e21b0ab3522c94333a0e135656c7f00960f534cec15477a74",
+      "download_bytes": 92630,
+      "depends": "libc6 (>= 2.38)",
+      "source": "libxcrypt"
+    },
+    {
+      "package": "libdb5.3t64",
+      "version": "5.3.28+dfsg2-7",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/d/db5.3/libdb5.3t64_5.3.28+dfsg2-7_armhf.deb",
+      "sha256": "12ac2200cb3d8451b92d626d1733f5e72d832ceabb1d9b20cd5b04ab74079012",
+      "download_bytes": 661858,
+      "depends": "libc6 (>= 2.38)",
+      "source": "db5.3"
+    },
+    {
+      "package": "libexpat1",
+      "version": "2.6.1-2ubuntu0.6",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/e/expat/libexpat1_2.6.1-2ubuntu0.6_armhf.deb",
+      "sha256": "e071ab76a8c5ddab4b07cf5fdbcf949e4ca179347ba43b03b8cc2610f7f249c1",
+      "download_bytes": 73942,
+      "depends": "libc6 (>= 2.38), libgcc-s1 (>= 3.5)",
+      "source": "expat"
+    },
+    {
+      "package": "libffi8",
+      "version": "3.4.6-1build1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/libf/libffi/libffi8_3.4.6-1build1_armhf.deb",
+      "sha256": "a5af6885f9b3f5e2910c767c74824c6415eeaaa54181bdfb31bdc6d481fc2bba",
+      "download_bytes": 21218,
+      "depends": "libc6 (>= 2.34), libgcc-s1 (>= 3.5)",
+      "source": "libffi"
+    },
+    {
+      "package": "liblzma5",
+      "version": "5.6.1+really5.4.5-1ubuntu0.4",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/x/xz-utils/liblzma5_5.6.1+really5.4.5-1ubuntu0.4_armhf.deb",
+      "sha256": "98e7a13902fca736c727a0f8fb267a15673c7ac0599b8feb6014f5e4fbffa73e",
+      "download_bytes": 112230,
+      "depends": "libc6 (>= 2.34)",
+      "source": "xz-utils"
+    },
+    {
+      "package": "libncursesw6",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/n/ncurses/libncursesw6_6.4+20240113-1ubuntu2.2_armhf.deb",
+      "sha256": "366840d8208bc9894b4435fec8c44217f076fd2050b53d2c4c00e8100ccfe707",
+      "download_bytes": 118580,
+      "depends": "libtinfo6 (= 6.4+20240113-1ubuntu2.2), libc6 (>= 2.34)",
+      "source": "ncurses"
+    },
+    {
+      "package": "libpython3.12-minimal",
+      "version": "3.12.3-1ubuntu0.17",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/p/python3.12/libpython3.12-minimal_3.12.3-1ubuntu0.17_armhf.deb",
+      "sha256": "af72f15a9bf5e378858d34fef570033dd49aba743b6e1b9e72cb0ac4ee1a13cd",
+      "download_bytes": 822866,
+      "depends": "libc6 (>= 2.4), libssl3t64 (>= 3.0.0)",
+      "source": "python3.12"
+    },
+    {
+      "package": "libpython3.12-stdlib",
+      "version": "3.12.3-1ubuntu0.17",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/p/python3.12/libpython3.12-stdlib_3.12.3-1ubuntu0.17_armhf.deb",
+      "sha256": "025643f3e358a42c8523e6b166725da77013a169e778a8c616e19dce24089f0b",
+      "download_bytes": 1928716,
+      "depends": "libpython3.12-minimal (= 3.12.3-1ubuntu0.17), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6)",
+      "source": "python3.12"
+    },
+    {
+      "package": "libreadline8t64",
+      "version": "8.2-4build1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/r/readline/libreadline8t64_8.2-4build1_armhf.deb",
+      "sha256": "e21995acae59059a96d8c1e2e5299204dcb3dadaca91ea31c2a5fb50f3e59b43",
+      "download_bytes": 129478,
+      "depends": "readline-common, libc6 (>= 2.38), libtinfo6 (>= 6)",
+      "source": "readline"
+    },
+    {
+      "package": "libsqlite3-0",
+      "version": "3.45.1-1ubuntu2.8",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/s/sqlite3/libsqlite3-0_3.45.1-1ubuntu2.8_armhf.deb",
+      "sha256": "339273bf2b5e1728de4a4503a50f7d13f154a5ff4ccb79c53d16ca570eab2ab9",
+      "download_bytes": 600516,
+      "depends": "libc6 (>= 2.38)",
+      "source": "sqlite3"
+    },
+    {
+      "package": "libssl3t64",
+      "version": "3.0.13-0ubuntu3.16",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/o/openssl/libssl3t64_3.0.13-0ubuntu3.16_armhf.deb",
+      "sha256": "7718e6683fc4e78e778c3021b88019dfd855f5f0c373eb4bd490b3cde91a7d00",
+      "download_bytes": 1565370,
+      "depends": "libc6 (>= 2.38)",
+      "source": "openssl"
+    },
+    {
+      "package": "libtinfo6",
+      "version": "6.4+20240113-1ubuntu2.2",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/n/ncurses/libtinfo6_6.4+20240113-1ubuntu2.2_armhf.deb",
+      "sha256": "6c37ccf3809959b17c0313a6dc3ad04b0da8d4d4a3fbacfe92bbbf5c20c2dc14",
+      "download_bytes": 91002,
+      "depends": "libc6 (>= 2.34)",
+      "source": "ncurses"
+    },
+    {
+      "package": "media-types",
+      "version": "10.1.0",
+      "architecture": "all",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/m/media-types/media-types_10.1.0_all.deb",
+      "sha256": "31bfb7eec55ab6d34a50ba995150e1498d4cb897714085d8025e330d3b529747",
+      "download_bytes": 27474,
+      "depends": "",
+      "source": "media-types"
+    },
+    {
+      "package": "netbase",
+      "version": "6.4",
+      "architecture": "all",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/n/netbase/netbase_6.4_all.deb",
+      "sha256": "8cdbc9c3dca01e660759bf9d840f72e45ac72faf5d19ca1faecacaf6a60c1a87",
+      "download_bytes": 13112,
+      "depends": "",
+      "source": "netbase"
+    },
+    {
+      "package": "python3.12",
+      "version": "3.12.3-1ubuntu0.17",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.17_armhf.deb",
+      "sha256": "1a4869ad9f41411e77c47c77c02502c35b20e11099f8dd1f88d6050897dc440f",
+      "download_bytes": 650732,
+      "depends": "python3.12-minimal (= 3.12.3-1ubuntu0.17), libpython3.12-stdlib (= 3.12.3-1ubuntu0.17), media-types | mime-support, tzdata",
+      "source": "python3.12"
+    },
+    {
+      "package": "python3.12-minimal",
+      "version": "3.12.3-1ubuntu0.17",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/p/python3.12/python3.12-minimal_3.12.3-1ubuntu0.17_armhf.deb",
+      "sha256": "cf28044fd00e4d30f9aa576f9936458f50e998758084afeaaa8f015e4fa4eb14",
+      "download_bytes": 2005834,
+      "depends": "libpython3.12-minimal (= 3.12.3-1ubuntu0.17), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)",
+      "source": "python3.12"
+    },
+    {
+      "package": "readline-common",
+      "version": "8.2-4build1",
+      "architecture": "all",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/r/readline/readline-common_8.2-4build1_all.deb",
+      "sha256": "879bfd7f8a9bc4c0f7cdc777cdd8bc6de5f8c4a2ac80c060322a1b22f13504bb",
+      "download_bytes": 56484,
+      "depends": "",
+      "source": "readline"
+    },
+    {
+      "package": "tzdata",
+      "version": "2026e-0ubuntu0.24.04.1",
+      "architecture": "all",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/t/tzdata/tzdata_2026e-0ubuntu0.24.04.1_all.deb",
+      "sha256": "2f6794a7f31753fc947d9ac02ff03ea46510f34864f9d132a93d7b105e3c4447",
+      "download_bytes": 282136,
+      "depends": "debconf (>= 0.5) | debconf-2.0",
+      "source": "tzdata"
+    },
+    {
+      "package": "zlib1g",
+      "version": "1:1.3.dfsg-3.1ubuntu2.3",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/z/zlib/zlib1g_1.3.dfsg-3.1ubuntu2.3_armhf.deb",
+      "sha256": "159443e0649cf22a531994b4fd105fd990e12c68c1ca72312b86fffe40db349a",
+      "download_bytes": 49544,
+      "depends": "libc6 (>= 2.4)",
+      "source": "zlib"
+    },
+    {
+      "package": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-14/libgcc-s1_14.2.0-4ubuntu2~24.04.1_armhf.deb",
+      "sha256": "0d1e93162ffa3d369e2b2452b5d4a98b298a9f64311de237d0080e46e6b72dac",
+      "download_bytes": 41510,
+      "depends": "gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34)",
+      "source": "gcc-14"
+    },
+    {
+      "package": "gcc-14-base",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "architecture": "armhf",
+      "url": "https://ports.ubuntu.com/ubuntu-ports/pool/main/g/gcc-14/gcc-14-base_14.2.0-4ubuntu2~24.04.1_armhf.deb",
+      "sha256": "2acd21ae31fdc0f80cd331a4baabc7adb18dbac9fde1f05c00854e190fa54a9a",
+      "download_bytes": 50936,
+      "depends": "",
+      "source": "gcc-14"
+    }
+  ],
+  "host_packages_installed": false,
+  "board_packages_installed": false,
+  "board_libc_replaced": false,
+  "omitted_target_system_packages": [
+    "base-files",
+    "debconf",
+    "debconf-2.0",
+    "dpkg",
+    "libc-bin",
+    "libc6",
+    "tar"
+  ],
+  "python_wrapper": "python3",
+  "python_runtime_prefix": "usr",
+  "selected_package_count": 22,
+  "extracted_regular_bytes": 26862403,
+  "runtime_archive_not_built_until_emulated_smoke_test": false,
+  "smoke_test": {
+    "scope": "QEMU_ARM_USERSPACE_SMOKE_NO_BOARD_OR_MMIO",
+    "result": "PASS",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "machine": "armv7l",
+    "pointer_bytes": 4,
+    "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+    "runtime": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/software/runtime/linux",
+    "bridge": "/home/dev/npu100_linux_build_20261102/software/runtime/linux/app/libnpu_camera.so",
+    "checks": [
+      "hash_and_compression",
+      "temporary_file_fcntl_mmap",
+      "local_socketpair",
+      "sqlite_in_memory",
+      "ctypes_bridge_abi3_all_model_contexts",
+      "production_python_module_imports"
+    ],
+    "driver_opened": false,
+    "board_inference_verified": false
+  },
+  "packaging_adjustments": [
+    "Relocated sitecustomize.py symlink inside private prefix",
+    "Removed private absolute localtime alias; actual board timezone unchanged"
+  ],
+  "dependencies_use_board_libc_loader_libm": true
+}

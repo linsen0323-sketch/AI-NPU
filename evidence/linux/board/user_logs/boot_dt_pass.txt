@@ -1,0 +1,9 @@
+/boot/image.ub: OK
+/sys/firmware/devicetree/base/memory@0/reg: OK
+/sys/firmware/devicetree/base/reserved-memory/npu-runtime@10000000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/assigned-clock-rates: OK
+BOOT_DT_PASS: 256 MiB no-map reservation and npu100 runtime DT node are active.
+This does not verify loaded PL registers, driver binding, model DDR loading or inference.
+MemTotal:         766496 kB
+CmaTotal:          16384 kB

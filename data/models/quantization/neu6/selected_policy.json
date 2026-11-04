@@ -1,0 +1,375 @@
+{
+  "tag": "accuracy_first_w8_mixed_a8_a16",
+  "policy": {
+    "backbone.backbone.stem.conv.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark2.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark2.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark2.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark2.1.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark2.1.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark2.1.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark3.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark3.1.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.m.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.m.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark3.1.m.2.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark3.1.m.2.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark4.1.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.m.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.m.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.m.2.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark4.1.m.2.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.1.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.1.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark5.2.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.2.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "backbone.backbone.dark5.2.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.2.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.backbone.dark5.2.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.lateral_conv0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p4.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p4.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p4.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p4.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p4.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.reduce_conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p3.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p3.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p3.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p3.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_p3.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.bu_conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n3.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n3.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n3.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n3.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n3.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.bu_conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n4.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n4.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n4.conv3.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n4.m.0.conv1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "backbone.C3_n4.m.0.conv2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.0.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.0.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.1.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.1.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.2.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_convs.2.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_convs.0.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.reg_convs.0.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_convs.1.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_convs.1.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_convs.2.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.reg_convs.2.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.cls_preds.0": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_preds.1": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.cls_preds.2": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_preds.0": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_preds.1": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.reg_preds.2": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.obj_preds.0": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.obj_preds.1": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.obj_preds.2": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.stems.0.conv": {
+      "weight_bits": 8,
+      "activation_bits": 16
+    },
+    "head.stems.1.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    },
+    "head.stems.2.conv": {
+      "weight_bits": 8,
+      "activation_bits": 8
+    }
+  },
+  "metrics": {
+    "mAP50_95": 44.832774869859556,
+    "mAP50": 79.4813042869003,
+    "AP75": 44.14613250259783,
+    "samples": 360,
+    "per_class": {
+      "crazing": {
+        "AP50_95": 17.59571460374316,
+        "AP50": 43.13083392400328
+      },
+      "inclusion": {
+        "AP50_95": 44.82539693668864,
+        "AP50": 84.34048393469958
+      },
+      "patches": {
+        "AP50_95": 59.67972650799261,
+        "AP50": 92.84892389018383
+      },
+      "pitted_surface": {
+        "AP50_95": 53.81632085287148,
+        "AP50": 87.01239886262752
+      },
+      "rolled-in_scale": {
+        "AP50_95": 35.00723026066693,
+        "AP50": 72.11116709268063
+      },
+      "scratches": {
+        "AP50_95": 58.07226005719451,
+        "AP50": 97.44401801720701
+      }
+    },
+    "tag": "selected",
+    "split": "val",
+    "elapsed_s": 7.858184800001254
+  },
+  "passes_budget": true,
+  "packed_weight_bytes": 8916480,
+  "selection_reason": "Accuracy priority; preserve weak-class performance. INT4 retained as optional comparison."
+}

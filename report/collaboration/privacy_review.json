@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "PATTERN_SCAN_AND_ROLE_METADATA_REVIEW_OF_EXISTING_PUBLIC_MESSAGE_EXPORT",
+  "source_kind": "privately_archived_user_visible_dialogue",
+  "source_name": "conversation.jsonl",
+  "source_sha256": "4193ec29e239d68f0ea6391bd5bc31fb36daef9a0d41f7f1710b0a12d4898783",
+  "messages": 54,
+  "metadata_message_count_matches": true,
+  "all_roles_user_or_assistant": true,
+  "all_have_source_line_and_timestamp": true,
+  "pattern_match_counts": {
+    "github_token": 0,
+    "private_key_header": 0,
+    "nonempty_secret_assignment": 0
+  },
+  "public_excerpts_local_paths_redacted": 1,
+  "limitation": "Pattern review is not a guarantee that all private information has been detected. The original local session is not available here for byte-for-byte re-export validation; archived export metadata is retained unchanged."
+}

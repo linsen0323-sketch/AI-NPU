@@ -1,0 +1,29 @@
+{
+  "result": "AUTOSTART_ENABLED",
+  "installed_prefix": "/opt/npu100-autostart-20261102",
+  "enabled_links": [
+    "/etc/rc2.d/S99npu100",
+    "/etc/rc3.d/S99npu100",
+    "/etc/rc4.d/S99npu100",
+    "/etc/rc5.d/S99npu100",
+    "/etc/rc0.d/K01npu100",
+    "/etc/rc1.d/K01npu100",
+    "/etc/rc6.d/K01npu100"
+  ],
+  "new_links": [
+    "/etc/rc2.d/S99npu100",
+    "/etc/rc3.d/S99npu100",
+    "/etc/rc4.d/S99npu100",
+    "/etc/rc5.d/S99npu100",
+    "/etc/rc0.d/K01npu100",
+    "/etc/rc1.d/K01npu100",
+    "/etc/rc6.d/K01npu100"
+  ],
+  "enabled_at_epoch": 1520608420.7587676,
+  "effective": "next_boot_or_explicit_start",
+  "camera_preview_on_boot": true,
+  "inference_on_boot": false,
+  "current_processes_modified": false,
+  "boot_files_modified": false,
+  "runtime_or_model_files_modified": false
+}

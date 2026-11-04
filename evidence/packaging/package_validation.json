@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "checked_at_utc": "2026-11-04T09:34:58.393234+00:00",
+  "integrity_pass": true,
+  "python_syntax_pass": true,
+  "protected_files": 690,
+  "total_files": 694,
+  "bytes": 712348098,
+  "integrity_issues": [],
+  "python_syntax_issues": [],
+  "naming_exceptions": [
+    {
+      "path": "board/boot/BOOT.BIN",
+      "component": "BOOT.BIN",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/environments/host/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/metrics/board/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/metrics/model_selection/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/models/runtime/bundle/BUNDLE_VERSION",
+      "component": "BUNDLE_VERSION",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/models/runtime/bundle/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "data/models/runtime/bundle/SHA256SUMS",
+      "component": "SHA256SUMS",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "evidence/linux/board/user_logs/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "report/collaboration/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "report/figures/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "report/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "report/technical/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "sim/rtl/unit/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "skill/fpga-release-integrity/SKILL.md",
+      "component": "SKILL.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "skill/linux-npu-evidence/SKILL.md",
+      "component": "SKILL.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "skill/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "src/software/app/src/CMakeLists.txt",
+      "component": "CMakeLists.txt",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "src/software/runtime/linux/app/Makefile",
+      "component": "Makefile",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "src/software/runtime/linux/driver/Makefile",
+      "component": "Makefile",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "src/software/runtime/linux/Makefile",
+      "component": "Makefile",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "src/software/runtime/linux/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    }
+  ],
+  "dated_path_names": [],
+  "forbidden_paths": [],
+  "validation_scope": "package integrity and syntax, not training, full FPGA implementation or board replay"
+}

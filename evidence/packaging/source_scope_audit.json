@@ -1,0 +1,49 @@
+{
+  "scope": "final target/source mapping and current npu100 RTL origin audit",
+  "mapped_records": 536,
+  "unique_original_files_verified": 479,
+  "rtl_files": 61,
+  "rtl_outside_current_project": 0,
+  "original_source_hash_changes": 0,
+  "mapped_target_hash_changes": 0,
+  "unavailable_or_virtual_origins": [
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.c",
+      "target": "board/hardware/ps7_init.c",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.h",
+      "target": "board/hardware/ps7_init.h",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.tcl",
+      "target": "board/hardware/ps7_init.tcl",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init_gpl.c",
+      "target": "board/hardware/ps7_init_gpl.c",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init_gpl.h",
+      "target": "board/hardware/ps7_init_gpl.h",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\npu100-userspace.tar.gz!python-runtime/PROVENANCE.json",
+      "target": "board/linux/userspace/python_packages.json",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    },
+    {
+      "source": "wsl://Ubuntu/home/dev/npu100_linux_build_20261102/kernel-output/Module.symvers",
+      "target": "board/linux/kernel/module.symvers",
+      "reason": "archive_member_wsl_or_ephemeral_origin"
+    }
+  ],
+  "naming_violations": [],
+  "issues": [],
+  "passed": true
+}

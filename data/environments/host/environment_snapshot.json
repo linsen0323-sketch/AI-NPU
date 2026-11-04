@@ -1,0 +1,54 @@
+{
+  "captured_at": "2026-11-02",
+  "python": "3.12.10",
+  "executable": "D:\\AI\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "packages": {
+    "torch": "2.14.0+cu132",
+    "torchvision": "0.29.0+cu132",
+    "onnx": "1.23.0",
+    "onnxruntime": "1.30.0",
+    "numpy": "2.5.2",
+    "opencv-python": "5.0.0.93",
+    "pycocotools": "2.0.11",
+    "ultralytics": "8.4.174"
+  },
+  "comparison_to_coco256_historical": {
+    "torch": {
+      "historical": "2.14.0+cu132",
+      "current": "2.14.0+cu132",
+      "equal": true
+    },
+    "torchvision": {
+      "historical": "0.29.0+cu132",
+      "current": "0.29.0+cu132",
+      "equal": true
+    },
+    "numpy": {
+      "historical": "2.5.2",
+      "current": "2.5.2",
+      "equal": true
+    },
+    "opencv-python": {
+      "historical": "5.0.0.93",
+      "current": "5.0.0.93",
+      "equal": true
+    },
+    "onnx": {
+      "historical": "1.23.0",
+      "current": "1.23.0",
+      "equal": true
+    },
+    "onnxruntime": {
+      "historical": "1.30.0",
+      "current": "1.30.0",
+      "equal": true
+    },
+    "pycocotools": {
+      "historical": "2.0.11",
+      "current": "2.0.11",
+      "equal": true
+    }
+  },
+  "scope": "current installed environment snapshot; not a verified public reproducible installer or historical training lock"
+}

@@ -1,0 +1,95 @@
+{
+  "samples": 12,
+  "output_shape": [
+    1,
+    1344,
+    85
+  ],
+  "errors": [
+    {
+      "image_id": 139,
+      "max_abs": 176.79580688476562,
+      "mean_abs": 0.15159183740615845,
+      "p99_abs": 3.043576240539551,
+      "probability_mean_abs": 0.0021254278253763914
+    },
+    {
+      "image_id": 285,
+      "max_abs": 57.438385009765625,
+      "mean_abs": 0.08683674782514572,
+      "p99_abs": 2.165390968322754,
+      "probability_mean_abs": 0.0007780062151141465
+    },
+    {
+      "image_id": 632,
+      "max_abs": 75.50019073486328,
+      "mean_abs": 0.11227871477603912,
+      "p99_abs": 2.3645222187042236,
+      "probability_mean_abs": 0.0014611296355724335
+    },
+    {
+      "image_id": 724,
+      "max_abs": 210.37005615234375,
+      "mean_abs": 0.33555373549461365,
+      "p99_abs": 7.364076614379883,
+      "probability_mean_abs": 0.002768497448414564
+    },
+    {
+      "image_id": 776,
+      "max_abs": 99.32316589355469,
+      "mean_abs": 0.18468131124973297,
+      "p99_abs": 3.9481301307678223,
+      "probability_mean_abs": 0.002402312820777297
+    },
+    {
+      "image_id": 785,
+      "max_abs": 223.24298095703125,
+      "mean_abs": 0.3110463619232178,
+      "p99_abs": 7.195682525634766,
+      "probability_mean_abs": 0.0029775488656014204
+    },
+    {
+      "image_id": 802,
+      "max_abs": 225.09402465820312,
+      "mean_abs": 0.2664448618888855,
+      "p99_abs": 5.461017608642578,
+      "probability_mean_abs": 0.0026567343156784773
+    },
+    {
+      "image_id": 872,
+      "max_abs": 58.7138557434082,
+      "mean_abs": 0.08169379085302353,
+      "p99_abs": 2.178209066390991,
+      "probability_mean_abs": 0.0010506415273994207
+    },
+    {
+      "image_id": 885,
+      "max_abs": 192.59776306152344,
+      "mean_abs": 0.33319345116615295,
+      "p99_abs": 7.7957868576049805,
+      "probability_mean_abs": 0.0027804113924503326
+    },
+    {
+      "image_id": 1000,
+      "max_abs": 183.35708618164062,
+      "mean_abs": 0.1638525426387787,
+      "p99_abs": 3.514777183532715,
+      "probability_mean_abs": 0.0026851000729948282
+    },
+    {
+      "image_id": 1268,
+      "max_abs": 190.261962890625,
+      "mean_abs": 0.23073390126228333,
+      "p99_abs": 4.558032989501953,
+      "probability_mean_abs": 0.0025725122541189194
+    },
+    {
+      "image_id": 1296,
+      "max_abs": 113.04713439941406,
+      "mean_abs": 0.17603445053100586,
+      "p99_abs": 3.5903191566467285,
+      "probability_mean_abs": 0.002246619202196598
+    }
+  ],
+  "note": "Unsuppressed decoded box errors are recorded, not thresholded as bit-exact parity; full COCO accuracy is the acceptance gate."
+}

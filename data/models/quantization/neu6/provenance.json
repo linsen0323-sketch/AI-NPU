@@ -1,0 +1,826 @@
+{
+  "seed": 20261019,
+  "source_files": {
+    "checkpoint": {
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\YOLOX_outputs\\neu_seed2022_mosaic10_yolox_s\\best_ckpt.pth",
+      "sha256": "cf7ae18a0d0eed5847ceb0108b8562b3d6adbaebbe254017749bc2050d095f4c"
+    },
+    "config": {
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\exps\\example\\custom\\neu_seed2022_mosaic10_yolox_s.py",
+      "sha256": "8e684a950f7200d7979babcbf40a92f697eaee9dfc6732d7d0e832dc2a99b819"
+    },
+    "val_annotations": {
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\annotations\\instances_val2017.json",
+      "sha256": "cab22d0890bb58d2b2da2ebf786d64d7a90bfef5965423a5ecec99066792b41a"
+    }
+  },
+  "checkpoint_metadata": {
+    "start_epoch": 90,
+    "best_ap": 0.45018122608268,
+    "curr_ap": 0.45018122608268
+  },
+  "preprocessing": {
+    "layout": "NCHW",
+    "color": "BGR",
+    "resize": "aspect preserving, cv2 INTER_LINEAR",
+    "letterbox": "top-left, fill 114",
+    "size": [
+      640,
+      640
+    ],
+    "input_range": [
+      0,
+      255
+    ],
+    "conf_threshold": 0.01,
+    "nms_iou": 0.65,
+    "class_agnostic_nms": false
+  },
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "split_counts": {
+    "train": 1439,
+    "val": 360
+  },
+  "calibration_split": "train only",
+  "calibration_samples": [
+    {
+      "id": 922,
+      "file_name": "patches_161.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_161.jpg",
+      "label": 3
+    },
+    {
+      "id": 229,
+      "file_name": "rolled-in_scale_111.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_111.jpg",
+      "label": 5
+    },
+    {
+      "id": 981,
+      "file_name": "patches_143.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_143.jpg",
+      "label": 3
+    },
+    {
+      "id": 449,
+      "file_name": "inclusion_144.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_144.jpg",
+      "label": 2
+    },
+    {
+      "id": 860,
+      "file_name": "scratches_5.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_5.jpg",
+      "label": 6
+    },
+    {
+      "id": 1160,
+      "file_name": "pitted_surface_81.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_81.jpg",
+      "label": 4
+    },
+    {
+      "id": 521,
+      "file_name": "rolled-in_scale_121.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_121.jpg",
+      "label": 5
+    },
+    {
+      "id": 187,
+      "file_name": "scratches_106.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_106.jpg",
+      "label": 6
+    },
+    {
+      "id": 739,
+      "file_name": "crazing_12.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_12.jpg",
+      "label": 1
+    },
+    {
+      "id": 1398,
+      "file_name": "rolled-in_scale_40.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_40.jpg",
+      "label": 5
+    },
+    {
+      "id": 925,
+      "file_name": "scratches_209.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_209.jpg",
+      "label": 6
+    },
+    {
+      "id": 167,
+      "file_name": "scratches_257.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_257.jpg",
+      "label": 6
+    },
+    {
+      "id": 1196,
+      "file_name": "patches_157.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_157.jpg",
+      "label": 3
+    },
+    {
+      "id": 1410,
+      "file_name": "inclusion_180.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_180.jpg",
+      "label": 2
+    },
+    {
+      "id": 356,
+      "file_name": "patches_85.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_85.jpg",
+      "label": 3
+    },
+    {
+      "id": 231,
+      "file_name": "inclusion_150.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_150.jpg",
+      "label": 2
+    },
+    {
+      "id": 268,
+      "file_name": "rolled-in_scale_221.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_221.jpg",
+      "label": 5
+    },
+    {
+      "id": 1281,
+      "file_name": "crazing_264.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_264.jpg",
+      "label": 1
+    },
+    {
+      "id": 1370,
+      "file_name": "rolled-in_scale_181.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_181.jpg",
+      "label": 5
+    },
+    {
+      "id": 485,
+      "file_name": "pitted_surface_218.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_218.jpg",
+      "label": 4
+    },
+    {
+      "id": 1350,
+      "file_name": "scratches_119.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_119.jpg",
+      "label": 6
+    },
+    {
+      "id": 949,
+      "file_name": "patches_207.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_207.jpg",
+      "label": 3
+    },
+    {
+      "id": 1246,
+      "file_name": "patches_186.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_186.jpg",
+      "label": 3
+    },
+    {
+      "id": 12,
+      "file_name": "patches_112.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_112.jpg",
+      "label": 3
+    },
+    {
+      "id": 826,
+      "file_name": "inclusion_198.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_198.jpg",
+      "label": 2
+    },
+    {
+      "id": 38,
+      "file_name": "pitted_surface_44.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_44.jpg",
+      "label": 4
+    },
+    {
+      "id": 817,
+      "file_name": "patches_292.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_292.jpg",
+      "label": 3
+    },
+    {
+      "id": 18,
+      "file_name": "pitted_surface_282.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_282.jpg",
+      "label": 4
+    },
+    {
+      "id": 786,
+      "file_name": "patches_256.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_256.jpg",
+      "label": 3
+    },
+    {
+      "id": 892,
+      "file_name": "scratches_44.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_44.jpg",
+      "label": 6
+    },
+    {
+      "id": 1011,
+      "file_name": "inclusion_267.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_267.jpg",
+      "label": 2
+    },
+    {
+      "id": 203,
+      "file_name": "inclusion_153.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_153.jpg",
+      "label": 2
+    },
+    {
+      "id": 45,
+      "file_name": "pitted_surface_64.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_64.jpg",
+      "label": 4
+    },
+    {
+      "id": 595,
+      "file_name": "crazing_138.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_138.jpg",
+      "label": 1
+    },
+    {
+      "id": 1345,
+      "file_name": "crazing_72.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_72.jpg",
+      "label": 1
+    },
+    {
+      "id": 1258,
+      "file_name": "crazing_21.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_21.jpg",
+      "label": 1
+    },
+    {
+      "id": 425,
+      "file_name": "rolled-in_scale_277.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_277.jpg",
+      "label": 5
+    },
+    {
+      "id": 1195,
+      "file_name": "pitted_surface_257.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_257.jpg",
+      "label": 4
+    },
+    {
+      "id": 719,
+      "file_name": "pitted_surface_194.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_194.jpg",
+      "label": 4
+    },
+    {
+      "id": 1286,
+      "file_name": "inclusion_299.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_299.jpg",
+      "label": 2
+    },
+    {
+      "id": 443,
+      "file_name": "patches_70.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_70.jpg",
+      "label": 3
+    },
+    {
+      "id": 1312,
+      "file_name": "rolled-in_scale_265.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_265.jpg",
+      "label": 5
+    },
+    {
+      "id": 1400,
+      "file_name": "inclusion_101.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_101.jpg",
+      "label": 2
+    },
+    {
+      "id": 173,
+      "file_name": "pitted_surface_190.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_190.jpg",
+      "label": 4
+    },
+    {
+      "id": 322,
+      "file_name": "inclusion_2.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_2.jpg",
+      "label": 2
+    },
+    {
+      "id": 383,
+      "file_name": "scratches_60.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_60.jpg",
+      "label": 6
+    },
+    {
+      "id": 211,
+      "file_name": "pitted_surface_117.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_117.jpg",
+      "label": 4
+    },
+    {
+      "id": 1310,
+      "file_name": "rolled-in_scale_263.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_263.jpg",
+      "label": 5
+    },
+    {
+      "id": 1134,
+      "file_name": "scratches_91.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_91.jpg",
+      "label": 6
+    },
+    {
+      "id": 536,
+      "file_name": "scratches_249.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_249.jpg",
+      "label": 6
+    },
+    {
+      "id": 902,
+      "file_name": "inclusion_84.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_84.jpg",
+      "label": 2
+    },
+    {
+      "id": 1229,
+      "file_name": "inclusion_11.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_11.jpg",
+      "label": 2
+    },
+    {
+      "id": 208,
+      "file_name": "pitted_surface_132.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_132.jpg",
+      "label": 4
+    },
+    {
+      "id": 1314,
+      "file_name": "inclusion_239.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_239.jpg",
+      "label": 2
+    },
+    {
+      "id": 1328,
+      "file_name": "pitted_surface_227.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_227.jpg",
+      "label": 4
+    },
+    {
+      "id": 585,
+      "file_name": "crazing_53.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_53.jpg",
+      "label": 1
+    },
+    {
+      "id": 1046,
+      "file_name": "inclusion_275.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_275.jpg",
+      "label": 2
+    },
+    {
+      "id": 1047,
+      "file_name": "crazing_291.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_291.jpg",
+      "label": 1
+    },
+    {
+      "id": 22,
+      "file_name": "patches_196.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_196.jpg",
+      "label": 3
+    },
+    {
+      "id": 258,
+      "file_name": "pitted_surface_34.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_34.jpg",
+      "label": 4
+    },
+    {
+      "id": 1302,
+      "file_name": "rolled-in_scale_254.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_254.jpg",
+      "label": 5
+    },
+    {
+      "id": 169,
+      "file_name": "pitted_surface_138.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_138.jpg",
+      "label": 4
+    },
+    {
+      "id": 16,
+      "file_name": "crazing_245.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_245.jpg",
+      "label": 1
+    },
+    {
+      "id": 44,
+      "file_name": "patches_278.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_278.jpg",
+      "label": 3
+    },
+    {
+      "id": 1157,
+      "file_name": "crazing_24.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_24.jpg",
+      "label": 1
+    },
+    {
+      "id": 1106,
+      "file_name": "inclusion_73.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_73.jpg",
+      "label": 2
+    },
+    {
+      "id": 1118,
+      "file_name": "pitted_surface_181.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_181.jpg",
+      "label": 4
+    },
+    {
+      "id": 444,
+      "file_name": "scratches_22.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_22.jpg",
+      "label": 6
+    },
+    {
+      "id": 391,
+      "file_name": "crazing_196.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_196.jpg",
+      "label": 1
+    },
+    {
+      "id": 1389,
+      "file_name": "crazing_216.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_216.jpg",
+      "label": 1
+    },
+    {
+      "id": 841,
+      "file_name": "inclusion_277.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_277.jpg",
+      "label": 2
+    },
+    {
+      "id": 488,
+      "file_name": "rolled-in_scale_99.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_99.jpg",
+      "label": 5
+    },
+    {
+      "id": 1185,
+      "file_name": "patches_266.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_266.jpg",
+      "label": 3
+    },
+    {
+      "id": 96,
+      "file_name": "crazing_51.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_51.jpg",
+      "label": 1
+    },
+    {
+      "id": 1403,
+      "file_name": "rolled-in_scale_258.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_258.jpg",
+      "label": 5
+    },
+    {
+      "id": 775,
+      "file_name": "scratches_214.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_214.jpg",
+      "label": 6
+    },
+    {
+      "id": 1377,
+      "file_name": "scratches_43.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_43.jpg",
+      "label": 6
+    },
+    {
+      "id": 311,
+      "file_name": "inclusion_118.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\inclusion_118.jpg",
+      "label": 2
+    },
+    {
+      "id": 924,
+      "file_name": "crazing_88.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_88.jpg",
+      "label": 1
+    },
+    {
+      "id": 506,
+      "file_name": "rolled-in_scale_282.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_282.jpg",
+      "label": 5
+    },
+    {
+      "id": 202,
+      "file_name": "scratches_48.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_48.jpg",
+      "label": 6
+    },
+    {
+      "id": 761,
+      "file_name": "pitted_surface_118.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_118.jpg",
+      "label": 4
+    },
+    {
+      "id": 900,
+      "file_name": "scratches_3.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_3.jpg",
+      "label": 6
+    },
+    {
+      "id": 93,
+      "file_name": "rolled-in_scale_235.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_235.jpg",
+      "label": 5
+    },
+    {
+      "id": 503,
+      "file_name": "rolled-in_scale_2.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_2.jpg",
+      "label": 5
+    },
+    {
+      "id": 1182,
+      "file_name": "pitted_surface_241.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\pitted_surface_241.jpg",
+      "label": 4
+    },
+    {
+      "id": 440,
+      "file_name": "patches_281.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_281.jpg",
+      "label": 3
+    },
+    {
+      "id": 555,
+      "file_name": "scratches_141.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_141.jpg",
+      "label": 6
+    },
+    {
+      "id": 1263,
+      "file_name": "rolled-in_scale_70.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_70.jpg",
+      "label": 5
+    },
+    {
+      "id": 1146,
+      "file_name": "patches_114.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_114.jpg",
+      "label": 3
+    },
+    {
+      "id": 1181,
+      "file_name": "crazing_192.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_192.jpg",
+      "label": 1
+    },
+    {
+      "id": 46,
+      "file_name": "rolled-in_scale_186.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\rolled-in_scale_186.jpg",
+      "label": 5
+    },
+    {
+      "id": 1052,
+      "file_name": "crazing_154.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_154.jpg",
+      "label": 1
+    },
+    {
+      "id": 885,
+      "file_name": "scratches_161.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\scratches_161.jpg",
+      "label": 6
+    },
+    {
+      "id": 766,
+      "file_name": "patches_73.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\patches_73.jpg",
+      "label": 3
+    },
+    {
+      "id": 859,
+      "file_name": "crazing_91.jpg",
+      "width": 200,
+      "height": 200,
+      "path": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\train2017\\crazing_91.jpg",
+      "label": 1
+    }
+  ],
+  "accuracy_budget_percentage_points": 1.0,
+  "torch": "2.14.0+cu132",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "bn_pairs_folded": 74
+}

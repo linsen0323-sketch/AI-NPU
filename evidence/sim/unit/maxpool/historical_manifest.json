@@ -1,0 +1,92 @@
+{
+  "status": "candidate_ready_not_applied",
+  "verified_at_local": "2026-11-01 18:22 Asia/Shanghai",
+  "baseline_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\before\\source\\acceleration\\unified_npu\\rtl\\npu_maxpool_engine.sv",
+  "baseline_sha256": "5907257BE2C7FF3A4C4AE82382ED05FD0683BA7FAB3EADB6107EDE66E2140DB9",
+  "production_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_maxpool_engine.sv",
+  "production_sha256_at_verification": "5907257BE2C7FF3A4C4AE82382ED05FD0683BA7FAB3EADB6107EDE66E2140DB9",
+  "candidate_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\npu_maxpool_engine.sv",
+  "candidate_sha256": "435AA68D4F895F5F4D4B51064715600641F78E303226E76CE4231D04F1FDDDF5",
+  "baseline_wrapper_change": "module name only: npu_maxpool_engine -> npu_maxpool_engine_before",
+  "helper_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_wide_math.sv",
+  "helper_sha256": "79EC08742E36F8CEB7EA3BBF9284ED2D6CE152E8FB73B9CE04B19307DB5E4DF2",
+  "tool": "Vivado standalone XSim 2025.2 Build 6299465",
+  "public_outputs_compared": 30,
+  "results": {
+    "bulk": "TEST_PASS maxpool_source_words BULK=1 cases=23 golden_pixels=472 compared_cycles=14673 scalar_reads=163 scalar_writes=121 bulk_reads=56 bulk_writes=10",
+    "scalar": "TEST_PASS maxpool_source_words BULK=0 cases=15 golden_pixels=472 compared_cycles=13559 scalar_reads=296 scalar_writes=249 bulk_reads=0 bulk_writes=0"
+  },
+  "validation_limits": [
+    "Directed behavioral simulation only; not formal equivalence.",
+    "Engine has no cancel input; system cancellation not exercised.",
+    "No candidate synthesis, resource measurement, timing, bitstream, or board validation."
+  ],
+  "files": [
+    {
+      "path": "npu_maxpool_engine.sv",
+      "bytes": 19194,
+      "sha256": "435AA68D4F895F5F4D4B51064715600641F78E303226E76CE4231D04F1FDDDF5"
+    },
+    {
+      "path": "npu_maxpool_engine_before.sv",
+      "bytes": 19021,
+      "sha256": "6A9562254EFE3DDC6DCE6F5E721901E3E4CBF2E4F1925C02AAACB67588A3F241"
+    },
+    {
+      "path": "generate_miter.py",
+      "bytes": 15471,
+      "sha256": "5E5B3B4120F32404BED94B5190307B7FA8D998465883CEACAD6A5D0C30A369CA"
+    },
+    {
+      "path": "tb_maxpool_source_words.sv",
+      "bytes": 23349,
+      "sha256": "1E2481BC733E3D15D135BAC967E9D89349C478409F857045D0586AA96FA8CE89"
+    },
+    {
+      "path": "run.ps1",
+      "bytes": 1368,
+      "sha256": "FE12EC052DA913712D5E28EF5A28F71DB2B98B442ABDB210860BB52C9247B9A9"
+    },
+    {
+      "path": "run.tcl",
+      "bytes": 13,
+      "sha256": "6218FFA4F2392F3C61113605D4AB2CD023186E11F1DA826B920E510A9A797EFB"
+    },
+    {
+      "path": "maxpool_source_words.patch",
+      "bytes": 2531,
+      "sha256": "2374408F55BF0D111D307FD29DD39C71294B8E45044BC8BEFEEE80CE0FD10F98"
+    },
+    {
+      "path": "results/compile.log",
+      "bytes": 1266,
+      "sha256": "59F33785C28DFC238A05922B381E1436CD5ACA51930E5CDC58BB1B2F10EBCD95"
+    },
+    {
+      "path": "results/elaborate_bulk.log",
+      "bytes": 886,
+      "sha256": "B0253F82E3ECA9B8E4CD6249DAA24AD9494A2DE244C8D1E2812D88E1466E34BD"
+    },
+    {
+      "path": "results/elaborate_scalar.log",
+      "bytes": 906,
+      "sha256": "BB2B469998F3B3DD7461877E2EB86AE6E73DB43A0E0196EEF0C0FE7C55DCA0F5"
+    },
+    {
+      "path": "results/simulate_bulk.log",
+      "bytes": 2763,
+      "sha256": "20888C019FDF8E269654547851322FEEB0C785CDFE669A9DD3A7BB3FD1F5B816"
+    },
+    {
+      "path": "results/simulate_scalar.log",
+      "bytes": 2232,
+      "sha256": "64F7DC1F95E3B0F113AE536E62F1E0C98CE218EA390650899019ADCB3B86BCEC"
+    },
+    {
+      "path": "VALIDATION_REPORT.md",
+      "bytes": 5274,
+      "sha256": "A4CE423F8B1D4D23AF4C1C25252C47B2D93A168A3123DD29541352EE1756A369"
+    }
+  ],
+  "packaged_at_local": "2026-11-01T18:26:12.065987+08:00"
+}

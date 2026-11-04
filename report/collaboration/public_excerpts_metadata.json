@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "kind": "SELECTED_REAL_MESSAGES_NOT_SYNTHETIC_DIALOGUE",
+  "source_kind": "privately_archived_user_visible_dialogue",
+  "source_name": "conversation.jsonl",
+  "source_thread_id": "01a195c1-f759-7901-a5c9-d5d48995e674",
+  "source_sha256": "4193ec29e239d68f0ea6391bd5bc31fb36daef9a0d41f7f1710b0a12d4898783",
+  "original_export_metadata_sha256": "48594d53227f228067567ba57c3907fe99f90df7a80e740a7559377aeb4e35a3",
+  "original_export_message_count": 54,
+  "selected_message_count": 15,
+  "selected_source_lines": [
+    310,
+    315,
+    322,
+    325,
+    384,
+    814,
+    817,
+    989,
+    994,
+    1524,
+    1529,
+    1537,
+    1542,
+    1731,
+    1832
+  ],
+  "local_path_redactions": 1,
+  "process": "Selected user-visible messages preserve timestamp, role, source_line and original_text_sha256; local absolute paths are visibly replaced for public reading.",
+  "limitation": "This is a curated subset of an archived session snapshot, not the full research history or current hardware evidence."
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "LOCAL_PRIVATE_SYSFS_FILESYSTEM_AND_COMMAND_STUBS_NO_BOARD_ACCESS",
+  "result": "PASS",
+  "cases": {
+    "busy": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Module reference count is 1; preserve busy driver\n"
+    },
+    "device_node": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Device node or symlink exists; preserve driver for diagnosis\n"
+    },
+    "dangling_device_symlink": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Device node or symlink exists; preserve driver for diagnosis\n"
+    },
+    "misc_device": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Misc device exists; preserve a successfully bound or active driver\n"
+    },
+    "bound_device": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Bound platform device or unexpected driver symlink exists: /tmp/npu100_failed_driver_e_b8fkd2/sys/bus/platform/drivers/unified-npu/43c10000.npu-runtime\n"
+    },
+    "bad_refcnt": {
+      "exit": 1,
+      "calls": [
+        "CHECK_ONLY"
+      ],
+      "output": "ERROR: Invalid module reference count; refusing unload\n"
+    },
+    "failed_probe": {
+      "exit": 0,
+      "calls": [
+        "CHECK_ONLY",
+        "RMMOD",
+        "INSMOD"
+      ],
+      "output": "FAILED_PROBE_MODULE_REMOVED: no bound device or module references existed.\nRecent kernel log follows, including the actual acquired FCLK rates.\nFIXTURE FCLK0=99999999 FCLK1=99999999\nFAILED_DRIVER_REPLACEMENT_PASS: INFO metadata checked; no PL MMIO or DDR access.\n"
+    },
+    "already_unloaded": {
+      "exit": 0,
+      "calls": [
+        "CHECK_ONLY",
+        "INSMOD"
+      ],
+      "output": "Recent kernel log follows, including the actual acquired FCLK rates.\nFIXTURE FCLK0=99999999 FCLK1=99999999\nFAILED_DRIVER_REPLACEMENT_PASS: INFO metadata checked; no PL MMIO or DDR access.\n"
+    }
+  },
+  "real_rmmod": false,
+  "real_insmod": false,
+  "real_device_access": false,
+  "board_verification": false,
+  "replaced_inputs": [
+    "filesystem_paths",
+    "id",
+    "rmmod",
+    "insmod",
+    "dmesg",
+    "child_check_driver"
+  ]
+}

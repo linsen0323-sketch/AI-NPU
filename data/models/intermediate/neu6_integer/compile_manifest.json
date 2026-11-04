@@ -1,0 +1,47 @@
+{
+  "model": "yolox_s_a",
+  "compiled": true,
+  "evidence": {
+    "schema": "HOST_V1_EVIDENCE1",
+    "created_utc": "2026-10-19T10:00:40.683695+00:00",
+    "sources": {
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\ABI.md": "e85228479059847e9a1ce26619087381b9757e6de895e144a14507a54afddcb3",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\aipkg3_abi.h": "e5299f7573bc3f6bfb8905c17e41fd3e459514808df9600974aba4f380e2808c",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\compiler.py": "ca2312f9d99d2f59d9ea867472ccc9c02a2de6d106fd6114ab3db4f59e1e509f",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\host.py": "70c00c8de7a0afdf1c798fe57d1f4c774a4879a2cc58413496ef1890269be0ae",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\integer_runtime.py": "9dd6ef8126cfe09900cc4bb3ab37bc99f79a06b640fd800947af12d7db15f655",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\legacy_cpu.py": "4ae487a09d5dc3cb580aaed7d3be26c7dda9853dc869d08c7355e2f007b9e9b2",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\legacy_reference.py": "11b9ffb12a5f4739426afa60dd2abbcceefe2c44ad59a592aad77b987e11f87e",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\package.py": "444f4613f53ca953db7af457ab7dd5adecccf88426433ace994f8e1c39364495",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\provenance.py": "b7aa81a126479c6bf40d2170de5ee77f30e673f654ea5ea38f3e0b55c810b837",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\README.md": "444173b27a428386829752ff7ee02bbddecb53a866551be6684cb820f63a4c04",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\release.py": "9732a723dec31cf966239a02e00922f2407aa75936ac634835d7e15b0b6825c2",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\run_all.ps1": "d3c0db1c15f35461103732b32c3522399d23aee26c0961d9905cffbbaf1e8849",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\test_contract.py": "85ddee6c4b5c61b1225c82a4c4a38972a2892487b42a4a7cfc421a411161c6e9",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\test_inputs.py": "b70b6ca0648feb672cd1e5bfd76fe9d33b564ce899f608558725628381ad6f5c",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\validate_integer.py": "512fe4894901c005db796e16c0179d2922f754c3d8cb14d41964a9eeee50bd9e",
+      "D:\\AI\\fpga_ai\\tools\\export_mixed_precision_onnx.py": "297333266537f2bf64add9cadb5932dac01a3a9a76bff7f31505780857a82a04",
+      "D:\\AI\\fpga_ai\\tools\\mixed_precision_ptq.py": "d6b0226bdbe7686a6a2de27a8e69a23f3713327572794824870bed0a3e96c7ac",
+      "D:\\AI\\fpga_ai\\tools\\verify_full_resnet18_int8.py": "2538a29ac21316b008cb1d215271f418a51d8b2d3d4ac4fba6d85ce08503779c"
+    },
+    "inputs": {
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\artifacts\\yolox_s_a\\parameters.npz": "7969cea4c5643779e7690ac78d9d065005ff76503a76b26057b395ccce426e5b",
+      "D:\\AI\\fpga_ai\\deployment\\host_v1\\artifacts\\yolox_s_a\\program.json": "ed327599e130caf7761bcecb4a7eb57a95d3d842c485098e351de4c93a6a40a1",
+      "D:\\AI\\fpga_ai\\quantized\\mixed_precision_20261019\\yolox_s_a\\model_manifest.json": "110d9866ce4a3b0b69708c65db8fcf4984c93e4678dab49319707fb6ea894009",
+      "D:\\AI\\fpga_ai\\quantized\\mixed_precision_20261019\\yolox_s_a\\model_mixed_qdq.onnx": "fb01d96c081215c515d847b7723d29ca521dbece36fd77023fff15bc460b38d9",
+      "D:\\AI\\fpga_ai\\quantized\\mixed_precision_20261019\\yolox_s_a\\selected_policy.json": "065bb474e00500a46e62d24bf0e5fc800eb4d569a7fd3300e0097af367479aec"
+    },
+    "environment": {
+      "python": "3.12.10",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.5.2",
+      "torch": "2.14.0+cu132",
+      "torchvision": "0.29.0+cu132",
+      "onnx": "1.23.0",
+      "Pillow": "12.3.0",
+      "opencv-python": "5.0.0.93",
+      "timm": "1.0.30",
+      "pycocotools": "2.0.11"
+    }
+  }
+}

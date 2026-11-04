@@ -1,0 +1,56 @@
+{
+  "case_results": [
+    {
+      "case": "ddr",
+      "layers": 48,
+      "elements_compared": 5745670,
+      "pass": true
+    },
+    {
+      "case": "conv1_ddr",
+      "layers": 1,
+      "elements_compared": 802816,
+      "pass": true
+    },
+    {
+      "case": "tail_ddr",
+      "layers": 2,
+      "elements_compared": 518,
+      "pass": true
+    },
+    {
+      "case": "smoke_ddr",
+      "layers": 9,
+      "elements_compared": 907,
+      "pass": true
+    },
+    {
+      "case": "edge_ddr",
+      "layers": 1,
+      "elements_compared": 6783,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "source_files_unchanged": 19,
+  "source_image": "D:\\AI\\fpga_ai\\datasets\\NEU_CLS_split\\test\\Cr\\Cr_101.bmp",
+  "integer_logits": [
+    87,
+    -7,
+    -39,
+    0,
+    -23,
+    -18
+  ],
+  "integer_class": 0,
+  "onnx_runtime_class": 0,
+  "onnx_runtime_logits": [
+    11.420565605163574,
+    -0.9295809268951416,
+    -5.046296119689941,
+    0.0,
+    -3.0543372631073,
+    -2.390350818634033
+  ],
+  "scope": "All48 exported DDR operators verified numerically against unchanged Python Golden; this is exporter validation, not RTL simulation."
+}

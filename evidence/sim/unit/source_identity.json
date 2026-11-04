@@ -1,0 +1,71 @@
+{
+  "suites": [
+    {
+      "suite": "wbuf",
+      "modules": [
+        {
+          "module": "npu_banked_buffer.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_banked_buffer.sv",
+          "sha256": "235224b5ac722428c10a5a7acf3846066ca91dd04fb35217753d9179fbcf0e2b",
+          "matches_historical_dut_or_helper": true
+        }
+      ],
+      "scope": "historical directed verification; DUT hashes checked against current npu100; no full-network or new-board claim"
+    },
+    {
+      "suite": "dma",
+      "modules": [
+        {
+          "module": "npu_stream_dma.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_stream_dma.sv",
+          "sha256": "6d5fc7201ea5eac6dfe23d803ec6cfa760cae2d580f2cf493844205723912cef",
+          "matches_historical_dut_or_helper": true
+        }
+      ],
+      "scope": "historical directed verification; DUT hashes checked against current npu100; no full-network or new-board claim"
+    },
+    {
+      "suite": "round",
+      "modules": [
+        {
+          "module": "npu_resnet_quant.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_resnet_quant.sv",
+          "sha256": "6411fb0ea15ab94247adb22822a63b9746cb4e2241b6ee48d0a9c112d6057bf6",
+          "matches_historical_dut_or_helper": true
+        },
+        {
+          "module": "npu_q16_vector_pipe.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_q16_vector_pipe.sv",
+          "sha256": "b277aab707ee19ff32b0ed67a08cba1dd9ac94619f24a82fb95a5c8f84499184",
+          "matches_historical_dut_or_helper": true
+        },
+        {
+          "module": "npu_conv_epilogue.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_conv_epilogue.sv",
+          "sha256": "279ab8e2dcf6021e3b036c2a02e69b0e430f83e66b250002f536ce0339c4d8b2",
+          "matches_historical_dut_or_helper": true
+        }
+      ],
+      "scope": "historical directed verification; DUT hashes checked against current npu100; no full-network or new-board claim"
+    },
+    {
+      "suite": "maxpool",
+      "modules": [
+        {
+          "module": "npu_maxpool_engine.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_maxpool_engine.sv",
+          "sha256": "435aa68d4f895f5f4d4b51064715600641f78e303226e76ce4231d04f1fdddf5",
+          "matches_historical_dut_or_helper": true
+        },
+        {
+          "module": "npu_wide_math.sv",
+          "packaged_path": "src/hardware/rtl/accelerator/npu_wide_math.sv",
+          "sha256": "79ec08742e36f8ceb7ea3bbf9284ed2d6ce152e8fb73b9ce04b19307db5e4df2",
+          "matches_historical_dut_or_helper": true
+        }
+      ],
+      "scope": "historical directed verification; DUT hashes checked against current npu100; no full-network or new-board claim"
+    }
+  ],
+  "new_simulation_executed": false
+}

@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Mon Nov  2 21:24:46 2026
+| Host         : LAPTOP-TKBH5FBB running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 15 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                   | Status                    | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                 |                           |                     | Log       |                    | Version |               | License    |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_ai_infer_mem_axi_0 | Up-to-date (discontinued) | No changes required |  *(1)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 38)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_ai_mem_axi_0       | Up-to-date (discontinued) | No changes required |  *(2)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 38)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_ai_preprocess_0_0  | Up-to-date                | No changes required | Change    | ai_camera_pipeline | 1.0     | 1.0 (Rev. 1)  | Included   | xc7z020clg400-2      |
+|                                 |                           |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     | available |                    | 1)      |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_axi_reset_0        | Up-to-date                | No changes required |  *(3)     | Processor System   | 5.0     | 5.0 (Rev. 17) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 17)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_const0_0           | Up-to-date (discontinued) | No changes required |  *(4)     | Constant           | 1.1     | 1.1 (Rev. 10) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 10)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_const1_0           | Up-to-date (discontinued) | No changes required |  *(5)     | Constant           | 1.1     | 1.1 (Rev. 10) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 10)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_control_gpio_0     | Up-to-date                | No changes required |  *(6)     | AXI GPIO           | 2.0     | 2.0 (Rev. 37) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 37)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_ctrl_axi_0         | Up-to-date (discontinued) | No changes required |  *(7)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 38)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_mem_axi_0          | Up-to-date (discontinued) | No changes required |  *(8)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 38)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_npu_reset_0        | Up-to-date                | No changes required |  *(9)     | Processor System   | 5.0     | 5.0 (Rev. 17) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 17)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_pixel_reset_0      | Up-to-date                | No changes required |  *(10)    | Processor System   | 5.0     | 5.0 (Rev. 17) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 17)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_ps7_0              | Up-to-date                | No changes required |  *(11)    | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 8)  | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | System             | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 8)      |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_stats_gpio_0       | Up-to-date                | No changes required |  *(12)    | AXI GPIO           | 2.0     | 2.0 (Rev. 37) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 37)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_video_out_0        | Up-to-date                | No changes required |  *(13)    | AXI4-Stream to     | 4.0     | 4.0 (Rev. 20) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | Video Out          | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 20)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| video_system_vtc_0              | Up-to-date                | No changes required |  *(14)    | Video Timing       | 6.2     | 6.2 (Rev. 11) | Included   | xc7z020clg400-2      |
+|                                 |                           |                     |           | Controller         | (Rev.   |               |            |                      |
+|                                 |                           |                     |           |                    | 11)     |               |            |                      |
++---------------------------------+---------------------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(2) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(3) d:/FPGA/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(4) d:/FPGA/2025.2/Vivado/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(5) d:/FPGA/2025.2/Vivado/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(6) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(7) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(8) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(9) d:/FPGA/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(10) d:/FPGA/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(11) d:/FPGA/2025.2/Vivado/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(12) d:/FPGA/2025.2/Vivado/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(13) d:/FPGA/2025.2/Vivado/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(14) d:/FPGA/2025.2/Vivado/data/ip/xilinx/v_tc_v6_2/doc/v_tc_v6_2_changelog.txt
+
+

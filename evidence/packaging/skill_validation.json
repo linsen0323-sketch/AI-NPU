@@ -1,0 +1,13 @@
+{
+  "scope": "isolated fixtures and skill frontmatter validation; no board access",
+  "checks": {
+    "valid_manifest": true,
+    "changed_rejected": true,
+    "missing_rejected": true,
+    "escape_rejected": true,
+    "malformed_rejected": true,
+    "duplicate_rejected": true
+  },
+  "passed": true,
+  "frontmatter_validator": "skill-creator quick_validate.py: Skill is valid!"
+}

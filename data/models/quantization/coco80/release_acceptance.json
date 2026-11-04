@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "full_onnx_validation_pass": true,
+  "samples": 5000,
+  "accuracy_budget_percentage_points": 1.0,
+  "drop_pp": {
+    "mAP50": 0.29807778391458584,
+    "mAP50_95": 0.24334323831561733
+  },
+  "onnx_sha256": "003aebc8829624b5dac49178febe4d7ec37fabda93f6f2016b9ce7c080b054a8",
+  "checkpoint_sha256": "f55ded7181e1b0c13285c56e7790b8f0e8f8db590fe4edb37f0b7f345c913a30",
+  "calibration_images": 500,
+  "onnx_checker_pass": true,
+  "onnx_output_shape": [
+    1,
+    1344,
+    85
+  ],
+  "full_integer_runtime_validated": false,
+  "fpga_board_validated": false,
+  "reference_drop_pp": {
+    "mAP50": 0.33024109373330646,
+    "mAP50_95": 0.25573848168998126
+  },
+  "reference_full_validation_pass": true,
+  "onnx_metrics_sha256": "87ae9c24d596e7e070df96503e44f025727f9ddb725cce5f32dd53633f5ae1a0",
+  "reference_metrics_sha256": "2d1cd16f170e8f7ad84d87b1a4f6a02cb2e269d6399f7b29e57adc86fda89120",
+  "baseline_metrics_sha256": "75a99b16eaa81909bff69557dafa7b3e895705d8a8175daf67644268351736c2",
+  "input_shape": [
+    1,
+    3,
+    256,
+    256
+  ]
+}

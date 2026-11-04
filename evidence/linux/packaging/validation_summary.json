@@ -1,0 +1,33 @@
+{
+  "scope": "SUBMISSION_PACKAGING_LOCAL_VALIDATION_NO_BOARD_ACCESS",
+  "result": "PASS",
+  "upstream_board_completion": "confirmed_by_project_owner",
+  "normalized_prefix_board_tested": false,
+  "checks": {
+    "autostart_install.json": {
+      "result": "PASS",
+      "scope": "LOCAL_PRIVATE_FILESYSTEM_REAL_CHECKSUM_COPY_LINK_LOGIC_NO_BOARD_ACCESS",
+      "sha256": "feaad890cb745c673f00172e4e6bc3431a759ceb0d47d3cba7f53363c945170c"
+    },
+    "service_private_validation.json": {
+      "result": "PASS",
+      "scope": "HOST_PRIVATE_FILESYSTEM_AND_FAKE_CAMERA_PROCESSES_NO_BOARD_ACCESS",
+      "sha256": "1b29fe9e29929c94dbf7d625fd5d7a992bf4ac239226f7f78a74aab16725d199"
+    },
+    "userspace_validation.json": {
+      "result": "PASS",
+      "scope": "PRIVATE_ARCHIVE_CHECKS_OPTIONAL_QEMU_ARM_NO_BOARD_ACCESS",
+      "sha256": "455961c4211dd6aa67eec6e64d8bca22bba0a8b00737d5fcffbd64bbde72dc29"
+    },
+    "repack_validation.json": {
+      "result": "PASS",
+      "scope": "PRIVATE_ARCHIVE_CHECKS_OPTIONAL_QEMU_ARM_NO_BOARD_ACCESS",
+      "sha256": "185bea375908ec660c7d7441adf90fa2ac753dfd03350b7eda207ea91640d539"
+    },
+    "source_validation.json": {
+      "result": "PASS",
+      "scope": "PACKAGED_SOURCE_SYNTAX_AND_PRIVATE_ARM_C_BUILD_NO_BOARD_ACCESS",
+      "sha256": "07caa35cf6a41e792b651ef6814638cfcc7aea588ee670185e99af9663fd7dfc"
+    }
+  }
+}

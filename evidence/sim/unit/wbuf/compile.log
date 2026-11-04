@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_banked_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npu_banked_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/wbuf_sim/tb_wbuf_native.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_wbuf_native

@@ -1,0 +1,268 @@
+{
+  "scope": "HOST_BUILD_STATIC_ABI_VALIDATION_NO_BOARD_ACCESS",
+  "phase": "complete",
+  "board_loaded": false,
+  "board_inference_verified": false,
+  "inputs_are_read_only": true,
+  "errors": [],
+  "warnings": [
+    "Original kernel GCC13.4.0; isolated rebuild GCC13.3.0. Compiler identity differs; CRC/vermagic checks do not prove board runtime compatibility."
+  ],
+  "config": {
+    "original_sha256": "486ed2baa718eca6aa3ed18e50c7ec1fbe84956615f3b6592d55ad5429bd9486",
+    "rebuilt_sha256": "5dbf8d284f8da1cfb43ad7241aceb61bef6da5a2897e5e807166fbb6f0420805",
+    "differences": [
+      {
+        "key": "CONFIG_CC_CAN_LINK",
+        "original": "n",
+        "rebuilt": "y",
+        "metadata_whitelisted": true
+      },
+      {
+        "key": "CONFIG_CC_CAN_LINK_STATIC",
+        "original": "n",
+        "rebuilt": "y",
+        "metadata_whitelisted": true
+      },
+      {
+        "key": "CONFIG_CC_VERSION_TEXT",
+        "original": "\"arm-amd-linux-gnueabi-gcc (GCC) 13.4.0\"",
+        "rebuilt": "\"arm-linux-gnueabihf-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\"",
+        "metadata_whitelisted": true
+      },
+      {
+        "key": "CONFIG_GCC_VERSION",
+        "original": "130400",
+        "rebuilt": "130300",
+        "metadata_whitelisted": true
+      }
+    ],
+    "metadata_whitelist": [
+      "CONFIG_AS_VERSION",
+      "CONFIG_CC_CAN_LINK",
+      "CONFIG_CC_CAN_LINK_STATIC",
+      "CONFIG_CC_VERSION_TEXT",
+      "CONFIG_GCC_VERSION",
+      "CONFIG_LD_VERSION",
+      "CONFIG_PAHOLE_VERSION",
+      "CONFIG_RUSTC_VERSION"
+    ]
+  },
+  "compiler": {
+    "original": "\"arm-amd-linux-gnueabi-gcc (GCC) 13.4.0\"",
+    "rebuilt": "\"arm-linux-gnueabihf-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\"",
+    "original_gcc_version": "130400",
+    "rebuilt_gcc_version": "130300",
+    "identical": false
+  },
+  "rebuilt_release": "6.12.40-xilinx-g31626ef92ff1",
+  "shipped_sample_comparison": {
+    "original_sample_module_count": 8,
+    "original_unique_imported_symbol_count": 362,
+    "rebuilt_export_count": 11064,
+    "matched_count": 362,
+    "missing": [],
+    "mismatched": [],
+    "all_original_samples_checked": true,
+    "module_symvers_sha256": "5ecd00489905f2c56a59cfa9ed4ee1b97ee5928b157de9a6d3b9be1e45b4ee96"
+  },
+  "driver": {
+    "path": "/home/dev/npu100_linux_build_20261102/software/runtime/linux/driver/unified_npu.ko",
+    "bytes": 17364,
+    "sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+    "class": 32,
+    "endianness": "little",
+    "machine": 40,
+    "type": 1,
+    "flags": "0x05000000",
+    "eabi_version": 5,
+    "hard_float_abi_flag": false,
+    "soft_float_abi_flag": false,
+    "compiler_comment": [
+      "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    ],
+    "modinfo": {
+      "description": [
+        "npu100 exclusive ABI8 reserved-DDR interface for Linux 6.12"
+      ],
+      "license": [
+        "GPL"
+      ],
+      "alias": [
+        "of:N*T*Clocal,npu100-runtime-v3C*",
+        "of:N*T*Clocal,npu100-runtime-v3"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "unified_npu"
+      ],
+      "vermagic": [
+        "6.12.40-xilinx-g31626ef92ff1 SMP preempt mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "versioned_imports": {
+      "__aeabi_unwind_cpp_pr0": "0xefd6cf06",
+      "__platform_driver_register": "0x489ab4c6",
+      "kfree": "0x037a0cba",
+      "down_write": "0x4253aa7e",
+      "up_write": "0x7e0ce0c3",
+      "platform_driver_unregister": "0x848378fd",
+      "capable": "0xc6cbbc89",
+      "mutex_lock": "0x828ce6bb",
+      "remap_pfn_range": "0x35ba0cdd",
+      "mutex_unlock": "0x9618ede0",
+      "refcount_warn_saturate": "0x0296695f",
+      "misc_deregister": "0x62d1a5a7",
+      "iounmap": "0xedc03953",
+      "__release_region": "0x4384eb42",
+      "clk_bulk_disable": "0x479f7d4b",
+      "clk_bulk_unprepare": "0x63c08029",
+      "iomem_resource": "0xc94d8e3b",
+      "__kmalloc_cache_noprof": "0x1eb091db",
+      "nonseekable_open": "0x0cbc46b9",
+      "kmalloc_caches": "0x79b2fe81",
+      "memset": "0x5f754e5a",
+      "__of_parse_phandle_with_args": "0xa464b4e8",
+      "of_reserved_mem_lookup": "0x94c05dc9",
+      "of_node_put": "0x8bfd79ce",
+      "__stack_chk_fail": "0xf0fdf6cb",
+      "dev_err_probe": "0x8e4c2079",
+      "of_find_property": "0xa3023653",
+      "__mutex_init": "0xde4bf88b",
+      "devm_kmalloc": "0x1d3cb331",
+      "devm_clk_bulk_get": "0x10a96429",
+      "clk_get_rate": "0x556e4390",
+      "_dev_info": "0x59e2dc54",
+      "clk_bulk_prepare": "0xead5c8e5",
+      "clk_bulk_enable": "0xc7a7e770",
+      "devm_gpiod_get": "0x217e9112",
+      "platform_get_resource": "0xedef3f2f",
+      "__request_region": "0xae9849dd",
+      "ioremap": "0xe97c4103",
+      "misc_register": "0xddec5c06",
+      "arm_copy_from_user": "0xae353d77",
+      "arm_copy_to_user": "0x51a910c0",
+      "gpiod_get_value_cansleep": "0x878a2109",
+      "arm_heavy_mb": "0x822137e2",
+      "module_layout": "0xd4c81321"
+    },
+    "strong_undefined_symbols": [
+      "__aeabi_unwind_cpp_pr0",
+      "__kmalloc_cache_noprof",
+      "__mutex_init",
+      "__of_parse_phandle_with_args",
+      "__platform_driver_register",
+      "__release_region",
+      "__request_region",
+      "__stack_chk_fail",
+      "_dev_info",
+      "arm_copy_from_user",
+      "arm_copy_to_user",
+      "arm_heavy_mb",
+      "capable",
+      "clk_bulk_disable",
+      "clk_bulk_enable",
+      "clk_bulk_prepare",
+      "clk_bulk_unprepare",
+      "clk_get_rate",
+      "dev_err_probe",
+      "devm_clk_bulk_get",
+      "devm_gpiod_get",
+      "devm_kmalloc",
+      "down_write",
+      "gpiod_get_value_cansleep",
+      "iomem_resource",
+      "ioremap",
+      "iounmap",
+      "kfree",
+      "kmalloc_caches",
+      "memset",
+      "misc_deregister",
+      "misc_register",
+      "mutex_lock",
+      "mutex_unlock",
+      "nonseekable_open",
+      "of_find_property",
+      "of_node_put",
+      "of_reserved_mem_lookup",
+      "platform_driver_unregister",
+      "platform_get_resource",
+      "refcount_warn_saturate",
+      "remap_pfn_range",
+      "up_write"
+    ],
+    "weak_undefined_symbols": [],
+    "symvers_errors": [],
+    "original_shipped_crc_overlap_count": 21,
+    "original_shipped_crc_overlap_symbols": [
+      "__aeabi_unwind_cpp_pr0",
+      "__kmalloc_cache_noprof",
+      "__mutex_init",
+      "__platform_driver_register",
+      "__stack_chk_fail",
+      "_dev_info",
+      "arm_copy_from_user",
+      "arm_copy_to_user",
+      "devm_kmalloc",
+      "down_write",
+      "ioremap",
+      "iounmap",
+      "kfree",
+      "kmalloc_caches",
+      "memset",
+      "module_layout",
+      "mutex_lock",
+      "mutex_unlock",
+      "platform_driver_unregister",
+      "refcount_warn_saturate",
+      "up_write"
+    ],
+    "original_shipped_crc_overlap_errors": [],
+    "other_driver_symbol_crcs_validated_against_rebuilt_kernel_only": [
+      "__of_parse_phandle_with_args",
+      "__release_region",
+      "__request_region",
+      "arm_heavy_mb",
+      "capable",
+      "clk_bulk_disable",
+      "clk_bulk_enable",
+      "clk_bulk_prepare",
+      "clk_bulk_unprepare",
+      "clk_get_rate",
+      "dev_err_probe",
+      "devm_clk_bulk_get",
+      "devm_gpiod_get",
+      "gpiod_get_value_cansleep",
+      "iomem_resource",
+      "misc_deregister",
+      "misc_register",
+      "nonseekable_open",
+      "of_find_property",
+      "of_node_put",
+      "of_reserved_mem_lookup",
+      "platform_get_resource",
+      "remap_pfn_range"
+    ]
+  },
+  "app": {
+    "path": "/home/dev/npu100_linux_build_20261102/software/runtime/linux/app/libnpu_camera.so",
+    "bytes": 51448,
+    "sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa",
+    "class": 32,
+    "endianness": "little",
+    "machine": 40,
+    "type": 3,
+    "flags": "0x05000400",
+    "eabi_version": 5,
+    "hard_float_abi_flag": true,
+    "soft_float_abi_flag": false,
+    "compiler_comment": [
+      "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    ]
+  },
+  "result": "PASS"
+}

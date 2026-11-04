@@ -1,0 +1,8 @@
+{
+  "scope": "PRIVATE_ARCHIVE_CHECKS_OPTIONAL_QEMU_ARM_NO_BOARD_ACCESS",
+  "archive_sha256": "31a47ccb1af8c2eaf69e22e2de9789bc0fd6a2ed1c702664691a27c0d490bf46",
+  "hardware_opened": false,
+  "qemu": false,
+  "regular_file_checksums": 1209,
+  "result": "PASS"
+}

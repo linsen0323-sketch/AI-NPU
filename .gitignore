@@ -1,0 +1,38 @@
+# Recreated projects and intermediate products
+/build/work/
+/build/output/
+/work/
+/tmp/
+/.venv/
+**/__pycache__/
+**/*.pyc
+**/.Xil/
+**/*.cache/
+**/*.gen/
+**/*.ip_user_files/
+**/*.runs/
+**/*.sim/
+**/xsim.dir/
+**/*.jou
+**/*.pb
+**/*.wdb
+**/*.wlf
+**/*.str
+**/.DS_Store
+**/Thumbs.db
+# Locally acquired datasets and private access settings
+/data/datasets/raw/
+/data/datasets/downloads/
+.env
+.env.*
+*.pem
+*.key
+# Presentation media excluded from this source release
+/report/poster/
+/report/video/
+/report/figures/board_setup.jpg
+/report/figures/board_front.jpg
+/report/figures/board_back.jpg
+# Keep curated evidence, final models and board deliverables.
+!evidence/sim/unit/**/*.wdb
+

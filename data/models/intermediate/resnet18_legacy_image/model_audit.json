@@ -1,0 +1,50 @@
+{
+  "graph_nodes": 189,
+  "graph_operator_counts": {
+    "DequantizeLinear": 91,
+    "QuantizeLinear": 49,
+    "Conv": 20,
+    "Relu": 17,
+    "MaxPool": 1,
+    "Add": 8,
+    "ReduceMean": 1,
+    "Reshape": 1,
+    "Gemm": 1
+  },
+  "semantic_count": 49,
+  "hardware_descriptors": 48,
+  "all_zero_points_zero": true,
+  "all_quantized_weights_int8_bias_int32": true,
+  "csv_validation": {
+    "rows": 4800,
+    "all_multiplier_shift_rows_exact": true
+  },
+  "maximum_accumulator_bound": 2147645011,
+  "maximum_requant_product_bound": 4486552919330480096,
+  "shift_range": [
+    36,
+    82
+  ],
+  "ddr_bytes": 17150976,
+  "source_sha256": {
+    "checkpoints/resnet18_neu_best.pth": "cdc75c95a18242f510392f29a8463367da7f5f5e0b27ec65242fdd049c9a064d",
+    "models/test_resnet.py": "24783fb4128086354cc0eeb12b9a78883f916f91bbbdde952e877d08c2ce9d9e",
+    "onnx/resnet18_neu_fp32.onnx": "a72fc51aa70b8288e8886b8c5ca4495afbbc7c32261e9c0f93025264f7164bbc",
+    "quantized/resnet18_neu_int8_qdq.onnx": "51d993ea376a0f08ff6f29d81a35c2ecd9d7058aa39809807494479bd72f1d22",
+    "quantized/resnet18_requant_params.csv": "3e1be9bdf24d45e18adc35a35b9c686c0e58f59ca3ed74d87239ef0e461e427d",
+    "tools/analyze_accumulator_width.py": "fcd055d94d5686e6617b20390160a80bb33810785fd0776b80243dac7c6d2b3a",
+    "tools/analyze_onnx.py": "677124d6120139de209601b2f439348264188de241254942f13cc2a284a7c8fe",
+    "tools/analyze_resnet18_layers.py": "8ab64d3142ec423012966a5ccf76834318f6c95b751ba3d04c1a04453ae60fcb",
+    "tools/build_requant_params.py": "1c1e8ea62ad9a4dc9a19693505215d67393e90783f702cb9b6d1408e691f771a",
+    "tools/export_resnet18_onnx.py": "97f57e12ef1a29c5c195162ec79c4bf7a1e529c868627b9bfa603fcd8a3f2128",
+    "tools/inspect_activation_quant.py": "725f29d52aaa97d365236790dc5f7b32b5de95e7c38d9e2bc995e55b718cc529",
+    "tools/inspect_first_residual_add.py": "a013465dfa8278f6e3c62bccc74289337c9b53ef470d7da1750fa195687ab4d7",
+    "tools/inspect_int8_weights.py": "eeada685e897a14121e02de7993194a3ca0b317971814c7282f315767dc56c6e",
+    "tools/inspect_relu_maxpool_quant.py": "6878326f4b6bd59cf4d0675eb9aece5d3b578197220f57b928722bd1888c06af",
+    "tools/inspect_tail_quant.py": "560b197060ce396adc3542e012ad6a486b3755227180aca4bca70b3f0b768b9a",
+    "tools/verify_first_conv_int8.py": "48d49ecdab57f82fa9be2ac6e1151f4973d1fe2addb48bac3a2bde74199fa5e1",
+    "tools/verify_full_resnet18_int8.py": "2538a29ac21316b008cb1d215271f418a51d8b2d3d4ac4fba6d85ce08503779c",
+    "tools/verify_tail_int8.py": "5b541108270d692ebd6195a3fbdce8465eafdee309f2bc423cfb6874d2b39c25",
+    "training/train_resnet18.py": "6da518a6e9e574a4b71cc8fecdc904ec760f74acafd27658d782623f1e42c1a7"
+  }
+}

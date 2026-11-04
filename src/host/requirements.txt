@@ -1,0 +1,16 @@
+# Install the PyTorch / torchvision build matching your CUDA environment first.
+# The historical exact environment is recorded in data/models/quantization/coco80/environment.json.
+numpy
+onnx
+onnxruntime
+torch
+torchvision
+opencv-python
+Pillow
+pycocotools
+loguru
+tqdm
+tabulate
+thop
+ninja
+tensorboard

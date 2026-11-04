@@ -1,0 +1,19 @@
+{
+  "scope": "Original YOLOX PTQ and QDQ exporter identity; already packaged",
+  "checks": [
+    {
+      "packaged_script": "host/quantization/neu6/mixed_precision_ptq.py",
+      "original_script": "D:\\AI\\fpga_ai\\quantized\\mixed_precision_20261019\\scripts\\mixed_precision_ptq.py",
+      "source_sha256": "d6b0226bdbe7686a6a2de27a8e69a23f3713327572794824870bed0a3e96c7ac",
+      "matches_recorded_original": true,
+      "packaged_script_path_adapted": true
+    },
+    {
+      "packaged_script": "host/quantization/neu6/export_mixed_precision_onnx.py",
+      "original_script": "D:\\AI\\fpga_ai\\quantized\\mixed_precision_20261019\\scripts\\export_mixed_precision_onnx.py",
+      "source_sha256": "297333266537f2bf64add9cadb5932dac01a3a9a76bff7f31505780857a82a04",
+      "matches_recorded_original": true,
+      "packaged_script_path_adapted": true
+    }
+  ]
+}

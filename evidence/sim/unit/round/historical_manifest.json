@@ -1,0 +1,20 @@
+[
+  {
+    "production": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_resnet_quant.sv",
+    "before_sha256": "6e72b20803c1e866730067411cbe5ef7310ff9b13b194d0ecf4c5a8f47d625b1",
+    "candidate": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_resnet_quant.sv",
+    "candidate_sha256": "6411fb0ea15ab94247adb22822a63b9746cb4e2241b6ee48d0a9c112d6057bf6"
+  },
+  {
+    "production": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_q16_vector_pipe.sv",
+    "before_sha256": "f0618d4d29866185888d0c228ecd55cb249901fca8f2c41285cde28caeb1143d",
+    "candidate": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_q16_vector_pipe.sv",
+    "candidate_sha256": "b277aab707ee19ff32b0ed67a08cba1dd9ac94619f24a82fb95a5c8f84499184"
+  },
+  {
+    "production": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_conv_epilogue.sv",
+    "before_sha256": "8cecdd39e078ed1a8c20fb1ec8e9439dca93c4677fc8bab0ed2de9358579d2dd",
+    "candidate": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_conv_epilogue.sv",
+    "candidate_sha256": "279ab8e2dcf6021e3b036c2a02e69b0e430f83e66b250002f536ce0339c4d8b2"
+  }
+]

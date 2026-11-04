@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/Xilinx/linux-xlnx",
+  "commit": "31626ef92ff11f9d3dee01926720572666fcc65a",
+  "archive_url": "https://github.com/Xilinx/linux-xlnx/archive/31626ef92ff11f9d3dee01926720572666fcc65a.tar.gz",
+  "archive_sha256": "71079f04c9900d15c8e9572ad6d14210b1dc4d064ffb803ab5ad4ed58a5593a2",
+  "release": "6.12.40-xilinx-g31626ef92ff1",
+  "running_kernel_compiler": "arm-amd-linux-gnueabi-gcc 13.4.0",
+  "module_build_compiler": "arm-linux-gnueabihf-gcc-13 13.3.0",
+  "architecture": "arm",
+  "init": "sysvinit",
+  "base_system_image_included": false,
+  "full_petalinux_project_included": false
+}

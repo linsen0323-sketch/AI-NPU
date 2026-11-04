@@ -1,0 +1,1156 @@
+[
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top.bit",
+    "destination": "board/hardware/npu100.bit",
+    "purpose": "Final 100 MHz board bitstream",
+    "source_sha256": "68c6e35cdd67a38068556ad1dd9173ff9842849ba23edce2b1d8996cffdffb16",
+    "destination_sha256": "68c6e35cdd67a38068556ad1dd9173ff9842849ba23edce2b1d8996cffdffb16",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa",
+    "destination": "board/hardware/npu100.xsa",
+    "purpose": "Final hardware handoff, identical to Linux deployment source XSA",
+    "source_sha256": "7a2dfe2c3f3ebd71550c70cc47d62634c6acce1d986df99ae563f3889b3f3e3f",
+    "destination_sha256": "7a2dfe2c3f3ebd71550c70cc47d62634c6acce1d986df99ae563f3889b3f3e3f",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.c",
+    "destination": "board/hardware/ps7_init.c",
+    "purpose": "PS7 initialization extracted without modification from final XSA",
+    "source_sha256": "8354f3bdefb5366085dced5783f74849f61aeb6634ff810b6044e53d0a89fc03",
+    "destination_sha256": "8354f3bdefb5366085dced5783f74849f61aeb6634ff810b6044e53d0a89fc03",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.h",
+    "destination": "board/hardware/ps7_init.h",
+    "purpose": "PS7 initialization extracted without modification from final XSA",
+    "source_sha256": "2bf11378d610cd9b79d3ec05e01f6452d3f8d181c67a590ca970b8c9a21d9c20",
+    "destination_sha256": "2bf11378d610cd9b79d3ec05e01f6452d3f8d181c67a590ca970b8c9a21d9c20",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init.tcl",
+    "destination": "board/hardware/ps7_init.tcl",
+    "purpose": "PS7 initialization extracted without modification from final XSA",
+    "source_sha256": "cdf45558d343f9aa0022828f7b6ebfefb1d27a9a43ea3e95e13011267b21048e",
+    "destination_sha256": "cdf45558d343f9aa0022828f7b6ebfefb1d27a9a43ea3e95e13011267b21048e",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init_gpl.c",
+    "destination": "board/hardware/ps7_init_gpl.c",
+    "purpose": "PS7 initialization extracted without modification from final XSA",
+    "source_sha256": "4f1d68002abcc24bb764b62e0a64a16a5185ed35308a1f69ea3ac63a49437325",
+    "destination_sha256": "4f1d68002abcc24bb764b62e0a64a16a5185ed35308a1f69ea3ac63a49437325",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\AI_NPU.xsa!ps7_init_gpl.h",
+    "destination": "board/hardware/ps7_init_gpl.h",
+    "purpose": "PS7 initialization extracted without modification from final XSA",
+    "source_sha256": "2ff18dcdedbec7a8f48d33cc9ae159ace53c156d4e172f46778ff4a80c28aa9a",
+    "destination_sha256": "2ff18dcdedbec7a8f48d33cc9ae159ace53c156d4e172f46778ff4a80c28aa9a",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_bus_skew_routed.rpt",
+    "destination": "build/reports/implementation/bus_skew_routed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: bus_skew_routed.rpt",
+    "source_sha256": "74e18b55c8427a41090b590d1691b99a989ee00d481ed302506a689f53f7e4de",
+    "destination_sha256": "74e18b55c8427a41090b590d1691b99a989ee00d481ed302506a689f53f7e4de",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_drc_routed.rpt",
+    "destination": "build/reports/implementation/drc_routed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: drc_routed.rpt",
+    "source_sha256": "602fa4109f7cf8b7a871f9127d4351a53625cbbb31a33378f092ac20791bd76a",
+    "destination_sha256": "602fa4109f7cf8b7a871f9127d4351a53625cbbb31a33378f092ac20791bd76a",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_methodology_drc_routed.rpt",
+    "destination": "build/reports/implementation/methodology_routed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: methodology_routed.rpt",
+    "source_sha256": "0b4d28cbb2c3215734717c3f6f99cd5ebf379c08f767bd14d3eba38059ed4320",
+    "destination_sha256": "0b4d28cbb2c3215734717c3f6f99cd5ebf379c08f767bd14d3eba38059ed4320",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_power_routed.rpt",
+    "destination": "build/reports/implementation/power_estimate_routed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: power_estimate_routed.rpt",
+    "source_sha256": "5bd97dc487f7cddd938198b5fe8bd88e604bc5d3e2bf6522a6537337e7a133dc",
+    "destination_sha256": "5bd97dc487f7cddd938198b5fe8bd88e604bc5d3e2bf6522a6537337e7a133dc",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_route_status.rpt",
+    "destination": "build/reports/implementation/route_status.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: route_status.rpt",
+    "source_sha256": "24fc220f27eb9117348d6a24d891f8d5355e3156270df85774a673833a0b33c7",
+    "destination_sha256": "24fc220f27eb9117348d6a24d891f8d5355e3156270df85774a673833a0b33c7",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_timing_summary_routed.rpt",
+    "destination": "build/reports/implementation/timing_routed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: timing_routed.rpt",
+    "source_sha256": "b4b2a3ba5b3db3047c372dd41afbd9a98a583719c8d83fea02604f6518c7b959",
+    "destination_sha256": "b4b2a3ba5b3db3047c372dd41afbd9a98a583719c8d83fea02604f6518c7b959",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_utilization_placed.rpt",
+    "destination": "build/reports/implementation/utilization_placed.rpt",
+    "purpose": "Final implementation report; report header specifies design stage: utilization_placed.rpt",
+    "source_sha256": "85ed7e35eeedb025beabb9210b206734108dcf116ba11dd23b85cd8e6c55f216",
+    "destination_sha256": "85ed7e35eeedb025beabb9210b206734108dcf116ba11dd23b85cd8e6c55f216",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_routed.dcp",
+    "destination": "build/reports/implementation/utilization_routed.rpt",
+    "purpose": "Routed utilization queried read-only from original final DCP, without rebuilding hardware",
+    "source_sha256": "bd2f462d0841313b918dfe76b14b2d770b6c5e24dc0f708c916c6e79f4bc170f",
+    "destination_sha256": "ef03bafcd7082cb485e5cab9712ac056b355c9c9dc587030b3e912c77f1bc959",
+    "edited": true,
+    "edit_reason": "Vivado report_utilization from final DCP"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\synth_1\\camera_720p30_top_utilization_synth.rpt",
+    "destination": "build/reports/synthesis/utilization_top_synth.rpt",
+    "purpose": "Top synthesis utilization; OOC black-box scopes must not be treated as complete whole-design utilization",
+    "source_sha256": "f2ddda307e0684ba66f7ae41b23a911bfc08bbf74e6ef53108d4059eb81685ff",
+    "destination_sha256": "f2ddda307e0684ba66f7ae41b23a911bfc08bbf74e6ef53108d4059eb81685ff",
+    "edited": false
+  },
+  {
+    "source_path": null,
+    "destination": "build/scripts/baremetal/build_application.py",
+    "purpose": "Optional Vitis 2025.2 standalone platform/BSP/application build from packaged npu100 XSA; source checked, not executed during packaging",
+    "source_sha256": null,
+    "destination_sha256": "6134ed574c2946104de67fea2ffcd9219b6dd0eed75fb3dea67076a82adb1f99",
+    "edited": true,
+    "edit_reason": "New portable Vitis CLI entrypoint based on installed 2025.2 API examples; legacy standalone path only"
+  },
+  {
+    "source_path": null,
+    "destination": "build/scripts/vivado/build_bitstream.tcl",
+    "purpose": "Explicit synthesis, implementation and bitstream entrypoint; not executed during packaging",
+    "source_sha256": null,
+    "destination_sha256": "aaa0a1fb11f85754c97ad52108def259440083856c3f8c24496d02aa3c3322cc",
+    "edited": true,
+    "edit_reason": "Generated portable packaging support; accelerator logic unchanged"
+  },
+  {
+    "source_path": null,
+    "destination": "build/scripts/vivado/create_project.tcl",
+    "purpose": "Portable final npu100 project recreation and BD/IP generation; never starts synthesis",
+    "source_sha256": null,
+    "destination_sha256": "0e096bc262f6eca964dc7bbf5a11ed7c6bd5b3f2d3ab3388d4985872694cba1f",
+    "edited": true,
+    "edit_reason": "Generated portable packaging support; accelerator logic unchanged",
+    "packaging_change": "References synchronized to existing src/hardware layout"
+  },
+  {
+    "source_path": null,
+    "destination": "build/scripts/vivado/export_hardware.tcl",
+    "purpose": "Export a newly built npu100 XSA into build/work without overwriting validated board artifacts",
+    "source_sha256": null,
+    "destination_sha256": "d66b48b2bd735f8e8cbc5daedc8ff23657c6f08d5d3db183184eefbb1c0e10e2",
+    "edited": true,
+    "edit_reason": "Generated portable packaging support; accelerator logic unchanged"
+  },
+  {
+    "source_path": null,
+    "destination": "docs/baremetal.md",
+    "purpose": "Standalone application module meanings, portable Vitis build route and current Linux/standalone distinction",
+    "source_sha256": null,
+    "destination_sha256": "d143e34cd82dd10ffba7ef2edb4c27f6cac0ee822ed7eb082996af8d352265c8",
+    "edited": true,
+    "edit_reason": "New packaging documentation / portable entrypoint"
+  },
+  {
+    "source_path": null,
+    "destination": "docs/hardware.md",
+    "purpose": "Hardware architecture, exact source identity, portable rebuild instructions and final report boundaries",
+    "source_sha256": null,
+    "destination_sha256": "b5038bd1b0c1868a3304fcb79dc01fa4b1fb209086b46ad86dff99e70652d4cb",
+    "edited": true,
+    "edit_reason": "New packaging documentation / portable entrypoint",
+    "packaging_change": "References synchronized to existing src/hardware layout"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.xpr",
+    "destination": "evidence/hardware/artifact_identity.json",
+    "purpose": "Final npu100 project, bitstream, XSA and routed checkpoint identity receipt",
+    "source_sha256": "57552898064457747c07bb98354d9a6962727d97ac0ea6e8e3e88ce1bbdc04a2",
+    "destination_sha256": "5d70c782218e449c89834dc22a7e2fbaa24aa51a638122cdf8da47e3c4336602",
+    "edited": true,
+    "edit_reason": "Artifact SHA and report facts collected during packaging"
+  },
+  {
+    "source_path": null,
+    "destination": "evidence/hardware/ip_status_recreated.rpt",
+    "purpose": "Vivado IP status for clean recreated npu100 project",
+    "source_sha256": null,
+    "destination_sha256": "303587b3f570e794cfd3b8bf9656d08837a1e32789626911fcb08ad3accb36f9",
+    "edited": true,
+    "edit_reason": "Report from isolated recreated project"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\bd\\video_system\\video_system.bd",
+    "destination": "evidence/hardware/original_video_system.bd",
+    "purpose": "Original final project BD snapshot; not used by portable build",
+    "source_sha256": "b4845969ada69b9a3bb35e4ccabfc6011acc899d3e2f438937063e058a00e9fa",
+    "destination_sha256": "b4845969ada69b9a3bb35e4ccabfc6011acc899d3e2f438937063e058a00e9fa",
+    "edited": false
+  },
+  {
+    "source_path": null,
+    "destination": "evidence/hardware/recreation.json",
+    "purpose": "Machine-readable packaging-time recreation and identity validation receipt",
+    "source_sha256": null,
+    "destination_sha256": "913ec7834116fe2b3f3c138d1044aa8b4dc0cbd3cc7f7cb6b4aa0d6392a3fc20",
+    "edited": true,
+    "edit_reason": "New validation receipt from actual Vivado run"
+  },
+  {
+    "source_path": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_hardware_pack_xw1xvhwh\\validate_final.log",
+    "destination": "evidence/hardware/recreation.log",
+    "purpose": "Actual isolated Vivado 2025.2 recreation / BD generation log; no synthesis or implementation",
+    "source_sha256": "fa791a661bfda3cef4832c30d7226f4900ee8b99bad03a695d2a76eae66c4054",
+    "destination_sha256": "fa791a661bfda3cef4832c30d7226f4900ee8b99bad03a695d2a76eae66c4054",
+    "edited": false
+  },
+  {
+    "source_path": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_hardware_pack_xw1xvhwh\\original_properties.txt",
+    "destination": "evidence/hardware/source_run_properties.txt",
+    "purpose": "Read-only query of final npu100 synthesis / implementation settings",
+    "source_sha256": "1fe516fab7b07f47882d0880be436f58345d123f432d1ed368ecf3b8d2e4838c",
+    "destination_sha256": "1fe516fab7b07f47882d0880be436f58345d123f432d1ed368ecf3b8d2e4838c",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.xpr",
+    "destination": "src/hardware/block_design/create_video_system.tcl",
+    "purpose": "Vivado write_bd_tcl export of final npu100 block design; all IP settings, interfaces, connections and address segments",
+    "source_sha256": "57552898064457747c07bb98354d9a6962727d97ac0ea6e8e3e88ce1bbdc04a2",
+    "destination_sha256": "456e979494ca47998befc24aa4362692d5408d17573a33f4a02d268145338ebc",
+    "edited": true,
+    "edit_reason": "Read-only Vivado BD export; fallback project creation replaced by explicit entrypoint requirement; removed fixed read-only-export warning after successful clean recreation and structural BD equivalence check",
+    "previous_destination": "hardware/block_design/create_video_system.tcl"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\constrs_1\\imports\\constraints\\camera_cdc_late.xdc",
+    "destination": "src/hardware/constraints/camera_cdc_late.xdc",
+    "purpose": "Board pins / clock / CDC constraints: camera_cdc_late",
+    "source_sha256": "9194ab9f380fa852d2bb7b711ce148276cef34367b647bcb85f45bbc9835981f",
+    "destination_sha256": "9194ab9f380fa852d2bb7b711ce148276cef34367b647bcb85f45bbc9835981f",
+    "edited": false,
+    "previous_destination": "hardware/constraints/camera_cdc_late.xdc"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\constrs_1\\imports\\constraints\\navigator_720p.xdc",
+    "destination": "src/hardware/constraints/navigator_720p.xdc",
+    "purpose": "Board pins / clock / CDC constraints: navigator_720p",
+    "source_sha256": "4a4c97fd76eea698bdc2262b833ce540d69ced0a4447589662c4b0d54b24e222",
+    "destination_sha256": "4a4c97fd76eea698bdc2262b833ce540d69ced0a4447589662c4b0d54b24e222",
+    "edited": false,
+    "previous_destination": "hardware/constraints/navigator_720p.xdc"
+  },
+  {
+    "source_path": null,
+    "destination": "src/hardware/ip/readme.md",
+    "purpose": "Required vendor IP catalog and module-reference dependencies",
+    "source_sha256": null,
+    "destination_sha256": "a8acb4e21fba44e1c26e70ff63827dfa211f999706bc37d8b4f45f8deb0124cb",
+    "edited": true,
+    "edit_reason": "New packaging documentation / portable entrypoint",
+    "previous_destination": "hardware/ip/readme.md"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_aipkg3_frontend.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_aipkg3_frontend.sv",
+    "purpose": "Shared NPU RTL: npu_aipkg3_frontend",
+    "source_sha256": "8bb26c125dc02349021ed4d9cbfa2c2f40d848899a810adf7bed27f6b929bd21",
+    "destination_sha256": "8bb26c125dc02349021ed4d9cbfa2c2f40d848899a810adf7bed27f6b929bd21",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_aipkg3_frontend.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_axil_window_mux.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_axil_window_mux.sv",
+    "purpose": "Shared NPU RTL: npu_axil_window_mux",
+    "source_sha256": "da0b435e2578662dc18320773fe8ef8cfe3c217d4566ee8dee8f4d2cef2cb689",
+    "destination_sha256": "da0b435e2578662dc18320773fe8ef8cfe3c217d4566ee8dee8f4d2cef2cb689",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_axil_window_mux.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_banked_buffer.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_banked_buffer.sv",
+    "purpose": "Shared NPU RTL: npu_banked_buffer",
+    "source_sha256": "235224b5ac722428c10a5a7acf3846066ca91dd04fb35217753d9179fbcf0e2b",
+    "destination_sha256": "235224b5ac722428c10a5a7acf3846066ca91dd04fb35217753d9179fbcf0e2b",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_banked_buffer.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_conv2d_stream_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_conv2d_stream_engine.sv",
+    "purpose": "Shared NPU RTL: npu_conv2d_stream_engine",
+    "source_sha256": "412e6cc2227ea96d7a4c4d0828ba8c486960cddbbae4e95d5ec86dda29425d55",
+    "destination_sha256": "412e6cc2227ea96d7a4c4d0828ba8c486960cddbbae4e95d5ec86dda29425d55",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_conv2d_stream_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_conv_epilogue.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_conv_epilogue.sv",
+    "purpose": "Shared NPU RTL: npu_conv_epilogue",
+    "source_sha256": "279ab8e2dcf6021e3b036c2a02e69b0e430f83e66b250002f536ce0339c4d8b2",
+    "destination_sha256": "279ab8e2dcf6021e3b036c2a02e69b0e430f83e66b250002f536ce0339c4d8b2",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_conv_epilogue.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_conv_output_tile.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_conv_output_tile.sv",
+    "purpose": "Shared NPU RTL: npu_conv_output_tile",
+    "source_sha256": "a21fc9a8159377aad15da34da801b57a181f2ae690891bf8b77509ceea49fdb2",
+    "destination_sha256": "a21fc9a8159377aad15da34da801b57a181f2ae690891bf8b77509ceea49fdb2",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_conv_output_tile.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_copy_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_copy_engine.sv",
+    "purpose": "Shared NPU RTL: npu_copy_engine",
+    "source_sha256": "e3cb2dc9db4c6e3bd1c62f78cd0f70ed9e503d31d89c7ce6c6cb05bb1dede7fa",
+    "destination_sha256": "e3cb2dc9db4c6e3bd1c62f78cd0f70ed9e503d31d89c7ce6c6cb05bb1dede7fa",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_copy_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_copy_stream_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_copy_stream_engine.sv",
+    "purpose": "Shared NPU RTL: npu_copy_stream_engine",
+    "source_sha256": "e0671c45ce3bfd8ca5ae1e959a08e79ccb10ee1d3ad037c26bd90f28d37f012e",
+    "destination_sha256": "e0671c45ce3bfd8ca5ae1e959a08e79ccb10ee1d3ad037c26bd90f28d37f012e",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_copy_stream_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_dsp48_pair.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_dsp48_pair.sv",
+    "purpose": "Shared NPU RTL: npu_dsp48_pair",
+    "source_sha256": "69b5ee77b1c44e077506b83af9f466f9fe8d8d99ece19a64d944698b2cec8f73",
+    "destination_sha256": "69b5ee77b1c44e077506b83af9f466f9fe8d8d99ece19a64d944698b2cec8f73",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_dsp48_pair.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_graph_control_top.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_graph_control_top.sv",
+    "purpose": "Shared NPU RTL: npu_graph_control_top",
+    "source_sha256": "dcbe31f43d23a1b1cf7fd30c4a234f60a6131058db170237231ff3ee2e6a4731",
+    "destination_sha256": "dcbe31f43d23a1b1cf7fd30c4a234f60a6131058db170237231ff3ee2e6a4731",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_graph_control_top.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_graph_plan_backend.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_graph_plan_backend.sv",
+    "purpose": "Shared NPU RTL: npu_graph_plan_backend",
+    "source_sha256": "8c5130726c82f1a0e1b208b675b2a8f864efc3f0804c39bc7b2fd77882a8934c",
+    "destination_sha256": "8c5130726c82f1a0e1b208b675b2a8f864efc3f0804c39bc7b2fd77882a8934c",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_graph_plan_backend.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_graph_registers.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_graph_registers.sv",
+    "purpose": "Shared NPU RTL: npu_graph_registers",
+    "source_sha256": "df956d6025eaf27a4ca19e378bfcb860598d406b935c4d6c7efb955ea9ea3bae",
+    "destination_sha256": "df956d6025eaf27a4ca19e378bfcb860598d406b935c4d6c7efb955ea9ea3bae",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_graph_registers.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_graph_result_bridge.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_graph_result_bridge.sv",
+    "purpose": "Shared NPU RTL: npu_graph_result_bridge",
+    "source_sha256": "2db5b5a2da8c8f573aa1fd9e384c19d18bdff08061116d30e4abda4f79e4f9e6",
+    "destination_sha256": "2db5b5a2da8c8f573aa1fd9e384c19d18bdff08061116d30e4abda4f79e4f9e6",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_graph_result_bridge.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_graph_sequencer.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_graph_sequencer.sv",
+    "purpose": "Shared NPU RTL: npu_graph_sequencer",
+    "source_sha256": "d0a972a256c5049bbcefff223936ed9b8f35881e1339c2fc702a19fcc51ae3e8",
+    "destination_sha256": "d0a972a256c5049bbcefff223936ed9b8f35881e1339c2fc702a19fcc51ae3e8",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_graph_sequencer.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_input_tile_loader.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_input_tile_loader.sv",
+    "purpose": "Shared NPU RTL: npu_input_tile_loader",
+    "source_sha256": "a7fa27eb93168b38c96648948cb7bb86ca59530ba25211eaf3875ad09d2975b9",
+    "destination_sha256": "a7fa27eb93168b38c96648948cb7bb86ca59530ba25211eaf3875ad09d2975b9",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_input_tile_loader.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_layer_profiler.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_layer_profiler.sv",
+    "purpose": "Shared NPU RTL: npu_layer_profiler",
+    "source_sha256": "7741bed91851c81e003b076e518d896d87c8eff519da066122271dfdd8f5653d",
+    "destination_sha256": "7741bed91851c81e003b076e518d896d87c8eff519da066122271dfdd8f5653d",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_layer_profiler.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_lut_reader.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_lut_reader.sv",
+    "purpose": "Shared NPU RTL: npu_lut_reader",
+    "source_sha256": "e6290b58247427e36e46d8d486fabd36ab7acb4b2290ef18ce5fa75cfefd38f0",
+    "destination_sha256": "e6290b58247427e36e46d8d486fabd36ab7acb4b2290ef18ce5fa75cfefd38f0",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_lut_reader.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_maxpool_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_maxpool_engine.sv",
+    "purpose": "Shared NPU RTL: npu_maxpool_engine",
+    "source_sha256": "435aa68d4f895f5f4d4b51064715600641f78e303226e76ce4231d04f1fdddf5",
+    "destination_sha256": "435aa68d4f895f5f4d4b51064715600641f78e303226e76ce4231d04f1fdddf5",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_maxpool_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_model_control_top.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_model_control_top.sv",
+    "purpose": "Shared NPU RTL: npu_model_control_top",
+    "source_sha256": "229102a2b6657fa4881ed971ac45f14989a5f3e0198a8e440045239d34b7b645",
+    "destination_sha256": "229102a2b6657fa4881ed971ac45f14989a5f3e0198a8e440045239d34b7b645",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_model_control_top.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_package_cache.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_package_cache.sv",
+    "purpose": "Shared NPU RTL: npu_package_cache",
+    "source_sha256": "53f8e2e39df12f41c0557b16296928c5e82b367753d1ece95869c84d7330a146",
+    "destination_sha256": "53f8e2e39df12f41c0557b16296928c5e82b367753d1ece95869c84d7330a146",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_package_cache.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_pe_8x32.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_pe_8x32.sv",
+    "purpose": "Shared NPU RTL: npu_pe_8x32",
+    "source_sha256": "d87e797a03fadcdae405c0c7b43522847e9fe66afc18ab197ebe80d59360dead",
+    "destination_sha256": "d87e797a03fadcdae405c0c7b43522847e9fe66afc18ab197ebe80d59360dead",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_pe_8x32.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_plan_dispatch.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_plan_dispatch.sv",
+    "purpose": "Shared NPU RTL: npu_plan_dispatch",
+    "source_sha256": "f0fd098f16950f6a730c75d7ef6a0ae4ba05c38b488bf0d57459fa7021924563",
+    "destination_sha256": "f0fd098f16950f6a730c75d7ef6a0ae4ba05c38b488bf0d57459fa7021924563",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_plan_dispatch.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_plan_iterator.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_plan_iterator.sv",
+    "purpose": "Shared NPU RTL: npu_plan_iterator",
+    "source_sha256": "13b621b7f35d7277bef2d6c771f8999f384e412694472f0e734ac89260a021a9",
+    "destination_sha256": "13b621b7f35d7277bef2d6c771f8999f384e412694472f0e734ac89260a021a9",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_plan_iterator.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_predecoded_frontend.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_predecoded_frontend.sv",
+    "purpose": "Shared NPU RTL: npu_predecoded_frontend",
+    "source_sha256": "ca71c2cfb90ce47a252eb195135a562b1be0e030c8c2b085ff0d456cc366c840",
+    "destination_sha256": "ca71c2cfb90ce47a252eb195135a562b1be0e030c8c2b085ff0d456cc366c840",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_predecoded_frontend.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_predecoded_iterator.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_predecoded_iterator.sv",
+    "purpose": "Shared NPU RTL: npu_predecoded_iterator",
+    "source_sha256": "c5ce441f5e09f82a3e3c1fd20e8d8bb04bf2132f9721f984e0c017b9b5d3607c",
+    "destination_sha256": "c5ce441f5e09f82a3e3c1fd20e8d8bb04bf2132f9721f984e0c017b9b5d3607c",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_predecoded_iterator.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_q16_elementwise.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_q16_elementwise.sv",
+    "purpose": "Shared NPU RTL: npu_q16_elementwise",
+    "source_sha256": "3acd4c7654d4b22c4845bc2335b840aedb2454f11777d0947f16242ebfa3ff40",
+    "destination_sha256": "3acd4c7654d4b22c4845bc2335b840aedb2454f11777d0947f16242ebfa3ff40",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_q16_elementwise.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_q16_scalar_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_q16_scalar_engine.sv",
+    "purpose": "Shared NPU RTL: npu_q16_scalar_engine",
+    "source_sha256": "7737fc793b0507e5ce4286caf3784c9289965371285b938b8be62a1dfbde4d33",
+    "destination_sha256": "7737fc793b0507e5ce4286caf3784c9289965371285b938b8be62a1dfbde4d33",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_q16_scalar_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_q16_vector_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_q16_vector_engine.sv",
+    "purpose": "Shared NPU RTL: npu_q16_vector_engine",
+    "source_sha256": "ca125f9ce0e3ffc3ba62ec9a6b52f8910633755818755b551d596110cb96f48a",
+    "destination_sha256": "ca125f9ce0e3ffc3ba62ec9a6b52f8910633755818755b551d596110cb96f48a",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_q16_vector_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_q16_vector_pipe.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_q16_vector_pipe.sv",
+    "purpose": "Shared NPU RTL: npu_q16_vector_pipe",
+    "source_sha256": "b277aab707ee19ff32b0ed67a08cba1dd9ac94619f24a82fb95a5c8f84499184",
+    "destination_sha256": "b277aab707ee19ff32b0ed67a08cba1dd9ac94619f24a82fb95a5c8f84499184",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_q16_vector_pipe.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_resnet_gap_engine.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_resnet_gap_engine.sv",
+    "purpose": "Shared NPU RTL: npu_resnet_gap_engine",
+    "source_sha256": "bf8fb5c7b8f05210a552f83dc30177fa9a2264053c05318ef9c16e93c1b7af52",
+    "destination_sha256": "bf8fb5c7b8f05210a552f83dc30177fa9a2264053c05318ef9c16e93c1b7af52",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_resnet_gap_engine.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_resnet_quant.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_resnet_quant.sv",
+    "purpose": "Shared NPU RTL: npu_resnet_quant",
+    "source_sha256": "6411fb0ea15ab94247adb22822a63b9746cb4e2241b6ee48d0a9c112d6057bf6",
+    "destination_sha256": "6411fb0ea15ab94247adb22822a63b9746cb4e2241b6ee48d0a9c112d6057bf6",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_resnet_quant.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_scalar_fabric.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_scalar_fabric.sv",
+    "purpose": "Shared NPU RTL: npu_scalar_fabric",
+    "source_sha256": "86b2833e3f880a3e113294fca724e66b2d988902c5252724728e95e90239c5de",
+    "destination_sha256": "86b2833e3f880a3e113294fca724e66b2d988902c5252724728e95e90239c5de",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_scalar_fabric.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_scalar_guard.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_scalar_guard.sv",
+    "purpose": "Shared NPU RTL: npu_scalar_guard",
+    "source_sha256": "b8b1b85fe2edea376584146c58c4e9db1d98c78a49fdffd31b6f4895bab6192c",
+    "destination_sha256": "b8b1b85fe2edea376584146c58c4e9db1d98c78a49fdffd31b6f4895bab6192c",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_scalar_guard.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_shared_pe.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_shared_pe.sv",
+    "purpose": "Shared NPU RTL: npu_shared_pe",
+    "source_sha256": "5e26d739d6c24409e7085ea30e5f4e792beee4b936b66925182285b71fc5e156",
+    "destination_sha256": "5e26d739d6c24409e7085ea30e5f4e792beee4b936b66925182285b71fc5e156",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_shared_pe.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_axi_master.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_axi_master.sv",
+    "purpose": "Shared NPU RTL: npu_stream_axi_master",
+    "source_sha256": "3d3c7362a943c6714a007f39ce756656ca21bab9f0d816906def28954cb7fc7d",
+    "destination_sha256": "3d3c7362a943c6714a007f39ce756656ca21bab9f0d816906def28954cb7fc7d",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_axi_master.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_dma.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_dma.sv",
+    "purpose": "Shared NPU RTL: npu_stream_dma",
+    "source_sha256": "6d5fc7201ea5eac6dfe23d803ec6cfa760cae2d580f2cf493844205723912cef",
+    "destination_sha256": "6d5fc7201ea5eac6dfe23d803ec6cfa760cae2d580f2cf493844205723912cef",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_dma.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_guard.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_guard.sv",
+    "purpose": "Shared NPU RTL: npu_stream_guard",
+    "source_sha256": "260b35909d65fb21b5f4064c99e598f429fd8d10ef7db3f932bc8cabd19831fd",
+    "destination_sha256": "260b35909d65fb21b5f4064c99e598f429fd8d10ef7db3f932bc8cabd19831fd",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_guard.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_ibuf.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_ibuf.sv",
+    "purpose": "Shared NPU RTL: npu_stream_ibuf",
+    "source_sha256": "1c23bbb951b5ff7c57f4e5d21aeeb8498bff6c72781b6c871f92e998ef8dd871",
+    "destination_sha256": "1c23bbb951b5ff7c57f4e5d21aeeb8498bff6c72781b6c871f92e998ef8dd871",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_ibuf.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_read_fabric.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_read_fabric.sv",
+    "purpose": "Shared NPU RTL: npu_stream_read_fabric",
+    "source_sha256": "939e6d0cf3dc79713028ba190737b0a0d2dd6c3fb6f48b25c49f7380f4067036",
+    "destination_sha256": "939e6d0cf3dc79713028ba190737b0a0d2dd6c3fb6f48b25c49f7380f4067036",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_read_fabric.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_weight_loader.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_weight_loader.sv",
+    "purpose": "Shared NPU RTL: npu_stream_weight_loader",
+    "source_sha256": "a632b8f142f0f01d8e941727b5a518e487f975d076e3150f8de1cc8981f0a191",
+    "destination_sha256": "a632b8f142f0f01d8e941727b5a518e487f975d076e3150f8de1cc8981f0a191",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_weight_loader.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_stream_write_fabric.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_stream_write_fabric.sv",
+    "purpose": "Shared NPU RTL: npu_stream_write_fabric",
+    "source_sha256": "3bc06a06f62fdfea4f27028408c76a82e81746de2d46c7b101273aa1f7ffb73f",
+    "destination_sha256": "3bc06a06f62fdfea4f27028408c76a82e81746de2d46c7b101273aa1f7ffb73f",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_stream_write_fabric.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_task_controller.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_task_controller.sv",
+    "purpose": "Shared NPU RTL: npu_task_controller",
+    "source_sha256": "59233378126c1f227b0a3549d5b299864ee08b682b488fd787c95a9316824e1a",
+    "destination_sha256": "59233378126c1f227b0a3549d5b299864ee08b682b488fd787c95a9316824e1a",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_task_controller.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_wide_math.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_wide_math.sv",
+    "purpose": "Shared NPU RTL: npu_wide_math",
+    "source_sha256": "79ec08742e36f8ceb7ea3bbf9284ed2d6ce152e8fb73b9ce04b19307db5e4df2",
+    "destination_sha256": "79ec08742e36f8ceb7ea3bbf9284ed2d6ce152e8fb73b9ce04b19307db5e4df2",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_wide_math.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_wide_math_fast.sv",
+    "destination": "src/hardware/rtl/accelerator/npu_wide_math_fast.sv",
+    "purpose": "Shared NPU RTL: npu_wide_math_fast",
+    "source_sha256": "65c3c90005799a56fafd87b70782e136dce7dd84c70a68908e01c16fdcf53bb3",
+    "destination_sha256": "65c3c90005799a56fafd87b70782e136dce7dd84c70a68908e01c16fdcf53bb3",
+    "edited": false,
+    "previous_destination": "hardware/rtl/accelerator/npu_wide_math_fast.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_camera_pipeline.sv",
+    "destination": "src/hardware/rtl/video/ai_camera_pipeline.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_camera_pipeline",
+    "source_sha256": "d70ef9d2684648928e901b9059116cd2506a63b5bcc2764e6a874ec00bf6cd71",
+    "destination_sha256": "d70ef9d2684648928e901b9059116cd2506a63b5bcc2764e6a874ec00bf6cd71",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_camera_pipeline.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_camera_pipeline_bd.v",
+    "destination": "src/hardware/rtl/video/ai_camera_pipeline_bd.v",
+    "purpose": "Camera / DMA / display integration RTL: ai_camera_pipeline_bd",
+    "source_sha256": "c92cc4bb2ff9582f987dac374da81fe38d7939c0117c7e886cdd845c4eaf3fa6",
+    "destination_sha256": "c92cc4bb2ff9582f987dac374da81fe38d7939c0117c7e886cdd845c4eaf3fa6",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_camera_pipeline_bd.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_dma64.sv",
+    "destination": "src/hardware/rtl/video/ai_dma64.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_dma64",
+    "source_sha256": "9039aa97ae2130f4357ee126209f9ecf6dfdbb9c4585ad1f6805986c15679d40",
+    "destination_sha256": "9039aa97ae2130f4357ee126209f9ecf6dfdbb9c4585ad1f6805986c15679d40",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_dma64.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_frame_scanout.sv",
+    "destination": "src/hardware/rtl/video/ai_frame_scanout.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_frame_scanout",
+    "source_sha256": "2b0fd63b5392af9b3c2e80a25bb6011e59e9cb2c6e4fd85c69579ce0636b634a",
+    "destination_sha256": "2b0fd63b5392af9b3c2e80a25bb6011e59e9cb2c6e4fd85c69579ce0636b634a",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_frame_scanout.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_preprocess_top.sv",
+    "destination": "src/hardware/rtl/video/ai_preprocess_top.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_preprocess_top",
+    "source_sha256": "878bd8f041b06dffb046b807505ccee2ed27c82e7c34a635f0df0aa46cfeb535",
+    "destination_sha256": "878bd8f041b06dffb046b807505ccee2ed27c82e7c34a635f0df0aa46cfeb535",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_preprocess_top.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_result_overlay.sv",
+    "destination": "src/hardware/rtl/video/ai_result_overlay.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_result_overlay",
+    "source_sha256": "afed2ac57ef805cee5efaf123622b2baeb6c3b8a349f178aa87b1fdfa164b745",
+    "destination_sha256": "afed2ac57ef805cee5efaf123622b2baeb6c3b8a349f178aa87b1fdfa164b745",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_result_overlay.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\rtl\\ai_snapshot.sv",
+    "destination": "src/hardware/rtl/video/ai_snapshot.sv",
+    "purpose": "Camera / DMA / display integration RTL: ai_snapshot",
+    "source_sha256": "12d7450a6ba73bcdc91ccce43f3c8bbf3b85e57f7166591089783b7f1a930c54",
+    "destination_sha256": "12d7450a6ba73bcdc91ccce43f3c8bbf3b85e57f7166591089783b7f1a930c54",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ai_snapshot.sv"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\cam_xclk_gen.v",
+    "destination": "src/hardware/rtl/video/cam_xclk_gen.v",
+    "purpose": "Board video / sensor / clock RTL: cam_xclk_gen",
+    "source_sha256": "d1d0467efe4f907c7e8940488fb24a5e2f9af8e3a90f572d4e11a16a97f775f9",
+    "destination_sha256": "d1d0467efe4f907c7e8940488fb24a5e2f9af8e3a90f572d4e11a16a97f775f9",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/cam_xclk_gen.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\camera_720p30_top.v",
+    "destination": "src/hardware/rtl/video/camera_720p30_top.v",
+    "purpose": "Board video / sensor / clock RTL: camera_720p30_top",
+    "source_sha256": "0ee97c64945ac09e3e1f33deeb6f50f96c19152f1c797998c31bbb6321c0b019",
+    "destination_sha256": "0ee97c64945ac09e3e1f33deeb6f50f96c19152f1c797998c31bbb6321c0b019",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/camera_720p30_top.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\clock_gen_720p.v",
+    "destination": "src/hardware/rtl/video/clock_gen_720p.v",
+    "purpose": "Board video / sensor / clock RTL: clock_gen_720p",
+    "source_sha256": "979a289f095782a1c5f77385ecb3b29925d6ed6011a4535d5fb85ab4cd87820a",
+    "destination_sha256": "979a289f095782a1c5f77385ecb3b29925d6ed6011a4535d5fb85ab4cd87820a",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/clock_gen_720p.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\dvi_encoder.v",
+    "destination": "src/hardware/rtl/video/dvi_encoder.v",
+    "purpose": "Board video / sensor / clock RTL: dvi_encoder",
+    "source_sha256": "20275832fa5d7af6ee0c18f4a0fd089e7e4b8a9bd573080797c888a9d9ab9378",
+    "destination_sha256": "20275832fa5d7af6ee0c18f4a0fd089e7e4b8a9bd573080797c888a9d9ab9378",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/dvi_encoder.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\dvi_transmitter_top.v",
+    "destination": "src/hardware/rtl/video/dvi_transmitter_top.v",
+    "purpose": "Board video / sensor / clock RTL: dvi_transmitter_top",
+    "source_sha256": "6615d8fe72499850524d6980376e18e04ee3ac8ed840804ab1689979125f771e",
+    "destination_sha256": "6615d8fe72499850524d6980376e18e04ee3ac8ed840804ab1689979125f771e",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/dvi_transmitter_top.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\dvp_to_axis.v",
+    "destination": "src/hardware/rtl/video/dvp_to_axis.v",
+    "purpose": "Board video / sensor / clock RTL: dvp_to_axis",
+    "source_sha256": "017288ddb69afe7d7d9006fc7e29d0487d43609023d359c04aa94c312881b272",
+    "destination_sha256": "017288ddb69afe7d7d9006fc7e29d0487d43609023d359c04aa94c312881b272",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/dvp_to_axis.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\ov5640_720p_rom.v",
+    "destination": "src/hardware/rtl/video/ov5640_720p_rom.v",
+    "purpose": "Board video / sensor / clock RTL: ov5640_720p_rom",
+    "source_sha256": "9a9973327d6e2a08bf66925c842c45b8ccd51a3ae3ccc4d12824086f5ea78993",
+    "destination_sha256": "9a9973327d6e2a08bf66925c842c45b8ccd51a3ae3ccc4d12824086f5ea78993",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ov5640_720p_rom.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\ov5640_sccb_ctrl.v",
+    "destination": "src/hardware/rtl/video/ov5640_sccb_ctrl.v",
+    "purpose": "Board video / sensor / clock RTL: ov5640_sccb_ctrl",
+    "source_sha256": "de2761cefad51638a25cca81af035f2d64ca52a17bf5272d59d009eda4eb6551",
+    "destination_sha256": "de2761cefad51638a25cca81af035f2d64ca52a17bf5272d59d009eda4eb6551",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/ov5640_sccb_ctrl.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\serializer_10_to_1.v",
+    "destination": "src/hardware/rtl/video/serializer_10_to_1.v",
+    "purpose": "Board video / sensor / clock RTL: serializer_10_to_1",
+    "source_sha256": "5af42be6afbd586450185124f737f1697e631566a0f011293f069d2b9eae49ca",
+    "destination_sha256": "5af42be6afbd586450185124f737f1697e631566a0f011293f069d2b9eae49ca",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/serializer_10_to_1.v"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.srcs\\sources_1\\imports\\rtl\\video_system_wrapper.v",
+    "destination": "src/hardware/rtl/video/video_system_wrapper.v",
+    "purpose": "Board video / sensor / clock RTL: video_system_wrapper",
+    "source_sha256": "93f3232d993dda9f2189c067524f0fce0bee2b4d065dc01151ac6f5da03e3cdc",
+    "destination_sha256": "93f3232d993dda9f2189c067524f0fce0bee2b4d065dc01151ac6f5da03e3cdc",
+    "edited": false,
+    "previous_destination": "hardware/rtl/video/video_system_wrapper.v"
+  },
+  {
+    "source_path": null,
+    "destination": "sim/rtl/readme.md",
+    "purpose": "Truthful simulation scope and missing final-system regression coverage",
+    "source_sha256": null,
+    "destination_sha256": "6393a2e713395d48f8d783020a0ba50d953ad90c777e89761239e40b542ae61c",
+    "edited": true,
+    "edit_reason": "New packaging documentation / portable entrypoint"
+  },
+  {
+    "source_path": null,
+    "destination": "sim/rtl/setup_simulations.tcl",
+    "purpose": "Configure the two existing production-tree simulation tops without running them",
+    "source_sha256": null,
+    "destination_sha256": "27ce360fcb1ce311979ff7c462806f8847b62e814b9b78259d5f113bde5044e7",
+    "edited": true,
+    "edit_reason": "New packaging documentation / portable entrypoint"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\verification\\tb_ai_result_overlay.sv",
+    "destination": "sim/rtl/tb_ai_result_overlay.sv",
+    "purpose": "Existing production-tree RTL testbench; no new simulation result claimed",
+    "source_sha256": "7cb36db53b2dd5fa6af16e875f5e8f4d4ca73dd0e2936046fdb1ef94c23744ad",
+    "destination_sha256": "7cb36db53b2dd5fa6af16e875f5e8f4d4ca73dd0e2936046fdb1ef94c23744ad",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\verification\\tb_ov5640_profile.sv",
+    "destination": "sim/rtl/tb_ov5640_profile.sv",
+    "purpose": "Existing production-tree RTL testbench; no new simulation result claimed",
+    "source_sha256": "fd06a85e2ebd6587ff64ddb8e0f471e673844df6b9d08c064352a37b7b7e674a",
+    "destination_sha256": "fd06a85e2ebd6587ff64ddb8e0f471e673844df6b9d08c064352a37b7b7e674a",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\CMakeLists.txt",
+    "destination": "software/app/src/CMakeLists.txt",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: CMakeLists",
+    "source_sha256": "e9353c58d949da903bac87bb886a9c66aa7390ae956985f02d45283889e3996d",
+    "destination_sha256": "caf720813d5ebbce0026d72a9979a482f34b1d283c00e0c161b0883fa14a2584",
+    "edited": true,
+    "edit_reason": "Lowercase private CMake include filenames; runtime directory layout preserved"
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_board_keys.c",
+    "destination": "software/app/src/ai_board_keys.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_board_keys",
+    "source_sha256": "7028705b53a1706632f7ab95c74fdb52f9440ed4c1ec76ec6546a0ada3df5a6e",
+    "destination_sha256": "7028705b53a1706632f7ab95c74fdb52f9440ed4c1ec76ec6546a0ada3df5a6e",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_board_keys.h",
+    "destination": "software/app/src/ai_board_keys.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_board_keys",
+    "source_sha256": "b382c8ea884fb9b5f8255719d536515a9efedf11b33ccbc4542e78564b7c7074",
+    "destination_sha256": "b382c8ea884fb9b5f8255719d536515a9efedf11b33ccbc4542e78564b7c7074",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_catalog.h",
+    "destination": "software/app/src/ai_camera_catalog.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_catalog",
+    "source_sha256": "72b7698906a9a5a25b99261d87d61172700d4558e7415e3e87c8dae1aa3a80e6",
+    "destination_sha256": "72b7698906a9a5a25b99261d87d61172700d4558e7415e3e87c8dae1aa3a80e6",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_geometry.h",
+    "destination": "software/app/src/ai_camera_geometry.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_geometry",
+    "source_sha256": "46ade9bd9822a181ac12e82ba15a5e475c761adf752aebefceae7a49750f36b4",
+    "destination_sha256": "46ade9bd9822a181ac12e82ba15a5e475c761adf752aebefceae7a49750f36b4",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_luts.h",
+    "destination": "software/app/src/ai_camera_luts.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_luts",
+    "source_sha256": "19f1d39f99b469184611360d72af21b146534493b3375964c53ca973e1dad37a",
+    "destination_sha256": "19f1d39f99b469184611360d72af21b146534493b3375964c53ca973e1dad37a",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_math.c",
+    "destination": "software/app/src/ai_camera_math.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math",
+    "source_sha256": "6805f127be46fe88d262d6fb1f4b088c1db6395fc2c5a5687bdeb8fcceee421c",
+    "destination_sha256": "6805f127be46fe88d262d6fb1f4b088c1db6395fc2c5a5687bdeb8fcceee421c",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_math.h",
+    "destination": "software/app/src/ai_camera_math.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math",
+    "source_sha256": "8731eb482d2458026589f0dd4e46826a4ced596adffbec2f12ad2b37ce18fe9d",
+    "destination_sha256": "8731eb482d2458026589f0dd4e46826a4ced596adffbec2f12ad2b37ce18fe9d",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_math_tables.h",
+    "destination": "software/app/src/ai_camera_math_tables.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math_tables",
+    "source_sha256": "9b3115d67d21b16cfeaa73a3bf9c6c6fe0c1d13602c81f0c36395acbd46370d3",
+    "destination_sha256": "9b3115d67d21b16cfeaa73a3bf9c6c6fe0c1d13602c81f0c36395acbd46370d3",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_memory.c",
+    "destination": "software/app/src/ai_camera_memory.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_memory",
+    "source_sha256": "ca6428f59ffa677f8f9655475e85bb9bf730bf4f6bebbf9426cc6d806a10edd6",
+    "destination_sha256": "ca6428f59ffa677f8f9655475e85bb9bf730bf4f6bebbf9426cc6d806a10edd6",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_memory.h",
+    "destination": "software/app/src/ai_camera_memory.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_memory",
+    "source_sha256": "b3160ad95015cae812134ca3f9bf74f90e60466e86eca2d1983fe98d163bdf6c",
+    "destination_sha256": "b3160ad95015cae812134ca3f9bf74f90e60466e86eca2d1983fe98d163bdf6c",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_models.c",
+    "destination": "software/app/src/ai_camera_models.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_models",
+    "source_sha256": "9e403d4fd455194f1b692dd9f4164c33be9f13fd84c564f569613e1a809faa24",
+    "destination_sha256": "9e403d4fd455194f1b692dd9f4164c33be9f13fd84c564f569613e1a809faa24",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_camera_models.h",
+    "destination": "software/app/src/ai_camera_models.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_models",
+    "source_sha256": "1f7ec9b04acbc84effcac408a07d3c657726c75081d93bd1fcb5484d33889ade",
+    "destination_sha256": "1f7ec9b04acbc84effcac408a07d3c657726c75081d93bd1fcb5484d33889ade",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_coco80_config.h",
+    "destination": "software/app/src/ai_coco80_config.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_coco80_config",
+    "source_sha256": "17bd61a52d6158c08f8a3481ac63013a283f5b706ed91a353cf1dccf7000eca6",
+    "destination_sha256": "17bd61a52d6158c08f8a3481ac63013a283f5b706ed91a353cf1dccf7000eca6",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_detector.c",
+    "destination": "software/app/src/ai_detector.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_detector",
+    "source_sha256": "3407e1f732dd199e72757b0344fde7b232eac6869db5393c5b4c573314aa4b77",
+    "destination_sha256": "3407e1f732dd199e72757b0344fde7b232eac6869db5393c5b4c573314aa4b77",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_detector.h",
+    "destination": "software/app/src/ai_detector.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_detector",
+    "source_sha256": "8415211a70252a3d78a925a2d9e53552319641b1ac26e00a8e7d316eece3f5bc",
+    "destination_sha256": "8415211a70252a3d78a925a2d9e53552319641b1ac26e00a8e7d316eece3f5bc",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_display.c",
+    "destination": "software/app/src/ai_display.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_display",
+    "source_sha256": "1c4ef364b41396962a89639428d70037b5e9d7e718fd488486493de248c45e8c",
+    "destination_sha256": "1c4ef364b41396962a89639428d70037b5e9d7e718fd488486493de248c45e8c",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_display.h",
+    "destination": "software/app/src/ai_display.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_display",
+    "source_sha256": "e2ca11cd8633707564b46866ce4a5267d0a13fc990f8a22e63e82fea2aa6b872",
+    "destination_sha256": "e2ca11cd8633707564b46866ce4a5267d0a13fc990f8a22e63e82fea2aa6b872",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_preprocess.c",
+    "destination": "software/app/src/ai_preprocess.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_preprocess",
+    "source_sha256": "56ad784f71b6be16654c0a1d1e988daba3c416247bf3f602c0f62f9dbe6365e7",
+    "destination_sha256": "56ad784f71b6be16654c0a1d1e988daba3c416247bf3f602c0f62f9dbe6365e7",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_preprocess.h",
+    "destination": "software/app/src/ai_preprocess.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_preprocess",
+    "source_sha256": "bc7e384f12fa55740de2b2543a9c8a6367efd4c83d582a9c829a8b4595b4d77f",
+    "destination_sha256": "bc7e384f12fa55740de2b2543a9c8a6367efd4c83d582a9c829a8b4595b4d77f",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_ps_timing.c",
+    "destination": "software/app/src/ai_ps_timing.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_ps_timing",
+    "source_sha256": "55fd0201b51fea2181945dfdb46bcdecc1a126e6f3b2e5cfdffaf759ee896fe1",
+    "destination_sha256": "55fd0201b51fea2181945dfdb46bcdecc1a126e6f3b2e5cfdffaf759ee896fe1",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_ps_timing.h",
+    "destination": "software/app/src/ai_ps_timing.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_ps_timing",
+    "source_sha256": "97b7f69412a88f2ed3f50f3671d27ca000925efef5d29e73b4c121241bc07e38",
+    "destination_sha256": "97b7f69412a88f2ed3f50f3671d27ca000925efef5d29e73b4c121241bc07e38",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_resnet_score_lut.h",
+    "destination": "software/app/src/ai_resnet_score_lut.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_resnet_score_lut",
+    "source_sha256": "a09edac0427fe3bf80f551c6ae05f178948e90e274756a6fa3b9f167fb358209",
+    "destination_sha256": "a09edac0427fe3bf80f551c6ae05f178948e90e274756a6fa3b9f167fb358209",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_result.h",
+    "destination": "software/app/src/ai_result.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_result",
+    "source_sha256": "163d4ac3da0d51d691ece62429f288b6c76077417016b8401b6cc7bab590f046",
+    "destination_sha256": "163d4ac3da0d51d691ece62429f288b6c76077417016b8401b6cc7bab590f046",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_sd_boot.c",
+    "destination": "software/app/src/ai_sd_boot.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_sd_boot",
+    "source_sha256": "21ab9f493141691320e85dc36e3465c2103f3b057eafc6e91bf79ea7916152b4",
+    "destination_sha256": "21ab9f493141691320e85dc36e3465c2103f3b057eafc6e91bf79ea7916152b4",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\ai_sd_boot.h",
+    "destination": "software/app/src/ai_sd_boot.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: ai_sd_boot",
+    "source_sha256": "b61d28e9212224aa2d0c6a52b8806083f53493623092db5bce552ebbf6825b2f",
+    "destination_sha256": "b61d28e9212224aa2d0c6a52b8806083f53493623092db5bce552ebbf6825b2f",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\Empty_applicationExample.cmake",
+    "destination": "software/app/src/empty_application_example.cmake",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: Empty_applicationExample",
+    "source_sha256": "bdfa05a2a68dda35a1b4f0f46241bbccdd520721b6913317a655e6fadeb05e46",
+    "destination_sha256": "bdfa05a2a68dda35a1b4f0f46241bbccdd520721b6913317a655e6fadeb05e46",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\lscript.ld",
+    "destination": "software/app/src/lscript.ld",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: lscript",
+    "source_sha256": "d8f80f3c755ccc9829e2732b6aaf43879a6177988d78256e598b70bcf693f1e2",
+    "destination_sha256": "d8f80f3c755ccc9829e2732b6aaf43879a6177988d78256e598b70bcf693f1e2",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\main.c",
+    "destination": "software/app/src/main.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: main",
+    "source_sha256": "a5da7d76f2ff733ee4858263dab8c6ce3f6d648d05c2bca62c3b7903cc74710c",
+    "destination_sha256": "a5da7d76f2ff733ee4858263dab8c6ce3f6d648d05c2bca62c3b7903cc74710c",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\runtime.c",
+    "destination": "software/app/src/runtime.c",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: runtime",
+    "source_sha256": "4ecbbd748fe984a07da1b2e0e7251d257e85a1465a01c0f1cccebe2df8a9bc1b",
+    "destination_sha256": "4ecbbd748fe984a07da1b2e0e7251d257e85a1465a01c0f1cccebe2df8a9bc1b",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\status_flags.h",
+    "destination": "software/app/src/status_flags.h",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: status_flags",
+    "source_sha256": "d135a28cd811e3e6f042a190f2403b8e972c3a037e32592dac43a6ee74ab382a",
+    "destination_sha256": "d135a28cd811e3e6f042a190f2403b8e972c3a037e32592dac43a6ee74ab382a",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\app\\src\\UserConfig.cmake",
+    "destination": "software/app/src/user_config.cmake",
+    "purpose": "Standalone Cortex-A9 application source / Vitis build configuration: UserConfig",
+    "source_sha256": "925dc8d1291d01e618863d36d80def840b7e296530d090901e1d6a9745160c1f",
+    "destination_sha256": "925dc8d1291d01e618863d36d80def840b7e296530d090901e1d6a9745160c1f",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\baremetal\\npu_sd_hash.c",
+    "destination": "software/runtime/baremetal/npu_sd_hash.c",
+    "purpose": "Optional standalone SD loading, hash and predecoded package support: npu_sd_hash",
+    "source_sha256": "a715196a2989229c4f348d31350cfd60b2379b4acc1819ce2c3ef2b247cba132",
+    "destination_sha256": "a715196a2989229c4f348d31350cfd60b2379b4acc1819ce2c3ef2b247cba132",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\baremetal\\npu_sd_hash.h",
+    "destination": "software/runtime/baremetal/npu_sd_hash.h",
+    "purpose": "Optional standalone SD loading, hash and predecoded package support: npu_sd_hash",
+    "source_sha256": "75ee1463a78f5af467b48a537c73bfb6bb8aa9115708348011c515fe4ae8459d",
+    "destination_sha256": "75ee1463a78f5af467b48a537c73bfb6bb8aa9115708348011c515fe4ae8459d",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\baremetal\\npu_sd_loader.c",
+    "destination": "software/runtime/baremetal/npu_sd_loader.c",
+    "purpose": "Optional standalone SD loading, hash and predecoded package support: npu_sd_loader",
+    "source_sha256": "a41168b24d10a476ffc9239b3556ef6993a4732eec51247f629c228ac01dd37f",
+    "destination_sha256": "a41168b24d10a476ffc9239b3556ef6993a4732eec51247f629c228ac01dd37f",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\baremetal\\npu_sd_loader.h",
+    "destination": "software/runtime/baremetal/npu_sd_loader.h",
+    "purpose": "Optional standalone SD loading, hash and predecoded package support: npu_sd_loader",
+    "source_sha256": "16f37bca92594ee1eb5827b70b8cf610e90a5f99e88422c3bed2de8a3fc51ee2",
+    "destination_sha256": "16f37bca92594ee1eb5827b70b8cf610e90a5f99e88422c3bed2de8a3fc51ee2",
+    "edited": false
+  },
+  {
+    "source_path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\baremetal\\npu_sd_predecoded.h",
+    "destination": "software/runtime/baremetal/npu_sd_predecoded.h",
+    "purpose": "Optional standalone SD loading, hash and predecoded package support: npu_sd_predecoded",
+    "source_sha256": "68026afc54c4857296ce5f1c8d7638926a2e833a0bc5360c9b1ae8bc9c0f668b",
+    "destination_sha256": "68026afc54c4857296ce5f1c8d7638926a2e833a0bc5360c9b1ae8bc9c0f668b",
+    "edited": false
+  }
+]

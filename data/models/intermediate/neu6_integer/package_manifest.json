@@ -1,0 +1,20 @@
+{
+  "model": "yolox_s_a",
+  "package_format": "AIPKG3",
+  "engine_profile": 2,
+  "image_bytes": 9703424,
+  "workspace_bytes": 49152000,
+  "crc32": "0x540005F4",
+  "sha256": "a2ecbf2cd72a1360bff172686674d6957c8233407b5dec1eecf2ca20502a1cc0",
+  "sections": {
+    "META": 221455,
+    "TENSORS": 90496,
+    "INSTRUCTIONS": 47104,
+    "ATTRIBUTES": 23040,
+    "CONSTANTS": 9306052
+  },
+  "relocatable": true,
+  "load_to_ddr_verified_on_board": false,
+  "current_resnet_bitstream_compatible": false,
+  "binary_roundtrip_pass": true
+}

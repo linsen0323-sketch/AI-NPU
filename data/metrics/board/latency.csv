@@ -1,0 +1,5 @@
+model,task,input_resolution,latency_seconds,approximate,source,timing_scope
+resnet18,neu6_classification,160x160,0.5,true,project_owner_report,inference_per_image_scope_not_further_specified
+yolox_s_coco80,coco80_detection,256x256,1.6,true,project_owner_report,inference_per_image_scope_not_further_specified
+yolox_s_neu6,neu6_detection,256x256,1.4,true,project_owner_report_net_interpreted_as_neu6,inference_per_image_scope_not_further_specified
+

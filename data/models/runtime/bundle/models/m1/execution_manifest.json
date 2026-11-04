@@ -1,0 +1,100 @@
+{
+  "format": "NPUPLN1",
+  "model": "resnet18_unified_160",
+  "model_id": 1,
+  "profile": 2,
+  "source_package": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\unified_npu\\models\\fusion_display_20261025\\resnet18_unified_160\\model.aipkg",
+  "source_sha256": "a96b1d4b1dedb4e245d50b61ed61e9eb7f211bb85fc214d549ecffc37f41557a",
+  "source_body_crc32": "0x43465F57",
+  "source_legacy_sha256": "9cfc64be75c5029749e46e05d935a08457e21c52dd82a148db4db04c6b3b1b9f",
+  "source_image_bytes": 11292672,
+  "source_derived_sha256": "a96b1d4b1dedb4e245d50b61ed61e9eb7f211bb85fc214d549ecffc37f41557a",
+  "plan_offset": 11292672,
+  "plan_bytes": 32768,
+  "ddr_bytes": 11325440,
+  "ddr_sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+  "graph_operations": 48,
+  "plan_records": 48,
+  "records_per_opcode": {
+    "CONV": 20,
+    "RELU": 17,
+    "MAXPOOL": 1,
+    "ADD": 8,
+    "GAP": 1,
+    "LINEAR": 1
+  },
+  "legacy_record_flag": 1,
+  "workspace_bytes": 6107136,
+  "original_workspace_bytes": 5906432,
+  "conv_scratch_offset": 5906432,
+  "conv_scratch_bytes": 200704,
+  "input_tensor_id": 0,
+  "input_offset": 6144,
+  "input_bytes": 76800,
+  "input_shape": [
+    1,
+    3,
+    160,
+    160
+  ],
+  "input_dtype": 1,
+  "output_tensor_id": 48,
+  "output_offset": 5902336,
+  "output_bytes": 6,
+  "output_shape": [
+    1,
+    6
+  ],
+  "output_dtype": 1,
+  "rtl_verified": false,
+  "board_verified": false,
+  "integer_reference_executed": false,
+  "compatible_with_legacy_loader": false,
+  "frozen_sources_modified": false,
+  "source_parent_package_sha256": "afb8af44f9c754709e2293c76c9b00966b0b8f87887daf6002ed86d2f97b1af5",
+  "source_model_dir": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\unified_npu\\models\\performance\\resnet18_unified_160",
+  "gap_gain_derivation": [
+    {
+      "operation": 46,
+      "old_area": 49,
+      "new_area": 25,
+      "old_multiplier": 1910138169,
+      "old_shift": 35,
+      "multiplier": 1871935406,
+      "shift": 34,
+      "target_gain": "93596770281/858993459200",
+      "realized_gain": "935967703/8589934592",
+      "absolute_gain_error": "19/858993459200"
+    }
+  ],
+  "constants_sha256": "dadf4e8f8574cc86f8d286022afe7d586cd6c5dee475a88fb592a30de4d81993",
+  "constant_weight_bytes_preserved": true,
+  "tensor_allocation_offsets_preserved": true,
+  "accuracy_validated": false,
+  "status": "source_only_unverified",
+  "diagnostic_input_kind": "synthetic resized quantized diagnostic input; not Golden",
+  "plan_feature_bits": 2,
+  "required_features": [
+    "ps_predecoded_control_v1"
+  ],
+  "predecoded_control": {
+    "format": "NPUPRE1",
+    "version": 1,
+    "offset": 1024,
+    "bytes": 128,
+    "affine_format": "AFF1",
+    "records": 48,
+    "outer_ranks_before": {
+      "0": 46,
+      "2": 2
+    },
+    "outer_ranks_after": {
+      "0": 46,
+      "1": 2
+    },
+    "inner_jobs": 622,
+    "full_graph_expanded": false,
+    "contiguous_inner_coalescing": true
+  },
+  "numerical_records_preserved": true
+}

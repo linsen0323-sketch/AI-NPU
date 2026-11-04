@@ -1,0 +1,555 @@
+{
+  "scope": "User-selected remaining-material search",
+  "original_files_modified": false,
+  "files": [
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\YOLOX_S_quantization_trace_20261029.md",
+      "target": "evidence/models/quantization_trace.md",
+      "purpose": "原YOLOX PTQ、QDQ、整数编译与模型打包的历史溯源报告；原文路径仅供历史追踪",
+      "source_sha256": "edb443b85e8a775c875c5130f57bd179803eff9030eba6560088cd9a1d72bd6d",
+      "target_sha256": "edb443b85e8a775c875c5130f57bd179803eff9030eba6560088cd9a1d72bd6d",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\tb_wbuf_native.sv",
+      "target": "sim/rtl/unit/wbuf/testbench.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "babcbc34fca3ac89d0592984568da85030684c8f883a55c5be38452843fe5749",
+      "target_sha256": "babcbc34fca3ac89d0592984568da85030684c8f883a55c5be38452843fe5749",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\result.json",
+      "target": "evidence/sim/unit/wbuf/historical_result.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "32b5a7784266e5425f71b835583608da3804b3522ffcce2f6f55d98b29a14224",
+      "target_sha256": "32b5a7784266e5425f71b835583608da3804b3522ffcce2f6f55d98b29a14224",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\review.md",
+      "target": "evidence/sim/unit/wbuf/historical_review.md",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "c148018a8f8af1215801f73212af1b6b1a2f72613b90096219695ffc7597b9fe",
+      "target_sha256": "c148018a8f8af1215801f73212af1b6b1a2f72613b90096219695ffc7597b9fe",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\xvlog.log",
+      "target": "evidence/sim/unit/wbuf/compile.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "8d0a007283c7c2a206131f2140eb36928fd6a8d011430033aa0d6fa022c34a02",
+      "target_sha256": "8d0a007283c7c2a206131f2140eb36928fd6a8d011430033aa0d6fa022c34a02",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\elaborate.log",
+      "target": "evidence/sim/unit/wbuf/elaborate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "2bfaee557c7fd557d14c89ed6891c971c4e7cd74e19e254a66af5837f4258fca",
+      "target_sha256": "2bfaee557c7fd557d14c89ed6891c971c4e7cd74e19e254a66af5837f4258fca",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\simulate.log",
+      "target": "evidence/sim/unit/wbuf/simulate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "6dbfee1ad372c5daf7cf3713bc93279308c93db9907869e10c044acacce16343",
+      "target_sha256": "6dbfee1ad372c5daf7cf3713bc93279308c93db9907869e10c044acacce16343",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\tests\\tb_dma_nonempty.sv",
+      "target": "sim/rtl/unit/dma/testbench.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "6bebe1c0d29f31b7ddc4594b3f290b249e3021e6c70d2c105ca5d2de0dd8d079",
+      "target_sha256": "6bebe1c0d29f31b7ddc4594b3f290b249e3021e6c70d2c105ca5d2de0dd8d079",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\tests\\dma_environment.svh",
+      "target": "sim/rtl/unit/dma/dma_environment.svh",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "cbceaefce11e3372ac17d84ce8e405aa728c07388934a47c71fc7f523618b209",
+      "target_sha256": "cbceaefce11e3372ac17d84ce8e405aa728c07388934a47c71fc7f523618b209",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\npu_stream_dma_before.sv",
+      "target": "sim/rtl/unit/dma/reference/npu_stream_dma_before.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "d2c26b12171d6f8d87b2f6e22234ee5bafdb26a70edc44b59d6249f0ae7a7eaa",
+      "target_sha256": "d2c26b12171d6f8d87b2f6e22234ee5bafdb26a70edc44b59d6249f0ae7a7eaa",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\manifest.json",
+      "target": "evidence/sim/unit/dma/historical_manifest.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "08f357a639f9f608b6abc00da8efb8c48664d3c644c455eef7a0ac9c962b501f",
+      "target_sha256": "08f357a639f9f608b6abc00da8efb8c48664d3c644c455eef7a0ac9c962b501f",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\coverage_results.json",
+      "target": "evidence/sim/unit/dma/coverage.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "493621b507be1c97a9e207652f4963c5044c2f9de9bbba10e112ecb00900b77f",
+      "target_sha256": "493621b507be1c97a9e207652f4963c5044c2f9de9bbba10e112ecb00900b77f",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\VALIDATION_REPORT.md",
+      "target": "evidence/sim/unit/dma/historical_review.md",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "05c11f72e58edca84e742c1bca190fed912bb9ba8cfa848f8a68a41d8236e535",
+      "target_sha256": "05c11f72e58edca84e742c1bca190fed912bb9ba8cfa848f8a68a41d8236e535",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\results\\compile.log",
+      "target": "evidence/sim/unit/dma/compile.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "4bb77e216eff8fad50fad0114de77792dc7528bd1210b9654adf7a7279defe3c",
+      "target_sha256": "4bb77e216eff8fad50fad0114de77792dc7528bd1210b9654adf7a7279defe3c",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\results\\elaborate.log",
+      "target": "evidence/sim/unit/dma/elaborate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "ff7af296b654f8c6160f32f3771a3fd0f7f7c1eb64d5328c2a7c6b39661a3804",
+      "target_sha256": "ff7af296b654f8c6160f32f3771a3fd0f7f7c1eb64d5328c2a7c6b39661a3804",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\results\\simulate.log",
+      "target": "evidence/sim/unit/dma/simulate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "2d07380ab7cd36f22daf571f91884845a7d26c084d274338a8cb899c1ffa3b23",
+      "target_sha256": "2d07380ab7cd36f22daf571f91884845a7d26c084d274338a8cb899c1ffa3b23",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\tb_round_miter.sv",
+      "target": "sim/rtl/unit/round/testbench.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "3836f50ab92a8c95ec3bac2ec2d0d818ab15a3cc5b6dd89e5995cd596084615a",
+      "target_sha256": "3836f50ab92a8c95ec3bac2ec2d0d818ab15a3cc5b6dd89e5995cd596084615a",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\round_before.sv",
+      "target": "sim/rtl/unit/round/reference/round_before.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "ace5f2990a7b9183f1c2af2c4e386e9cae7e81d1f9b03b21c3b2ad051b0639e6",
+      "target_sha256": "ace5f2990a7b9183f1c2af2c4e386e9cae7e81d1f9b03b21c3b2ad051b0639e6",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\verification.json",
+      "target": "evidence/sim/unit/round/historical_result.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "3c54de83f388118843fe502f7edd77fe2257913fd3e444ed57e2433838511706",
+      "target_sha256": "3c54de83f388118843fe502f7edd77fe2257913fd3e444ed57e2433838511706",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\candidate_manifest.json",
+      "target": "evidence/sim/unit/round/historical_manifest.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "a6a77386febcafe1119a6de8a96346bc89f9d4a9d1fa40cecf8e0c6b72637c57",
+      "target_sha256": "a6a77386febcafe1119a6de8a96346bc89f9d4a9d1fa40cecf8e0c6b72637c57",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\README.md",
+      "target": "evidence/sim/unit/round/historical_review.md",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "c46caaa35a7dce2eb972f296e92b48d0ef22562b59ff2fba1558524d0bf103b9",
+      "target_sha256": "c46caaa35a7dce2eb972f296e92b48d0ef22562b59ff2fba1558524d0bf103b9",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\results\\compile.log",
+      "target": "evidence/sim/unit/round/compile.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "9a396adea00597aa1591a470c9ca0d8b3ce3c240383855dc25ff665d5c5d99ca",
+      "target_sha256": "9a396adea00597aa1591a470c9ca0d8b3ce3c240383855dc25ff665d5c5d99ca",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\results\\elaborate.log",
+      "target": "evidence/sim/unit/round/elaborate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "be1ba4eb1c048134dc86c951d0396e080c6f0adc8dacdf9f6709c27f389b5aaa",
+      "target_sha256": "be1ba4eb1c048134dc86c951d0396e080c6f0adc8dacdf9f6709c27f389b5aaa",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\results\\simulate.log",
+      "target": "evidence/sim/unit/round/simulate.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "a552a81401b70e03c4ce5ae4c2c8b7cf877deb8922ae6074ef0723451030cb0b",
+      "target_sha256": "a552a81401b70e03c4ce5ae4c2c8b7cf877deb8922ae6074ef0723451030cb0b",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\tb_maxpool_source_words.sv",
+      "target": "sim/rtl/unit/maxpool/testbench.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "1e2481bc733e3d15d135bac967e9d89349c478409f857045d0586aa96fa8ce89",
+      "target_sha256": "1e2481bc733e3d15d135bac967e9d89349c478409f857045d0586aa96fa8ce89",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\npu_maxpool_engine_before.sv",
+      "target": "sim/rtl/unit/maxpool/reference/npu_maxpool_engine_before.sv",
+      "purpose": "当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件",
+      "source_sha256": "6a9562254efe3ddc6dce6f5e721901e3e4cbf2e4f1925c02aaacb67588a3f241",
+      "target_sha256": "6a9562254efe3ddc6dce6f5e721901e3e4cbf2e4f1925c02aaacb67588a3f241",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\manifest.json",
+      "target": "evidence/sim/unit/maxpool/historical_manifest.json",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "e13da263ae208d8f8e8f7605296b12b236b28409bd15ab09e4eac5f5c2c74a2f",
+      "target_sha256": "e13da263ae208d8f8e8f7605296b12b236b28409bd15ab09e4eac5f5c2c74a2f",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\VALIDATION_REPORT.md",
+      "target": "evidence/sim/unit/maxpool/historical_review.md",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "a4ce423f8b1d4d23af4c1c25252c47b2d93a168a3123dd29541352ee1756a369",
+      "target_sha256": "a4ce423f8b1d4d23af4c1c25252c47b2d93a168a3123dd29541352ee1756a369",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\compile.log",
+      "target": "evidence/sim/unit/maxpool/compile.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "59f33785c28dfc238a05922b381e1436cd5aca51930e5cdc58bb1b2f10ebcd95",
+      "target_sha256": "59f33785c28dfc238a05922b381e1436cd5aca51930e5cdc58bb1b2f10ebcd95",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\elaborate_bulk.log",
+      "target": "evidence/sim/unit/maxpool/elaborate_bulk.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "b0253f82e3eca9b8e4cd6249daa24ad9494a2de244c8d1e2812d88e1466e34bd",
+      "target_sha256": "b0253f82e3eca9b8e4cd6249daa24ad9494a2de244c8d1e2812d88e1466e34bd",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\elaborate_scalar.log",
+      "target": "evidence/sim/unit/maxpool/elaborate_scalar.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "bb2b469998f3b3dd7461877e2eb86ae6e73db43a0e0196eef0c0fe7c55dca0f5",
+      "target_sha256": "bb2b469998f3b3dd7461877e2eb86ae6e73db43a0e0196eef0c0fe7c55dca0f5",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\simulate_bulk.log",
+      "target": "evidence/sim/unit/maxpool/simulate_bulk.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "20888c019fdf8e269654547851322feeb0c785cdfe669a9dd3a7bb3fd1f5b816",
+      "target_sha256": "20888c019fdf8e269654547851322feeb0c785cdfe669a9dd3a7bb3fd1f5b816",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\simulate_scalar.log",
+      "target": "evidence/sim/unit/maxpool/simulate_scalar.log",
+      "purpose": "已保存的历史定向XSim证据；本次未重跑，不代表整网Golden",
+      "source_sha256": "64f7dc1f95e3b0f113ae536e62f1e0c98ce218ea390650899019adcb3b86bcec",
+      "target_sha256": "64f7dc1f95e3b0f113ae536e62f1e0c98ce218ea390650899019adcb3b86bcec",
+      "modified": false
+    },
+    {
+      "source": null,
+      "target": "evidence/sim/unit/source_identity.json",
+      "purpose": "四组定向仿真与当前npu100生产模块的哈希对应",
+      "source_sha256": null,
+      "target_sha256": "874037373adab17f857712df9f51bcd71652ec47d67fe20cbc2b10ef18897765",
+      "modified": true,
+      "derived_from": []
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\baseline_seed42\\results.csv",
+      "target": "data/metrics/model_selection/yolov8n/baseline/results.csv",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "dce51ee1522001c9bbdcfdefcfea01679c22eeb584e26ae13f4d01d70ebc651a",
+      "target_sha256": "dce51ee1522001c9bbdcfdefcfea01679c22eeb584e26ae13f4d01d70ebc651a",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\baseline_seed42\\args.yaml",
+      "target": "data/metrics/model_selection/yolov8n/baseline/arguments.yaml",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "2fc4395b592c19f49c0d091301378979caab893328f35ffe5085c46a22afb35a",
+      "target_sha256": "2fc4395b592c19f49c0d091301378979caab893328f35ffe5085c46a22afb35a",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\baseline_seed42\\results.png",
+      "target": "data/metrics/model_selection/yolov8n/baseline/training_curves.png",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "bd69b0d720009241f92c16bc3d52eb1f46785f8572fbf38518cd97e8498471fe",
+      "target_sha256": "bd69b0d720009241f92c16bc3d52eb1f46785f8572fbf38518cd97e8498471fe",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\scale03_seed42\\results.csv",
+      "target": "data/metrics/model_selection/yolov8n/scale03/results.csv",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "611040c995a58a66974bbb70982250f7f9d8bc7b16e5f22b3e8c4170cdbc92ca",
+      "target_sha256": "611040c995a58a66974bbb70982250f7f9d8bc7b16e5f22b3e8c4170cdbc92ca",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\scale03_seed42\\args.yaml",
+      "target": "data/metrics/model_selection/yolov8n/scale03/arguments.yaml",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "04aad1015b9712fb56ed711b68950c61a49d68b8454882d7edb67299ca929069",
+      "target_sha256": "04aad1015b9712fb56ed711b68950c61a49d68b8454882d7edb67299ca929069",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\scale03_seed42\\results.png",
+      "target": "data/metrics/model_selection/yolov8n/scale03/training_curves.png",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "7eab7754be34d5b98ec7a18423598ccc9408e6f21f0d57686a3f6ab01c79d47e",
+      "target_sha256": "7eab7754be34d5b98ec7a18423598ccc9408e6f21f0d57686a3f6ab01c79d47e",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\mosaic05_seed42\\results.csv",
+      "target": "data/metrics/model_selection/yolov8n/mosaic05/results.csv",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "f0e30be37c6ff14ddc76acf03f322b92807cb9573b692ba696d62aa163289ff9",
+      "target_sha256": "f0e30be37c6ff14ddc76acf03f322b92807cb9573b692ba696d62aa163289ff9",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\mosaic05_seed42\\args.yaml",
+      "target": "data/metrics/model_selection/yolov8n/mosaic05/arguments.yaml",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "2751381a2926edb42d9911c3f6cdce76b3d413e3dcde6657c8c4690321a3af7e",
+      "target_sha256": "2751381a2926edb42d9911c3f6cdce76b3d413e3dcde6657c8c4690321a3af7e",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\mosaic05_seed42\\results.png",
+      "target": "data/metrics/model_selection/yolov8n/mosaic05/training_curves.png",
+      "purpose": "历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度",
+      "source_sha256": "b23847eb16b43262e40b3b31daae993c6323aba715fa226a6ae993c5fa33221e",
+      "target_sha256": "b23847eb16b43262e40b3b31daae993c6323aba715fa226a6ae993c5fa33221e",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\baseline_seed42\\BoxPR_curve.png",
+      "target": "data/metrics/model_selection/yolov8n/baseline/precision_recall.png",
+      "purpose": "历史YOLOv8n验证曲线，模型选型参考",
+      "source_sha256": "5fc525b29895e46d19b9b50ed886b7303aab8e982434c52458871ea7a5be19b8",
+      "target_sha256": "5fc525b29895e46d19b9b50ed886b7303aab8e982434c52458871ea7a5be19b8",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\runs\\baseline_seed42\\confusion_matrix_normalized.png",
+      "target": "data/metrics/model_selection/yolov8n/baseline/confusion_matrix_normalized.png",
+      "purpose": "历史YOLOv8n验证曲线，模型选型参考",
+      "source_sha256": "4760c397418fe3f889a82d0c1648c5d55f8f2982a6f750be1435c485c028c363",
+      "target_sha256": "4760c397418fe3f889a82d0c1648c5d55f8f2982a6f750be1435c485c028c363",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\detect\\yolo12n_neu_baseline\\results.csv",
+      "target": "data/metrics/model_selection/yolo12n/baseline/results.csv",
+      "purpose": "历史YOLO12n训练记录；不属于最终三模型部署",
+      "source_sha256": "28ff72370a296dfe28150e9be41884ea72e806e72fbf8dc3eb0a8fc55d400942",
+      "target_sha256": "28ff72370a296dfe28150e9be41884ea72e806e72fbf8dc3eb0a8fc55d400942",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\detect\\yolo12n_neu_baseline\\args.yaml",
+      "target": "data/metrics/model_selection/yolo12n/baseline/arguments.yaml",
+      "purpose": "历史YOLO12n训练记录；不属于最终三模型部署",
+      "source_sha256": "f0720c34bc9fa7ea52c2c892a512bcff2d7a248b224bcf3d4a3b4d36271a830d",
+      "target_sha256": "f0720c34bc9fa7ea52c2c892a512bcff2d7a248b224bcf3d4a3b4d36271a830d",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\detect\\yolo12n_neu_baseline\\results.png",
+      "target": "data/metrics/model_selection/yolo12n/baseline/training_curves.png",
+      "purpose": "历史YOLO12n训练记录；不属于最终三模型部署",
+      "source_sha256": "025244425631db0c365a64932cc65dc84340643bf7addd5a3bf8820b7c52073d",
+      "target_sha256": "025244425631db0c365a64932cc65dc84340643bf7addd5a3bf8820b7c52073d",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\per_class_test_metrics.csv",
+      "target": "data/metrics/model_selection/yolo12n/test/per_class_metrics.csv",
+      "purpose": "历史YOLO12n独立测试逐类指标；与YOLOX训练划分不同，不能直接横向排名",
+      "source_sha256": "7cace433c941b0e1a1f5fd7fbf204d1dbf0e7af5637897f361c5e1db40df117e",
+      "target_sha256": "7cace433c941b0e1a1f5fd7fbf204d1dbf0e7af5637897f361c5e1db40df117e",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\evaluation\\test_metrics\\BoxPR_curve.png",
+      "target": "data/metrics/model_selection/yolo12n/test/precision_recall.png",
+      "purpose": "历史YOLO12n测试曲线，仅作选型背景",
+      "source_sha256": "7d58779f327d981f87f82c337e531c1b909e5106209142d92d60506fa46dfd22",
+      "target_sha256": "7d58779f327d981f87f82c337e531c1b909e5106209142d92d60506fa46dfd22",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\evaluation\\test_metrics\\BoxF1_curve.png",
+      "target": "data/metrics/model_selection/yolo12n/test/f1_curve.png",
+      "purpose": "历史YOLO12n测试曲线，仅作选型背景",
+      "source_sha256": "294b028cf8ccbb743b38952fefbf56e4778b82aa8141b49f3916b1a57085a5e4",
+      "target_sha256": "294b028cf8ccbb743b38952fefbf56e4778b82aa8141b49f3916b1a57085a5e4",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\runs\\evaluation\\test_metrics\\confusion_matrix_normalized.png",
+      "target": "data/metrics/model_selection/yolo12n/test/confusion_matrix_normalized.png",
+      "purpose": "历史YOLO12n测试曲线，仅作选型背景",
+      "source_sha256": "2dfa184890d4e33174414e4b874ba88abb8a29d3e41ca6d1c32f0ece1bb1793c",
+      "target_sha256": "2dfa184890d4e33174414e4b874ba88abb8a29d3e41ca6d1c32f0ece1bb1793c",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\data.yaml",
+      "target": "evidence/models/model_selection/yolo12n_dataset.yaml",
+      "purpose": "历史YOLO12n数据配置；正文保留原始路径用于辨明划分",
+      "source_sha256": "c3b5d92562e0e57f7be5bdc1a605866b01d40674dd8c5abd2b7f237a8df7cc63",
+      "target_sha256": "c3b5d92562e0e57f7be5bdc1a605866b01d40674dd8c5abd2b7f237a8df7cc63",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\Yolov12n\\train.py",
+      "target": "evidence/models/model_selection/yolo12n_training_recipe.py",
+      "purpose": "历史YOLO12n训练方法归档，不是本包正式训练入口",
+      "source_sha256": "f5d9274c4b1a039525a4be387e25c0003c06884e19a54969753f4cd4c5957d25",
+      "target_sha256": "f5d9274c4b1a039525a4be387e25c0003c06884e19a54969753f4cd4c5957d25",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\Desktop\\对照模型\\train_compare.py",
+      "target": "evidence/models/model_selection/yolov8n_training_recipe.py",
+      "purpose": "历史YOLOv8n对照配置和版本约束，不是本包正式训练入口",
+      "source_sha256": "85c4039ac24eb1bb50392354db5e7c41f6313d488788c84b2f0731b60bef27a5",
+      "target_sha256": "85c4039ac24eb1bb50392354db5e7c41f6313d488788c84b2f0731b60bef27a5",
+      "modified": false
+    },
+    {
+      "source": "C:\\Users\\ii\\.codex\\visualizations\\2026\\11\\01\\01a195c1-f759-7901-a5c9-d5d48995e674\\tmp\\host_requirements_snapshot.txt",
+      "target": "data/environments/host/requirements_snapshot.txt",
+      "purpose": "整理时D:/AI/.venv的当前pip freeze；不冒充历史锁定环境",
+      "source_sha256": "f6690f48bfa7534a0d29938032ef21c1a1cdd25e150de6d4be380349aa2a1f1b",
+      "target_sha256": "f6690f48bfa7534a0d29938032ef21c1a1cdd25e150de6d4be380349aa2a1f1b",
+      "modified": false
+    },
+    {
+      "source": null,
+      "target": "evidence/packaging/layout_sync.json",
+      "purpose": "沿用现有src/hardware布局的引用适配记录",
+      "source_sha256": null,
+      "target_sha256": "ee721b6e8b680daebcbb724c8dc1f3053014ad931c95283536907bee1be6e2d5",
+      "modified": true,
+      "derived_from": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\tb_wbuf_native_behav.wdb",
+      "target": "evidence/sim/unit/wbuf/waveform.wdb",
+      "purpose": "原始定向XSim波形；对应同目录历史日志，不代表整网仿真",
+      "source_sha256": "a14fce732612aa88cdd00332763f555a616ee94701920d54e253f63da6cf7544",
+      "target_sha256": "a14fce732612aa88cdd00332763f555a616ee94701920d54e253f63da6cf7544",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\dma_nonempty_candidate\\results\\dma_nonempty.wdb",
+      "target": "evidence/sim/unit/dma/waveform.wdb",
+      "purpose": "原始定向XSim波形；对应同目录历史日志，不代表整网仿真",
+      "source_sha256": "554571aad2a668ed784ab1e8f2ff4db5d4cb94e5202e5e380c5ba0fdbe58ef2f",
+      "target_sha256": "554571aad2a668ed784ab1e8f2ff4db5d4cb94e5202e5e380c5ba0fdbe58ef2f",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\results\\round_miter.wdb",
+      "target": "evidence/sim/unit/round/waveform.wdb",
+      "purpose": "原始定向XSim波形；对应同目录历史日志，不代表整网仿真",
+      "source_sha256": "edf38b1cf5243c541e232d67d70b68bdf72d696aa81687451e187f1d48d856db",
+      "target_sha256": "edf38b1cf5243c541e232d67d70b68bdf72d696aa81687451e187f1d48d856db",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\maxpool_source_words_bulk.wdb",
+      "target": "evidence/sim/unit/maxpool/bulk_waveform.wdb",
+      "purpose": "原始定向XSim波形；对应同目录历史日志，不代表整网仿真",
+      "source_sha256": "51075e6266777d32656eb894a09f6c2796d83af0c829bbe74ebc4d1e7b8a40fb",
+      "target_sha256": "51075e6266777d32656eb894a09f6c2796d83af0c829bbe74ebc4d1e7b8a40fb",
+      "modified": false
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\maxpool_candidate\\results\\maxpool_source_words_scalar.wdb",
+      "target": "evidence/sim/unit/maxpool/scalar_waveform.wdb",
+      "purpose": "原始定向XSim波形；对应同目录历史日志，不代表整网仿真",
+      "source_sha256": "0446dc704fe416dbfdbeeb03ffeb7245bb59cb74d9ec1bacdc3ee0e3ca2cb296",
+      "target_sha256": "0446dc704fe416dbfdbeeb03ffeb7245bb59cb74d9ec1bacdc3ee0e3ca2cb296",
+      "modified": false
+    },
+    {
+      "source": null,
+      "target": "data/metrics/training_resnet18/checkpoint_metadata.json",
+      "purpose": "从选中训练checkpoint安全提取的原始元数据；原224验证条件",
+      "source_sha256": null,
+      "target_sha256": "2922a9b9600c893469a1f9e83bb3fc38c3dec1d7f352210fcc9fa733111efbd5",
+      "modified": true,
+      "derived_from": [
+        {
+          "path": "C:\\Users\\ii\\Desktop\\project_ai_npu\\models\\checkpoints\\resnet18_neu6.pth",
+          "sha256": "cdc75c95a18242f510392f29a8463367da7f5f5e0b27ec65242fdd049c9a064d"
+        }
+      ]
+    },
+    {
+      "source": null,
+      "target": "data/environments/host/environment_snapshot.json",
+      "purpose": "当前主机环境与历史COCO量化关键版本对照",
+      "source_sha256": null,
+      "target_sha256": "aad7e0993b7e4e2820beef26401c998d1cd225ed1c9295ad8b4738ed9ac2c0cf",
+      "modified": true,
+      "derived_from": [
+        {
+          "path": "C:\\Users\\ii\\Desktop\\project_ai_npu\\models\\quantization\\coco80\\environment.json",
+          "sha256": "12f69048fe728523e7bc1de2ea5eb63fcd4f8eb368bd81e5716bbb27849f9f1c"
+        }
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/models/quantization_source_identity.json",
+      "purpose": "原YOLOX量化核心身份与既有收录来源的核对",
+      "source_sha256": null,
+      "target_sha256": "fa8106f57a8e884b573333b341f7f11e3042fedbf4825565f3a60f3009561f53",
+      "modified": true,
+      "derived_from": [
+        {
+          "path": "D:\\AI\\fpga_ai\\tools\\mixed_precision_ptq.py",
+          "sha256": "d6b0226bdbe7686a6a2de27a8e69a23f3713327572794824870bed0a3e96c7ac"
+        }
+      ]
+    },
+    {
+      "source": null,
+      "target": "sim/rtl/unit/setup_unit_tests.tcl",
+      "purpose": "为当前npu100设置五个已恢复测试的仿真fileset，不自动运行仿真",
+      "source_sha256": null,
+      "target_sha256": "3a3e23c953b038682025470c900d23ced2c6235f69619b7573ff530c3a0f2c62",
+      "modified": true,
+      "derived_from": []
+    }
+  ]
+}

@@ -1,0 +1,1307 @@
+{
+  "format": "NPUPLN1",
+  "model": "yolox_s_a_256",
+  "model_id": 3,
+  "source_package": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\verification\\dma64_load_20261027\\runtime_models\\yolox_s_a_256\\model.aipkg",
+  "source_sha256": "a3ce72c5169111b4930a9de7373b88b3f89804a40e49017855f52a43f6ce0184",
+  "source_body_crc32": "0x4194DEE8",
+  "ddr_bytes": 15888384,
+  "plan_offset": 15740928,
+  "plan_bytes": 147456,
+  "graph_operations": 368,
+  "plan_records": 270,
+  "records_per_opcode": {
+    "SLICE": 9,
+    "CONCAT": 47,
+    "QUANT": 58,
+    "CONV": 83,
+    "SIGMOID": 53,
+    "ADD": 8,
+    "MAXPOOL": 3,
+    "RESIZE_NEAREST": 2,
+    "RESHAPE": 3,
+    "TRANSPOSE": 1,
+    "MUL": 2,
+    "EXP": 1
+  },
+  "workspace_bytes": 8126464,
+  "original_workspace_bytes": 7864320,
+  "conv_scratch_bytes": 262144,
+  "source_image_bytes": 15740928,
+  "input_tensor_id": 338,
+  "output_tensor_id": 706,
+  "input_offset": 0,
+  "input_bytes": 786432,
+  "input_shape": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "output_offset": 173056,
+  "output_bytes": 118272,
+  "output_shape": [
+    1,
+    1344,
+    11
+  ],
+  "output_dtype": 4,
+  "ddr_sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+  "fusion_groups": [
+    {
+      "first_op": 9,
+      "last_op": 11,
+      "quantized": true,
+      "output_tensor": 350,
+      "records": 1
+    },
+    {
+      "first_op": 17,
+      "last_op": 18,
+      "quantized": false,
+      "output_tensor": 357,
+      "records": 1
+    },
+    {
+      "first_op": 21,
+      "last_op": 22,
+      "quantized": false,
+      "output_tensor": 361,
+      "records": 1
+    },
+    {
+      "first_op": 25,
+      "last_op": 27,
+      "quantized": true,
+      "output_tensor": 366,
+      "records": 1
+    },
+    {
+      "first_op": 35,
+      "last_op": 37,
+      "quantized": true,
+      "output_tensor": 376,
+      "records": 1
+    },
+    {
+      "first_op": 39,
+      "last_op": 40,
+      "quantized": false,
+      "output_tensor": 379,
+      "records": 1
+    },
+    {
+      "first_op": 43,
+      "last_op": 44,
+      "quantized": false,
+      "output_tensor": 383,
+      "records": 1
+    },
+    {
+      "first_op": 47,
+      "last_op": 48,
+      "quantized": false,
+      "output_tensor": 387,
+      "records": 1
+    },
+    {
+      "first_op": 51,
+      "last_op": 53,
+      "quantized": true,
+      "output_tensor": 392,
+      "records": 1
+    },
+    {
+      "first_op": 60,
+      "last_op": 62,
+      "quantized": true,
+      "output_tensor": 401,
+      "records": 1
+    },
+    {
+      "first_op": 69,
+      "last_op": 71,
+      "quantized": true,
+      "output_tensor": 410,
+      "records": 1
+    },
+    {
+      "first_op": 73,
+      "last_op": 74,
+      "quantized": false,
+      "output_tensor": 413,
+      "records": 1
+    },
+    {
+      "first_op": 95,
+      "last_op": 97,
+      "quantized": true,
+      "output_tensor": 436,
+      "records": 1
+    },
+    {
+      "first_op": 104,
+      "last_op": 106,
+      "quantized": true,
+      "output_tensor": 445,
+      "records": 1
+    },
+    {
+      "first_op": 113,
+      "last_op": 115,
+      "quantized": true,
+      "output_tensor": 454,
+      "records": 1
+    },
+    {
+      "first_op": 117,
+      "last_op": 118,
+      "quantized": false,
+      "output_tensor": 457,
+      "records": 1
+    },
+    {
+      "first_op": 127,
+      "last_op": 129,
+      "quantized": true,
+      "output_tensor": 468,
+      "records": 1
+    },
+    {
+      "first_op": 139,
+      "last_op": 140,
+      "quantized": false,
+      "output_tensor": 479,
+      "records": 1
+    },
+    {
+      "first_op": 147,
+      "last_op": 148,
+      "quantized": false,
+      "output_tensor": 487,
+      "records": 1
+    },
+    {
+      "first_op": 151,
+      "last_op": 153,
+      "quantized": true,
+      "output_tensor": 492,
+      "records": 1
+    },
+    {
+      "first_op": 160,
+      "last_op": 161,
+      "quantized": false,
+      "output_tensor": 500,
+      "records": 1
+    },
+    {
+      "first_op": 170,
+      "last_op": 171,
+      "quantized": false,
+      "output_tensor": 510,
+      "records": 1
+    },
+    {
+      "first_op": 174,
+      "last_op": 175,
+      "quantized": false,
+      "output_tensor": 514,
+      "records": 1
+    },
+    {
+      "first_op": 178,
+      "last_op": 180,
+      "quantized": true,
+      "output_tensor": 519,
+      "records": 1
+    },
+    {
+      "first_op": 187,
+      "last_op": 189,
+      "quantized": true,
+      "output_tensor": 528,
+      "records": 1
+    },
+    {
+      "first_op": 191,
+      "last_op": 192,
+      "quantized": false,
+      "output_tensor": 531,
+      "records": 1
+    },
+    {
+      "first_op": 197,
+      "last_op": 198,
+      "quantized": false,
+      "output_tensor": 537,
+      "records": 1
+    },
+    {
+      "first_op": 201,
+      "last_op": 202,
+      "quantized": false,
+      "output_tensor": 541,
+      "records": 1
+    },
+    {
+      "first_op": 205,
+      "last_op": 207,
+      "quantized": true,
+      "output_tensor": 546,
+      "records": 1
+    },
+    {
+      "first_op": 218,
+      "last_op": 219,
+      "quantized": false,
+      "output_tensor": 558,
+      "records": 1
+    },
+    {
+      "first_op": 223,
+      "last_op": 224,
+      "quantized": false,
+      "output_tensor": 563,
+      "records": 1
+    },
+    {
+      "first_op": 227,
+      "last_op": 228,
+      "quantized": false,
+      "output_tensor": 567,
+      "records": 1
+    },
+    {
+      "first_op": 231,
+      "last_op": 233,
+      "quantized": true,
+      "output_tensor": 572,
+      "records": 1
+    },
+    {
+      "first_op": 244,
+      "last_op": 245,
+      "quantized": false,
+      "output_tensor": 584,
+      "records": 1
+    },
+    {
+      "first_op": 253,
+      "last_op": 254,
+      "quantized": false,
+      "output_tensor": 593,
+      "records": 1
+    },
+    {
+      "first_op": 257,
+      "last_op": 259,
+      "quantized": true,
+      "output_tensor": 598,
+      "records": 1
+    },
+    {
+      "first_op": 266,
+      "last_op": 267,
+      "quantized": false,
+      "output_tensor": 606,
+      "records": 1
+    },
+    {
+      "first_op": 274,
+      "last_op": 276,
+      "quantized": true,
+      "output_tensor": 615,
+      "records": 1
+    },
+    {
+      "first_op": 278,
+      "last_op": 280,
+      "quantized": true,
+      "output_tensor": 619,
+      "records": 1
+    },
+    {
+      "first_op": 299,
+      "last_op": 300,
+      "quantized": false,
+      "output_tensor": 639,
+      "records": 1
+    },
+    {
+      "first_op": 303,
+      "last_op": 305,
+      "quantized": true,
+      "output_tensor": 644,
+      "records": 1
+    },
+    {
+      "first_op": 307,
+      "last_op": 309,
+      "quantized": true,
+      "output_tensor": 648,
+      "records": 1
+    },
+    {
+      "first_op": 313,
+      "last_op": 315,
+      "quantized": true,
+      "output_tensor": 654,
+      "records": 1
+    },
+    {
+      "first_op": 328,
+      "last_op": 329,
+      "quantized": false,
+      "output_tensor": 668,
+      "records": 1
+    },
+    {
+      "first_op": 332,
+      "last_op": 334,
+      "quantized": true,
+      "output_tensor": 673,
+      "records": 1
+    },
+    {
+      "first_op": 336,
+      "last_op": 338,
+      "quantized": true,
+      "output_tensor": 677,
+      "records": 1
+    },
+    {
+      "first_op": 342,
+      "last_op": 344,
+      "quantized": true,
+      "output_tensor": 683,
+      "records": 1
+    },
+    {
+      "first_op": 12,
+      "last_op": 14,
+      "flags": 16,
+      "output_tensor": 353,
+      "records": 1,
+      "eliminated_ddr_bytes": 4194304
+    },
+    {
+      "first_op": 28,
+      "last_op": 30,
+      "flags": 16,
+      "output_tensor": 369,
+      "records": 1,
+      "eliminated_ddr_bytes": 2097152
+    },
+    {
+      "first_op": 54,
+      "last_op": 56,
+      "flags": 16,
+      "output_tensor": 395,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 63,
+      "last_op": 65,
+      "flags": 16,
+      "output_tensor": 404,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 78,
+      "last_op": 80,
+      "flags": 16,
+      "output_tensor": 419,
+      "records": 1,
+      "eliminated_ddr_bytes": 2097152
+    },
+    {
+      "first_op": 82,
+      "last_op": 84,
+      "flags": 16,
+      "output_tensor": 423,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 86,
+      "last_op": 88,
+      "flags": 16,
+      "output_tensor": 427,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 90,
+      "last_op": 92,
+      "flags": 16,
+      "output_tensor": 431,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 98,
+      "last_op": 100,
+      "flags": 16,
+      "output_tensor": 439,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 107,
+      "last_op": 109,
+      "flags": 16,
+      "output_tensor": 448,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 122,
+      "last_op": 124,
+      "flags": 16,
+      "output_tensor": 463,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 130,
+      "last_op": 132,
+      "flags": 16,
+      "output_tensor": 471,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 142,
+      "last_op": 144,
+      "flags": 16,
+      "output_tensor": 483,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 154,
+      "last_op": 156,
+      "flags": 16,
+      "output_tensor": 495,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 163,
+      "last_op": 165,
+      "flags": 16,
+      "output_tensor": 504,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 181,
+      "last_op": 183,
+      "flags": 16,
+      "output_tensor": 522,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 208,
+      "last_op": 210,
+      "flags": 16,
+      "output_tensor": 549,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 213,
+      "last_op": 215,
+      "flags": 16,
+      "output_tensor": 554,
+      "records": 1,
+      "eliminated_ddr_bytes": 2097152
+    },
+    {
+      "first_op": 234,
+      "last_op": 236,
+      "flags": 16,
+      "output_tensor": 575,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 239,
+      "last_op": 241,
+      "flags": 16,
+      "output_tensor": 580,
+      "records": 1,
+      "eliminated_ddr_bytes": 1048576
+    },
+    {
+      "first_op": 248,
+      "last_op": 250,
+      "flags": 16,
+      "output_tensor": 589,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 260,
+      "last_op": 262,
+      "flags": 16,
+      "output_tensor": 601,
+      "records": 1,
+      "eliminated_ddr_bytes": 262144
+    },
+    {
+      "first_op": 269,
+      "last_op": 271,
+      "flags": 16,
+      "output_tensor": 610,
+      "records": 1,
+      "eliminated_ddr_bytes": 2097152
+    },
+    {
+      "first_op": 283,
+      "last_op": 286,
+      "flags": 24,
+      "output_tensor": 625,
+      "records": 1,
+      "eliminated_ddr_bytes": 3145728
+    },
+    {
+      "first_op": 287,
+      "last_op": 289,
+      "flags": 16,
+      "output_tensor": 628,
+      "records": 1,
+      "eliminated_ddr_bytes": 2097152
+    },
+    {
+      "first_op": 316,
+      "last_op": 318,
+      "flags": 16,
+      "output_tensor": 657,
+      "records": 1,
+      "eliminated_ddr_bytes": 524288
+    },
+    {
+      "first_op": 345,
+      "last_op": 347,
+      "flags": 16,
+      "output_tensor": 686,
+      "records": 1,
+      "eliminated_ddr_bytes": 131072
+    }
+  ],
+  "absorbed_operations": [
+    10,
+    11,
+    13,
+    14,
+    18,
+    22,
+    26,
+    27,
+    29,
+    30,
+    36,
+    37,
+    40,
+    44,
+    48,
+    52,
+    53,
+    55,
+    56,
+    61,
+    62,
+    64,
+    65,
+    70,
+    71,
+    74,
+    79,
+    80,
+    83,
+    84,
+    87,
+    88,
+    91,
+    92,
+    96,
+    97,
+    99,
+    100,
+    105,
+    106,
+    108,
+    109,
+    114,
+    115,
+    118,
+    123,
+    124,
+    128,
+    129,
+    131,
+    132,
+    140,
+    143,
+    144,
+    148,
+    152,
+    153,
+    155,
+    156,
+    161,
+    164,
+    165,
+    171,
+    175,
+    179,
+    180,
+    182,
+    183,
+    188,
+    189,
+    192,
+    198,
+    202,
+    206,
+    207,
+    209,
+    210,
+    214,
+    215,
+    219,
+    224,
+    228,
+    232,
+    233,
+    235,
+    236,
+    240,
+    241,
+    245,
+    249,
+    250,
+    254,
+    258,
+    259,
+    261,
+    262,
+    267,
+    270,
+    271,
+    275,
+    276,
+    279,
+    280,
+    284,
+    285,
+    286,
+    288,
+    289,
+    300,
+    304,
+    305,
+    308,
+    309,
+    314,
+    315,
+    317,
+    318,
+    329,
+    333,
+    334,
+    337,
+    338,
+    343,
+    344,
+    346,
+    347
+  ],
+  "plan_feature_bits": 15,
+  "required_features": [
+    "exact_silu_fusion_v1",
+    "ps_predecoded_control_v1",
+    "exact_conv_fusion_v1",
+    "packed_3x3_weights_v1"
+  ],
+  "accuracy_validated": false,
+  "rtl_verified": false,
+  "board_verified": false,
+  "compatible_with_legacy_loader": false,
+  "source_model_dir": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\unified_npu\\models\\fusion_display_20261025\\yolox_s_a_256",
+  "accuracy_changed": false,
+  "status": "runtime_layout_candidate",
+  "source_derived_sha256": "a3ce72c5169111b4930a9de7373b88b3f89804a40e49017855f52a43f6ce0184",
+  "source_parent_package_sha256": "7e266f6dd4141d7ecc9f368f8331bdababf81fe92814db9b17a878b503a92477",
+  "predecoded_control": {
+    "format": "NPUPRE1",
+    "version": 1,
+    "offset": 1024,
+    "bytes": 128,
+    "affine_format": "AFF1",
+    "records": 270,
+    "outer_ranks_before": {
+      "3": 165,
+      "1": 83,
+      "2": 17,
+      "5": 2,
+      "0": 3
+    },
+    "outer_ranks_after": {
+      "1": 17,
+      "0": 251,
+      "3": 2
+    },
+    "inner_jobs": 112220,
+    "full_graph_expanded": false,
+    "contiguous_inner_coalescing": true
+  },
+  "integer_reference_executed": false,
+  "frozen_sources_modified": false,
+  "numerical_records_preserved": true,
+  "packed_weights": {
+    "format": "WPK1",
+    "order": "OC,Cin_group,kernel,Cin_lane",
+    "layout_marker_word": 120,
+    "bank_stride_word": 121,
+    "plan_feature_bit": 3,
+    "parent_ddr_sha256": "f63b4cbfc16e72031392a61b1c14f08a32b911b183a8f59c0d7ae7ae67d4a99a",
+    "tensors": [
+      {
+        "original_constant_offset": 0,
+        "packed_constant_offset": 9195520,
+        "ic": 12,
+        "oc": 32,
+        "original_bytes": 3456,
+        "packed_bytes": 4608,
+        "bank_stride": 144,
+        "original_sha256": "1c1689a8cd7ded282e40fd90b7341b7afab1e6a163c75da28a2510c571fc56eb",
+        "packed_sha256": "3a0c99b7094b8920a13dd4544daffa88f31cde12746cbafd904d4b717fa47c74"
+      },
+      {
+        "original_constant_offset": 3840,
+        "packed_constant_offset": 9200128,
+        "ic": 32,
+        "oc": 64,
+        "original_bytes": 18432,
+        "packed_bytes": 18432,
+        "bank_stride": 288,
+        "original_sha256": "54a2b49185eb2bc663350f487a3aea771353f69ce055bc960f3ebec9e3f358e2",
+        "packed_sha256": "b5ee9efeae834b907aac02dab1dac34c0c647ead37a89e3a550d19c690ce6a71"
+      },
+      {
+        "original_constant_offset": 29312,
+        "packed_constant_offset": 9218560,
+        "ic": 32,
+        "oc": 32,
+        "original_bytes": 9216,
+        "packed_bytes": 9216,
+        "bank_stride": 288,
+        "original_sha256": "b69dc283ae6bb502519686e97b4c61d52bf1cda063f1cb1053422a24a7efd16b",
+        "packed_sha256": "4862bca3687fad00c268fde72305dfed54adf5c1e49cccf8a976865b6fe03dca"
+      },
+      {
+        "original_constant_offset": 43776,
+        "packed_constant_offset": 9227776,
+        "ic": 64,
+        "oc": 128,
+        "original_bytes": 73728,
+        "packed_bytes": 73728,
+        "bank_stride": 576,
+        "original_sha256": "4881c236bea17ade5710f7e26666ece10bf275f073b76b5cfcadc5a1810b75bb",
+        "packed_sha256": "000af3d5b0efd58734da7a9754624b57c648894fcccefc7b2edb731e2b983666"
+      },
+      {
+        "original_constant_offset": 141824,
+        "packed_constant_offset": 9301504,
+        "ic": 64,
+        "oc": 64,
+        "original_bytes": 36864,
+        "packed_bytes": 36864,
+        "bank_stride": 576,
+        "original_sha256": "559be7154356d31ecbd17948318b30bef145e8434ae2844192b1d6710dde97ff",
+        "packed_sha256": "27ae2c635873841c59524ebe93833859bf108221233c80a584a25cf9fe319cd2"
+      },
+      {
+        "original_constant_offset": 184320,
+        "packed_constant_offset": 9338368,
+        "ic": 64,
+        "oc": 64,
+        "original_bytes": 36864,
+        "packed_bytes": 36864,
+        "bank_stride": 576,
+        "original_sha256": "8bdf582c05365273f17f50a62c0c896a85072f1f6b128e40db1311b91c645eae",
+        "packed_sha256": "0525f4bdc392abe6fb5ef828af578d36ff0854451e33f160595efe60f7142ec3"
+      },
+      {
+        "original_constant_offset": 226816,
+        "packed_constant_offset": 9375232,
+        "ic": 64,
+        "oc": 64,
+        "original_bytes": 36864,
+        "packed_bytes": 36864,
+        "bank_stride": 576,
+        "original_sha256": "1369de6ce289f0c51dfb1d9176f54c3ff592c8a595552819b4a28575bfc2774f",
+        "packed_sha256": "a413010f54e506b7ebe5223a22b5d23d33c5d0ab45de2b91ea96921c1956edc7"
+      },
+      {
+        "original_constant_offset": 282368,
+        "packed_constant_offset": 9412096,
+        "ic": 128,
+        "oc": 256,
+        "original_bytes": 294912,
+        "packed_bytes": 294912,
+        "bank_stride": 1152,
+        "original_sha256": "8eca26a513ee0670952fd9de23d95c8dedc2e46441980e5e2f6bbbeee5e8579b",
+        "packed_sha256": "a9d8fcdd6a4656700be447966f4c37162edb27e24ffd3e975db6079b17272cdd"
+      },
+      {
+        "original_constant_offset": 666880,
+        "packed_constant_offset": 9707008,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "74abe32c58451aea95e891353663bb3f9f062dfcda7c332247fc650ef90e85ed",
+        "packed_sha256": "c45eae8d4ac19bcfafe7b790618922209dabdfa088c2687bc4fbe7284ba4699c"
+      },
+      {
+        "original_constant_offset": 833792,
+        "packed_constant_offset": 9854464,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "10ce8faf2089ebf22f705b9876745664b8669f12505f290469da95c939957186",
+        "packed_sha256": "9cc1906567309810bb10624c4e0ef22928c46e5104ba4db96c4cc5af64f17379"
+      },
+      {
+        "original_constant_offset": 1000704,
+        "packed_constant_offset": 10001920,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "77764c24fc0fca0e816ff7de620bf35dea7d138be57f807b8c40f3064dc364b0",
+        "packed_sha256": "35fddc784ffcbf4b7319d1e8653b2ffbf70debd2f377692a06182f9d91c9e485"
+      },
+      {
+        "original_constant_offset": 1218304,
+        "packed_constant_offset": 10149376,
+        "ic": 256,
+        "oc": 512,
+        "original_bytes": 1179648,
+        "packed_bytes": 1179648,
+        "bank_stride": 2304,
+        "original_sha256": "49ab16bb9d5176b4f911d760fba87c9bddcdcb8b58723cdaace5fccdd6a22340",
+        "packed_sha256": "f7194cc87cf8fe018e03aa6dcaffb5b96d3b7ebc1dcf426f46d8c9e261102fee"
+      },
+      {
+        "original_constant_offset": 3405568,
+        "packed_constant_offset": 11329024,
+        "ic": 256,
+        "oc": 256,
+        "original_bytes": 589824,
+        "packed_bytes": 589824,
+        "bank_stride": 2304,
+        "original_sha256": "e626d066c948c779cc80a4fc550f681519bd15397819f8a04555caa8236b3057",
+        "packed_sha256": "e4c6dfd3a048240a96475ea4b21f08db6194b35b532d791af57f9cc2c66288e5"
+      },
+      {
+        "original_constant_offset": 4552960,
+        "packed_constant_offset": 11918848,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "d03428c5088a3c507f4cf0f647ddd4b8b088e481f05c96b7b9ac8ebc944b71b9",
+        "packed_sha256": "b1bb8de36edeba979da1501427eadd2499321663df0d456543ea7be179b293de"
+      },
+      {
+        "original_constant_offset": 4844032,
+        "packed_constant_offset": 12066304,
+        "ic": 64,
+        "oc": 64,
+        "original_bytes": 36864,
+        "packed_bytes": 36864,
+        "bank_stride": 576,
+        "original_sha256": "51ea4d6545cc6e00ef08bedfd9b915114e214d4fb140ee82141379c5318d3eda",
+        "packed_sha256": "9a29246f0198c35d84d9a5fbf7d01da74bbd99785f1f854995d672dbccf82c54"
+      },
+      {
+        "original_constant_offset": 4899584,
+        "packed_constant_offset": 12103168,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "64b24cf728c61d6472d8ea90e436911771f24cd0381dd3c71cac71ad00bce5fe",
+        "packed_sha256": "af709f748f5b1f6deaee337570cae57a5a1944ff2e8281714d4d05c95ed9e93b"
+      },
+      {
+        "original_constant_offset": 5135104,
+        "packed_constant_offset": 12250624,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "aae610c18a20235d93b0b6418e0f0998d29bc1c04a3d1d77a9174a572cea3230",
+        "packed_sha256": "166f29e848c825263eb22b75c00caa16d8338e77b8412aca1fe9f43f21321870"
+      },
+      {
+        "original_constant_offset": 5352704,
+        "packed_constant_offset": 12398080,
+        "ic": 256,
+        "oc": 256,
+        "original_bytes": 589824,
+        "packed_bytes": 589824,
+        "bank_stride": 2304,
+        "original_sha256": "c83f6c3e84c3d13eab91e858e38791d64e9b130e4200ecff3add6537fdc571e1",
+        "packed_sha256": "4aeebcb1854421913c663106f8974f23a3d1547ef61a9a144753105646fac35d"
+      },
+      {
+        "original_constant_offset": 6282496,
+        "packed_constant_offset": 12987904,
+        "ic": 256,
+        "oc": 256,
+        "original_bytes": 589824,
+        "packed_bytes": 589824,
+        "bank_stride": 2304,
+        "original_sha256": "a666ccc2121ea7a9e5722c7cf4dfdb6a8c1897e240f1925a1caa45582e463f97",
+        "packed_sha256": "8d5ad9dcb540336a273d35e822d064ec9c714fd62148f94dc01c2fbaa320d3d6"
+      },
+      {
+        "original_constant_offset": 7161600,
+        "packed_constant_offset": 13577728,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "7a2a0d92d00777018f27985aa523288724eb80e8b15d5e93f3630a9d731cbbcd",
+        "packed_sha256": "315a393c3cbb9fafe0f9c2bb217c652ba4ad8c27dcf00252cf4256a2881de0fe"
+      },
+      {
+        "original_constant_offset": 7310592,
+        "packed_constant_offset": 13725184,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "16f4199de21965346eb696a2f62c13af2e75641c399ebd034a1df06f901eba96",
+        "packed_sha256": "d6c66c8ab2888a53c76e0182767775f8449d8e6d9e1e8ecccc75c2bcf2b944a0"
+      },
+      {
+        "original_constant_offset": 7460544,
+        "packed_constant_offset": 13872640,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "450e34ada120c433c3592d001b73c4c05ec695a2b3c1933dfa21af288540bc23",
+        "packed_sha256": "a48aa1e7d2f453d22adefa61c0a6058b5e194132075cefdbbbb4c5237e277b6c"
+      },
+      {
+        "original_constant_offset": 7609536,
+        "packed_constant_offset": 14020096,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "bc07a329097fff4d7daf7737045e11276a447115ecf32bbc8d87e6c898e57077",
+        "packed_sha256": "2a52dcdee21d728f29877ef05c80de3531c23bb3452f02ac27f66613f8698dbe"
+      },
+      {
+        "original_constant_offset": 7793856,
+        "packed_constant_offset": 14167552,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "082e86171a3d9edce5105132567265c07e35467a787ff555ad33a44251e0e72b",
+        "packed_sha256": "75e6600a6706b3df135e76c8be293487d9f39b333810c5ec7ab134c18838254c"
+      },
+      {
+        "original_constant_offset": 7942848,
+        "packed_constant_offset": 14315008,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "b397623953835e827b8c58ade5ebe0d84e36c369809f0fa7ea5c7b4f5087509b",
+        "packed_sha256": "ae2a5898dc2e1b70792ff54328576aca7f2801ee568d0f0fa10943c81202d945"
+      },
+      {
+        "original_constant_offset": 8092800,
+        "packed_constant_offset": 14462464,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "45d113d7ebad87ee69e9124ea2c0477fb11e341b1aba730b7950bb98925eed4f",
+        "packed_sha256": "c3a4fb1e6c96e0be580515d9d369020584b98958946e577d8161c4446a027649"
+      },
+      {
+        "original_constant_offset": 8241792,
+        "packed_constant_offset": 14609920,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "1c40e678ae45018dd078bddd79b826cdeb12b2528af25c62b33f530280a221c2",
+        "packed_sha256": "b1429eb2d6565d7a0ca5ea7cec042d778188670ea30ad0a919bb88b170506e2c"
+      },
+      {
+        "original_constant_offset": 8458880,
+        "packed_constant_offset": 14757376,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "87726e36167969f07e87baf3e7032b14413f5dbab1cccde8928ae63974ec214f",
+        "packed_sha256": "191495bcac60f3ca93f89e32d4786249c5484a5b3283808716239f7a684fe393"
+      },
+      {
+        "original_constant_offset": 8607872,
+        "packed_constant_offset": 14904832,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "13ed0abd73abc310d9ebe9b5d977a4742abd3811b0891e795e47ab9eecb244b1",
+        "packed_sha256": "3e8d29447608d715c330fcdc4c32c065f824eb33eeac88cb825a4112f938a76e"
+      },
+      {
+        "original_constant_offset": 8757824,
+        "packed_constant_offset": 15052288,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "c6d5ba1d47ee0ebe8afbd6f8a41a3e952e97ffc293736d9aebfa68fefab36f54",
+        "packed_sha256": "a2acc24367301d26a258538cd5c2a90b5e0c5ade525f589232d98a4397189408"
+      },
+      {
+        "original_constant_offset": 8906816,
+        "packed_constant_offset": 15199744,
+        "ic": 128,
+        "oc": 128,
+        "original_bytes": 147456,
+        "packed_bytes": 147456,
+        "bank_stride": 1152,
+        "original_sha256": "5ab34d459b4267c98f8d75a4eb6c3b2825c46d943f9611dcab5f599837a04af3",
+        "packed_sha256": "8b373584f06e45da725748dd2608efd7cf3e4226350c1df4b2aa192696990d21"
+      }
+    ],
+    "records": [
+      {
+        "record": 11,
+        "original_op": 8,
+        "bank_stride": 144,
+        "packed_pointer": 2156679168
+      },
+      {
+        "record": 13,
+        "original_op": 12,
+        "bank_stride": 288,
+        "packed_pointer": 2156683776
+      },
+      {
+        "record": 23,
+        "original_op": 28,
+        "bank_stride": 288,
+        "packed_pointer": 2156702208
+      },
+      {
+        "record": 30,
+        "original_op": 38,
+        "bank_stride": 576,
+        "packed_pointer": 2156711424
+      },
+      {
+        "record": 41,
+        "original_op": 54,
+        "bank_stride": 576,
+        "packed_pointer": 2156785152
+      },
+      {
+        "record": 46,
+        "original_op": 63,
+        "bank_stride": 576,
+        "packed_pointer": 2156822016
+      },
+      {
+        "record": 51,
+        "original_op": 72,
+        "bank_stride": 576,
+        "packed_pointer": 2156858880
+      },
+      {
+        "record": 59,
+        "original_op": 82,
+        "bank_stride": 1152,
+        "packed_pointer": 2156895744
+      },
+      {
+        "record": 67,
+        "original_op": 98,
+        "bank_stride": 1152,
+        "packed_pointer": 2157190656
+      },
+      {
+        "record": 72,
+        "original_op": 107,
+        "bank_stride": 1152,
+        "packed_pointer": 2157338112
+      },
+      {
+        "record": 77,
+        "original_op": 116,
+        "bank_stride": 1152,
+        "packed_pointer": 2157485568
+      },
+      {
+        "record": 85,
+        "original_op": 126,
+        "bank_stride": 2304,
+        "packed_pointer": 2157633024
+      },
+      {
+        "record": 106,
+        "original_op": 154,
+        "bank_stride": 2304,
+        "packed_pointer": 2158812672
+      },
+      {
+        "record": 126,
+        "original_op": 181,
+        "bank_stride": 1152,
+        "packed_pointer": 2159402496
+      },
+      {
+        "record": 146,
+        "original_op": 208,
+        "bank_stride": 576,
+        "packed_pointer": 2159549952
+      },
+      {
+        "record": 152,
+        "original_op": 217,
+        "bank_stride": 1152,
+        "packed_pointer": 2159586816
+      },
+      {
+        "record": 165,
+        "original_op": 234,
+        "bank_stride": 1152,
+        "packed_pointer": 2159734272
+      },
+      {
+        "record": 171,
+        "original_op": 243,
+        "bank_stride": 2304,
+        "packed_pointer": 2159881728
+      },
+      {
+        "record": 183,
+        "original_op": 260,
+        "bank_stride": 2304,
+        "packed_pointer": 2160471552
+      },
+      {
+        "record": 192,
+        "original_op": 273,
+        "bank_stride": 1152,
+        "packed_pointer": 2161061376
+      },
+      {
+        "record": 194,
+        "original_op": 277,
+        "bank_stride": 1152,
+        "packed_pointer": 2161208832
+      },
+      {
+        "record": 198,
+        "original_op": 283,
+        "bank_stride": 1152,
+        "packed_pointer": 2161356288
+      },
+      {
+        "record": 199,
+        "original_op": 287,
+        "bank_stride": 1152,
+        "packed_pointer": 2161503744
+      },
+      {
+        "record": 213,
+        "original_op": 302,
+        "bank_stride": 1152,
+        "packed_pointer": 2161651200
+      },
+      {
+        "record": 215,
+        "original_op": 306,
+        "bank_stride": 1152,
+        "packed_pointer": 2161798656
+      },
+      {
+        "record": 219,
+        "original_op": 312,
+        "bank_stride": 1152,
+        "packed_pointer": 2161946112
+      },
+      {
+        "record": 221,
+        "original_op": 316,
+        "bank_stride": 1152,
+        "packed_pointer": 2162093568
+      },
+      {
+        "record": 235,
+        "original_op": 331,
+        "bank_stride": 1152,
+        "packed_pointer": 2162241024
+      },
+      {
+        "record": 237,
+        "original_op": 335,
+        "bank_stride": 1152,
+        "packed_pointer": 2162388480
+      },
+      {
+        "record": 241,
+        "original_op": 341,
+        "bank_stride": 1152,
+        "packed_pointer": 2162535936
+      },
+      {
+        "record": 243,
+        "original_op": 345,
+        "bank_stride": 1152,
+        "packed_pointer": 2162683392
+      }
+    ],
+    "reconstructed_OIHW_bytes": 6150528
+  }
+}

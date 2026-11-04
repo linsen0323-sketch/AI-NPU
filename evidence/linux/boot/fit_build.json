@@ -1,0 +1,142 @@
+{
+  "scope": "LOCAL_DT_FIT_PREPARATION_NO_BOARD_WRITES",
+  "original_boot_sha256": {
+    "BOOT.BIN": "4707115527d5e730a4d5baff031fc5e59fa0706c1328b79c6483682ba1d13bf7",
+    "image.ub": "297070f4cffc72bbb739829a3ca294e150cb812cfdf332299a7bbd56cf324ac7",
+    "boot.scr": "4c7ed60cad10872084bf727b2c9ab0eca9eab992635cf3abf67dfe7ed9cc7807"
+  },
+  "new_image_sha256": "34a91205a86ce3e2e8809c3ea2b340afdebdbd171bc2ce228040e6a7981981b8",
+  "new_image_bytes": 5087879,
+  "original_dt_sha256": "e88431496b693409917f2ab489913836131e89b09b0e0d77d8aa5b7917c8e1b9",
+  "new_dt_sha256": "569788e7f6e5c8bfa644114035f452634b297fb0bff29e4ce6369dc6c4d978e5",
+  "running_dt_source_sha256": "5f5b88b12ffe18fd62c9bf373a0da7954d468f6b54bd547c900d3234e6cb722a",
+  "running_vs_base_differences": [
+    [
+      "/chosen",
+      "u-boot,bootconf"
+    ],
+    [
+      "/chosen",
+      "u-boot,version"
+    ]
+  ],
+  "dt_property_changes": [
+    [
+      "/__symbols__",
+      "npu_reserved"
+    ],
+    [
+      "/__symbols__",
+      "unified_npu_runtime"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "assigned-clock-rates"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "assigned-clocks"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "clock-names"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "clocks"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "compatible"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "memory-region"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "neu-gpios"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "phandle"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "reg"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "reg-names"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "resnet-gpios"
+    ],
+    [
+      "/npu-runtime@43c10000",
+      "status"
+    ],
+    [
+      "/pl-bus/ai_camera_pipeline_bd@43c10000",
+      "status"
+    ],
+    [
+      "/pl-bus/gpio@41200000",
+      "status"
+    ],
+    [
+      "/pl-bus/gpio@41210000",
+      "status"
+    ],
+    [
+      "/reserved-memory",
+      "#address-cells"
+    ],
+    [
+      "/reserved-memory",
+      "#size-cells"
+    ],
+    [
+      "/reserved-memory",
+      "ranges"
+    ],
+    [
+      "/reserved-memory/npu-runtime@10000000",
+      "no-map"
+    ],
+    [
+      "/reserved-memory/npu-runtime@10000000",
+      "phandle"
+    ],
+    [
+      "/reserved-memory/npu-runtime@10000000",
+      "reg"
+    ]
+  ],
+  "fit_changes": [
+    [
+      "/images/fdt-system-top.dtb",
+      "data"
+    ],
+    [
+      "/images/fdt-system-top.dtb/hash-1",
+      "value"
+    ]
+  ],
+  "kernel_unchanged": true,
+  "kernel_sha256": "5eaa8867f7daa729e3944821ffe6e270efdbc5ab7fbfd2a72d93e58709885bb1",
+  "boot_bin_contains_current_bit_configuration": true,
+  "bit_sha256": "68c6e35cdd67a38068556ad1dd9173ff9842849ba23edce2b1d8996cffdffb16",
+  "boot_bit_configuration_offset": 104304,
+  "production_files_unchanged": true,
+  "production_file_count": 61,
+  "runtime_check_dt": "PASS",
+  "dt_compile_roundtrip": "PASS",
+  "fit_image_hashes": "PASS",
+  "shell_syntax": "PASS",
+  "output": "/mnt/d/PetaLinux_Installer/NPU100_BOOT_UPDATE_20261102",
+  "board_updated": false,
+  "board_boot_verified": false,
+  "driver_built": false
+}

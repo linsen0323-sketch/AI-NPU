@@ -1,0 +1,20 @@
+{
+  "scope": "LAYOUT_METADATA_ADAPTERS_ONLY_NO_HARDWARE_OR_MODEL_BEHAVIOR_CHANGE",
+  "edits": [
+    {
+      "before_path": "tools/release_manifest.py",
+      "after_path": "tools/release_manifest.py",
+      "before_sha256": "202c5c60d5443e3910ddf2b31687c5ba465db86c0705821237a54616c3cb5373",
+      "after_sha256": "07a79add93fc2c5ebb460728646a720dee454fb8805d401091c687e83c41bf07",
+      "purpose": "Read-only verifier and source-map compatibility for approved directory relocation; no model arithmetic changes"
+    },
+    {
+      "before_path": "build/scripts/models/verify_models.py",
+      "after_path": "build/scripts/models/verify_models.py",
+      "before_sha256": "4238c4ce1ebbb75fbc5e4d996065fee32097fbf1ebd29c1bc9adbbd614537bb4",
+      "after_sha256": "798ba0c5e0924bdd602cc1c974b7bc5908fbd37159ea7ee9d91fec8f4ce39c28",
+      "purpose": "Read-only verifier and source-map compatibility for approved directory relocation; no model arithmetic changes"
+    }
+  ],
+  "historical_evidence_modified": false
+}

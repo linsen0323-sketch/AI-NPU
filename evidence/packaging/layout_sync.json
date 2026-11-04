@@ -1,0 +1,30 @@
+{
+  "observed_move": {
+    "from": "hardware",
+    "to": "src/hardware"
+  },
+  "all_moved_hardware_hashes_preserved": true,
+  "reference_changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "b699d3b11a9e2cf8269ad759a0393f7c530f67e42c4bb208212bba9d6e68fcb1",
+      "after_sha256": "917404f89a82cd3559de6274c6817acb0a33cc267f0ccf8d4784c83e04b87c84"
+    },
+    {
+      "path": "docs/hardware.md",
+      "before_sha256": "b17708fdf1eba667b59dcd3d92604df36e1a0aa1acc762420ce8f9df6ea2bcff",
+      "after_sha256": "b5038bd1b0c1868a3304fcb79dc01fa4b1fb209086b46ad86dff99e70652d4cb"
+    },
+    {
+      "path": "tools/release_manifest.py",
+      "before_sha256": "51646b6dea452591fc8cd48161696535584ee6e993b228ed809b8056f68a77b7",
+      "after_sha256": "f996d272731b2f09088d3886b878cd6f703654e587ac0b13b8024ba3280cedac"
+    },
+    {
+      "path": "build/scripts/vivado/create_project.tcl",
+      "before_sha256": "de2550706085062d77c84bfd6b6d85fc6686bdb0041469efd1e8c2e3af5a4214",
+      "after_sha256": "0e096bc262f6eca964dc7bbf5a11ed7c6bd5b3f2d3ab3388d4985872694cba1f"
+    }
+  ],
+  "historical_receipts_unchanged": true
+}

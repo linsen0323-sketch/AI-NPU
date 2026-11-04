@@ -1,0 +1,117 @@
+navigator_linux:~/NPU100_DRIVER_20261102$ cd /home/petalinux/NPU100_DRIVER_CLOCKFIX_20261102
+navigator_linux:~/NPU100_DRIVER_CLOCKFIX_20261102$ chmod +x npu_driver_info
+navigator_linux:~/NPU100_DRIVER_CLOCKFIX_20261102$ sudo sh replace_failed_driver.sh
+Password: 
+BUILD_ABI_REPORT.json: OK
+README_CN.txt: OK
+check_driver.sh: OK
+libnpu_camera.so: OK
+npu_driver_info: OK
+npu_driver_info.c: OK
+replace_failed_driver.sh: OK
+unified_npu.ko: OK
+unified_npu_uapi.h: OK
+/proc/config.gz: OK
+/boot/BOOT.BIN: OK
+/boot/boot.scr: OK
+/boot/image.ub: OK
+/sys/firmware/devicetree/base/memory@0/reg: OK
+/sys/firmware/devicetree/base/reserved-memory/npu-runtime@10000000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/assigned-clock-rates: OK
+DRIVER_CHECK_OK: package, kernel configuration, boot files and live DT match.
+CHECK_ONLY: no module loaded, device opened, PL MMIO or DDR accessed.
+FAILED_PROBE_MODULE_REMOVED: no bound device or module references existed.
+BUILD_ABI_REPORT.json: OK
+README_CN.txt: OK
+check_driver.sh: OK
+libnpu_camera.so: OK
+npu_driver_info: OK
+npu_driver_info.c: OK
+replace_failed_driver.sh: OK
+unified_npu.ko: OK
+unified_npu_uapi.h: OK
+/proc/config.gz: OK
+/boot/BOOT.BIN: OK
+/boot/boot.scr: OK
+/boot/image.ub: OK
+/sys/firmware/devicetree/base/memory@0/reg: OK
+/sys/firmware/devicetree/base/reserved-memory/npu-runtime@10000000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/reg: OK
+/sys/firmware/devicetree/base/npu-runtime@43c10000/assigned-clock-rates: OK
+DRIVER_CHECK_OK: package, kernel configuration, boot files and live DT match.
+INFO_OK: region=0 FRONTEND phys=0x43c10000 size=0x00008000 flags=0x00000000
+INFO_OK: region=1 GRAPH phys=0x43c18000 size=0x00008000 flags=0x00000000
+INFO_OK: region=2 RAW phys=0x12000000 size=0x02000000 flags=0x00000001
+INFO_OK: region=3 MODELS phys=0x14000000 size=0x06000000 flags=0x00000001
+INFO_OK: region=4 WORKSPACE phys=0x1a000000 size=0x01000000 flags=0x00000001
+INFO_OK: region=5 COCO phys=0x1b000000 size=0x01000000 flags=0x00000001
+INFO_OK: region=6 CONTROL phys=0x41200000 size=0x00010000 flags=0x00000000
+INFO_OK: region=7 STATS phys=0x41210000 size=0x00010000 flags=0x00000000
+DRIVER_INFO_PASS: ABI 3 and all eight driver windows match.
+No PL registers or DDR were accessed; PL identity and inference remain unverified.
+DRIVER_LOAD_PASS: module and INFO metadata verified; module remains loaded.
+No automatic startup, reboot, FPGA configuration, PL MMIO or model DDR load occurred.
+Recent kernel log follows, including the actual acquired FCLK rates.
+e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+usbcore: registered new interface driver usb-storage
+i2c_dev: i2c /dev entries driver
+cdns-wdt f8005000.watchdog: Xilinx Watchdog Timer with timeout 10s
+EDAC MC: ECC not enabled
+Xilinx Zynq CpuIdle Driver started
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci-pltfm: SDHCI platform and OF driver helper
+clocksource: ttc_clocksource: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 537538477 ns
+timer #0 at (ptrval), irq=40
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+armv7-pmu f8891000.pmu: hw perfevents: no interrupt-affinity property, guessing.
+hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 (8000003f) counters available
+mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+fpga_manager fpga0: Xilinx Zynq FPGA Manager registered
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+can: controller area network core
+NET: Registered PF_CAN protocol family
+can: raw protocol
+can: broadcast manager protocol
+can: netlink gateway - max_hops=1
+Registering SWP/SWPB emulation handler
+mmc0: new high speed SDHC card at address aaaa
+mmcblk0: mmc0:aaaa SC16G 14.8 GiB
+ mmcblk0: p1 p2
+of-fpga-region fpga-region: FPGA Region probed
+of_cfs_init
+of_cfs_init: OK
+clk: Disabling unused clocks
+ALSA device list:
+  No soundcards found.
+EXT4-fs (mmcblk0p2): orphan cleanup on readonly fs
+EXT4-fs (mmcblk0p2): mounted filesystem 8f156724-ca98-409d-b62b-b9d11ae2f0ba ro with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel image (initmem) memory: 1024K
+Run /sbin/init as init process
+  with arguments:
+    /sbin/init
+  with environment:
+    HOME=/
+    TERM=linux
+FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+udevd[82]: starting version 3.2.14
+random: crng init done
+udevd[83]: starting eudev-3.2.14
+macb e000b000.ethernet enx000a35001e53: renamed from eth0
+EXT4-fs (mmcblk0p2): re-mounted 8f156724-ca98-409d-b62b-b9d11ae2f0ba r/w.
+macb e000b000.ethernet enx000a35001e53: PHY [e000b000.ethernet-ffffffff:00] driver [Generic PHY] (irq=POLL)
+macb e000b000.ethernet enx000a35001e53: configuring for phy/rgmii-id link mode
+macb e000b000.ethernet enx000a35001e53: Link is Up - 1Gbps/Full - flow control tx
+unified_npu: loading out-of-tree module taints kernel.
+unified-npu 43c10000.npu-runtime: probe with driver unified-npu failed with error -34
+unified-npu 43c10000.npu-runtime: FCLK rates: fclk0=99999999 Hz fclk1=99999999 Hz (nominal 100 MHz)
+FAILED_DRIVER_REPLACEMENT_PASS: INFO metadata checked; no PL MMIO or DDR access.
+navigator_linux:~/NPU100_DRIVER_CLOCKFIX_20261102$ 

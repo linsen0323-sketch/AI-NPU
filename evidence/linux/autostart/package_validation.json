@@ -1,0 +1,350 @@
+{
+  "scope": "HOST_FIXTURES_AND_QEMU_ARM_SOFTWARE_NO_BOARD_DEPLOYMENT",
+  "result": "PASS",
+  "original_sysv_image_audit": {
+    "scope": "READ_ONLY_ORIGINAL_SD_IMAGE_SYSV_INIT_AUDIT",
+    "board_current_files_verified": false,
+    "image": "/mnt/d/PetaLinux_Installer/petalinux-sdimage.wic/petalinux-sdimage.wic",
+    "image_bytes": 6442455040,
+    "loop_mapping": {
+      "name": "/dev/loop0",
+      "sizelimit": 4294967296,
+      "offset": 2147487744,
+      "autoclear": false,
+      "ro": true,
+      "back-file": "/PetaLinux_Installer/petalinux-sdimage.wic/petalinux-sdimage.wic",
+      "dio": false,
+      "log-sec": 512
+    },
+    "init": "/sbin/init -> /sbin/init.sysvinit",
+    "default_runlevel": "5",
+    "boot_sysinit": "/etc/init.d/rcS -> exec /etc/init.d/rc S",
+    "multiuser_entry": "/etc/init.d/rc 5",
+    "start_convention": "/etc/rc[2345].d/S99npu100 -> ../init.d/npu100",
+    "stop_convention": "/etc/rc[016].d/K01npu100 -> ../init.d/npu100",
+    "ordering": [
+      "rc script runs K[0-9][0-9]* stop before all S* when previous is not N",
+      "rc script runs S* start in ordinary runlevels",
+      "runlevels0/6 invoke S* stop after K* stop",
+      "K01npu100 precedes K09sshd and S20sendsigs in0/6",
+      "rcS mounts root/filesystems and initializes udev/modules before runlevel5",
+      "S99npu100 follows S01networking and S09sshd in runlevel5",
+      "enable-only symlink installation need not invoke current manual daemon"
+    ],
+    "busybox_known_aliases": [
+      "/sbin/start-stop-daemon",
+      "/usr/bin/flock",
+      "/usr/bin/nohup",
+      "/usr/bin/setsid",
+      "/usr/bin/readlink",
+      "/usr/bin/logger"
+    ],
+    "busybox_binary_sha256": "84d1b35676671dc870b5364f8d307459eb77e0561e6d93fb29ccc2e6cf9a26f7",
+    "records": [
+      {
+        "operation": "stat",
+        "path": "/sbin/init",
+        "evidence": "stat_sbin_init.txt",
+        "bytes": 559,
+        "sha256": "7c965bc09efdece82bebc6b497c91986cde6027707dc82a8326c46d50178dc6e"
+      },
+      {
+        "operation": "stat",
+        "path": "/sbin/init.sysvinit",
+        "evidence": "stat_sbin_init.sysvinit.txt",
+        "bytes": 556,
+        "sha256": "79704575f88a5a5dbeda7694c5922457a91e51819a37efefb297a70356d28385"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/inittab",
+        "evidence": "cat_etc_inittab.txt",
+        "bytes": 1113,
+        "sha256": "7f21524e6caeab79462038dc9e592bdaa324bdb8a6ba64e0807cad76cae6c42d"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/init.d/rcS",
+        "evidence": "cat_etc_init.d_rcS.txt",
+        "bytes": 525,
+        "sha256": "19ce896144ff4c85b826fe3cd5f940ff5d41ec19b6bb56f2966215da7888c7be"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/init.d/rc",
+        "evidence": "cat_etc_init.d_rc.txt",
+        "bytes": 4407,
+        "sha256": "dc914f7bac4ec44ed39fc95b34d6250d6a8573633b5a7e16f74f0ff533d34312"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/default/rcS",
+        "evidence": "cat_etc_default_rcS.txt",
+        "bytes": 1313,
+        "sha256": "ef616800eaf2fcfe4e75f1f36abc77dcec6e181e824360e48bc0636a43dafc12"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/fstab",
+        "evidence": "cat_etc_fstab.txt",
+        "bytes": 685,
+        "sha256": "cbe6089a010c1e7f9164718f543705006d834f315bdb542d84bed69fb8717d39"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/init.d/sshd",
+        "evidence": "cat_etc_init.d_sshd.txt",
+        "bytes": 2029,
+        "sha256": "d82f45ab9f83031030f1182c833c1f055fb4aba6b17da942026b7778733fa8d5"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/init.d/modutils.sh",
+        "evidence": "cat_etc_init.d_modutils.sh.txt",
+        "bytes": 1362,
+        "sha256": "6e44ab57948d64b8d9e6c52a74c81ce86e809f0a4f05d33082a9326f711aa823"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/init.d/sendsigs",
+        "evidence": "cat_etc_init.d_sendsigs.txt",
+        "bytes": 483,
+        "sha256": "2c83a59b27989d531b09f5aec15bb5e64979763d32d558e54bedae7d03e2db24"
+      },
+      {
+        "operation": "cat",
+        "path": "/etc/busybox.links.nosuid",
+        "evidence": "cat_etc_busybox.links.nosuid.txt",
+        "bytes": 2622,
+        "sha256": "92d8f1ef948deef8d098f5ed55bf495c84dcef66813142467e4afe38ab112699"
+      },
+      {
+        "operation": "stat",
+        "path": "/etc/rc5.d/S09sshd",
+        "evidence": "stat_etc_rc5.d_S09sshd.txt",
+        "bytes": 554,
+        "sha256": "b8af8023b544cc8d0a19996d0a56ad164ab9027cc3c47c9073a84ae4c1468ba7"
+      },
+      {
+        "operation": "stat",
+        "path": "/etc/rcS.d/S04udev",
+        "evidence": "stat_etc_rcS.d_S04udev.txt",
+        "bytes": 554,
+        "sha256": "1ef372b4343951ca58ddeb69c5df10069734df5731c86c5777312277f19104cf"
+      },
+      {
+        "operation": "stat",
+        "path": "/sbin/start-stop-daemon",
+        "evidence": "stat_sbin_start-stop-daemon.txt",
+        "bytes": 559,
+        "sha256": "5e177a9c6faf79e8e72d4a7cdd7fb73582d18fc3597d8ea491c0212f6e922b0c"
+      },
+      {
+        "operation": "stat",
+        "path": "/usr/bin/flock",
+        "evidence": "stat_usr_bin_flock.txt",
+        "bytes": 559,
+        "sha256": "9ab75923e718e9c73b992b841605f785fbf0f2bb2fbca858384d53902c1f0e3f"
+      },
+      {
+        "operation": "stat",
+        "path": "/bin/busybox.nosuid",
+        "evidence": "stat_bin_busybox.nosuid.txt",
+        "bytes": 560,
+        "sha256": "56509a0c33a3a98ffd0937d04e217eae74aadf1a4c283e626a68d3d7d5c57eab"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rcS.d",
+        "evidence": "ls_-l_etc_rcS.d.txt",
+        "bytes": 1325,
+        "sha256": "66d2b31aa63244ddb8ced2694c92b98b629d172a74831ae10da232c118efde6c"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc0.d",
+        "evidence": "ls_-l_etc_rc0.d.txt",
+        "bytes": 1213,
+        "sha256": "edf2ead2bc1c7c4efe0c8c14eef6cddca03f73d9449bad749c36c909600d5797"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc1.d",
+        "evidence": "ls_-l_etc_rc1.d.txt",
+        "bytes": 855,
+        "sha256": "fa9e8749027bfb3bce6be52767609db6313e4250821d7a312ddde6938e2597d1"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc2.d",
+        "evidence": "ls_-l_etc_rc2.d.txt",
+        "bytes": 933,
+        "sha256": "d5408273bfbc7fa8f22f45c0a1b211eac0c5ca5ebab81571dfa4cac8fae72c49"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc3.d",
+        "evidence": "ls_-l_etc_rc3.d.txt",
+        "bytes": 933,
+        "sha256": "8b29d709b55c8a8928204bbec92cdfbba4fd299a86be4a280268ee02a191ba67"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc4.d",
+        "evidence": "ls_-l_etc_rc4.d.txt",
+        "bytes": 860,
+        "sha256": "f92958c5fd2c0c079eb6af68506062b6f591e05651b12e17b654f328a74395c9"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc5.d",
+        "evidence": "ls_-l_etc_rc5.d.txt",
+        "bytes": 933,
+        "sha256": "fcc227029703c28e3f64675bdd06c3f656ba77d200f1a232083d665f32b1f08d"
+      },
+      {
+        "operation": "ls -l",
+        "path": "/etc/rc6.d",
+        "evidence": "ls_-l_etc_rc6.d.txt",
+        "bytes": 1215,
+        "sha256": "3c500dc1176acdf9069474dd836d0f2e6f2de3c23ab8173e3ddb0a68ad795a9b"
+      }
+    ],
+    "production_files_modified": false,
+    "image_modified": false
+  },
+  "test_reports": {
+    "validation_configure_autostart.json": {
+      "scope": "LOCAL_PRIVATE_FILESYSTEM_REAL_CHECKSUM_COPY_LINK_LOGIC_NO_BOARD_ACCESS",
+      "result": "PASS",
+      "cases": {
+        "check_only_no_writes_or_process_mutation": {
+          "result": "PASS",
+          "commands": [
+            [
+              "sha256sum",
+              "-c",
+              "FILES.sha256"
+            ],
+            [
+              "sha256sum",
+              "-c",
+              "FILES.sha256"
+            ],
+            [
+              "sh",
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/verify_after_boot.sh"
+            ],
+            [
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/python-runtime/python3",
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/runtime_check.py"
+            ],
+            [
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/python-runtime/python3",
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/runtime/preflight.py",
+              "--bundle",
+              "/home/petalinux/npu100_models",
+              "--boot-receipt",
+              "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/boot.sha256"
+            ]
+          ]
+        },
+        "sysv_mismatch": {
+          "result": "PASS",
+          "rejection": "SysV startup layout changed; existing files preserved: /etc/inittab"
+        },
+        "unrelated_init": {
+          "result": "PASS",
+          "rejection": "Existing unrelated init script preserved: /tmp/npu100_autostart_fixture_yht1c71z/etc/init.d/npu100"
+        },
+        "conflicting_link": {
+          "result": "PASS",
+          "rejection": "Existing conflicting runlevel entry preserved: /tmp/npu100_autostart_fixture_3996uuxu/etc/rc2.d/S99npu100"
+        },
+        "unrelated_startup_link": {
+          "result": "PASS",
+          "rejection": "Unrelated NPU startup entry needs review: /tmp/npu100_autostart_fixture_ei4wdq_k/etc/rc2.d/S98npu100_other"
+        },
+        "install_creates_exactly_seven_owned_links": {
+          "result": "PASS",
+          "links": [
+            "etc/rc0.d/K01npu100",
+            "etc/rc3.d/S99npu100",
+            "etc/rc1.d/K01npu100",
+            "etc/rc2.d/S99npu100",
+            "etc/rc4.d/S99npu100",
+            "etc/rc6.d/K01npu100",
+            "etc/rc5.d/S99npu100"
+          ]
+        },
+        "idempotent_install_only_refreshes_receipt": {
+          "result": "PASS"
+        },
+        "disable_only_owned_links_preserves_files_and_process": {
+          "result": "PASS"
+        }
+      },
+      "shell_syntax": {
+        "install_autostart.sh": "PASS",
+        "npu100.init": "PASS"
+      },
+      "mocked_inputs": [
+        "system_path_constants_and_Path_factory",
+        "kernel_machine_identity",
+        "fixture_config_sysv_module_hash_constants",
+        "root_uid",
+        "os.sync",
+        "insmod_presence",
+        "three_runtime_readonly_check_commands"
+      ],
+      "real_driver_or_process_operations": false,
+      "real_system_files_modified": false,
+      "source_files_modified": false
+    },
+    "service_private_validation.json": {
+      "scope": "HOST_PRIVATE_FILESYSTEM_AND_FAKE_CAMERA_PROCESSES_NO_BOARD_ACCESS",
+      "source": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/linux_autostart_20261102/service.py",
+      "source_sha256": "628d50d8ba690e8792cff78b90012fa5a269cedcdf326f417155e2195f1740f8",
+      "checks": [
+        "actual_child_ready_then_status",
+        "idempotent_start_preserves_single_child",
+        "actual_child_output_rotates_within_bounds",
+        "term_forwarded_after_exec_and_clean_child_exit",
+        "idempotent_stop",
+        "concurrent_starters_real_flock_allows_one_camera",
+        "manual_camera_owner_refused_without_signals",
+        "real_prerequisite_checksum_failure_before_module_or_child",
+        "unexpected_fault_latched_without_restart_or_retry",
+        "reused_pid_starttime_mismatch_never_signaled",
+        "same_pid_changed_argv_never_signaled"
+      ],
+      "production_files_modified": false,
+      "real_boot_or_opt_accessed": false,
+      "driver_opened": false,
+      "hardware_operations_mocked": true,
+      "retained_real_operations": [
+        "process identity",
+        "Popen shell exec",
+        "flock",
+        "selectors",
+        "bounded log rotation",
+        "TERM forwarding",
+        "state JSON",
+        "failure latch"
+      ],
+      "result": "PASS",
+      "source_unchanged_after_tests": true,
+      "all_private_fixture_processes_terminated": true
+    }
+  },
+  "arm_package_import": "PASS",
+  "shell_syntax": "PASS",
+  "frozen_hardware_files_unchanged": 61,
+  "existing_runtime_modules_unchanged": 4,
+  "existing_runtime_package_unchanged": true,
+  "module_sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+  "board_installation_performed": false,
+  "board_boot_autostart_verified": false,
+  "startup_inference": false,
+  "startup_preview": true
+}

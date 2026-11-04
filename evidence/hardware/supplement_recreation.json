@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "src/hardware layout, current npu100 recreation and recovered simulation fileset configuration only",
+  "project": "npu100",
+  "tool": "Vivado 2025.2",
+  "simsets": [
+    "sim_unit_wbuf",
+    "sim_unit_dma",
+    "sim_unit_round",
+    "sim_unit_maxpool_bulk",
+    "sim_unit_maxpool_scalar"
+  ],
+  "errors_or_critical_warnings": [],
+  "synthesis_executed": false,
+  "implementation_executed": false,
+  "simulation_executed": false,
+  "board_access": false,
+  "log_sha256": "677013e68894abcd361c6e57986cd7e6b59efbffb434c62b0c9c140f5de19fa1"
+}

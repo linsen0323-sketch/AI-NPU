@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-11-01T10:23:15.879351+00:00",
+  "status": "PASS",
+  "backend": "XSim 2025.2",
+  "mode": "candidate-only behavioral differential simulation",
+  "pyslang_version": "12.1.0",
+  "syntax_diagnostics": [],
+  "production_unchanged": true,
+  "marker": "TEST_PASS round_miter narrow=175194 default96=175194 issued=175242 cycles=183308 resets=17 shifts=-128..127 seed=498175e3",
+  "steps": [
+    {
+      "label": "compile",
+      "command": [
+        "D:\\FPGA\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_resnet_quant.sv",
+        "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\round_before.sv",
+        "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\tb_round_miter.sv"
+      ],
+      "returncode": 0,
+      "sha256": "9a396adea00597aa1591a470c9ca0d8b3ce3c240383855dc25ff665d5c5d99ca"
+    },
+    {
+      "label": "elaborate",
+      "command": [
+        "D:\\FPGA\\2025.2\\Vivado\\bin\\xelab.bat",
+        "--mt",
+        "2",
+        "--debug",
+        "typical",
+        "-s",
+        "round_miter",
+        "tb_round_miter"
+      ],
+      "returncode": 0,
+      "sha256": "be1ba4eb1c048134dc86c951d0396e080c6f0adc8dacdf9f6709c27f389b5aaa"
+    },
+    {
+      "label": "simulate",
+      "command": [
+        "D:\\FPGA\\2025.2\\Vivado\\bin\\xsim.bat",
+        "round_miter",
+        "--tclbatch",
+        "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/run.tcl"
+      ],
+      "returncode": 0,
+      "sha256": "a552a81401b70e03c4ce5ae4c2c8b7cf877deb8922ae6074ef0723451030cb0b"
+    }
+  ],
+  "files": [
+    {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_resnet_quant.sv",
+      "sha256": "6411fb0ea15ab94247adb22822a63b9746cb4e2241b6ee48d0a9c112d6057bf6"
+    },
+    {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\round_before.sv",
+      "sha256": "ace5f2990a7b9183f1c2af2c4e386e9cae7e81d1f9b03b21c3b2ad051b0639e6"
+    },
+    {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\tb_round_miter.sv",
+      "sha256": "3836f50ab92a8c95ec3bac2ec2d0d818ab15a3cc5b6dd89e5995cd596084615a"
+    },
+    {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_q16_vector_pipe.sv",
+      "sha256": "b277aab707ee19ff32b0ed67a08cba1dd9ac94619f24a82fb95a5c8f84499184"
+    },
+    {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\round_pipe_candidate\\rtl\\npu_conv_epilogue.sv",
+      "sha256": "279ab8e2dcf6021e3b036c2a02e69b0e430f83e66b250002f536ce0339c4d8b2"
+    }
+  ]
+}

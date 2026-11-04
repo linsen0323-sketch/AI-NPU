@@ -1,0 +1,45 @@
+/* Merge into the BASE DTB before Linux boots. All physical
+ * DDR is 0x00000000..0x40000000 (1 GiB). Linux retains 768 MiB outside the
+ * reserved 0x10000000..0x20000000 window.
+ * Any exported-memory/bare-metal mailbox in lower DDR must not be used by
+ * Linux/AMP without its own reservation. This runtime uses no 0x00f00100 mailbox.
+ */
+/ {
+    reserved-memory {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        ranges;
+        npu_reserved: npu-runtime@10000000 {
+            reg = <0x10000000 0x10000000>;
+            no-map;
+        };
+    };
+    unified_npu_runtime: npu-runtime@43c10000 {
+        compatible = "local,npu100-runtime-v3";
+        reg = <0x43c10000 0x8000>, <0x43c18000 0x8000>,
+              <0x41200000 0x10000>, <0x41210000 0x10000>;
+        reg-names = "frontend", "graph", "control", "stats";
+        clocks = <&clkc 15>, <&clkc 16>;
+        clock-names = "fclk0", "fclk1";
+        assigned-clocks = <&clkc 15>, <&clkc 16>;
+        assigned-clock-rates = <100000000>, <100000000>;
+        /* GPIO_ACTIVE_LOW = 1. Match gpio0's actual exported base-DT label. */
+        resnet-gpios = <&gpio0 12 1>;
+        neu-gpios = <&gpio0 11 1>;
+        memory-region = <&npu_reserved>;
+        /* HP1/HP2 are NONCOHERENT; do not add dma-coherent. */
+        status = "okay";
+    };
+};
+/* REQUIRED integration in system-user.dtsi: disable the GENERATED nodes for
+ * 0x41200000,0x41210000 and either 0x43c10000/0x43c18000 before this driver
+ * binds. For XSA labels control_gpio/stats_gpio, use:
+ *   &control_gpio { status = "disabled"; };
+ *   &stats_gpio { status = "disabled"; };
+ * Change labels to actual generated pl.dtsi labels; npu100 has no generated
+ * Linux DT to verify those labels against. Do not create duplicate dummy nodes.
+ * The custom node owns the AXI GPIO MMIO; gpiod owns only PS MIO12/MIO11.
+ * Remove/disable any other generated driver node overlapping these exact CSR
+ * pages. Do not bind generic-uio or another character driver to the same CSR.
+ * Bootloader configuration and FCLK0/FCLK1/reset readiness precede startup.
+ * No interrupts property: current hardware has no wired PS fabric interrupt. */

@@ -1,0 +1,18 @@
+[Unit]
+Description=Check npu100 boot prerequisites and immutable SD bundle
+After=local-fs.target systemd-modules-load.service
+RequiresMountsFor=/boot /home/petalinux/npu100_models
+Before=unified-npu.service
+
+[Service]
+Type=oneshot
+User=root
+# /etc/npu100/boot.sha256 is created at deployment from the newly generated,
+# matching boot artifacts. Absolute paths are required. This checks files;
+# matching PL must have been loaded by the configured boot chain already.
+ExecStart=/usr/bin/python3 /opt/npu100/preflight.py --bundle /home/petalinux/npu100_models --boot-receipt /etc/npu100/boot.sha256 --device /dev/unified-npu
+RemainAfterExit=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=false
+PrivateTmp=yes

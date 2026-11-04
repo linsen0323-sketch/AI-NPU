@@ -1,0 +1,87 @@
+{
+  "scope": "LOCAL_PRIVATE_FILESYSTEM_REAL_CHECKSUM_COPY_LINK_LOGIC_NO_BOARD_ACCESS",
+  "result": "PASS",
+  "cases": {
+    "check_only_no_writes_or_process_mutation": {
+      "result": "PASS",
+      "commands": [
+        [
+          "sha256sum",
+          "-c",
+          "FILES.sha256"
+        ],
+        [
+          "sha256sum",
+          "-c",
+          "FILES.sha256"
+        ],
+        [
+          "sh",
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/verify_after_boot.sh"
+        ],
+        [
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/python-runtime/python3",
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/runtime_check.py"
+        ],
+        [
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/python-runtime/python3",
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/runtime/preflight.py",
+          "--bundle",
+          "/home/petalinux/npu100_models",
+          "--boot-receipt",
+          "/tmp/npu100_autostart_fixture_7m88w0zw/opt/npu100-20261102/boot.sha256"
+        ]
+      ]
+    },
+    "sysv_mismatch": {
+      "result": "PASS",
+      "rejection": "SysV startup layout changed; existing files preserved: /etc/inittab"
+    },
+    "unrelated_init": {
+      "result": "PASS",
+      "rejection": "Existing unrelated init script preserved: /tmp/npu100_autostart_fixture_yht1c71z/etc/init.d/npu100"
+    },
+    "conflicting_link": {
+      "result": "PASS",
+      "rejection": "Existing conflicting runlevel entry preserved: /tmp/npu100_autostart_fixture_3996uuxu/etc/rc2.d/S99npu100"
+    },
+    "unrelated_startup_link": {
+      "result": "PASS",
+      "rejection": "Unrelated NPU startup entry needs review: /tmp/npu100_autostart_fixture_ei4wdq_k/etc/rc2.d/S98npu100_other"
+    },
+    "install_creates_exactly_seven_owned_links": {
+      "result": "PASS",
+      "links": [
+        "etc/rc0.d/K01npu100",
+        "etc/rc3.d/S99npu100",
+        "etc/rc1.d/K01npu100",
+        "etc/rc2.d/S99npu100",
+        "etc/rc4.d/S99npu100",
+        "etc/rc6.d/K01npu100",
+        "etc/rc5.d/S99npu100"
+      ]
+    },
+    "idempotent_install_only_refreshes_receipt": {
+      "result": "PASS"
+    },
+    "disable_only_owned_links_preserves_files_and_process": {
+      "result": "PASS"
+    }
+  },
+  "shell_syntax": {
+    "install_autostart.sh": "PASS",
+    "npu100.init": "PASS"
+  },
+  "mocked_inputs": [
+    "system_path_constants_and_Path_factory",
+    "kernel_machine_identity",
+    "fixture_config_sysv_module_hash_constants",
+    "root_uid",
+    "os.sync",
+    "insmod_presence",
+    "three_runtime_readonly_check_commands"
+  ],
+  "real_driver_or_process_operations": false,
+  "real_system_files_modified": false,
+  "source_files_modified": false
+}

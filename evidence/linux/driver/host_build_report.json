@@ -1,0 +1,41 @@
+{
+  "scope": "HOST_CROSS_COMPILE_ONLY_NO_BOARD_ACCESS",
+  "source_commit": "31626ef92ff11f9d3dee01926720572666fcc65a",
+  "kernel_release": "6.12.40-xilinx-g31626ef92ff1",
+  "source_archive_sha256": "71079f04c9900d15c8e9572ad6d14210b1dc4d064ffb803ab5ad4ed58a5593a2",
+  "config_deltas": {
+    "CONFIG_CC_CAN_LINK": {
+      "before": null,
+      "after": "y"
+    },
+    "CONFIG_CC_CAN_LINK_STATIC": {
+      "before": null,
+      "after": "y"
+    },
+    "CONFIG_CC_VERSION_TEXT": {
+      "before": "\"arm-amd-linux-gnueabi-gcc (GCC) 13.4.0\"",
+      "after": "\"arm-linux-gnueabihf-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\""
+    },
+    "CONFIG_GCC_VERSION": {
+      "before": "130400",
+      "after": "130300"
+    }
+  },
+  "production_software_unchanged": true,
+  "artifacts": {
+    "/home/dev/npu100_linux_build_20261102/software/runtime/linux/driver/unified_npu.ko": {
+      "bytes": 17364,
+      "sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30"
+    },
+    "/home/dev/npu100_linux_build_20261102/software/runtime/linux/app/libnpu_camera.so": {
+      "bytes": 51448,
+      "sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa"
+    },
+    "/home/dev/npu100_linux_build_20261102/kernel-output/Module.symvers": {
+      "bytes": 635127,
+      "sha256": "5ecd00489905f2c56a59cfa9ed4ee1b97ee5928b157de9a6d3b9be1e45b4ee96"
+    }
+  },
+  "board_module_loaded": false,
+  "board_inference_validated": false
+}

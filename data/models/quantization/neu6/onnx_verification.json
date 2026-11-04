@@ -1,0 +1,82 @@
+{
+  "onnx_check_model_pass": true,
+  "opset": 21,
+  "static_batch": 1,
+  "validation_samples": 12,
+  "errors": [
+    {
+      "max_abs": 32.717864990234375,
+      "mean_abs": 0.3211889863014221
+    },
+    {
+      "max_abs": 38.947906494140625,
+      "mean_abs": 0.3714351952075958
+    },
+    {
+      "max_abs": 45.95550537109375,
+      "mean_abs": 0.34029892086982727
+    },
+    {
+      "max_abs": 42.084808349609375,
+      "mean_abs": 0.2815570831298828
+    },
+    {
+      "max_abs": 41.21954345703125,
+      "mean_abs": 0.2666986584663391
+    },
+    {
+      "max_abs": 38.050048828125,
+      "mean_abs": 0.3683694899082184
+    },
+    {
+      "max_abs": 35.87469482421875,
+      "mean_abs": 0.26273855566978455
+    },
+    {
+      "max_abs": 23.991302490234375,
+      "mean_abs": 0.31173697113990784
+    },
+    {
+      "max_abs": 32.284576416015625,
+      "mean_abs": 0.27671119570732117
+    },
+    {
+      "max_abs": 38.439361572265625,
+      "mean_abs": 0.2861866056919098
+    },
+    {
+      "max_abs": 45.23712158203125,
+      "mean_abs": 0.28761035203933716
+    },
+    {
+      "max_abs": 57.138946533203125,
+      "mean_abs": 0.3377305865287781
+    }
+  ],
+  "graph_nodes": {
+    "Identity": 3,
+    "Constant": 419,
+    "Unsqueeze": 42,
+    "Slice": 12,
+    "Concat": 37,
+    "Mul": 242,
+    "Clip": 83,
+    "QuantizeLinear": 83,
+    "DequantizeLinear": 166,
+    "Shape": 92,
+    "ConstantOfShape": 83,
+    "Conv": 83,
+    "Sigmoid": 80,
+    "Add": 8,
+    "MaxPool": 3,
+    "Resize": 2,
+    "Reshape": 18,
+    "Transpose": 1,
+    "Expand": 6,
+    "Cast": 1,
+    "Exp": 1
+  },
+  "onnx_bytes": 9384257,
+  "onnx_sha256": "fb01d96c081215c515d847b7723d29ca521dbece36fd77023fff15bc460b38d9",
+  "runtime": "ORT CPU, graph optimizations disabled; throughput is not an FPGA metric"
+}

@@ -1,0 +1,26 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/FPGA/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_wbuf_native_behav xil_defaultlib.tb_wbuf_native xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_banked_buffer.sv" Line 8. Module npu_banked_buffer(ROW_W=7,TAG_W=8,RESERVE_PENDING_READ_PAGE=1'b1,READ_LATENCY=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_banked_buffer.sv" Line 8. Module npu_banked_buffer(ROW_W=7,TAG_W=8,RESERVE_PENDING_READ_PAGE=1'b1,READ_LATENCY=2,USE_NATIVE_WBUF=1'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_banked_buffer.sv" Line 8. Module npu_banked_buffer(ROW_W=7,TAG_W=8,RESERVE_PENDING_READ_PAGE=1'b1,READ_LATENCY=2,ENABLE_READ_BANK_MASK=1'b1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_banked_buffer.sv" Line 8. Module npu_banked_buffer(ROW_W=7,TAG_W=8,RESERVE_PENDING_READ_PAGE=1'b1,READ_LATENCY=2,ENABLE_READ_BANK_MASK=1'b1,USE_NATIVE_WBUF=1'b0) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,RAM...
+Compiling module xil_defaultlib.npu_banked_buffer(ROW_W=7,TAG_W=...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=16...
+Compiling module xil_defaultlib.npu_banked_buffer(ROW_W=7,TAG_W=...
+Compiling module xil_defaultlib.npu_banked_buffer(ROW_W=7,TAG_W=...
+Compiling module xil_defaultlib.npu_banked_buffer(ROW_W=7,TAG_W=...
+Compiling module xil_defaultlib.tb_wbuf_native
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_wbuf_native_behav

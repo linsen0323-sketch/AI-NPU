@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "layers": 83,
+  "all_weights_W8": true,
+  "scale_finite_positive": true,
+  "bias_int32_bounds_pass": true,
+  "weight_roundtrip_pass": true,
+  "W8A8": 59,
+  "W8A16": 24,
+  "rounding": "nearest ties-to-even",
+  "zero_point": 0,
+  "signed_narrow_ranges": [
+    [
+      -127,
+      127
+    ],
+    [
+      -32767,
+      32767
+    ]
+  ],
+  "accumulator_bits_distribution": {
+    "32": 83
+  }
+}

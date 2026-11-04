@@ -1,0 +1,33 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov  1 18:20:50 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/maxpool_source_words_scalar/xsim_script.tcl
+# xsim {maxpool_source_words_scalar} -autoloadwcfg -tclbatch {D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/run.tcl}
+Time resolution is 1 ps
+source D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/run.tcl
+## run all
+CASE_PASS bulk=0 case=1 k=5 legacy=0 generic=0 fault_mode=0 cycles=1495
+CASE_PASS bulk=0 case=2 k=9 legacy=0 generic=0 fault_mode=0 cycles=1696
+CASE_PASS bulk=0 case=3 k=13 legacy=0 generic=0 fault_mode=0 cycles=1695
+CASE_PASS bulk=0 case=4 k=5 legacy=0 generic=0 fault_mode=0 cycles=1700
+CASE_PASS bulk=0 case=5 k=9 legacy=0 generic=0 fault_mode=0 cycles=1693
+CASE_PASS bulk=0 case=6 k=13 legacy=0 generic=0 fault_mode=0 cycles=1495
+CASE_PASS bulk=0 case=7 k=3 legacy=0 generic=1 fault_mode=0 cycles=571
+CASE_PASS bulk=0 case=8 k=3 legacy=1 generic=1 fault_mode=0 cycles=457
+CASE_PASS bulk=0 case=9 k=5 legacy=0 generic=0 fault_mode=1 cycles=38
+CASE_PASS bulk=0 case=10 k=5 legacy=0 generic=0 fault_mode=9 cycles=897
+CASE_PASS bulk=0 case=11 k=5 legacy=0 generic=0 fault_mode=10 cycles=10
+CASE_PASS bulk=0 case=12 k=5 legacy=0 generic=0 fault_mode=11 cycles=15
+RESET_PASS bulk=0 state=15
+RESET_PASS bulk=0 state=17
+CASE_PASS bulk=0 case=15 k=13 legacy=0 generic=0 fault_mode=0 cycles=1693
+TEST_PASS maxpool_source_words BULK=0 cases=15 golden_pixels=472 compared_cycles=13559 scalar_reads=296 scalar_writes=249 bulk_reads=0 bulk_writes=0
+$finish called at time : 135720 ns : File "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/tb_maxpool_source_words.sv" Line 472
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 18:20:52 2026...

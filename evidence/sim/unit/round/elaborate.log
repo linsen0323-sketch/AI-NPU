@@ -1,0 +1,16 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/FPGA/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --mt 2 --debug typical -s round_miter tb_round_miter 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.npu_resnet_round_pipe_before(TAG...
+Compiling module work.npu_resnet_round_pipe(TAG_W=16,M...
+Compiling module work.npu_resnet_round_pipe(TAG_W=16)
+Compiling module work.tb_round_miter
+Built simulation snapshot round_miter

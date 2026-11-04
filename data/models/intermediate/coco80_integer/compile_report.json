@@ -1,0 +1,28 @@
+{
+  "source": "D:\\AI\\fpga_ai\\quantized\\coco80_yolox_s_256_20261029_run02",
+  "model_sha256": "003aebc8829624b5dac49178febe4d7ec37fabda93f6f2016b9ce7c080b054a8",
+  "status": "COMPILED_CANDIDATE_NOT_ACCEPTED",
+  "integer_execution": "NOT_RUN",
+  "rtl": "NOT_RUN",
+  "coco5000": "NOT_RUN",
+  "installed": false,
+  "wpk1": {
+    "model": "coco80_yolox_s_256_20261029_run02",
+    "feature_bits": 15,
+    "packed_records": 31,
+    "distinct_weight_tensors": 31,
+    "reconstructed_OIHW_bytes": 6150528,
+    "original_ddr_bytes": 9764864,
+    "packed_ddr_bytes": 15917056,
+    "parent_sha256": "760a1d2cf6fb26b65404ad9757c1f2f9b3679358777db108dbf851adc2c5e0ee",
+    "candidate_sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf"
+  },
+  "workspace_bytes": 7864320,
+  "operators": 368,
+  "precision": {
+    "W8A8": 59,
+    "W8A16": 24
+  },
+  "compiler_sha256": "ca2312f9d99d2f59d9ea867472ccc9c02a2de6d106fd6114ab3db4f59e1e509f",
+  "package_sha256": "c690dee33ea9a7d27dc0ed38c1103e8e5fbfe30f2fc85107ea18db6c602d7a61"
+}

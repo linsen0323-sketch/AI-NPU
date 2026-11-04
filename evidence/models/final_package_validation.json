@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "local_file_integrity_and_binary_contract_only",
+  "board_test_executed": false,
+  "inference_executed": false,
+  "models": [
+    {
+      "id": 1,
+      "name": "resnet18_unified_160",
+      "bytes": 11325440,
+      "sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+      "descriptor_and_memory_contract": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "yolox_s_a_256",
+      "bytes": 15888384,
+      "sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+      "descriptor_and_memory_contract": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "yolox_s_coco80_256",
+      "bytes": 15917056,
+      "sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+      "descriptor_and_memory_contract": "PASS"
+    }
+  ],
+  "packaged_files_verified": 316,
+  "verification_basis": {
+    "historical_sha256": 293,
+    "layout_receipt_sha256": 23
+  },
+  "historical_ledgers_modified": false
+}

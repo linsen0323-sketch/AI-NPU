@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "path": "evidence/sim/unit/wbuf/waveform.wdb",
+      "ignored": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "path": "data/datasets/neu_cls/files.json",
+      "ignored": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "path": "work/generated.wdb",
+      "ignored": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "check": "curated_waveform_git_lfs",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "isolated Git attributes/ignore check; no Git repository initialized in submission"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "HOST_PRIVATE_FILESYSTEM_AND_FAKE_CAMERA_PROCESSES_NO_BOARD_ACCESS",
+  "source": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/linux_autostart_20261102/service.py",
+  "source_sha256": "628d50d8ba690e8792cff78b90012fa5a269cedcdf326f417155e2195f1740f8",
+  "checks": [
+    "actual_child_ready_then_status",
+    "idempotent_start_preserves_single_child",
+    "actual_child_output_rotates_within_bounds",
+    "term_forwarded_after_exec_and_clean_child_exit",
+    "idempotent_stop",
+    "concurrent_starters_real_flock_allows_one_camera",
+    "manual_camera_owner_refused_without_signals",
+    "real_prerequisite_checksum_failure_before_module_or_child",
+    "unexpected_fault_latched_without_restart_or_retry",
+    "reused_pid_starttime_mismatch_never_signaled",
+    "same_pid_changed_argv_never_signaled"
+  ],
+  "production_files_modified": false,
+  "real_boot_or_opt_accessed": false,
+  "driver_opened": false,
+  "hardware_operations_mocked": true,
+  "retained_real_operations": [
+    "process identity",
+    "Popen shell exec",
+    "flock",
+    "selectors",
+    "bounded log rotation",
+    "TERM forwarding",
+    "state JSON",
+    "failure latch"
+  ],
+  "result": "PASS",
+  "source_unchanged_after_tests": true,
+  "all_private_fixture_processes_terminated": true
+}

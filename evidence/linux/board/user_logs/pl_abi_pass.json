@@ -1,0 +1,38 @@
+{
+  "scope": "READ_ONLY_INFO_AND_PL_CSR_READS_NO_DDR_MAPPING",
+  "result": "PL_ABI_PASS",
+  "registers": {
+    "frontend_magic": 1347571761,
+    "frontend_version": 8,
+    "camera_feature": 1128353074,
+    "live_feature": 1279874609,
+    "overlay_feature": 1331055667,
+    "build_id": 638648580,
+    "caps": 525063,
+    "keys_feature": 1262836017,
+    "graph_magic": 1313296433,
+    "graph_extension": 2,
+    "graph_clock_hz": 100000000,
+    "wire_model_mask": 10,
+    "graph_opt_magic": 1330664497,
+    "graph_opt_features": 15,
+    "graph_dia_features": 1145651456,
+    "graph_status": 0,
+    "graph_control": 0,
+    "graph_mode": 4,
+    "graph_result_pending": 0,
+    "frontend_fault": 0,
+    "display_fault": 0,
+    "camera_control": 0,
+    "camera_status": 2561,
+    "sensor_frames": 166399,
+    "complete_frames": 0
+  },
+  "required_features": {
+    "1": 2,
+    "3": 15,
+    "4": 15
+  },
+  "models_loaded": false,
+  "inference_tested": false
+}

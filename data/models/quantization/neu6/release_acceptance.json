@@ -1,0 +1,7 @@
+{
+  "full_onnx_validation_pass": true,
+  "accuracy_budget_percentage_points": 1.0,
+  "onnx_sha256": "fb01d96c081215c515d847b7723d29ca521dbece36fd77023fff15bc460b38d9",
+  "weights_sha256": "04a2896d28f0dfc45df41624e2d76de4f0331fd8d1c7ad082b357f45a78a9ea5",
+  "fpga_integer_and_board_validation": false
+}

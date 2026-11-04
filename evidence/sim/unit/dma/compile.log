@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/dma_nonempty_candidate/npu_stream_dma_before.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_stream_dma_before
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/dma_nonempty_candidate/npu_stream_dma.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_stream_dma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/dma_nonempty_candidate/tests/tb_dma_nonempty.sv" into library work
+INFO: [VRFC 10-311] analyzing module dma_nonempty_case
+INFO: [VRFC 10-311] analyzing module tb_dma_nonempty

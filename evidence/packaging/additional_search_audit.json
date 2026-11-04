@@ -1,0 +1,25 @@
+{
+  "scope": "additional user-selected source search and integration",
+  "paths_indexed": 77512,
+  "additional_source_records": 66,
+  "source_or_target_issues": [],
+  "broken_local_document_links": [],
+  "current_hardware_layout": "src/hardware",
+  "production_rtl_replaced": false,
+  "final_model_binaries_changed": false,
+  "training_or_quantization_executed": false,
+  "new_simulation_executed": false,
+  "board_access": false,
+  "passed": true,
+  "existing_source_record_updates": [
+    {
+      "path": "docs/model_gaps.md",
+      "before_sha256": "f56cd40d231a7d2d3972bd8b90fbc6b4e776d0a85e443d579e5b6b46a1df8cf0",
+      "after_sha256": "b9464759209dd4f405f254416536065f396b50836071397e70736bd22131bb2c"
+    }
+  ],
+  "all_mapped_target_records_verified": 602,
+  "current_npu100_rtl_files_verified": 61,
+  "target_hash_issues": [],
+  "layout_recreation": "PASS; five recovered simulation filesets configured"
+}

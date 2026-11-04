@@ -1,0 +1,42 @@
+{
+  "verdict": "PASS",
+  "tool": "Vivado 2025.2 XSim",
+  "part": "xc7z020clg400-2",
+  "terminal_marker": [
+    "cycles=13775 writes=10073 reads=2390 responses=2388 conflicts=630 stalls=1974 masked_reads=1586 zero_writes=5 simultaneous=461 seed=08ba51e7"
+  ],
+  "source": {
+    "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\source\\acceleration\\unified_npu\\rtl\\npu_banked_buffer.sv": {
+      "sha256": "235224b5ac722428c10a5a7acf3846066ca91dd04fb35217753d9179fbcf0e2b",
+      "syntax_diagnostics": 0
+    },
+    "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\tb_wbuf_native.sv": {
+      "sha256": "babcbc34fca3ac89d0592984568da85030684c8f883a55c5be38452843fe5749",
+      "syntax_diagnostics": 0
+    }
+  },
+  "log": {
+    "xvlog.log": {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\xvlog.log",
+      "sha256": "8d0a007283c7c2a206131f2140eb36928fd6a8d011430033aa0d6fa022c34a02",
+      "bytes": 489
+    },
+    "elaborate.log": {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\elaborate.log",
+      "sha256": "2bfaee557c7fd557d14c89ed6891c971c4e7cd74e19e254a66af5837f4258fca",
+      "bytes": 2608
+    },
+    "simulate.log": {
+      "path": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\timing_closure_20261101_175338\\wbuf_sim\\project\\wbuf_native.sim\\sim_1\\behav\\xsim\\simulate.log",
+      "sha256": "6dbfee1ad372c5daf7cf3713bc93279308c93db9907869e10c044acacce16343",
+      "bytes": 104465
+    }
+  },
+  "failures": [],
+  "limits": [
+    "Behavioral module verification only",
+    "No full-network Golden proof",
+    "No resource or timing improvement claimed by this script",
+    "Two queued reads are intentionally discarded by reset"
+  ]
+}

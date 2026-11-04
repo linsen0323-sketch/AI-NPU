@@ -1,0 +1,144 @@
+{
+  "created": "2026-11-01T19:31:39.463031",
+  "scope": "isolated candidate only; production source unchanged",
+  "baseline_production_sha256": "015172020834EB45F937467FC1D48A8D67041A6B3626C6004A5E59F6497E321F",
+  "candidate_sha256": "6D5FC7201EA5EAC6DFE23D803EC6CFA760CAE2D580F2CF493844205723912CEF",
+  "full_public_output_ports": 45,
+  "files": [
+    {
+      "path": "candidate.patch",
+      "bytes": 2797,
+      "sha256": "2D9FDC983406DDA4C2B34202776A0E02168D79B7C2E6C963678B7095205EDDA8"
+    },
+    {
+      "path": "coverage_results.json",
+      "bytes": 4546,
+      "sha256": "493621B507BE1C97A9E207652F4963C5044C2F9DE9BBBA10E112ECB00900B77F"
+    },
+    {
+      "path": "generate_miter.py",
+      "bytes": 4699,
+      "sha256": "84D54E400A5E32E45FCB62E48C4BC44F80EFAA9A07868F1CFAAF8970DE2E8647"
+    },
+    {
+      "path": "npu_stream_dma.sv",
+      "bytes": 15702,
+      "sha256": "6D5FC7201EA5EAC6DFE23D803EC6CFA760CAE2D580F2CF493844205723912CEF"
+    },
+    {
+      "path": "npu_stream_dma_before.sv",
+      "bytes": 15440,
+      "sha256": "D2C26B12171D6F8D87B2F6E22234EE5BAFDB26A70EDC44B59D6249F0AE7A7EAA"
+    },
+    {
+      "path": "package_evidence.py",
+      "bytes": 9107,
+      "sha256": "CEBEB32359BE0ADB99A16E35A09218414715EDC5373A3AE5A061A4965CF521DF"
+    },
+    {
+      "path": "results/compile.log",
+      "bytes": 846,
+      "sha256": "4BB77E216EFF8FAD50FAD0114DE77792DC7528BD1210B9654ADF7A7279DEFE3C"
+    },
+    {
+      "path": "results/dfx_runtime.txt",
+      "bytes": 113,
+      "sha256": "398361591B57B6E989320060693B33C7A147D7AB7114C847CF421C46ACB8987E"
+    },
+    {
+      "path": "results/elaborate.log",
+      "bytes": 1606,
+      "sha256": "FF7AF296B654F8C6160F32F3771A3FD0F7F7C1EB64D5328C2A7C6B39661A3804"
+    },
+    {
+      "path": "results/first_pass/compile.log",
+      "bytes": 846,
+      "sha256": "4BB77E216EFF8FAD50FAD0114DE77792DC7528BD1210B9654ADF7A7279DEFE3C"
+    },
+    {
+      "path": "results/first_pass/elaborate.log",
+      "bytes": 1606,
+      "sha256": "FF7AF296B654F8C6160F32F3771A3FD0F7F7C1EB64D5328C2A7C6B39661A3804"
+    },
+    {
+      "path": "results/first_pass/simulate.log",
+      "bytes": 791,
+      "sha256": "D1D6F3B947A6AE3B8F29219A9BAE4CB1B8D32628531902AD5015CA98FF50FF9D"
+    },
+    {
+      "path": "results/first_pass/xelab.log",
+      "bytes": 1575,
+      "sha256": "34EDBC1BDB370B2E070EE43DEBB05A6648600865FA112E2C24B00411038F59BA"
+    },
+    {
+      "path": "results/first_pass/xsim.log",
+      "bytes": 1705,
+      "sha256": "93FDA284B63A1AD57E3B1569BF14FCE1270E031007F6E33C15A5CA3AC1A26B02"
+    },
+    {
+      "path": "results/first_pass/xvlog.log",
+      "bytes": 839,
+      "sha256": "C3069B0110DE4D2B28F99AE9F5D259B9A96BD53DEA6189F75110CDEC09026AE9"
+    },
+    {
+      "path": "results/simulate.log",
+      "bytes": 29299,
+      "sha256": "2D07380AB7CD36F22DAF571F91884845A7D26C084D274338A8CB899C1FFA3B23"
+    },
+    {
+      "path": "results/xelab.log",
+      "bytes": 1575,
+      "sha256": "34EDBC1BDB370B2E070EE43DEBB05A6648600865FA112E2C24B00411038F59BA"
+    },
+    {
+      "path": "results/xsim.log",
+      "bytes": 29525,
+      "sha256": "8FE2B6D4C647524DA1857D28B4A96F6BB8F696E945F84D219CFFA33AEEA06F7E"
+    },
+    {
+      "path": "results/xsim_211552.backup.log",
+      "bytes": 1705,
+      "sha256": "93FDA284B63A1AD57E3B1569BF14FCE1270E031007F6E33C15A5CA3AC1A26B02"
+    },
+    {
+      "path": "results/xsim_212604.backup.log",
+      "bytes": 29525,
+      "sha256": "CCBF6560F97430B42228490EF4CD7E06313BDCB7F7212521423C9DFFE00C304A"
+    },
+    {
+      "path": "results/xvlog.log",
+      "bytes": 839,
+      "sha256": "C3069B0110DE4D2B28F99AE9F5D259B9A96BD53DEA6189F75110CDEC09026AE9"
+    },
+    {
+      "path": "run.ps1",
+      "bytes": 1121,
+      "sha256": "6428931E1FB99D901CE8816B8C8FCF5BC43026BC470008FD9438C6CF7951BBB9"
+    },
+    {
+      "path": "run.tcl",
+      "bytes": 13,
+      "sha256": "6218FFA4F2392F3C61113605D4AB2CD023186E11F1DA826B920E510A9A797EFB"
+    },
+    {
+      "path": "tests/dma_environment.svh",
+      "bytes": 13210,
+      "sha256": "CBCEAEFCE11E3372AC17D84CE8E405AA728C07388934A47C71FC7F523618B209"
+    },
+    {
+      "path": "tests/public_ports.json",
+      "bytes": 4688,
+      "sha256": "D7BBCB8338C86E3104B1C5D0D0E552DA452CFD78EEBC9161505F0BD20412071B"
+    },
+    {
+      "path": "tests/tb_dma_nonempty.sv",
+      "bytes": 16084,
+      "sha256": "6BEBE1C0D29F31B7DDC4594B3F290B249E3021E6C70D2C105CA5D2DE0DD8D079"
+    },
+    {
+      "path": "VALIDATION_REPORT.md",
+      "bytes": 6111,
+      "sha256": "05C11F72E58EDCA84E742C1BCA190FED912BB9BA8CFA848F8A68A41D8236E535"
+    }
+  ]
+}

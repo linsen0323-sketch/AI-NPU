@@ -1,0 +1,75 @@
+{
+  "scope": "LAYOUT_AND_FILE_CONSTRUCTION_CHECKS_NO_SYNTHESIS_NO_SIMULATION_NO_BOARD",
+  "moved_files": 342,
+  "path_adapted_files": 38,
+  "core_source_files_unchanged": 107,
+  "frozen_model_and_third_party_files_unchanged": 246,
+  "source_identity_issues": [],
+  "python_modules_ast_checked": 197,
+  "python_syntax_issues": [],
+  "model_contract_validation": {
+    "status": "PASS",
+    "scope": "local_file_integrity_and_binary_contract_only",
+    "board_test_executed": false,
+    "inference_executed": false,
+    "models": [
+      {
+        "id": 1,
+        "name": "resnet18_unified_160",
+        "bytes": 11325440,
+        "sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+        "descriptor_and_memory_contract": "PASS"
+      },
+      {
+        "id": 3,
+        "name": "yolox_s_a_256",
+        "bytes": 15888384,
+        "sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+        "descriptor_and_memory_contract": "PASS"
+      },
+      {
+        "id": 4,
+        "name": "yolox_s_coco80_256",
+        "bytes": 15917056,
+        "sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+        "descriptor_and_memory_contract": "PASS"
+      }
+    ],
+    "packaged_files_verified": 316,
+    "verification_basis": {
+      "historical_sha256": 293,
+      "layout_receipt_sha256": 23
+    },
+    "historical_ledgers_modified": false
+  },
+  "runtime_model_rebuild": {
+    "status": "PASS",
+    "scope": "file_construction_and_byte_identity_only",
+    "inference_executed": false,
+    "models": [
+      {
+        "id": 1,
+        "path": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\relocation_model_rebuild\\resnet18\\ddr.bin",
+        "sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+        "expected": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+        "matches": true
+      },
+      {
+        "id": 3,
+        "path": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\relocation_model_rebuild\\neu6\\ddr.bin",
+        "sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+        "expected": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+        "matches": true
+      },
+      {
+        "id": 4,
+        "path": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\relocation_model_rebuild\\coco80_build\\wpk1\\ddr.bin",
+        "sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+        "expected": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+        "matches": true
+      }
+    ]
+  },
+  "historical_ledgers_modified": false,
+  "final_release_manifests_refreshed": false
+}

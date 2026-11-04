@@ -1,0 +1,7 @@
+{
+  "result": "SERVICE_STATUS",
+  "managed_process_alive": false,
+  "state": {},
+  "manual_processes": [],
+  "failure": {}
+}

@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/rtl/npu_resnet_quant.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_resnet_quant
+INFO: [VRFC 10-311] analyzing module npu_resnet_product_pipe
+INFO: [VRFC 10-311] analyzing module npu_resnet_round_pipe
+INFO: [VRFC 10-311] analyzing module npu_resnet_round_sat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/round_before.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_resnet_round_pipe_before
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/tb_round_miter.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_round_miter

@@ -1,0 +1,29 @@
+/dts-v1/;
+/plugin/;
+/* Optional BOOT-TIME overlay, never apply/reload while this runtime is open.
+ * The no-map reservation must already exist in the base DT before Linux uses
+ * RAM. Requires base DT symbols npu_reserved, clkc, gpio0; adapt actual labels.
+ * Disable conflicting generated AXI GPIO/CSR nodes in the base DT. */
+/ {
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <1>;
+            npu-runtime@43c10000 {
+                compatible = "local,npu100-runtime-v3";
+                reg = <0x43c10000 0x8000>, <0x43c18000 0x8000>,
+                      <0x41200000 0x10000>, <0x41210000 0x10000>;
+                reg-names = "frontend", "graph", "control", "stats";
+                clocks = <&clkc 15>, <&clkc 16>;
+                clock-names = "fclk0", "fclk1";
+                assigned-clocks = <&clkc 15>, <&clkc 16>;
+                assigned-clock-rates = <100000000>, <100000000>;
+                resnet-gpios = <&gpio0 12 1>;
+                neu-gpios = <&gpio0 11 1>;
+                memory-region = <&npu_reserved>;
+                status = "okay";
+            };
+        };
+    };
+};

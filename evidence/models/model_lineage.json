@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "selection": "Final npu100 SD manifest and execution-manifest hash closure",
+  "source_compiler_sha256": "ca2312f9d99d2f59d9ea867472ccc9c02a2de6d106fd6114ab3db4f59e1e509f",
+  "compiler_source_bound_by_final_coco_compile_report": true,
+  "models": [
+    {
+      "model_id": 1,
+      "name": "resnet18_unified_160",
+      "runtime_sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+      "aipkg_sha256": "a96b1d4b1dedb4e245d50b61ed61e9eb7f211bb85fc214d549ecffc37f41557a",
+      "execution_plan_sha256": "e1949ef9d1c9bcc48b0220a072909184e2094fd3daac73c109c98abfed34e147",
+      "historical_source": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\unified_npu\\models\\fusion_display_20261025\\resnet18_unified_160\\model.aipkg",
+      "parent_package_sha256": "afb8af44f9c754709e2293c76c9b00966b0b8f87887daf6002ed86d2f97b1af5",
+      "preserved_execution_manifest": "models/runtime/bundle/models/m1/execution_manifest.json",
+      "match": true
+    },
+    {
+      "model_id": 3,
+      "name": "yolox_s_a_256",
+      "runtime_sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+      "aipkg_sha256": "a3ce72c5169111b4930a9de7373b88b3f89804a40e49017855f52a43f6ce0184",
+      "execution_plan_sha256": "c27f5d9c424fe55d01f5ecd21f289606d169da7b8eeca3d67c0982c42bd93984",
+      "historical_source": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\verification\\dma64_load_20261027\\runtime_models\\yolox_s_a_256\\model.aipkg",
+      "parent_package_sha256": "7e266f6dd4141d7ecc9f368f8331bdababf81fe92814db9b17a878b503a92477",
+      "preserved_execution_manifest": "models/runtime/bundle/models/m3/execution_manifest.json",
+      "match": true
+    },
+    {
+      "model_id": 4,
+      "name": "yolox_s_coco80_256",
+      "runtime_sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+      "aipkg_sha256": "3af1ab868365325da13b38f7841baed19664349fd67bde32104b360694128ca7",
+      "execution_plan_sha256": "9b99fb3b88c5d7d2c09be4cb5d72b8314856e379b7f636a9dce357363facaa50",
+      "historical_source": "D:\\AI_acceleration\\FPGA_Projects\\dual_display\\acceleration\\verification\\row_coco_rgb_20261029\\coco80_runtime_candidate\\wpk1\\model.aipkg",
+      "parent_package_sha256": "0692a39cedeabba8a1b1d701455d91eb7115ffbf57d3a75e890368358435b784",
+      "preserved_execution_manifest": "models/runtime/bundle/coco80/execution_manifest.json",
+      "match": true
+    }
+  ],
+  "notes": [
+    "Historical manifests retain historical verification flags and absolute provenance paths.",
+    "No old RTL, PS application or unrelated model was imported with host tools."
+  ]
+}

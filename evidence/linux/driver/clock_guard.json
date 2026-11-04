@@ -1,0 +1,116 @@
+{
+  "scope": "NATIVE_EXTRACTED_EXPRESSION_TEST_AND_ARM_COMPILE_ONLY_NO_BOARD_ACCESS",
+  "result": "PASS",
+  "board_clock_rate_measured": false,
+  "module_loaded": false,
+  "source_sha256": "79ddea7490dd4a522e61caf022184c9e82055350110ce2718405837b9b138f71",
+  "source_unchanged": true,
+  "extracted_expression": "fclk0_hz < NPU_CLOCK_HZ - NPU_CLOCK_ROUNDING_HZ ||\n        fclk0_hz > NPU_CLOCK_HZ + NPU_CLOCK_ROUNDING_HZ ||\n        fclk1_hz < NPU_CLOCK_HZ - NPU_CLOCK_ROUNDING_HZ ||\n        fclk1_hz > NPU_CLOCK_HZ + NPU_CLOCK_ROUNDING_HZ",
+  "extracted_defines": [
+    "#define NPU_CLOCK_HZ 100000000UL",
+    "#define NPU_CLOCK_ROUNDING_HZ 1UL"
+  ],
+  "native_pair_count": 81,
+  "accepted_pairs": 9,
+  "rejected_pairs": 72,
+  "explicit_arm_ulong_max_checks": 2,
+  "clock_retuning_calls": false,
+  "calculations_from_matching_artifacts": [
+    {
+      "clock": "fclk0",
+      "reference_hz": 33333333,
+      "pll_multiplier": 30,
+      "pll_hz": 999999990,
+      "divider0": 5,
+      "divider1": 2,
+      "provider_rate_hz": 99999999,
+      "nominal_hz": 100000000
+    },
+    {
+      "clock": "fclk1",
+      "reference_hz": 33333333,
+      "pll_multiplier": 30,
+      "pll_hz": 999999990,
+      "divider0": 5,
+      "divider1": 2,
+      "provider_rate_hz": 99999999,
+      "nominal_hz": 100000000
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/software/runtime/linux/driver/unified_npu.c",
+      "line": 373,
+      "note": "Production predicate extracted verbatim"
+    },
+    {
+      "path": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/linux_boot_update_20261102/npu100-system.dts",
+      "line": 414,
+      "sha256": "e5b48dbdd45ae5d95895af79724a86e3a1beffc6320ecc5deba027716dc0e83d"
+    },
+    {
+      "path": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/project/npu100.gen/sources_1/bd/video_system/ip/video_system_ps7_0/ps7_init.tcl",
+      "line": 20,
+      "sha256": "cdf45558d343f9aa0022828f7b6ebfefb1d27a9a43ea3e95e13011267b21048e"
+    },
+    {
+      "path": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/project/npu100.gen/sources_1/bd/video_system/ip/video_system_ps7_0/ps7_init.tcl",
+      "line": 36
+    },
+    {
+      "path": "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/project/npu100.gen/sources_1/bd/video_system/ip/video_system_ps7_0/ps7_init.tcl",
+      "line": 37
+    },
+    {
+      "path": "/home/dev/npu100_linux_build_20261102/linux-xlnx-31626ef92ff11f9d3dee01926720572666fcc65a/drivers/clk/zynq/pll.c",
+      "line": 84
+    },
+    {
+      "path": "/home/dev/npu100_linux_build_20261102/linux-xlnx-31626ef92ff11f9d3dee01926720572666fcc65a/drivers/clk/clk-divider.c",
+      "line": 145
+    }
+  ],
+  "executions": [
+    {
+      "command": [
+        "gcc",
+        "-O2",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/linux_driver_clockfix_20261102/clock_guard_extracted.c",
+        "-o",
+        "/home/dev/npu100_linux_build_20261102/clock_guard_test/clock_guard_native"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/dev/npu100_linux_build_20261102/clock_guard_test/clock_guard_native"
+      ],
+      "exit": 0,
+      "stdout": "PASS: pairs=81 accepted=9 rejected=72 native_ulong_bits=64 target_ulong_max_cases=2\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "arm-linux-gnueabihf-gcc-13",
+        "-O2",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-c",
+        "/mnt/d/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/linux_driver_clockfix_20261102/clock_guard_extracted.c",
+        "-o",
+        "/home/dev/npu100_linux_build_20261102/clock_guard_test/clock_guard_arm.o"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

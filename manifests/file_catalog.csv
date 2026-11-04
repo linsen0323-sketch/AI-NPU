@@ -1,0 +1,695 @@
+﻿path,bytes,purpose,origin,source
+.gitattributes,838,项目入口或配置：.gitattributes,authored_or_generated,
+.gitignore,674,项目入口或配置：.gitignore,authored_or_generated,
+README.md,13609,项目入口或配置：README,authored_or_generated,
+board/boot/BOOT.BIN,5227556,"Matched Zynq FSBL, PL bitstream and bootloader boot image",copied,D:\PetaLinux_Installer\SD_UPDATE\BOOT.BIN
+board/boot/boot.scr,3830,Matched U-Boot boot script,copied,D:\PetaLinux_Installer\SD_UPDATE\boot.scr
+board/boot/image.ub,5087879,Final kernel FIT image with 256 MiB reserved DDR and runtime device tree,copied,D:\PetaLinux_Installer\NPU100_BOOT_UPDATE_20261102\image.ub
+board/deploy/autostart/configure_autostart.py,8444,开机服务配置与安装布局检查; SysV autostart source; stable /opt prefixes and package names; Install a new SysV service without opening NPU or disturbing current processes.,adapted,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\configure_autostart.py
+board/deploy/autostart/files.sha256,666,Normalized package internal checksum ledger,adapted,
+board/deploy/autostart/install_autostart.sh,686,SysV autostart source; stable /opt prefixes and package names,adapted,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\install_autostart.sh
+board/deploy/autostart/module/npu_driver_info,8316,Exact final driver or INFO checker used by SysV service,copied,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\module\npu_driver_info
+board/deploy/autostart/module/unified_npu.ko,17364,Exact final driver or INFO checker used by SysV service,copied,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\module\unified_npu.ko
+board/deploy/autostart/npu100.init,500,SysV autostart source; stable /opt prefixes and package names,adapted,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\npu100.init
+board/deploy/autostart/readme.md,1003,SysV autostart file-level purpose and scope guide,adapted,
+board/deploy/autostart/service.py,17176,"SysV托管的单实例摄像头服务、日志和退出管理; SysV autostart source; stable /opt prefixes and package names; Single-owner SysV camera supervisor; no restart, forced kill or PL reload.",adapted,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\service.py
+board/deploy/autostart/sha256sums,745,Normalized deployment package checksum ledger,adapted,
+board/deploy/autostart/validation.json,12543,Unmodified original package validation; current packaging has separate verification,copied,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\VALIDATION.json
+board/deploy/boot/verify_after_boot.sh,1859,"Read-only kernel, boot and live-DT contract validation",copied,D:\PetaLinux_Installer\NPU100_BOOT_UPDATE_20261102\verify_after_boot.sh
+board/deploy/userspace/install_runtime.sh,2205,Install private userspace to stable /opt/npu100,adapted,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\install_runtime.sh
+board/deploy/userspace/load_models_once.py,5553,"Source helper used inside Linux userspace archive; Stage and verify three frozen SD models, then leave NPU admission stopped.",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_userspace_20261102\load_models_once.py
+board/deploy/userspace/npu100.sh,1699,Source helper used inside Linux userspace archive,adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_userspace_20261102\npu100.sh
+board/deploy/userspace/runtime_check.py,1227,Source helper used inside Linux userspace archive; Verify the private Python/C runtime without opening any hardware device.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_userspace_20261102\runtime_check.py
+board/deploy/userspace/sha256sums,609,Userspace installation script and archive checksum ledger,adapted,
+board/deploy/userspace/validate_pl.py,3367,Source helper used inside Linux userspace archive; Validate PL through the deployed runtime's read-only constructor path.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_userspace_20261102\validate_pl.py
+board/deploy/userspace/verify_after_boot.sh,1859,Read-only final boot and live device-tree contract checker,copied,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\verify_after_boot.sh
+board/hardware/npu100.bit,4045693,Final 100 MHz board bitstream,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top.bit
+board/hardware/npu100.xsa,1809734,"Final hardware handoff, identical to Linux deployment source XSA",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa
+board/hardware/ps7_init.c,418244,PS7 initialization extracted without modification from final XSA,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa!ps7_init.c
+board/hardware/ps7_init.h,3796,PS7 initialization extracted without modification from final XSA,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa!ps7_init.h
+board/hardware/ps7_init.tcl,30395,PS7 initialization extracted without modification from final XSA,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa!ps7_init.tcl
+board/hardware/ps7_init_gpl.c,418861,PS7 initialization extracted without modification from final XSA,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa!ps7_init_gpl.c
+board/hardware/ps7_init_gpl.h,4414,PS7 initialization extracted without modification from final XSA,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\AI_NPU.xsa!ps7_init_gpl.h
+board/linux/boot_sources/.gitkeep,0,保留待补空目录；不代表已有验证结果,authored_or_generated,
+board/linux/device_tree/system.dtb,16311,Final DTB embedded in image.ub,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_boot_update_20261102\npu100-system.dtb
+board/linux/device_tree/system.dts,18830,Complete final flattened device-tree source,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_boot_update_20261102\npu100-system.dts
+board/linux/driver/check_driver.sh,3776,Read-only driver/kernel/boot/DT check; explicit --load mode loads module once,adapted,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\check_driver.sh
+board/linux/driver/libnpu_camera.so,51448,Final ARM C bridge shared object,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\libnpu_camera.so
+board/linux/driver/npu_driver_info,8316,ARM INFO-ioctl metadata checker; no PL MMIO,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\npu_driver_info
+board/linux/driver/npu_driver_info.c,2866,Source of INFO metadata checker,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\npu_driver_info.c
+board/linux/driver/readme.md,888,Driver artifact and helper reference,adapted,
+board/linux/driver/replace_failed_driver.sh,2303,Recovery helper for unbound failed probe only; not normal startup,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\replace_failed_driver.sh
+board/linux/driver/sha256sums,664,Normalized deployment package checksum ledger,adapted,
+board/linux/driver/unified_npu.ko,17364,Final ARMv7 kernel module with nominal-100MHz +/-1Hz clock guard,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\unified_npu.ko
+board/linux/driver/unified_npu_uapi.h,783,Linux内核与用户态共用的ioctl结构和ABI定义; Driver ioctl ABI header used by metadata checker,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\unified_npu_uapi.h
+board/linux/kernel/kernel.config,167968,Original running 6.12.40-xilinx kernel configuration extracted from SD kernel,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\kernel.config
+board/linux/kernel/module.symvers,635127,"Final kernel exported-symbol CRC table, not a substitute for compiling the matching kernel",copied,wsl://Ubuntu/home/dev/npu100_linux_build_20261102/kernel-output/Module.symvers
+board/linux/kernel/source.json,620,Pinned kernel source and build identity,adapted,
+board/linux/petalinux/readme.md,118,Placeholder explaining missing Linux base-system deliverable,adapted,
+board/linux/rootfs/base_os_image.json,1699,板端部署文件：base os image,authored_or_generated,
+board/linux/rootfs/readme.md,801,Placeholder explaining missing Linux base-system deliverable,adapted,
+board/linux/userspace/linux_userspace.tar.gz,11075578,Private ARM Python and source-matched runtime; normalized deployment prefix,adapted,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\npu100-userspace.tar.gz
+board/linux/userspace/python_packages.json,14131,"Pinned private ARM Python packages, upstream URLs, hashes, version and licensing provenance",copied,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\npu100-userspace.tar.gz!python-runtime/PROVENANCE.json
+build/reports/implementation/bus_skew_routed.rpt,273873,Final implementation report; report header specifies design stage: bus_skew_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_bus_skew_routed.rpt
+build/reports/implementation/drc_routed.rpt,79852,Final implementation report; report header specifies design stage: drc_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_drc_routed.rpt
+build/reports/implementation/methodology_routed.rpt,46736,Final implementation report; report header specifies design stage: methodology_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_methodology_drc_routed.rpt
+build/reports/implementation/power_estimate_routed.rpt,12110,Final implementation report; report header specifies design stage: power_estimate_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_power_routed.rpt
+build/reports/implementation/route_status.rpt,651,Final implementation report; report header specifies design stage: route_status.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_route_status.rpt
+build/reports/implementation/timing_routed.rpt,2198285,Final implementation report; report header specifies design stage: timing_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_timing_summary_routed.rpt
+build/reports/implementation/utilization_placed.rpt,13326,Final implementation report; report header specifies design stage: utilization_placed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_utilization_placed.rpt
+build/reports/implementation/utilization_routed.rpt,13322,"Routed utilization queried read-only from original final DCP, without rebuilding hardware",adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_routed.dcp
+build/reports/synthesis/utilization_top_synth.rpt,10201,Top synthesis utilization; OOC black-box scopes must not be treated as complete whole-design utilization,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\synth_1\camera_720p30_top_utilization_synth.rpt
+build/scripts/baremetal/build_application.py,2130,"Optional Vitis 2025.2 standalone platform/BSP/application build from packaged npu100 XSA; source checked, not executed during packaging; Optional standalone build using the Vitis 2025.2 Python CLI.",adapted,
+build/scripts/linux/build_software.sh,993,"Portable source-only Linux module, C bridge and INFO-tool build entry",adapted,
+build/scripts/linux/repack_userspace.py,3313,Rebuild source-controlled runtime layer while retaining frozen third-party Python; Rebuild own runtime layer using the frozen third-party ARM Python payload.,adapted,
+build/scripts/linux/verify_autostart_install.py,10474,Existing private installation fixture adapted to normalized package paths; Isolated real checksum/copy/link tests; system paths and read-check calls mocked.,adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_autostart_20261102\test_configure_autostart.py
+build/scripts/linux/verify_service.py,13697,Existing private service lifecycle fixture adapted to normalized package paths; Exercise the real supervisor in private host fixtures with fake camera work.,adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_autostart_20261102\test_service_private.py
+build/scripts/linux/verify_sources.py,2523,Private actual ARM C bridge/checker compilation and Python/Shell syntax validation; Compile packaged Linux C bridge/checker privately and validate script syntax.,adapted,
+build/scripts/linux/verify_userspace.py,3750,"Private archive integrity, source identity and optional QEMU smoke test; Validate the packaged ARM runtime privately; never opens a hardware device.",adapted,
+build/scripts/models/rebuild_runtime_models.py,3027,Portable deterministic reconstruction of final three DDR model binaries; Rebuild final DDR payloads from the packaged frozen compiler inputs.,adapted,
+build/scripts/models/run_quantization.py,1613,Portable entry for original NEU/COCO quantization stages; fails on missing data; Run the existing YOLOX PTQ workflows against separately acquired datasets.,adapted,
+build/scripts/models/verify_models.py,5158,Read-only package identity and descriptor validation; Validate packaged model identities and runtime descriptors; never access hardware.,adapted,
+build/scripts/vivado/build_bitstream.tcl,1092,"Explicit synthesis, implementation and bitstream entrypoint; not executed during packaging",adapted,
+build/scripts/vivado/create_project.tcl,7414,Portable final npu100 project recreation and BD/IP generation; never starts synthesis,adapted,
+build/scripts/vivado/export_hardware.tcl,737,Export a newly built npu100 XSA into build/work without overwriting validated board artifacts,adapted,
+data/calibration/coco80/calibration_manifest.json,437093,Deterministic COCO selection and SHA256 image identity,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\calibration_manifest.json
+data/calibration/coco80/validation_fingerprints.json,1143358,Deterministic COCO selection and SHA256 image identity,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\validation_fingerprints.json
+data/datasets/neu_cls/files.json,277744,Classification dataset split and file identity snapshot without redistributing images,adapted,
+data/datasets/neu_det/annotations/instances_train2017.json,797722,Original NEU split/annotations; images acquired separately,copied,C:\Users\ii\Desktop\YoloX-S-1\datasets\NEU_PAPER80_CLEAN\annotations\instances_train2017.json
+data/datasets/neu_det/annotations/instances_val2017.json,202743,Original NEU split/annotations; images acquired separately,copied,C:\Users\ii\Desktop\YoloX-S-1\datasets\NEU_PAPER80_CLEAN\annotations\instances_val2017.json
+data/datasets/neu_det/split_manifest.json,69999,Original NEU split/annotations; images acquired separately,copied,C:\Users\ii\Desktop\YoloX-S-1\datasets\NEU_PAPER80_CLEAN\split_manifest.json
+data/environments/host/README.md,530,数据划分、校准或参考结果：README,authored_or_generated,
+data/environments/host/environment_snapshot.json,1372,当前主机环境与历史COCO量化关键版本对照,adapted,
+data/environments/host/requirements_snapshot.txt,1427,整理时D:/AI/.venv的当前pip freeze；不冒充历史锁定环境,copied,C:\Users\ii\.codex\visualizations\2026\11\01\01a195c1-f759-7901-a5c9-d5d48995e674\tmp\host_requirements_snapshot.txt
+data/metrics/board/.gitkeep,0,保留待补空目录；不代表已有验证结果,authored_or_generated,
+data/metrics/board/README.md,761,数据划分、校准或参考结果：README,authored_or_generated,
+data/metrics/board/latency.csv,448,数据划分、校准或参考结果：latency,authored_or_generated,
+data/metrics/coco80/fp32_val_coco.txt,1193,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\fp32_val_coco.txt
+data/metrics/coco80/fp32_val_metrics.json,10379,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\fp32_val_metrics.json
+data/metrics/coco80/onnx_val_coco.txt,1193,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\onnx_val_coco.txt
+data/metrics/coco80/onnx_val_metrics.json,10351,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\onnx_val_metrics.json
+data/metrics/coco80/selected_val_coco.txt,1193,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\selected_val_coco.txt
+data/metrics/coco80/selected_val_metrics.json,10375,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\selected_val_metrics.json
+data/metrics/model_selection/README.md,930,数据划分、校准或参考结果：README,authored_or_generated,
+data/metrics/model_selection/yolo12n/baseline/arguments.yaml,1858,历史YOLO12n训练记录；不属于最终三模型部署,copied,C:\Users\ii\Desktop\Yolov12n\runs\detect\yolo12n_neu_baseline\args.yaml
+data/metrics/model_selection/yolo12n/baseline/results.csv,12249,历史YOLO12n训练记录；不属于最终三模型部署,copied,C:\Users\ii\Desktop\Yolov12n\runs\detect\yolo12n_neu_baseline\results.csv
+data/metrics/model_selection/yolo12n/baseline/training_curves.png,295922,历史YOLO12n训练记录；不属于最终三模型部署,copied,C:\Users\ii\Desktop\Yolov12n\runs\detect\yolo12n_neu_baseline\results.png
+data/metrics/model_selection/yolo12n/test/confusion_matrix_normalized.png,190717,历史YOLO12n测试曲线，仅作选型背景,copied,C:\Users\ii\Desktop\Yolov12n\runs\evaluation\test_metrics\confusion_matrix_normalized.png
+data/metrics/model_selection/yolo12n/test/f1_curve.png,280790,历史YOLO12n测试曲线，仅作选型背景,copied,C:\Users\ii\Desktop\Yolov12n\runs\evaluation\test_metrics\BoxF1_curve.png
+data/metrics/model_selection/yolo12n/test/per_class_metrics.csv,571,历史YOLO12n独立测试逐类指标；与YOLOX训练划分不同，不能直接横向排名,copied,C:\Users\ii\Desktop\Yolov12n\per_class_test_metrics.csv
+data/metrics/model_selection/yolo12n/test/precision_recall.png,184521,历史YOLO12n测试曲线，仅作选型背景,copied,C:\Users\ii\Desktop\Yolov12n\runs\evaluation\test_metrics\BoxPR_curve.png
+data/metrics/model_selection/yolov8n/baseline/arguments.yaml,1864,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\baseline_seed42\args.yaml
+data/metrics/model_selection/yolov8n/baseline/confusion_matrix_normalized.png,198633,历史YOLOv8n验证曲线，模型选型参考,copied,C:\Users\ii\Desktop\对照模型\runs\baseline_seed42\confusion_matrix_normalized.png
+data/metrics/model_selection/yolov8n/baseline/precision_recall.png,191223,历史YOLOv8n验证曲线，模型选型参考,copied,C:\Users\ii\Desktop\对照模型\runs\baseline_seed42\BoxPR_curve.png
+data/metrics/model_selection/yolov8n/baseline/results.csv,12223,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\baseline_seed42\results.csv
+data/metrics/model_selection/yolov8n/baseline/training_curves.png,311334,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\baseline_seed42\results.png
+data/metrics/model_selection/yolov8n/mosaic05/arguments.yaml,1864,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\mosaic05_seed42\args.yaml
+data/metrics/model_selection/yolov8n/mosaic05/results.csv,11401,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\mosaic05_seed42\results.csv
+data/metrics/model_selection/yolov8n/mosaic05/training_curves.png,299552,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\mosaic05_seed42\results.png
+data/metrics/model_selection/yolov8n/scale03/arguments.yaml,1862,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\scale03_seed42\args.yaml
+data/metrics/model_selection/yolov8n/scale03/results.csv,11044,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\scale03_seed42\results.csv
+data/metrics/model_selection/yolov8n/scale03/training_curves.png,294799,历史YOLOv8n受控实验资料；416输入，不是最终NPU模型或当前模型精度,copied,C:\Users\ii\Desktop\对照模型\runs\scale03_seed42\results.png
+data/metrics/neu6/fp32_val_coco.txt,1280,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\fp32_val_coco.txt
+data/metrics/neu6/fp32_val_metrics.json,809,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\fp32_val_metrics.json
+data/metrics/neu6/onnx_val_coco.txt,1280,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\onnx_val_coco.txt
+data/metrics/neu6/onnx_val_metrics.json,808,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\onnx_val_metrics.json
+data/metrics/neu6/selected_val_coco.txt,1280,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\selected_val_coco.txt
+data/metrics/neu6/selected_val_metrics.json,811,Historical software accuracy evaluation; not final FPGA board measurements,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\selected_val_metrics.json
+data/metrics/training_neu6/train_log.txt,696121,Original selected-run training and validation log,copied,C:\Users\ii\Desktop\YoloX-S-1\YOLOX_outputs\neu_seed2022_mosaic10_yolox_s\train_log.txt
+data/metrics/training_neu6/val_log.txt,25324,Original selected-run training and validation log,copied,C:\Users\ii\Desktop\YoloX-S-1\YOLOX_outputs\neu_seed2022_mosaic10_yolox_s\val_log.txt
+data/metrics/training_resnet18/checkpoint_metadata.json,724,从选中训练checkpoint安全提取的原始元数据；原224验证条件,adapted,
+data/models/checkpoints/resnet18_neu6.pth,134290395,Selected training or pretrained checkpoint,copied,D:\AI\fpga_ai\checkpoints\resnet18_neu_best.pth
+data/models/checkpoints/yolox_s_coco80.pth,72089125,Selected training or pretrained checkpoint,copied,C:\Users\ii\Desktop\YoloX-S80\weights\yolox_s_coco80.pth
+data/models/checkpoints/yolox_s_neu6.pth,71856611,Selected training or pretrained checkpoint,copied,C:\Users\ii\Desktop\YoloX-S-1\YOLOX_outputs\neu_seed2022_mosaic10_yolox_s\best_ckpt.pth
+data/models/intermediate/coco80_integer/compile_report.json,1065,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\verification\row_coco_rgb_20261029\coco80_runtime_candidate\compile_report.json
+data/models/intermediate/coco80_integer/model.aipkg,9621504,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\verification\row_coco_rgb_20261029\coco80_runtime_candidate\model.aipkg
+data/models/intermediate/coco80_integer/parameters.npz,9310044,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\verification\row_coco_rgb_20261029\coco80_runtime_candidate\parameters.npz
+data/models/intermediate/coco80_integer/program.json,215757,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\verification\row_coco_rgb_20261029\coco80_runtime_candidate\program.json
+data/models/intermediate/neu6_integer/compile_manifest.json,3684,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\compile_manifest.json
+data/models/intermediate/neu6_integer/input_example/input.bin,4915200,Frozen compiler example input,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\input_example\input.bin
+data/models/intermediate/neu6_integer/input_example/input_manifest.json,561,Frozen compiler example input,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\input_example\input_manifest.json
+data/models/intermediate/neu6_integer/model.aipkg,9703424,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\model.aipkg
+data/models/intermediate/neu6_integer/package_manifest.json,546,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\package_manifest.json
+data/models/intermediate/neu6_integer/parameters.npz,9391860,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\parameters.npz
+data/models/intermediate/neu6_integer/program.json,214810,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\yolox_s_a\program.json
+data/models/intermediate/resnet18_legacy/input_example/input.bin,150528,Frozen compiler example input,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\resnet18\input_example\input.bin
+data/models/intermediate/resnet18_legacy/input_example/input_manifest.json,468,Frozen compiler example input,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\resnet18\input_example\input_manifest.json
+data/models/intermediate/resnet18_legacy/model.aipkg,17203200,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\resnet18\model.aipkg
+data/models/intermediate/resnet18_legacy/package_manifest.json,568,Frozen upstream input for deterministic package reconstruction,copied,D:\AI\fpga_ai\deployment\host_v1\artifacts\resnet18\package_manifest.json
+data/models/intermediate/resnet18_legacy_image/ddr.bin,17150976,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\ddr.bin
+data/models/intermediate/resnet18_legacy_image/export_validation.json,1200,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\export_validation.json
+data/models/intermediate/resnet18_legacy_image/layers.json,33600,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\layers.json
+data/models/intermediate/resnet18_legacy_image/layout.json,77390,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\layout.json
+data/models/intermediate/resnet18_legacy_image/model_audit.json,2710,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\model_audit.json
+data/models/intermediate/resnet18_legacy_image/source_hashes.json,2004,Original ResNet descriptor image and immutable numerical contract,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\resnet18\generated\source_hashes.json
+data/models/intermediate/resnet18_unified/ddr.bin,11325440,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\ddr.bin
+data/models/intermediate/resnet18_unified/execution_manifest.json,1530,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\execution_manifest.json
+data/models/intermediate/resnet18_unified/execution_plan.bin,32768,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\execution_plan.bin
+data/models/intermediate/resnet18_unified/input.bin,150528,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\input.bin
+data/models/intermediate/resnet18_unified/input_manifest.json,566,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\input_manifest.json
+data/models/intermediate/resnet18_unified/model.aipkg,11292672,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\model.aipkg
+data/models/intermediate/resnet18_unified/weight_relayout_manifest.json,6565,Frozen upstream input for deterministic package reconstruction,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\models\resnet18_unified\weight_relayout_manifest.json
+data/models/onnx/resnet18_fp32.onnx,44782442,Frozen ONNX export; model resolution is specified in model pipeline documentation,copied,D:\AI\fpga_ai\onnx\resnet18_neu_fp32.onnx
+data/models/onnx/resnet18_int8_qdq.onnx,11366558,Frozen ONNX export; model resolution is specified in model pipeline documentation,copied,D:\AI\fpga_ai\quantized\resnet18_neu_int8_qdq.onnx
+data/models/onnx/yolox_s_coco80_qdq.onnx,9357533,Frozen ONNX export; model resolution is specified in model pipeline documentation,copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\model_mixed_qdq.onnx
+data/models/onnx/yolox_s_neu6_qdq.onnx,9384257,Frozen ONNX export; model resolution is specified in model pipeline documentation,copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\model_mixed_qdq.onnx
+data/models/quantization/coco80/calibration.json,29141,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\calibration.json
+data/models/quantization/coco80/calibration_identity.json,243,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\calibration_identity.json
+data/models/quantization/coco80/calibration_manifest.json,437093,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\calibration_manifest.json
+data/models/quantization/coco80/environment.json,700,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\environment.json
+data/models/quantization/coco80/fp32_vs_qdq_numerics.json,2714,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\fp32_vs_qdq_numerics.json
+data/models/quantization/coco80/fp32_vs_quantized_reference_numerics.json,2197,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\fp32_vs_quantized_reference_numerics.json
+data/models/quantization/coco80/golden_sample_00.npz,918497,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\golden_sample_00.npz
+data/models/quantization/coco80/golden_sample_01.npz,1040397,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\golden_sample_01.npz
+data/models/quantization/coco80/golden_sample_02.npz,975824,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\golden_sample_02.npz
+data/models/quantization/coco80/layer_precision.csv,6575,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\layer_precision.csv
+data/models/quantization/coco80/model_manifest.json,617825,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\model_manifest.json
+data/models/quantization/coco80/onnx_shape_checks.json,259,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\onnx_shape_checks.json
+data/models/quantization/coco80/onnx_verification.json,1391482,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\onnx_verification.json
+data/models/quantization/coco80/packing_verification.json,106,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\packing_verification.json
+data/models/quantization/coco80/parameter_validation.json,435,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\parameter_validation.json
+data/models/quantization/coco80/per_class_comparison.csv,16092,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\per_class_comparison.csv
+data/models/quantization/coco80/provenance.json,7248,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\provenance.json
+data/models/quantization/coco80/quantized_reference.pth,63091893,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\quantized_reference.pth
+data/models/quantization/coco80/release_acceptance.json,1097,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\release_acceptance.json
+data/models/quantization/coco80/selected_policy.json,20019,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\selected_policy.json
+data/models/quantization/coco80/shape_and_bn_checks.json,701,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\shape_and_bn_checks.json
+data/models/quantization/coco80/validation_fingerprints.json,1143358,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\validation_fingerprints.json
+data/models/quantization/coco80/weights_packed.bin,8944896,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\weights_packed.bin
+data/models/quantization/neu6/calibration.json,29009,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\calibration.json
+data/models/quantization/neu6/dataset_fingerprints.json,422846,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\dataset_fingerprints.json
+data/models/quantization/neu6/golden_sample_00.npz,1368556,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\golden_sample_00.npz
+data/models/quantization/neu6/golden_sample_01.npz,1851884,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\golden_sample_01.npz
+data/models/quantization/neu6/golden_sample_02.npz,1512800,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\golden_sample_02.npz
+data/models/quantization/neu6/layer_precision.csv,6542,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\layer_precision.csv
+data/models/quantization/neu6/model_manifest.json,607724,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\model_manifest.json
+data/models/quantization/neu6/onnx_verification.json,1857,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\onnx_verification.json
+data/models/quantization/neu6/packing_verification.json,106,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\packing_verification.json
+data/models/quantization/neu6/provenance.json,25417,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\provenance.json
+data/models/quantization/neu6/quantized_reference.pth,62891573,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\quantized_reference.pth
+data/models/quantization/neu6/release_acceptance.json,308,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\release_acceptance.json
+data/models/quantization/neu6/selected_policy.json,9531,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\selected_policy.json
+data/models/quantization/neu6/weights_packed.bin,8916480,"Selected PTQ artifacts, calibration contract or numerical reference",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\yolox_s_a\weights_packed.bin
+data/models/quantization/resnet18/requant_params.csv,923183,Original exact fixed-point multiplier/shift contract,copied,D:\AI\fpga_ai\quantized\resnet18_requant_params.csv
+data/models/runtime/bundle/BUNDLE_VERSION,13,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\BUNDLE_VERSION
+data/models/runtime/bundle/README.md,1486,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\README_CN.txt
+data/models/runtime/bundle/SHA256SUMS,1766,Final SD three-model payload and ABI manifests; byte-preserved,adapted,D:\PetaLinux_Installer\npu100_models\SHA256SUMS
+data/models/runtime/bundle/coco80/execution_manifest.json,32986,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\coco80\execution_manifest.json
+data/models/runtime/bundle/coco80/input.bin,786432,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\coco80\input.bin
+data/models/runtime/bundle/coco80/input_manifest.json,679,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\coco80\input_manifest.json
+data/models/runtime/bundle/coco80/model.bin,15917056,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\coco80\model.bin
+data/models/runtime/bundle/coco80/model_config.tcl,635,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\coco80\model_config.tcl
+data/models/runtime/bundle/manifest.bin,896,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\manifest.bin
+data/models/runtime/bundle/manifest.json,3810,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\manifest.json
+data/models/runtime/bundle/manifest.sha256,81,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\manifest.sha256
+data/models/runtime/bundle/models/m1/execution_manifest.json,3106,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m1\execution_manifest.json
+data/models/runtime/bundle/models/m1/input.bin,76800,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m1\input.bin
+data/models/runtime/bundle/models/m1/input_manifest.json,1014,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m1\input_manifest.json
+data/models/runtime/bundle/models/m1/model.bin,11325440,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m1\model.bin
+data/models/runtime/bundle/models/m1/model_config.tcl,617,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m1\model_config.tcl
+data/models/runtime/bundle/models/m3/execution_manifest.json,33051,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m3\execution_manifest.json
+data/models/runtime/bundle/models/m3/input.bin,786432,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m3\input.bin
+data/models/runtime/bundle/models/m3/input_manifest.json,785,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m3\input_manifest.json
+data/models/runtime/bundle/models/m3/model.bin,15888384,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m3\model.bin
+data/models/runtime/bundle/models/m3/model_config.tcl,614,Final SD three-model payload and ABI manifests; byte-preserved,copied,D:\PetaLinux_Installer\npu100_models\models\m3\model_config.tcl
+data/reference/resnet18/verify_full_resnet18_int8.py,46534,"ResNet冻结整数Golden数值规格与比较实现; Byte-preserved original arithmetic Golden, retained for historical hash checks",copied,D:\AI\fpga_ai\tools\verify_full_resnet18_int8.py
+data/reference/system/.gitkeep,0,保留待补空目录；不代表已有验证结果,authored_or_generated,
+data/samples/neu6/scratches_105.jpg,12357,Frozen source image named by NEU deployment input manifest,copied,C:\Users\ii\Desktop\YoloX-S-1\datasets\NEU_PAPER80_CLEAN\val2017\scratches_105.jpg
+docs/additional_materials.md,2300,项目文档：additional materials,authored_or_generated,
+docs/architecture.md,1904,项目文档：architecture,authored_or_generated,
+docs/baremetal.md,3147,"Standalone application module meanings, portable Vitis build route and current Linux/standalone distinction",adapted,
+docs/environment.md,1151,项目文档：environment,authored_or_generated,
+docs/github.md,1805,项目文档：github,authored_or_generated,
+docs/hardware.md,5510,"Hardware architecture, exact source identity, portable rebuild instructions and final report boundaries",adapted,
+docs/hardware_modules.md,12485,项目文档：hardware modules,authored_or_generated,
+docs/license_and_privacy_review.md,2918,项目文档：license and privacy review,authored_or_generated,
+docs/linux.md,9005,End-to-end Linux deployment and source-build guide,adapted,
+docs/linux_gaps.md,1953,Explicit Linux reproduction and board-evidence gaps,adapted,
+docs/linux_packaging_changes.md,1915,Explicit normalized-path adaptation list and retained board identity boundary,adapted,
+docs/missing_artifacts.md,307,项目文档：missing artifacts,authored_or_generated,
+docs/missing_materials.md,7463,项目文档：missing materials,authored_or_generated,
+docs/model_gaps.md,2816,Explicit missing training/quantization/data/licensing/accuracy materials without fabricating results,adapted,
+docs/model_pipeline.md,8443,"End-to-end actual selected model lineage, reproducible commands and evidence boundaries",adapted,
+docs/naming.md,1276,项目文档：naming,authored_or_generated,
+docs/optimization_decisions.md,4932,项目文档：optimization decisions,authored_or_generated,
+docs/reproduction.md,9807,项目文档：reproduction,authored_or_generated,
+docs/requirement_matrix.md,5776,项目文档：requirement matrix,authored_or_generated,
+docs/submission_requirements.md,2934,项目文档：submission requirements,authored_or_generated,
+docs/third_party.md,1266,项目文档：third party,authored_or_generated,
+evidence/hardware/artifact_identity.json,1461,"Final npu100 project, bitstream, XSA and routed checkpoint identity receipt",adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.xpr
+evidence/hardware/ip_status_recreated.rpt,13908,Vivado IP status for clean recreated npu100 project,adapted,
+evidence/hardware/original_video_system.bd,162826,Original final project BD snapshot; not used by portable build,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\bd\video_system\video_system.bd
+evidence/hardware/recreation.json,1135,Machine-readable packaging-time recreation and identity validation receipt,adapted,
+evidence/hardware/recreation.log,20082,Actual isolated Vivado 2025.2 recreation / BD generation log; no synthesis or implementation,copied,C:\Users\ii\AppData\Local\Temp\npu_hardware_pack_xw1xvhwh\validate_final.log
+evidence/hardware/source_run_properties.txt,5748,Read-only query of final npu100 synthesis / implementation settings,copied,C:\Users\ii\AppData\Local\Temp\npu_hardware_pack_xw1xvhwh\original_properties.txt
+evidence/hardware/supplement_recreation.json,592,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/hardware/supplement_recreation.log,79412,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/autostart/install_validation.json,2766,Original private installation and conflict fixture result,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_autostart_20261102\validation_configure_autostart.json
+evidence/linux/autostart/package_validation.json,12543,Original host/QEMU SysV service fixture validation,copied,D:\PetaLinux_Installer\NPU100_AUTOSTART_20261102\VALIDATION.json
+evidence/linux/autostart/service_validation.json,1295,Original service process-lifecycle fixture result,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_autostart_20261102\service_private_validation.json
+evidence/linux/board/driver_load.txt,5607,Original board-terminal log of final clockfixed driver load and INFO checks,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_userspace_20261102\board_driver_load_pass.txt
+evidence/linux/board/user_logs/README.md,2014,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/autostart_enabled.json,797,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/autostart_status_after_install.json,125,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/boot_dt_pass.txt,502,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/metadata.json,3006,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/model_preload_pass.json,1843,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/board/user_logs/pl_abi_pass.json,950,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/boot/fit_build.json,3178,DT/FIT patch and matched PL boot identity receipt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_boot_update_20261102\build_report.json
+evidence/linux/driver/abi_validation.json,8104,Unmodified host cross-build and ABI validation receipt,copied,D:\PetaLinux_Installer\NPU100_DRIVER_CLOCKFIX_20261102\BUILD_ABI_REPORT.json
+evidence/linux/driver/clock_guard.json,3897,Clock rounding guard unit-check result,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_clockfix_20261102\clock_guard_validation.json
+evidence/linux/driver/host_build_report.json,1453,Original host kernel build configuration or build validation receipt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\host_build_report.json
+evidence/linux/driver/kernel.config,167968,Original host kernel build configuration or build validation receipt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\kernel.config
+evidence/linux/driver/kernel.config.gz,35934,Original host kernel build configuration or build validation receipt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\kernel.config.gz
+evidence/linux/driver/kernel_abi_validation.json,8104,Original host kernel build configuration or build validation receipt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\kernel_abi_validation_complete.json
+evidence/linux/driver/replacement_validation.json,2252,Private driver replacement validation,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_clockfix_20261102\validation_replace_failed_driver.json
+evidence/linux/packaging/archive_changes.json,1058,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/autostart_install.json,2712,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/repack_validation.json,261,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/service_private_validation.json,1268,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/source_validation.json,1745,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/userspace_validation.json,818,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/packaging/userspace_validation_current.json,269,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/linux/packaging/validation_summary.json,1392,Local packaging validation receipt; scope declared in JSON,adapted,
+evidence/linux/userspace/package_validation.json,7271,Original host/QEMU userspace package validation,copied,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\PACKAGE_VALIDATION.json
+evidence/models/final_package_validation.json,1023,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/models/layout_runtime_rebuild.json,1193,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/models/model_lineage.json,2730,Final SD binary-to-upstream package and compiler SHA256 lineage,adapted,
+evidence/models/model_selection/yolo12n_dataset.yaml,214,历史YOLO12n数据配置；正文保留原始路径用于辨明划分,copied,C:\Users\ii\Desktop\Yolov12n\data.yaml
+evidence/models/model_selection/yolo12n_training_recipe.py,1408,历史YOLO12n训练方法归档，不是本包正式训练入口; Train YOLO12n on the prepared NEU-DET dataset.,copied,C:\Users\ii\Desktop\Yolov12n\train.py
+evidence/models/model_selection/yolov8n_training_recipe.py,5443,历史YOLOv8n对照配置和版本约束，不是本包正式训练入口; Controlled NEU-DET training; run each experiment manually.,copied,C:\Users\ii\Desktop\对照模型\train_compare.py
+evidence/models/package_validation.json,885,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/models/quantization_source_identity.json,885,原YOLOX量化核心身份与既有收录来源的核对,adapted,
+evidence/models/quantization_trace.md,29900,原YOLOX PTQ、QDQ、整数编译与模型打包的历史溯源报告；原文路径仅供历史追踪,copied,D:\AI_acceleration\FPGA_Projects\YOLOX_S_quantization_trace_20261029.md
+evidence/models/runtime_rebuild.json,1055,Measured file-only reconstruction: all three DDR payload SHA256 values match final SD bundle,adapted,
+evidence/models/source_validation.json,285,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/additional_files.json,34764,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/additional_search_audit.json,940,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/build_work_archive.json,49063,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/git_byte_preservation.json,570,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/hardware_files.json,70554,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/hardware_module_documentation.json,19861,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/layout_metadata_adaptation.json,1032,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/layout_migration.json,153990,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/layout_sync.json,1158,沿用现有src/hardware布局的引用适配记录,adapted,
+evidence/packaging/layout_validation.json,2827,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/linux_files.json,48948,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/local_final_checks.json,4604,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/models_files.json,146233,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/package_validation.json,,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/skill_validation.json,394,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/source_scope_audit.json,2014,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/supplement_git_rules.json,626,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/sim/unit/dma/compile.log,846,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\results\compile.log
+evidence/sim/unit/dma/coverage.json,4546,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\coverage_results.json
+evidence/sim/unit/dma/elaborate.log,1606,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\results\elaborate.log
+evidence/sim/unit/dma/historical_manifest.json,4730,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\manifest.json
+evidence/sim/unit/dma/historical_review.md,6111,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\VALIDATION_REPORT.md
+evidence/sim/unit/dma/simulate.log,29299,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\results\simulate.log
+evidence/sim/unit/dma/waveform.wdb,416852,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\results\dma_nonempty.wdb
+evidence/sim/unit/maxpool/bulk_waveform.wdb,69680,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\maxpool_source_words_bulk.wdb
+evidence/sim/unit/maxpool/compile.log,1266,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\compile.log
+evidence/sim/unit/maxpool/elaborate_bulk.log,886,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\elaborate_bulk.log
+evidence/sim/unit/maxpool/elaborate_scalar.log,906,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\elaborate_scalar.log
+evidence/sim/unit/maxpool/historical_manifest.json,4002,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\manifest.json
+evidence/sim/unit/maxpool/historical_review.md,5274,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\VALIDATION_REPORT.md
+evidence/sim/unit/maxpool/scalar_waveform.wdb,69648,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\maxpool_source_words_scalar.wdb
+evidence/sim/unit/maxpool/simulate_bulk.log,2763,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\simulate_bulk.log
+evidence/sim/unit/maxpool/simulate_scalar.log,2232,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\results\simulate_scalar.log
+evidence/sim/unit/round/compile.log,963,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\results\compile.log
+evidence/sim/unit/round/elaborate.log,757,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\results\elaborate.log
+evidence/sim/unit/round/historical_manifest.json,1492,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\candidate_manifest.json
+evidence/sim/unit/round/historical_result.json,3227,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\verification.json
+evidence/sim/unit/round/historical_review.md,5720,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\README.md
+evidence/sim/unit/round/simulate.log,1368,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\results\simulate.log
+evidence/sim/unit/round/waveform.wdb,102886,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\results\round_miter.wdb
+evidence/sim/unit/source_identity.json,2877,四组定向仿真与当前npu100生产模块的哈希对应,adapted,
+evidence/sim/unit/wbuf/compile.log,489,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\xvlog.log
+evidence/sim/unit/wbuf/elaborate.log,2608,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\elaborate.log
+evidence/sim/unit/wbuf/historical_result.json,2020,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\result.json
+evidence/sim/unit/wbuf/historical_review.md,5655,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\review.md
+evidence/sim/unit/wbuf/simulate.log,104465,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\simulate.log
+evidence/sim/unit/wbuf/waveform.wdb,6993197,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\tb_wbuf_native_behav.wdb
+license.md,514,项目入口或配置：license,authored_or_generated,
+manifests/file_catalog.csv,,项目入口或配置：file catalog,authored_or_generated,
+manifests/files.json,,项目入口或配置：files,authored_or_generated,
+manifests/files.sha256,,项目入口或配置：files,authored_or_generated,
+manifests/source_map.json,357458,项目入口或配置：source map,authored_or_generated,
+report/README.md,898,报告、展示材料或真实交互记录：README,authored_or_generated,
+report/collaboration/README.md,2196,报告、展示材料或真实交互记录：README,authored_or_generated,
+report/collaboration/collaboration_record.md,10247,报告、展示材料或真实交互记录：collaboration record,authored_or_generated,
+report/collaboration/driver_log_classification.json,1484,报告、展示材料或真实交互记录：driver log classification,authored_or_generated,
+report/collaboration/evidence_index.json,3813,报告、展示材料或真实交互记录：evidence index,authored_or_generated,
+report/collaboration/privacy_review.json,858,报告、展示材料或真实交互记录：privacy review,authored_or_generated,
+report/collaboration/public_excerpts.jsonl,9115,报告、展示材料或真实交互记录：public excerpts,authored_or_generated,
+report/collaboration/public_excerpts_metadata.json,1047,报告、展示材料或真实交互记录：public excerpts metadata,authored_or_generated,
+report/collaboration/skill_validation.json,1537,报告、展示材料或真实交互记录：skill validation,authored_or_generated,
+report/collaboration/user_log_validation.json,7913,报告、展示材料或真实交互记录：user log validation,authored_or_generated,
+report/design/.gitkeep,0,报告、展示材料或真实交互记录：.gitkeep,authored_or_generated,
+report/design/design_report.md,26503,报告、展示材料或真实交互记录：design report,authored_or_generated,
+report/design/design_report.pdf,877675,报告、展示材料或真实交互记录：design report,authored_or_generated,
+report/figures/.gitkeep,0,报告、展示材料或真实交互记录：.gitkeep,authored_or_generated,
+report/figures/README.md,755,报告、展示材料或真实交互记录：README,authored_or_generated,
+report/figures/frame_ownership.png,409516,报告、展示材料或真实交互记录：frame ownership,authored_or_generated,
+report/figures/linux_layers.png,126598,报告、展示材料或真实交互记录：linux layers,authored_or_generated,
+report/figures/pe_mapping.png,390047,报告、展示材料或真实交互记录：pe mapping,authored_or_generated,
+report/figures/ping_pong_buffers.png,92448,报告、展示材料或真实交互记录：ping pong buffers,authored_or_generated,
+report/figures/system_architecture.png,681757,报告、展示材料或真实交互记录：system architecture,authored_or_generated,
+report/figures/training_deployment.png,549487,报告、展示材料或真实交互记录：training deployment,authored_or_generated,
+report/technical/README.md,441,报告、展示材料或真实交互记录：README,authored_or_generated,
+report/technical/technical_report.pdf,2815319,报告、展示材料或真实交互记录：technical report,authored_or_generated,
+sim/rtl/readme.md,982,Truthful simulation scope and missing final-system regression coverage,adapted,
+sim/rtl/setup_simulations.tcl,816,Configure the two existing production-tree simulation tops without running them,adapted,
+sim/rtl/tb_ai_result_overlay.sv,10209,Existing production-tree RTL testbench; no new simulation result claimed; modules=tb_ai_result_overlay,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\verification\tb_ai_result_overlay.sv
+sim/rtl/tb_ov5640_profile.sv,4432,Existing production-tree RTL testbench; no new simulation result claimed; modules=tb_ov5640_profile,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\verification\tb_ov5640_profile.sv
+sim/rtl/unit/README.md,1629,仿真材料：README,authored_or_generated,
+sim/rtl/unit/dma/dma_environment.svh,13210,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\tests\dma_environment.svh
+sim/rtl/unit/dma/reference/npu_stream_dma_before.sv,15440,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=npu_stream_dma_before,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\npu_stream_dma_before.sv
+sim/rtl/unit/dma/testbench.sv,16084,"当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=dma_nonempty_case,tb_dma_nonempty",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\dma_nonempty_candidate\tests\tb_dma_nonempty.sv
+sim/rtl/unit/maxpool/reference/npu_maxpool_engine_before.sv,19021,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=npu_maxpool_engine_before,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\npu_maxpool_engine_before.sv
+sim/rtl/unit/maxpool/testbench.sv,23349,"当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=tb_maxpool_source_words,tb_maxpool_source_words_bulk,tb_maxpool_source_words_scalar",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\maxpool_candidate\tb_maxpool_source_words.sv
+sim/rtl/unit/round/reference/round_before.sv,4643,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=npu_resnet_round_pipe_before,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\round_before.sv
+sim/rtl/unit/round/testbench.sv,5506,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=tb_round_miter,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\round_pipe_candidate\tb_round_miter.sv
+sim/rtl/unit/setup_unit_tests.tcl,1655,为当前npu100设置五个已恢复测试的仿真fileset，不自动运行仿真,adapted,
+sim/rtl/unit/wbuf/testbench.sv,8009,当前npu100对应定向仿真；reference下为有独立模块名的对照实现，不进入生产硬件; modules=tb_wbuf_native,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\tb_wbuf_native.sv
+sim/system/.gitkeep,0,保留待补空目录；不代表已有验证结果,authored_or_generated,
+skill/README.md,2567,可复用技能包工作流或完整性校验工具,authored_or_generated,
+skill/fpga-release-integrity/SKILL.md,2853,可复用技能包工作流或完整性校验工具,authored_or_generated,
+skill/fpga-release-integrity/scripts/verify_manifest.py,3203,可复用技能包工作流或完整性校验工具; Read-only SHA256 manifest validation; does not invoke FPGA tools.,authored_or_generated,
+skill/linux-npu-evidence/SKILL.md,2730,可复用技能包工作流或完整性校验工具,authored_or_generated,
+skill/linux-npu-evidence/scripts/classify_log.py,3280,可复用技能包工作流或完整性校验工具; Classify reported stages in saved logs; performs no hardware operation.,authored_or_generated,
+src/hardware/block_design/create_video_system.tcl,46886,"Vivado write_bd_tcl export of final npu100 block design; all IP settings, interfaces, connections and address segments",adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.xpr
+src/hardware/constraints/camera_cdc_late.xdc,14399,Board pins / clock / CDC constraints: camera_cdc_late,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\constrs_1\imports\constraints\camera_cdc_late.xdc
+src/hardware/constraints/navigator_720p.xdc,3754,Board pins / clock / CDC constraints: navigator_720p,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\constrs_1\imports\constraints\navigator_720p.xdc
+src/hardware/ip/readme.md,548,Required vendor IP catalog and module-reference dependencies,adapted,
+src/hardware/rtl/accelerator/npu_aipkg3_frontend.sv,10780,Shared NPU RTL: npu_aipkg3_frontend; modules=npu_aipkg3_frontend,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_aipkg3_frontend.sv
+src/hardware/rtl/accelerator/npu_axil_window_mux.sv,3286,Shared NPU RTL: npu_axil_window_mux; modules=npu_axil_window_mux,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_axil_window_mux.sv
+src/hardware/rtl/accelerator/npu_banked_buffer.sv,8966,Shared NPU RTL: npu_banked_buffer; modules=npu_banked_buffer,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_banked_buffer.sv
+src/hardware/rtl/accelerator/npu_conv2d_stream_engine.sv,64238,流式卷积执行与数据供给协调; Shared NPU RTL: npu_conv2d_stream_engine; modules=npu_conv2d_stream_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_conv2d_stream_engine.sv
+src/hardware/rtl/accelerator/npu_conv_epilogue.sv,5769,Shared NPU RTL: npu_conv_epilogue; modules=npu_conv_epilogue,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_conv_epilogue.sv
+src/hardware/rtl/accelerator/npu_conv_output_tile.sv,9835,Shared NPU RTL: npu_conv_output_tile; modules=npu_conv_output_tile,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_conv_output_tile.sv
+src/hardware/rtl/accelerator/npu_copy_engine.sv,5421,Shared NPU RTL: npu_copy_engine; modules=npu_copy_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_copy_engine.sv
+src/hardware/rtl/accelerator/npu_copy_stream_engine.sv,24683,Shared NPU RTL: npu_copy_stream_engine; modules=npu_copy_stream_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_copy_stream_engine.sv
+src/hardware/rtl/accelerator/npu_dsp48_pair.sv,2274,Shared NPU RTL: npu_dsp48_pair; modules=npu_dsp48_pair,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_dsp48_pair.sv
+src/hardware/rtl/accelerator/npu_graph_control_top.sv,16059,Shared NPU RTL: npu_graph_control_top; modules=npu_graph_control_top,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_graph_control_top.sv
+src/hardware/rtl/accelerator/npu_graph_plan_backend.sv,27392,统一计算图执行计划后端; Shared NPU RTL: npu_graph_plan_backend; modules=npu_graph_plan_backend,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_graph_plan_backend.sv
+src/hardware/rtl/accelerator/npu_graph_registers.sv,16020,Shared NPU RTL: npu_graph_registers; modules=npu_graph_registers,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_graph_registers.sv
+src/hardware/rtl/accelerator/npu_graph_result_bridge.sv,3105,Shared NPU RTL: npu_graph_result_bridge; modules=npu_graph_result_bridge,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_graph_result_bridge.sv
+src/hardware/rtl/accelerator/npu_graph_sequencer.sv,14516,Shared NPU RTL: npu_graph_sequencer; modules=npu_graph_sequencer,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_graph_sequencer.sv
+src/hardware/rtl/accelerator/npu_input_tile_loader.sv,21857,输入特征图分块读取、边界和缓存装载; Shared NPU RTL: npu_input_tile_loader; modules=npu_input_tile_loader,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_input_tile_loader.sv
+src/hardware/rtl/accelerator/npu_layer_profiler.sv,9567,"Shared NPU RTL: npu_layer_profiler; modules=npu_layer_profiler,npu_stall_snapshot",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_layer_profiler.sv
+src/hardware/rtl/accelerator/npu_lut_reader.sv,26039,Shared NPU RTL: npu_lut_reader; modules=npu_lut_reader,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_lut_reader.sv
+src/hardware/rtl/accelerator/npu_maxpool_engine.sv,19194,Shared NPU RTL: npu_maxpool_engine; modules=npu_maxpool_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_maxpool_engine.sv
+src/hardware/rtl/accelerator/npu_model_control_top.sv,22142,Shared NPU RTL: npu_model_control_top; modules=npu_model_control_top,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_model_control_top.sv
+src/hardware/rtl/accelerator/npu_package_cache.sv,11405,Shared NPU RTL: npu_package_cache; modules=npu_package_cache,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_package_cache.sv
+src/hardware/rtl/accelerator/npu_pe_8x32.sv,21610,Shared NPU RTL: npu_pe_8x32; modules=npu_pe_8x32,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_pe_8x32.sv
+src/hardware/rtl/accelerator/npu_plan_dispatch.sv,38001,算子指令分发及执行资源调度; Shared NPU RTL: npu_plan_dispatch; modules=npu_plan_dispatch,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_plan_dispatch.sv
+src/hardware/rtl/accelerator/npu_plan_iterator.sv,12120,Shared NPU RTL: npu_plan_iterator; modules=npu_plan_iterator,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_plan_iterator.sv
+src/hardware/rtl/accelerator/npu_predecoded_frontend.sv,6257,Shared NPU RTL: npu_predecoded_frontend; modules=npu_predecoded_frontend,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_predecoded_frontend.sv
+src/hardware/rtl/accelerator/npu_predecoded_iterator.sv,19019,Shared NPU RTL: npu_predecoded_iterator; modules=npu_predecoded_iterator,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_predecoded_iterator.sv
+src/hardware/rtl/accelerator/npu_q16_elementwise.sv,10310,Shared NPU RTL: npu_q16_elementwise; modules=npu_q16_elementwise,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_q16_elementwise.sv
+src/hardware/rtl/accelerator/npu_q16_scalar_engine.sv,35978,Shared NPU RTL: npu_q16_scalar_engine; modules=npu_q16_scalar_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_q16_scalar_engine.sv
+src/hardware/rtl/accelerator/npu_q16_vector_engine.sv,11992,Shared NPU RTL: npu_q16_vector_engine; modules=npu_q16_vector_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_q16_vector_engine.sv
+src/hardware/rtl/accelerator/npu_q16_vector_pipe.sv,10225,Shared NPU RTL: npu_q16_vector_pipe; modules=npu_q16_vector_pipe,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_q16_vector_pipe.sv
+src/hardware/rtl/accelerator/npu_resnet_gap_engine.sv,5651,Shared NPU RTL: npu_resnet_gap_engine; modules=npu_resnet_gap_engine,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_resnet_gap_engine.sv
+src/hardware/rtl/accelerator/npu_resnet_quant.sv,19725,"Shared NPU RTL: npu_resnet_quant; modules=npu_resnet_quant,npu_resnet_product_pipe,npu_resnet_round_pipe",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_resnet_quant.sv
+src/hardware/rtl/accelerator/npu_scalar_fabric.sv,3503,Shared NPU RTL: npu_scalar_fabric; modules=npu_scalar_fabric,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_scalar_fabric.sv
+src/hardware/rtl/accelerator/npu_scalar_guard.sv,2965,Shared NPU RTL: npu_scalar_guard; modules=npu_scalar_guard,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_scalar_guard.sv
+src/hardware/rtl/accelerator/npu_shared_pe.sv,6058,共享并行乘加计算阵列; Shared NPU RTL: npu_shared_pe; modules=npu_shared_pe,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_shared_pe.sv
+src/hardware/rtl/accelerator/npu_stream_axi_master.sv,10362,Shared NPU RTL: npu_stream_axi_master; modules=npu_stream_axi_master,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_axi_master.sv
+src/hardware/rtl/accelerator/npu_stream_dma.sv,15702,Shared NPU RTL: npu_stream_dma; modules=npu_stream_dma,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_dma.sv
+src/hardware/rtl/accelerator/npu_stream_guard.sv,5937,Shared NPU RTL: npu_stream_guard; modules=npu_stream_guard,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_guard.sv
+src/hardware/rtl/accelerator/npu_stream_ibuf.sv,3685,Shared NPU RTL: npu_stream_ibuf; modules=npu_stream_ibuf,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_ibuf.sv
+src/hardware/rtl/accelerator/npu_stream_read_fabric.sv,2603,Shared NPU RTL: npu_stream_read_fabric; modules=npu_stream_read_fabric,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_read_fabric.sv
+src/hardware/rtl/accelerator/npu_stream_weight_loader.sv,14613,流式权重读取和片上缓存装载; Shared NPU RTL: npu_stream_weight_loader,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_weight_loader.sv
+src/hardware/rtl/accelerator/npu_stream_write_fabric.sv,2091,Shared NPU RTL: npu_stream_write_fabric; modules=npu_stream_write_fabric,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_stream_write_fabric.sv
+src/hardware/rtl/accelerator/npu_task_controller.sv,10121,Shared NPU RTL: npu_task_controller; modules=npu_task_controller,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_task_controller.sv
+src/hardware/rtl/accelerator/npu_wide_math.sv,5669,"Shared NPU RTL: npu_wide_math; modules=npu_wide_math,npu_math_port,npu_math_fabric",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_wide_math.sv
+src/hardware/rtl/accelerator/npu_wide_math_fast.sv,4295,Shared NPU RTL: npu_wide_math_fast; modules=npu_wide_math_fast,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\unified_npu\rtl\npu_wide_math_fast.sv
+src/hardware/rtl/video/ai_camera_pipeline.sv,40623,Camera / DMA / display integration RTL: ai_camera_pipeline; modules=ai_camera_pipeline,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_camera_pipeline.sv
+src/hardware/rtl/video/ai_camera_pipeline_bd.v,20918,Camera / DMA / display integration RTL: ai_camera_pipeline_bd; modules=ai_camera_pipeline_bd,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_camera_pipeline_bd.v
+src/hardware/rtl/video/ai_dma64.sv,3037,Camera / DMA / display integration RTL: ai_dma64; modules=ai_dma64,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_dma64.sv
+src/hardware/rtl/video/ai_frame_scanout.sv,15623,Camera / DMA / display integration RTL: ai_frame_scanout; modules=ai_frame_scanout,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_frame_scanout.sv
+src/hardware/rtl/video/ai_preprocess_top.sv,32054,Camera / DMA / display integration RTL: ai_preprocess_top; modules=ai_preprocess_top,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_preprocess_top.sv
+src/hardware/rtl/video/ai_result_overlay.sv,24297,Camera / DMA / display integration RTL: ai_result_overlay; modules=ai_result_overlay,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_result_overlay.sv
+src/hardware/rtl/video/ai_snapshot.sv,5384,Camera / DMA / display integration RTL: ai_snapshot; modules=ai_snapshot,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\rtl\ai_snapshot.sv
+src/hardware/rtl/video/cam_xclk_gen.v,1679,Board video / sensor / clock RTL: cam_xclk_gen; modules=cam_xclk_gen,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\cam_xclk_gen.v
+src/hardware/rtl/video/camera_720p30_top.v,11265,Board video / sensor / clock RTL: camera_720p30_top; modules=camera_720p30_top,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\camera_720p30_top.v
+src/hardware/rtl/video/clock_gen_720p.v,1418,Board video / sensor / clock RTL: clock_gen_720p; modules=clock_gen_720p,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\clock_gen_720p.v
+src/hardware/rtl/video/dvi_encoder.v,2788,Board video / sensor / clock RTL: dvi_encoder; modules=dvi_encoder,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\dvi_encoder.v
+src/hardware/rtl/video/dvi_transmitter_top.v,2514,Board video / sensor / clock RTL: dvi_transmitter_top; modules=dvi_transmitter_top,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\dvi_transmitter_top.v
+src/hardware/rtl/video/dvp_to_axis.v,13578,Board video / sensor / clock RTL: dvp_to_axis; modules=dvp_to_axis,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\dvp_to_axis.v
+src/hardware/rtl/video/ov5640_720p_rom.v,16944,Board video / sensor / clock RTL: ov5640_720p_rom; modules=ov5640_720p_rom,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\ov5640_720p_rom.v
+src/hardware/rtl/video/ov5640_sccb_ctrl.v,16042,"Board video / sensor / clock RTL: ov5640_sccb_ctrl; modules=ov5640_sccb_ctrl,camera_sccb_master",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\ov5640_sccb_ctrl.v
+src/hardware/rtl/video/serializer_10_to_1.v,2001,Board video / sensor / clock RTL: serializer_10_to_1; modules=serializer_10_to_1,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\serializer_10_to_1.v
+src/hardware/rtl/video/video_system_wrapper.v,5221,Board video / sensor / clock RTL: video_system_wrapper; modules=video_system_wrapper,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\imports\rtl\video_system_wrapper.v
+src/host/compiler/abi.md,9833,"AIPKG3 compiler, integer reference or binary ABI",copied,D:\AI\fpga_ai\deployment\host_v1\ABI.md
+src/host/compiler/aipkg3_abi.h,2612,"AIPKG3 compiler, integer reference or binary ABI",copied,D:\AI\fpga_ai\deployment\host_v1\aipkg3_abi.h
+src/host/compiler/compiler.py,17606,"QDQ ONNX到整数执行图的主机编译器; AIPKG3 compiler, integer reference or binary ABI; Compile the frozen QDQ ONNX models to a static integer dataflow program.",adapted,D:\AI\fpga_ai\deployment\host_v1\compiler.py
+src/host/compiler/host.py,10790,"AIPKG3 compiler, integer reference or binary ABI; User-facing offline model package tool: inspect, prepare input, integer infer.",adapted,D:\AI\fpga_ai\deployment\host_v1\host.py
+src/host/compiler/integer_runtime.py,12253,"AIPKG3 compiler, integer reference or binary ABI; Executable integer golden for AIGRAPH_INTEGER_V1.",adapted,D:\AI\fpga_ai\deployment\host_v1\integer_runtime.py
+src/host/compiler/legacy_cpu.py,2866,"AIPKG3 compiler, integer reference or binary ABI; Standalone integer interpreter for the preserved 48-op ResNet DDR payload.",copied,D:\AI\fpga_ai\deployment\host_v1\legacy_cpu.py
+src/host/compiler/legacy_reference.py,3198,"AIPKG3 compiler, integer reference or binary ABI; Read-only adapter for the original ResNet integer DDR ABI and Golden helpers.",adapted,D:\AI\fpga_ai\deployment\host_v1\legacy_reference.py
+src/host/compiler/package.py,16916,"AIPKG模型镜像组织、读写和格式校验; AIPKG3 compiler, integer reference or binary ABI; Relocatable AIPKG3 DDR images, binary descriptors, verifier and loader output.",adapted,D:\AI\fpga_ai\deployment\host_v1\package.py
+src/host/compiler/provenance.py,2343,Compiler source and input hashing; Content-addressed evidence for the offline release; never trusts timestamps.,adapted,D:\AI\fpga_ai\deployment\host_v1\provenance.py
+src/host/plan_tools/compare_graph_output.py,5064,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Exact comparison of a little-endian RTL/board output dump to frozen Golden.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compare_graph_output.py
+src/host/plan_tools/compile_coco80.py,11445,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Compile an independently named COCO80 candidate with the existing ABI3 compiler.",adapted,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compile_coco80.py
+src/host/plan_tools/compile_conv_fused_plan.py,6412,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Exact Conv -> optional SiLU -> optional Quant, with frozen AIPKG3 payloads.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compile_conv_fused_plan.py
+src/host/plan_tools/compile_graph_plan.py,24488,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Lower a frozen AIPKG3 graph into relocatable hardware execution records.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compile_graph_plan.py
+src/host/plan_tools/compile_optimized_plan.py,10418,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Compile exact SiLU/quant fusion without changing frozen AIPKG3 tensors.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compile_optimized_plan.py
+src/host/plan_tools/compile_resnet_plan.py,15909,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Adapt the frozen 48-op ResNet image to the shared NPUPLN1 backend.",adapted,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\compile_resnet_plan.py
+src/host/plan_tools/legacy_plan_abi.py,2186,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; ResNet numerical extension of NPUPLN1 (record flag bit 0).",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\legacy_plan_abi.py
+src/host/plan_tools/load_graph.tcl,6153,Auxiliary JTAG script embedded by original offline plan compiler; not the Linux deployment entry,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\load_graph.tcl
+src/host/plan_tools/pack_runtime_weights.py,10732,"WPK1运行时权重布局重排；不执行浮点量化; NPUPLN1 plan generation, dimension specialization or WPK1 layout; Derive a separate WPK1 runtime image; frozen OIHW and Golden stay intact.",adapted,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\pack_runtime_weights.py
+src/host/plan_tools/plan_manifest.py,22541,"离线模型派生与执行计划的结构检查合同; Offline construction contract imported by original plan/WPK1 tools; distinct from final Linux strict runtime manifest; Versioned SD bundle contract, shared by file packer and Linux runtime.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\runtime\linux\manifest.py
+src/host/plan_tools/plan_reference.py,17893,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Functional NPUPLN1 interpreter, independent of graph lowering.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\plan_reference.py
+src/host/plan_tools/prepare_predecoded_control.py,12020,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Create a separate PS-predecoded NPUPRE1/AFF1 model image.",adapted,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\prepare_predecoded_control.py
+src/host/plan_tools/read_graph_result.tcl,3841,Auxiliary JTAG script embedded by original offline plan compiler; not the Linux deployment entry,copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\read_graph_result.tcl
+src/host/plan_tools/runtime_manifest.py,24159,"最终三模型包的严格Linux运行合同; Self-contained offline package validation contract, matched to current Linux runtime; Versioned SD bundle contract, shared by file packer and Linux runtime.",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\manifest.py
+src/host/plan_tools/specialize_resnet.py,18325,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Derive a 160/128 ResNet package from the immutable unified 224 package.",copied,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\build_resnet_size.py
+src/host/plan_tools/specialize_yolox.py,9747,"NPUPLN1 plan generation, dimension specialization or WPK1 layout; Specialize the frozen integer YOLOX graph to 320, without training.",adapted,D:\AI_acceleration\FPGA_Projects\dual_display\acceleration\unified_npu\tools\build_yolo320.py
+src/host/quantization/coco80/export_mixed_precision_onnx.py,5837,混合精度量化参考到QDQ ONNX的导出; Original 256-pixel COCO PTQ task adapter and quantization core; Export the selected integer tensors as an executable standard ONNX QDQ graph.,adapted,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\scripts\export_mixed_precision_onnx.py
+src/host/quantization/coco80/mixed_precision_ptq.py,28890,"原YOLOX混合精度PTQ数值核心; Original 256-pixel COCO PTQ task adapter and quantization core; Deterministic, accuracy-gated PTQ reference for the two selected NEU models.",adapted,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\scripts\mixed_precision_ptq.py
+src/host/quantization/coco80/mixed_precision_ptq_coco80.py,14610,Original 256-pixel COCO PTQ task adapter and quantization core; COCO task adapter. Quantization math is imported unchanged from original PTQ.,adapted,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\scripts\mixed_precision_ptq_coco80.py
+src/host/quantization/coco80/prepare_coco_calibration.py,9018,Original 256-pixel COCO PTQ task adapter and quantization core; Prepare only a deterministic COCO train calibration subset; never edit val.,adapted,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\scripts\prepare_coco_calibration.py
+src/host/quantization/coco80/refine_yolox_coco80_precision.py,12686,Original 256-pixel COCO PTQ task adapter and quantization core; Run COCO-only W8/A8/A16 policy search and original QDQ exporter.,adapted,D:\AI\fpga_ai\quantized\coco80_yolox_s_256_20261029_run02\scripts\refine_yolox_coco80_precision.py
+src/host/quantization/neu6/export_mixed_precision_onnx.py,5837,"混合精度量化参考到QDQ ONNX的导出; Existing mixed-precision PTQ, selector or QDQ exporter; Export the selected integer tensors as an executable standard ONNX QDQ graph.",adapted,D:\AI\fpga_ai\quantized\mixed_precision_20261019\scripts\export_mixed_precision_onnx.py
+src/host/quantization/neu6/mixed_precision_ptq.py,28890,"原YOLOX混合精度PTQ数值核心; Existing mixed-precision PTQ, selector or QDQ exporter; Deterministic, accuracy-gated PTQ reference for the two selected NEU models.",adapted,D:\AI\fpga_ai\quantized\mixed_precision_20261019\scripts\mixed_precision_ptq.py
+src/host/quantization/neu6/refine_yolox_precision.py,4120,"Existing mixed-precision PTQ, selector or QDQ exporter; Validation-only activation/weight sensitivity refinement for YOLOX A.",copied,D:\AI\fpga_ai\quantized\mixed_precision_20261019\scripts\refine_yolox_precision.py
+src/host/quantization/resnet18/build_requant_params.py,11520,ResNet整数重定点参数推导; Existing ResNet export or exact integer arithmetic reference,adapted,D:\AI\fpga_ai\tools\build_requant_params.py
+src/host/quantization/resnet18/export_int8_model.py,16427,Existing QDQ-to-descriptor export; not a quantizer; Export the existing QDQ ONNX to the descriptor/DDR ABI; never train/quantize.,adapted,D:\AI\fpga_ai\fpga\rtl_resnet18\tools\export_int8_model.py
+src/host/quantization/resnet18/export_resnet18_onnx.py,4802,Existing ResNet export or exact integer arithmetic reference,adapted,D:\AI\fpga_ai\tools\export_resnet18_onnx.py
+src/host/quantization/resnet18/verify_full_resnet18_int8.py,44131,ResNet冻结整数Golden数值规格与比较实现; Existing ResNet export or exact integer arithmetic reference,adapted,D:\AI\fpga_ai\tools\verify_full_resnet18_int8.py
+src/host/requirements.txt,298,Host model-tool Python dependencies; historical environment retained separately,adapted,
+src/host/training/prepare_neu_det.py,9277,Original dataset conversion and duplicate-handling procedure; Convert original NEU-DET Pascal VOC XMLs to leakage-free YOLOX COCO split.,copied,C:\Users\ii\Desktop\YoloX-S-1\prepare_neu_voc_paper_clean_v2.py
+src/host/training/train_resnet18.py,12110,Original NEU classification training procedure,adapted,D:\AI\fpga_ai\training\train_resnet18.py
+src/host/training/yolox_neu6.py,1361,"Exact experiment configuration used by selected NEU checkpoint; YOLOX-s MixUp ablation, same NEU-DET split and training settings.",adapted,C:\Users\ii\Desktop\YoloX-S-1\exps\example\custom\neu_seed2022_mosaic10_yolox_s.py
+src/software/app/src/CMakeLists.txt,4281,Standalone Cortex-A9 application source / Vitis build configuration: CMakeLists,adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\CMakeLists.txt
+src/software/app/src/ai_board_keys.c,1552,板上实体按键读取与控制支持; Standalone Cortex-A9 application source / Vitis build configuration: ai_board_keys,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_board_keys.c
+src/software/app/src/ai_board_keys.h,535,Standalone Cortex-A9 application source / Vitis build configuration: ai_board_keys,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_board_keys.h
+src/software/app/src/ai_camera_catalog.h,2008,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_catalog,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_catalog.h
+src/software/app/src/ai_camera_geometry.h,665,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_geometry,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_geometry.h
+src/software/app/src/ai_camera_luts.h,4206,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_luts,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_luts.h
+src/software/app/src/ai_camera_math.c,12689,固定点检测框解码、数值换算和NMS共享算法; Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_math.c
+src/software/app/src/ai_camera_math.h,3929,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_math.h
+src/software/app/src/ai_camera_math_tables.h,25635,共享固定点数学查找表; Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_math_tables,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_math_tables.h
+src/software/app/src/ai_camera_memory.c,1762,相机帧槽、模型槽与工作区的DDR管理; Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_memory,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_memory.c
+src/software/app/src/ai_camera_memory.h,1027,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_memory,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_memory.h
+src/software/app/src/ai_camera_models.c,24188,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_models,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_models.c
+src/software/app/src/ai_camera_models.h,3431,Standalone Cortex-A9 application source / Vitis build configuration: ai_camera_models,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_camera_models.h
+src/software/app/src/ai_coco80_config.h,1248,Standalone Cortex-A9 application source / Vitis build configuration: ai_coco80_config,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_coco80_config.h
+src/software/app/src/ai_detector.c,5393,推理任务和检测结果处理状态机; Standalone Cortex-A9 application source / Vitis build configuration: ai_detector,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_detector.c
+src/software/app/src/ai_detector.h,1402,Standalone Cortex-A9 application source / Vitis build configuration: ai_detector,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_detector.h
+src/software/app/src/ai_display.c,2954,PS侧结果发布、帧身份和显示状态管理; Standalone Cortex-A9 application source / Vitis build configuration: ai_display,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_display.c
+src/software/app/src/ai_display.h,1720,Standalone Cortex-A9 application source / Vitis build configuration: ai_display,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_display.h
+src/software/app/src/ai_preprocess.c,9641,图像缩放、像素格式与模型输入组织; Standalone Cortex-A9 application source / Vitis build configuration: ai_preprocess,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_preprocess.c
+src/software/app/src/ai_preprocess.h,3401,Standalone Cortex-A9 application source / Vitis build configuration: ai_preprocess,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_preprocess.h
+src/software/app/src/ai_ps_timing.c,4653,Standalone Cortex-A9 application source / Vitis build configuration: ai_ps_timing,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_ps_timing.c
+src/software/app/src/ai_ps_timing.h,3263,Standalone Cortex-A9 application source / Vitis build configuration: ai_ps_timing,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_ps_timing.h
+src/software/app/src/ai_resnet_score_lut.h,2185,ResNet分类置信度计算查找表; Standalone Cortex-A9 application source / Vitis build configuration: ai_resnet_score_lut,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_resnet_score_lut.h
+src/software/app/src/ai_result.h,648,Standalone Cortex-A9 application source / Vitis build configuration: ai_result,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_result.h
+src/software/app/src/ai_sd_boot.c,1261,Standalone Cortex-A9 application source / Vitis build configuration: ai_sd_boot,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_sd_boot.c
+src/software/app/src/ai_sd_boot.h,183,Standalone Cortex-A9 application source / Vitis build configuration: ai_sd_boot,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\ai_sd_boot.h
+src/software/app/src/empty_application_example.cmake,566,Standalone Cortex-A9 application source / Vitis build configuration: Empty_applicationExample,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\Empty_applicationExample.cmake
+src/software/app/src/lscript.ld,6398,Standalone Cortex-A9 application source / Vitis build configuration: lscript,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\lscript.ld
+src/software/app/src/main.c,836,Standalone Cortex-A9 application source / Vitis build configuration: main,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\main.c
+src/software/app/src/runtime.c,31664,Standalone Cortex-A9 application source / Vitis build configuration: runtime,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\runtime.c
+src/software/app/src/status_flags.h,899,Standalone Cortex-A9 application source / Vitis build configuration: status_flags,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\status_flags.h
+src/software/app/src/user_config.cmake,8140,Standalone Cortex-A9 application source / Vitis build configuration: UserConfig,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\app\src\UserConfig.cmake
+src/software/runtime/baremetal/npu_sd_hash.c,3304,"Optional standalone SD loading, hash and predecoded package support: npu_sd_hash",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\baremetal\npu_sd_hash.c
+src/software/runtime/baremetal/npu_sd_hash.h,484,"Optional standalone SD loading, hash and predecoded package support: npu_sd_hash",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\baremetal\npu_sd_hash.h
+src/software/runtime/baremetal/npu_sd_loader.c,18933,"Optional standalone SD loading, hash and predecoded package support: npu_sd_loader",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\baremetal\npu_sd_loader.c
+src/software/runtime/baremetal/npu_sd_loader.h,1607,"Optional standalone SD loading, hash and predecoded package support: npu_sd_loader",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\baremetal\npu_sd_loader.h
+src/software/runtime/baremetal/npu_sd_predecoded.h,15193,"Optional standalone SD loading, hash and predecoded package support: npu_sd_predecoded",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\baremetal\npu_sd_predecoded.h
+src/software/runtime/linux/Makefile,1095,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\Makefile
+src/software/runtime/linux/README.md,10136,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\README.md
+src/software/runtime/linux/app/Makefile,519,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\app\Makefile
+src/software/runtime/linux/app/camera_bridge.c,3462,Linux用户态与共享C预处理/后处理算法的桥接ABI; Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\app\camera_bridge.c
+src/software/runtime/linux/camera.json,392,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\camera.json
+src/software/runtime/linux/deploy.md,558,Linux production source; build/app/runtime/driver/device-tree configuration,adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\DEPLOY_CN.md
+src/software/runtime/linux/driver/Makefile,314,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\driver\Makefile
+src/software/runtime/linux/driver/unified_npu.c,18898,NPU字符设备驱动、寄存器访问、共享DDR、时钟与任务生命周期; Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\driver\unified_npu.c
+src/software/runtime/linux/driver/unified_npu_uapi.h,783,Linux内核与用户态共用的ioctl结构和ABI定义; Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\driver\unified_npu_uapi.h
+src/software/runtime/linux/dts/unified-npu-reserved.dtsi,2163,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\dts\unified-npu-reserved.dtsi
+src/software/runtime/linux/dts/unified-npu-runtime.dtso,1180,Linux production source; build/app/runtime/driver/device-tree configuration,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\dts\unified-npu-runtime.dtso
+src/software/runtime/linux/linux_camera.py,22211,摄像头运行循环、按键状态、任务提交与结果显示; Linux production source; build/app/runtime/driver/device-tree configuration; Single-owner camera/NPU/HDMI daemon; control locally or through SSH.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\linux_camera.py
+src/software/runtime/linux/manifest.py,24159,"生产运行时的模型清单及部署合同检查; Linux production source; build/app/runtime/driver/device-tree configuration; Versioned SD bundle contract, shared by file packer and Linux runtime.",copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\manifest.py
+src/software/runtime/linux/npu_runtime.py,28626,Linux设备封装、模型加载、推理提交和完成处理; Linux production source; build/app/runtime/driver/device-tree configuration; Single-owner Linux SD->DDR runtime and local CLI. No /dev/mem access.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\npu_runtime.py
+src/software/runtime/linux/pack_sd.py,6154,Linux production source; build/app/runtime/driver/device-tree configuration; Stage three existing npu100 packages in a NEW directory; never write a device.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\pack_sd.py
+src/software/runtime/linux/preflight.py,10765,Linux production source; build/app/runtime/driver/device-tree configuration; Read-only Linux DT/SD checks. Never opens the NPU device or accesses MMIO.,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\preflight.py
+src/software/runtime/linux/systemd/npu100-fpga-check.service,717,Optional systemd service template; final board uses SysV init,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\systemd\npu100-fpga-check.service
+src/software/runtime/linux/systemd/unified-npu.service,1201,Optional systemd service template; final board uses SysV init,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\software\runtime\linux\systemd\unified-npu.service
+src/third_party/yolox/coco80/exps/default/__init__.py,98,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\__init__.py
+src/third_party/yolox/coco80/exps/default/yolov3.py,1031,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolov3.py
+src/third_party/yolox/coco80/exps/default/yolox_l.py,370,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_l.py
+src/third_party/yolox/coco80/exps/default/yolox_m.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_m.py
+src/third_party/yolox/coco80/exps/default/yolox_nano.py,1565,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_nano.py
+src/third_party/yolox/coco80/exps/default/yolox_s.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_s.py
+src/third_party/yolox/coco80/exps/default/yolox_tiny.py,560,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_tiny.py
+src/third_party/yolox/coco80/exps/default/yolox_x.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\exps\default\yolox_x.py
+src/third_party/yolox/coco80/license,11572,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S\LICENSE
+src/third_party/yolox/coco80/readme.md,13563,Upstream YOLOX usage and attribution,copied,C:\Users\ii\Desktop\YoloX-S\README.md
+src/third_party/yolox/coco80/requirements.txt,295,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S\requirements.txt
+src/third_party/yolox/coco80/setup.cfg,636,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S\setup.cfg
+src/third_party/yolox/coco80/setup.py,2710,YOLOX upstream license or installation metadata,adapted,C:\Users\ii\Desktop\YoloX-S\setup.py
+src/third_party/yolox/coco80/tools/__init__.py,98,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\__init__.py
+src/third_party/yolox/coco80/tools/demo.py,10495,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\demo.py
+src/third_party/yolox/coco80/tools/eval.py,6697,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\eval.py
+src/third_party/yolox/coco80/tools/export_onnx.py,3754,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\export_onnx.py
+src/third_party/yolox/coco80/tools/export_torchscript.py,2346,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\export_torchscript.py
+src/third_party/yolox/coco80/tools/train.py,4328,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\train.py
+src/third_party/yolox/coco80/tools/trt.py,2596,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\trt.py
+src/third_party/yolox/coco80/tools/visualize_assign.py,2793,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\tools\visualize_assign.py
+src/third_party/yolox/coco80/yolox/__init__.py,73,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\__init__.py
+src/third_party/yolox/coco80/yolox/core/__init__.py,158,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\core\__init__.py
+src/third_party/yolox/coco80/yolox/core/launch.py,4534,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\core\launch.py
+src/third_party/yolox/coco80/yolox/core/trainer.py,16056,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\core\trainer.py
+src/third_party/yolox/coco80/yolox/data/__init__.py,363,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\__init__.py
+src/third_party/yolox/coco80/yolox/data/data_augment.py,7603,YOLOX source snapshot; original Apache-2.0 license retained; Data augmentation functionality. Passed as callable transformations to,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\data_augment.py
+src/third_party/yolox/coco80/yolox/data/data_prefetcher.py,1700,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\data_prefetcher.py
+src/third_party/yolox/coco80/yolox/data/dataloading.py,3784,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\dataloading.py
+src/third_party/yolox/coco80/yolox/data/datasets/__init__.py,334,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\__init__.py
+src/third_party/yolox/coco80/yolox/data/datasets/coco.py,6551,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\coco.py
+src/third_party/yolox/coco80/yolox/data/datasets/coco_classes.py,1382,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\coco_classes.py
+src/third_party/yolox/coco80/yolox/data/datasets/datasets_wrapper.py,11178,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\datasets_wrapper.py
+src/third_party/yolox/coco80/yolox/data/datasets/mosaicdetection.py,9807,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\mosaicdetection.py
+src/third_party/yolox/coco80/yolox/data/datasets/voc.py,12277,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\voc.py
+src/third_party/yolox/coco80/yolox/data/datasets/voc_classes.py,469,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\datasets\voc_classes.py
+src/third_party/yolox/coco80/yolox/data/samplers.py,2939,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\data\samplers.py
+src/third_party/yolox/coco80/yolox/evaluators/__init__.py,184,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\evaluators\__init__.py
+src/third_party/yolox/coco80/yolox/evaluators/coco_evaluator.py,11839,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\evaluators\coco_evaluator.py
+src/third_party/yolox/coco80/yolox/evaluators/voc_eval.py,5814,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\evaluators\voc_eval.py
+src/third_party/yolox/coco80/yolox/evaluators/voc_evaluator.py,6751,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\evaluators\voc_evaluator.py
+src/third_party/yolox/coco80/yolox/exp/__init__.py,181,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\exp\__init__.py
+src/third_party/yolox/coco80/yolox/exp/base_exp.py,2690,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\exp\base_exp.py
+src/third_party/yolox/coco80/yolox/exp/build.py,1279,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\exp\build.py
+src/third_party/yolox/coco80/yolox/exp/default/__init__.py,1018,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\exp\default\__init__.py
+src/third_party/yolox/coco80/yolox/exp/yolox_base.py,13969,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\exp\yolox_base.py
+src/third_party/yolox/coco80/yolox/layers/__init__.py,398,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\layers\__init__.py
+src/third_party/yolox/coco80/yolox/layers/cocoeval/cocoeval.cpp,21326,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\layers\cocoeval\cocoeval.cpp
+src/third_party/yolox/coco80/yolox/layers/cocoeval/cocoeval.h,4076,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\layers\cocoeval\cocoeval.h
+src/third_party/yolox/coco80/yolox/layers/fast_coco_eval_api.py,5946,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\layers\fast_coco_eval_api.py
+src/third_party/yolox/coco80/yolox/layers/jit_ops.py,4600,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\layers\jit_ops.py
+src/third_party/yolox/coco80/yolox/models/__init__.py,319,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\__init__.py
+src/third_party/yolox/coco80/yolox/models/build.py,4377,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\build.py
+src/third_party/yolox/coco80/yolox/models/darknet.py,6198,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\darknet.py
+src/third_party/yolox/coco80/yolox/models/losses.py,1730,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\losses.py
+src/third_party/yolox/coco80/yolox/models/network_blocks.py,6302,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\network_blocks.py
+src/third_party/yolox/coco80/yolox/models/yolo_fpn.py,2560,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\yolo_fpn.py
+src/third_party/yolox/coco80/yolox/models/yolo_head.py,24582,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\yolo_head.py
+src/third_party/yolox/coco80/yolox/models/yolo_pafpn.py,3646,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\yolo_pafpn.py
+src/third_party/yolox/coco80/yolox/models/yolox.py,1594,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\models\yolox.py
+src/third_party/yolox/coco80/yolox/tools/__init__.py,993,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\tools\__init__.py
+src/third_party/yolox/coco80/yolox/utils/__init__.py,509,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\__init__.py
+src/third_party/yolox/coco80/yolox/utils/allreduce_norm.py,2938,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\allreduce_norm.py
+src/third_party/yolox/coco80/yolox/utils/boxes.py,4855,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\boxes.py
+src/third_party/yolox/coco80/yolox/utils/checkpoint.py,1355,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\checkpoint.py
+src/third_party/yolox/coco80/yolox/utils/compat.py,325,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\compat.py
+src/third_party/yolox/coco80/yolox/utils/demo_utils.py,5260,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\demo_utils.py
+src/third_party/yolox/coco80/yolox/utils/dist.py,8356,YOLOX source snapshot; original Apache-2.0 license retained; This file contains primitives for multi-gpu communication.,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\dist.py
+src/third_party/yolox/coco80/yolox/utils/ema.py,2133,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\ema.py
+src/third_party/yolox/coco80/yolox/utils/logger.py,15076,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\logger.py
+src/third_party/yolox/coco80/yolox/utils/lr_scheduler.py,6756,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\lr_scheduler.py
+src/third_party/yolox/coco80/yolox/utils/metric.py,3593,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\metric.py
+src/third_party/yolox/coco80/yolox/utils/mlflow_logger.py,19962,"YOLOX source snapshot; original Apache-2.0 license retained; Logging training runs with hyperparameter, datasets and trained models to MlFlow.",copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\mlflow_logger.py
+src/third_party/yolox/coco80/yolox/utils/model_utils.py,5800,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\model_utils.py
+src/third_party/yolox/coco80/yolox/utils/setup_env.py,2752,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\setup_env.py
+src/third_party/yolox/coco80/yolox/utils/visualize.py,3727,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S\yolox\utils\visualize.py
+src/third_party/yolox/neu6/exps/default/__init__.py,98,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\__init__.py
+src/third_party/yolox/neu6/exps/default/yolov3.py,1031,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolov3.py
+src/third_party/yolox/neu6/exps/default/yolox_l.py,370,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_l.py
+src/third_party/yolox/neu6/exps/default/yolox_m.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_m.py
+src/third_party/yolox/neu6/exps/default/yolox_nano.py,1565,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_nano.py
+src/third_party/yolox/neu6/exps/default/yolox_s.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_s.py
+src/third_party/yolox/neu6/exps/default/yolox_tiny.py,560,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_tiny.py
+src/third_party/yolox/neu6/exps/default/yolox_x.py,372,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\exps\default\yolox_x.py
+src/third_party/yolox/neu6/license,11572,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S-1\LICENSE
+src/third_party/yolox/neu6/readme.md,13563,Upstream YOLOX usage and attribution,copied,C:\Users\ii\Desktop\YoloX-S-1\README.md
+src/third_party/yolox/neu6/requirements.txt,295,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S-1\requirements.txt
+src/third_party/yolox/neu6/setup.cfg,636,YOLOX upstream license or installation metadata,copied,C:\Users\ii\Desktop\YoloX-S-1\setup.cfg
+src/third_party/yolox/neu6/setup.py,2710,YOLOX upstream license or installation metadata,adapted,C:\Users\ii\Desktop\YoloX-S-1\setup.py
+src/third_party/yolox/neu6/tools/__init__.py,98,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\__init__.py
+src/third_party/yolox/neu6/tools/demo.py,10495,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\demo.py
+src/third_party/yolox/neu6/tools/eval.py,6697,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\eval.py
+src/third_party/yolox/neu6/tools/export_onnx.py,3754,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\export_onnx.py
+src/third_party/yolox/neu6/tools/export_torchscript.py,2346,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\export_torchscript.py
+src/third_party/yolox/neu6/tools/train.py,4328,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\train.py
+src/third_party/yolox/neu6/tools/trt.py,2596,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\trt.py
+src/third_party/yolox/neu6/tools/visualize_assign.py,2793,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\tools\visualize_assign.py
+src/third_party/yolox/neu6/yolox/__init__.py,73,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\__init__.py
+src/third_party/yolox/neu6/yolox/core/__init__.py,158,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\core\__init__.py
+src/third_party/yolox/neu6/yolox/core/launch.py,4534,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\core\launch.py
+src/third_party/yolox/neu6/yolox/core/trainer.py,16056,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\core\trainer.py
+src/third_party/yolox/neu6/yolox/data/__init__.py,363,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\__init__.py
+src/third_party/yolox/neu6/yolox/data/data_augment.py,7603,YOLOX source snapshot; original Apache-2.0 license retained; Data augmentation functionality. Passed as callable transformations to,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\data_augment.py
+src/third_party/yolox/neu6/yolox/data/data_prefetcher.py,1700,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\data_prefetcher.py
+src/third_party/yolox/neu6/yolox/data/dataloading.py,3784,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\dataloading.py
+src/third_party/yolox/neu6/yolox/data/datasets/__init__.py,334,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\__init__.py
+src/third_party/yolox/neu6/yolox/data/datasets/coco.py,6551,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\coco.py
+src/third_party/yolox/neu6/yolox/data/datasets/coco_classes.py,1382,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\coco_classes.py
+src/third_party/yolox/neu6/yolox/data/datasets/datasets_wrapper.py,11178,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\datasets_wrapper.py
+src/third_party/yolox/neu6/yolox/data/datasets/mosaicdetection.py,9807,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\mosaicdetection.py
+src/third_party/yolox/neu6/yolox/data/datasets/voc.py,12277,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\voc.py
+src/third_party/yolox/neu6/yolox/data/datasets/voc_classes.py,469,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\datasets\voc_classes.py
+src/third_party/yolox/neu6/yolox/data/samplers.py,2939,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\data\samplers.py
+src/third_party/yolox/neu6/yolox/evaluators/__init__.py,184,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\evaluators\__init__.py
+src/third_party/yolox/neu6/yolox/evaluators/coco_evaluator.py,12312,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\evaluators\coco_evaluator.py
+src/third_party/yolox/neu6/yolox/evaluators/voc_eval.py,5814,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\evaluators\voc_eval.py
+src/third_party/yolox/neu6/yolox/evaluators/voc_evaluator.py,6751,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\evaluators\voc_evaluator.py
+src/third_party/yolox/neu6/yolox/exp/__init__.py,181,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\exp\__init__.py
+src/third_party/yolox/neu6/yolox/exp/base_exp.py,2690,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\exp\base_exp.py
+src/third_party/yolox/neu6/yolox/exp/build.py,1279,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\exp\build.py
+src/third_party/yolox/neu6/yolox/exp/default/__init__.py,1018,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\exp\default\__init__.py
+src/third_party/yolox/neu6/yolox/exp/yolox_base.py,13969,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\exp\yolox_base.py
+src/third_party/yolox/neu6/yolox/layers/__init__.py,398,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\layers\__init__.py
+src/third_party/yolox/neu6/yolox/layers/cocoeval/cocoeval.cpp,21326,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\layers\cocoeval\cocoeval.cpp
+src/third_party/yolox/neu6/yolox/layers/cocoeval/cocoeval.h,4076,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\layers\cocoeval\cocoeval.h
+src/third_party/yolox/neu6/yolox/layers/fast_coco_eval_api.py,5946,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\layers\fast_coco_eval_api.py
+src/third_party/yolox/neu6/yolox/layers/jit_ops.py,4600,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\layers\jit_ops.py
+src/third_party/yolox/neu6/yolox/models/__init__.py,319,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\__init__.py
+src/third_party/yolox/neu6/yolox/models/build.py,4377,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\build.py
+src/third_party/yolox/neu6/yolox/models/darknet.py,6198,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\darknet.py
+src/third_party/yolox/neu6/yolox/models/losses.py,1730,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\losses.py
+src/third_party/yolox/neu6/yolox/models/network_blocks.py,6302,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\network_blocks.py
+src/third_party/yolox/neu6/yolox/models/yolo_fpn.py,2560,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\yolo_fpn.py
+src/third_party/yolox/neu6/yolox/models/yolo_head.py,24582,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\yolo_head.py
+src/third_party/yolox/neu6/yolox/models/yolo_pafpn.py,3646,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\yolo_pafpn.py
+src/third_party/yolox/neu6/yolox/models/yolox.py,1594,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\models\yolox.py
+src/third_party/yolox/neu6/yolox/tools/__init__.py,993,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\tools\__init__.py
+src/third_party/yolox/neu6/yolox/utils/__init__.py,509,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\__init__.py
+src/third_party/yolox/neu6/yolox/utils/allreduce_norm.py,2938,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\allreduce_norm.py
+src/third_party/yolox/neu6/yolox/utils/boxes.py,4855,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\boxes.py
+src/third_party/yolox/neu6/yolox/utils/checkpoint.py,1355,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\checkpoint.py
+src/third_party/yolox/neu6/yolox/utils/compat.py,325,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\compat.py
+src/third_party/yolox/neu6/yolox/utils/demo_utils.py,5260,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\demo_utils.py
+src/third_party/yolox/neu6/yolox/utils/dist.py,8356,YOLOX source snapshot; original Apache-2.0 license retained; This file contains primitives for multi-gpu communication.,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\dist.py
+src/third_party/yolox/neu6/yolox/utils/ema.py,2133,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\ema.py
+src/third_party/yolox/neu6/yolox/utils/logger.py,15076,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\logger.py
+src/third_party/yolox/neu6/yolox/utils/lr_scheduler.py,6756,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\lr_scheduler.py
+src/third_party/yolox/neu6/yolox/utils/metric.py,3593,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\metric.py
+src/third_party/yolox/neu6/yolox/utils/mlflow_logger.py,19962,"YOLOX source snapshot; original Apache-2.0 license retained; Logging training runs with hyperparameter, datasets and trained models to MlFlow.",copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\mlflow_logger.py
+src/third_party/yolox/neu6/yolox/utils/model_utils.py,5800,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\model_utils.py
+src/third_party/yolox/neu6/yolox/utils/setup_env.py,2752,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\setup_env.py
+src/third_party/yolox/neu6/yolox/utils/visualize.py,3727,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\visualize.py
+tools/export_collaboration.py,3263,项目的维护、清单或检查工具; Export only user-visible dialogue from an explicitly selected local session.,authored_or_generated,
+tools/release_manifest.py,14585,项目的维护、清单或检查工具; Generate and verify a portable release inventory without vendor dependencies.,authored_or_generated,

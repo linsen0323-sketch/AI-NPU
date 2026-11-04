@@ -1,0 +1,22 @@
+{
+  "architecture": "resnet18",
+  "epoch": 27,
+  "val_accuracy": 100.0,
+  "val_loss": 0.0003447307674731645,
+  "class_to_idx": {
+    "Cr": 0,
+    "In": 1,
+    "PS": 2,
+    "Pa": 3,
+    "RS": 4,
+    "Sc": 5
+  },
+  "num_classes": 6,
+  "seed": 42,
+  "source_checkpoint_sha256": "cdc75c95a18242f510392f29a8463367da7f5f5e0b27ec65242fdd049c9a064d",
+  "packaged_checkpoint": "models/checkpoints/resnet18_neu6.pth",
+  "extraction": "torch.load(weights_only=True); tensor/optimizer payloads not exported",
+  "input_resolution_of_training": 224,
+  "metric_scope": "checkpoint-stored validation at original training configuration; not final 160-input or board accuracy",
+  "full_epoch_history_available": false
+}

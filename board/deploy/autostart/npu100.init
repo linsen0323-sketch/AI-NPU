@@ -1,0 +1,15 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          npu100
+# Required-Start:    $local_fs $remote_fs
+# Required-Stop:     $local_fs $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: NPU100 SD models, camera preview and physical keys
+### END INIT INFO
+umask 077
+case "${1:-}" in
+    start|stop|status) ;;
+    *) echo 'Usage: /etc/init.d/npu100 start|stop|status' >&2; exit 2 ;;
+esac
+exec /opt/npu100/python-runtime/python3 -u /opt/npu100-autostart/service.py "$@"

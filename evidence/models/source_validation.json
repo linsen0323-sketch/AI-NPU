@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "python_files_parsed": 179,
+  "syntax_errors": [],
+  "legacy_cli_safety": "host prepare-input and integer_runtime direct CLI both refused before file I/O",
+  "training_executed": false,
+  "quantization_executed": false,
+  "inference_executed": false
+}

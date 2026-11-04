@@ -1,0 +1,1117 @@
+{
+  "scope": "LINUX_SUBMISSION_PACKAGING_SOURCE_MAPPING",
+  "original_files_modified": false,
+  "records": [
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\app\\camera_bridge.c",
+      "target": "software/runtime/linux/app/camera_bridge.c",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "30731523a6cb1262cc7b474cdedcddf2ee4fe518c76924e2d3568dc9ffe4b5d0",
+      "target_sha256": "30731523a6cb1262cc7b474cdedcddf2ee4fe518c76924e2d3568dc9ffe4b5d0",
+      "bytes": 3462,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\app\\Makefile",
+      "target": "software/runtime/linux/app/Makefile",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "b38a2469a45ecc0d6e7d12d3f39700d78fca4d0d09e0e51bf9c00dffd3d5ed4e",
+      "target_sha256": "b38a2469a45ecc0d6e7d12d3f39700d78fca4d0d09e0e51bf9c00dffd3d5ed4e",
+      "bytes": 519,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\camera.json",
+      "target": "software/runtime/linux/camera.json",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "02b447767ad01b80aadd7e91121edaf3f626cc8dcf84204249f7d244ec961690",
+      "target_sha256": "02b447767ad01b80aadd7e91121edaf3f626cc8dcf84204249f7d244ec961690",
+      "bytes": 392,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\DEPLOY_CN.md",
+      "target": "software/runtime/linux/deploy.md",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "87b7b77a27f1e356b2a18c22d3ba17a84b7eb1b60d3ba40dc793498696c14282",
+      "target_sha256": "87b7b77a27f1e356b2a18c22d3ba17a84b7eb1b60d3ba40dc793498696c14282",
+      "bytes": 6498,
+      "modified": false,
+      "changes": [
+        "Renamed documentation to professional lowercase deploy.md; original content preserved"
+      ]
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\driver\\Makefile",
+      "target": "software/runtime/linux/driver/Makefile",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "ae0bf455965c30223d9b2922910f2a17aa027cce7bed4e2d604461212bd21ce0",
+      "target_sha256": "ae0bf455965c30223d9b2922910f2a17aa027cce7bed4e2d604461212bd21ce0",
+      "bytes": 314,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\driver\\unified_npu.c",
+      "target": "software/runtime/linux/driver/unified_npu.c",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "79ddea7490dd4a522e61caf022184c9e82055350110ce2718405837b9b138f71",
+      "target_sha256": "79ddea7490dd4a522e61caf022184c9e82055350110ce2718405837b9b138f71",
+      "bytes": 18898,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\driver\\unified_npu_uapi.h",
+      "target": "software/runtime/linux/driver/unified_npu_uapi.h",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "5b0067ade1c3d2346108aae76ef9f3095ed268b57a57da9210b4207990f82c99",
+      "target_sha256": "5b0067ade1c3d2346108aae76ef9f3095ed268b57a57da9210b4207990f82c99",
+      "bytes": 783,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\dts\\unified-npu-reserved.dtsi",
+      "target": "software/runtime/linux/dts/unified-npu-reserved.dtsi",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "e66c672684b74dd8faba01a84267a7f0652f4e2d0726cd68a95225dac5af0891",
+      "target_sha256": "e66c672684b74dd8faba01a84267a7f0652f4e2d0726cd68a95225dac5af0891",
+      "bytes": 2163,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\dts\\unified-npu-runtime.dtso",
+      "target": "software/runtime/linux/dts/unified-npu-runtime.dtso",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "04ebbe8aae3ed0cdaad31f7e121940de63666a7fa059d5b33fa9dc86b6f9698c",
+      "target_sha256": "04ebbe8aae3ed0cdaad31f7e121940de63666a7fa059d5b33fa9dc86b6f9698c",
+      "bytes": 1180,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\linux_camera.py",
+      "target": "software/runtime/linux/linux_camera.py",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "140f780c0d980823363027aa4cc01cdb94494954b6168e7ed62e56e8ee8e7dc2",
+      "target_sha256": "140f780c0d980823363027aa4cc01cdb94494954b6168e7ed62e56e8ee8e7dc2",
+      "bytes": 22211,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\Makefile",
+      "target": "software/runtime/linux/Makefile",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "a1a985ec07b38016a3269ea329e02899f3112a25b5f2bd70af09f2eb36478166",
+      "target_sha256": "a1a985ec07b38016a3269ea329e02899f3112a25b5f2bd70af09f2eb36478166",
+      "bytes": 1095,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\manifest.py",
+      "target": "software/runtime/linux/manifest.py",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "9180e3b680b08685805db1580e0bc7139b232569a1419fa6d06471ad1e0531bb",
+      "target_sha256": "9180e3b680b08685805db1580e0bc7139b232569a1419fa6d06471ad1e0531bb",
+      "bytes": 24159,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\npu_runtime.py",
+      "target": "software/runtime/linux/npu_runtime.py",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "557b52aa9760217825336a771398aeb479028f3aa2a732c8c42b08b43f105497",
+      "target_sha256": "557b52aa9760217825336a771398aeb479028f3aa2a732c8c42b08b43f105497",
+      "bytes": 28626,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\pack_sd.py",
+      "target": "software/runtime/linux/pack_sd.py",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "f2de09c573f6c750ea0aac1bd90c0a842e8b1acc54f99311c3996e722d197796",
+      "target_sha256": "f2de09c573f6c750ea0aac1bd90c0a842e8b1acc54f99311c3996e722d197796",
+      "bytes": 6154,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\preflight.py",
+      "target": "software/runtime/linux/preflight.py",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "35015706896d26d335036d8168f8b892ca6e70da7b285668eb686644ed29df23",
+      "target_sha256": "35015706896d26d335036d8168f8b892ca6e70da7b285668eb686644ed29df23",
+      "bytes": 10765,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\README.md",
+      "target": "software/runtime/linux/README.md",
+      "purpose": "Linux production source; build/app/runtime/driver/device-tree configuration",
+      "source_sha256": "44e7e8b5e028dab9e1db053ab77785d83ce69e8209480c91f732d45ab004d423",
+      "target_sha256": "44e7e8b5e028dab9e1db053ab77785d83ce69e8209480c91f732d45ab004d423",
+      "bytes": 10136,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\systemd\\npu100-fpga-check.service",
+      "target": "software/runtime/linux/systemd/npu100-fpga-check.service",
+      "purpose": "Optional systemd service template; final board uses SysV init",
+      "source_sha256": "ff6cdd624ffe5eef55a50e7346b2e9ef3a5b76ac56fa0b4a712a501d9035c76e",
+      "target_sha256": "ff6cdd624ffe5eef55a50e7346b2e9ef3a5b76ac56fa0b4a712a501d9035c76e",
+      "bytes": 717,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\software\\runtime\\linux\\systemd\\unified-npu.service",
+      "target": "software/runtime/linux/systemd/unified-npu.service",
+      "purpose": "Optional systemd service template; final board uses SysV init",
+      "source_sha256": "89163cc97545588f78633f571148c9eb4703a7041e8036abc4b1bdeac588e3d6",
+      "target_sha256": "89163cc97545588f78633f571148c9eb4703a7041e8036abc4b1bdeac588e3d6",
+      "bytes": 1201,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\SD_UPDATE\\BOOT.BIN",
+      "target": "board/boot/BOOT.BIN",
+      "purpose": "Matched Zynq FSBL, PL bitstream and bootloader boot image",
+      "source_sha256": "4707115527d5e730a4d5baff031fc5e59fa0706c1328b79c6483682ba1d13bf7",
+      "target_sha256": "4707115527d5e730a4d5baff031fc5e59fa0706c1328b79c6483682ba1d13bf7",
+      "bytes": 5227556,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\SD_UPDATE\\boot.scr",
+      "target": "board/boot/boot.scr",
+      "purpose": "Matched U-Boot boot script",
+      "source_sha256": "4c7ed60cad10872084bf727b2c9ab0eca9eab992635cf3abf67dfe7ed9cc7807",
+      "target_sha256": "4c7ed60cad10872084bf727b2c9ab0eca9eab992635cf3abf67dfe7ed9cc7807",
+      "bytes": 3830,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_BOOT_UPDATE_20261102\\image.ub",
+      "target": "board/boot/image.ub",
+      "purpose": "Final kernel FIT image with 256 MiB reserved DDR and runtime device tree",
+      "source_sha256": "34a91205a86ce3e2e8809c3ea2b340afdebdbd171bc2ce228040e6a7981981b8",
+      "target_sha256": "34a91205a86ce3e2e8809c3ea2b340afdebdbd171bc2ce228040e6a7981981b8",
+      "bytes": 5087879,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_boot_update_20261102\\npu100-system.dts",
+      "target": "board/linux/device_tree/system.dts",
+      "purpose": "Complete final flattened device-tree source",
+      "source_sha256": "e5b48dbdd45ae5d95895af79724a86e3a1beffc6320ecc5deba027716dc0e83d",
+      "target_sha256": "e5b48dbdd45ae5d95895af79724a86e3a1beffc6320ecc5deba027716dc0e83d",
+      "bytes": 18830,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_boot_update_20261102\\npu100-system.dtb",
+      "target": "board/linux/device_tree/system.dtb",
+      "purpose": "Final DTB embedded in image.ub",
+      "source_sha256": "569788e7f6e5c8bfa644114035f452634b297fb0bff29e4ce6369dc6c4d978e5",
+      "target_sha256": "569788e7f6e5c8bfa644114035f452634b297fb0bff29e4ce6369dc6c4d978e5",
+      "bytes": 16311,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_BOOT_UPDATE_20261102\\verify_after_boot.sh",
+      "target": "board/deploy/boot/verify_after_boot.sh",
+      "purpose": "Read-only kernel, boot and live-DT contract validation",
+      "source_sha256": "ca9e1240886e00609c0c56172e8269be51379264cf89136433a82a66579f8562",
+      "target_sha256": "ca9e1240886e00609c0c56172e8269be51379264cf89136433a82a66579f8562",
+      "bytes": 1859,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\unified_npu.ko",
+      "target": "board/linux/driver/unified_npu.ko",
+      "purpose": "Final ARMv7 kernel module with nominal-100MHz +/-1Hz clock guard",
+      "source_sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+      "target_sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+      "bytes": 17364,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\npu_driver_info",
+      "target": "board/linux/driver/npu_driver_info",
+      "purpose": "ARM INFO-ioctl metadata checker; no PL MMIO",
+      "source_sha256": "9c4c7510f58ddd0abce9f410f0358a7d3f6b4db9e18d2939e9b8b23c53fe1eae",
+      "target_sha256": "9c4c7510f58ddd0abce9f410f0358a7d3f6b4db9e18d2939e9b8b23c53fe1eae",
+      "bytes": 8316,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\npu_driver_info.c",
+      "target": "board/linux/driver/npu_driver_info.c",
+      "purpose": "Source of INFO metadata checker",
+      "source_sha256": "c6ff7651cacef614ec7d00feb2b4a7c5826f81a8dd9de5a63d896cca77cea30d",
+      "target_sha256": "c6ff7651cacef614ec7d00feb2b4a7c5826f81a8dd9de5a63d896cca77cea30d",
+      "bytes": 2866,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\unified_npu_uapi.h",
+      "target": "board/linux/driver/unified_npu_uapi.h",
+      "purpose": "Driver ioctl ABI header used by metadata checker",
+      "source_sha256": "5b0067ade1c3d2346108aae76ef9f3095ed268b57a57da9210b4207990f82c99",
+      "target_sha256": "5b0067ade1c3d2346108aae76ef9f3095ed268b57a57da9210b4207990f82c99",
+      "bytes": 783,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\libnpu_camera.so",
+      "target": "board/linux/driver/libnpu_camera.so",
+      "purpose": "Final ARM C bridge shared object",
+      "source_sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa",
+      "target_sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa",
+      "bytes": 51448,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\check_driver.sh",
+      "target": "board/linux/driver/check_driver.sh",
+      "purpose": "Read-only driver/kernel/boot/DT check; explicit --load mode loads module once",
+      "source_sha256": "20e8c6a26532b805a9e48cae0b71f7d0c5efc0ed84ec1af0f10f6ee7aa7d7b85",
+      "target_sha256": "6888e071d254d20b081f2a33431ced9f1846c36371db969c452d9f6e81ce406e",
+      "bytes": 3776,
+      "modified": true,
+      "changes": [
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\replace_failed_driver.sh",
+      "target": "board/linux/driver/replace_failed_driver.sh",
+      "purpose": "Recovery helper for unbound failed probe only; not normal startup",
+      "source_sha256": "3434b1cdc2f14c278f0fcc834f5dbe4aaa386e0a523c3d1ea213f04a5ad05f20",
+      "target_sha256": "3434b1cdc2f14c278f0fcc834f5dbe4aaa386e0a523c3d1ea213f04a5ad05f20",
+      "bytes": 2303,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_DRIVER_CLOCKFIX_20261102\\BUILD_ABI_REPORT.json",
+      "target": "evidence/linux/driver/abi_validation.json",
+      "purpose": "Unmodified host cross-build and ABI validation receipt",
+      "source_sha256": "7af2ca672b1c7847cc6e2697800edcbf8e72af49db92b9990dfb648698c97284",
+      "target_sha256": "7af2ca672b1c7847cc6e2697800edcbf8e72af49db92b9990dfb648698c97284",
+      "bytes": 8104,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_build_20261102\\kernel.config",
+      "target": "evidence/linux/driver/kernel.config",
+      "purpose": "Original host kernel build configuration or build validation receipt",
+      "source_sha256": "486ed2baa718eca6aa3ed18e50c7ec1fbe84956615f3b6592d55ad5429bd9486",
+      "target_sha256": "486ed2baa718eca6aa3ed18e50c7ec1fbe84956615f3b6592d55ad5429bd9486",
+      "bytes": 167968,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_build_20261102\\kernel.config.gz",
+      "target": "evidence/linux/driver/kernel.config.gz",
+      "purpose": "Original host kernel build configuration or build validation receipt",
+      "source_sha256": "169adac3de2c6b5e16a42e63bec80116a240880ce04a0f350c9d6d857625be73",
+      "target_sha256": "169adac3de2c6b5e16a42e63bec80116a240880ce04a0f350c9d6d857625be73",
+      "bytes": 35934,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_build_20261102\\host_build_report.json",
+      "target": "evidence/linux/driver/host_build_report.json",
+      "purpose": "Original host kernel build configuration or build validation receipt",
+      "source_sha256": "e57142738b2549ab7a47a32bd8397153aa5e7d0654a7842d617e7b2adab5d355",
+      "target_sha256": "e57142738b2549ab7a47a32bd8397153aa5e7d0654a7842d617e7b2adab5d355",
+      "bytes": 1453,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_build_20261102\\kernel_abi_validation_complete.json",
+      "target": "evidence/linux/driver/kernel_abi_validation.json",
+      "purpose": "Original host kernel build configuration or build validation receipt",
+      "source_sha256": "7af2ca672b1c7847cc6e2697800edcbf8e72af49db92b9990dfb648698c97284",
+      "target_sha256": "7af2ca672b1c7847cc6e2697800edcbf8e72af49db92b9990dfb648698c97284",
+      "bytes": 8104,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_build_20261102\\kernel.config",
+      "target": "board/linux/kernel/kernel.config",
+      "purpose": "Original running 6.12.40-xilinx kernel configuration extracted from SD kernel",
+      "source_sha256": "486ed2baa718eca6aa3ed18e50c7ec1fbe84956615f3b6592d55ad5429bd9486",
+      "target_sha256": "486ed2baa718eca6aa3ed18e50c7ec1fbe84956615f3b6592d55ad5429bd9486",
+      "bytes": 167968,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_userspace_20261102\\board_driver_load_pass.txt",
+      "target": "evidence/linux/board/driver_load.txt",
+      "purpose": "Original board-terminal log of final clockfixed driver load and INFO checks",
+      "source_sha256": "ba3f982eb62f93301c508bc13e1cfca2c57156fe1fee8dc3001a1aab52f4b4b0",
+      "target_sha256": "ba3f982eb62f93301c508bc13e1cfca2c57156fe1fee8dc3001a1aab52f4b4b0",
+      "bytes": 5607,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_boot_update_20261102\\build_report.json",
+      "target": "evidence/linux/boot/fit_build.json",
+      "purpose": "DT/FIT patch and matched PL boot identity receipt",
+      "source_sha256": "d134050784d35e45b98b16500f055d2e6f411a7bf24182af3cba1f756e4126da",
+      "target_sha256": "d134050784d35e45b98b16500f055d2e6f411a7bf24182af3cba1f756e4126da",
+      "bytes": 3178,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_clockfix_20261102\\clock_guard_validation.json",
+      "target": "evidence/linux/driver/clock_guard.json",
+      "purpose": "Clock rounding guard unit-check result",
+      "source_sha256": "64e8ccf218c831e8e94fa63e7202af7b8fb72ff11889b66800a281d404f10931",
+      "target_sha256": "64e8ccf218c831e8e94fa63e7202af7b8fb72ff11889b66800a281d404f10931",
+      "bytes": 3897,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_driver_clockfix_20261102\\validation_replace_failed_driver.json",
+      "target": "evidence/linux/driver/replacement_validation.json",
+      "purpose": "Private driver replacement validation",
+      "source_sha256": "bf1d2a1c59824f7efb9fcda5c49f3227111501dcdd04f214f9a5e0f9fea3ff5c",
+      "target_sha256": "bf1d2a1c59824f7efb9fcda5c49f3227111501dcdd04f214f9a5e0f9fea3ff5c",
+      "bytes": 2252,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\PACKAGE_VALIDATION.json",
+      "target": "evidence/linux/userspace/package_validation.json",
+      "purpose": "Original host/QEMU userspace package validation",
+      "source_sha256": "98dfd0fb7e65fbd8cfb3192364ae470917fba664fb949b9a84a43a7568333ca5",
+      "target_sha256": "98dfd0fb7e65fbd8cfb3192364ae470917fba664fb949b9a84a43a7568333ca5",
+      "bytes": 7271,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\VALIDATION.json",
+      "target": "evidence/linux/autostart/package_validation.json",
+      "purpose": "Original host/QEMU SysV service fixture validation",
+      "source_sha256": "7410f22a8696e9093fc45233cf8341db103ed7e24f0c8577ba7ec63cd5fecea1",
+      "target_sha256": "7410f22a8696e9093fc45233cf8341db103ed7e24f0c8577ba7ec63cd5fecea1",
+      "bytes": 12543,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_autostart_20261102\\service_private_validation.json",
+      "target": "evidence/linux/autostart/service_validation.json",
+      "purpose": "Original service process-lifecycle fixture result",
+      "source_sha256": "d9f1282a553a50af4b75ed7ca672804c4c856889da96b6bee58f3e459f983007",
+      "target_sha256": "d9f1282a553a50af4b75ed7ca672804c4c856889da96b6bee58f3e459f983007",
+      "bytes": 1295,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_autostart_20261102\\validation_configure_autostart.json",
+      "target": "evidence/linux/autostart/install_validation.json",
+      "purpose": "Original private installation and conflict fixture result",
+      "source_sha256": "77b28862afa52d0bd2599cca73ffa770d86c6c312e7c86a0aff561ad5012847a",
+      "target_sha256": "77b28862afa52d0bd2599cca73ffa770d86c6c312e7c86a0aff561ad5012847a",
+      "bytes": 2766,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\configure_autostart.py",
+      "target": "board/deploy/autostart/configure_autostart.py",
+      "purpose": "SysV autostart source; stable /opt prefixes and package names",
+      "source_sha256": "66555a6987707cb8a19b2bad85ef1ae53bf598c63f253c36499f2cbf8a31c0c1",
+      "target_sha256": "5bae75556f768e7de7fb59b59eccea34456917294a95924a526bad9e4b9d31bb",
+      "bytes": 8444,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\service.py",
+      "target": "board/deploy/autostart/service.py",
+      "purpose": "SysV autostart source; stable /opt prefixes and package names",
+      "source_sha256": "628d50d8ba690e8792cff78b90012fa5a269cedcdf326f417155e2195f1740f8",
+      "target_sha256": "683f7a4c46e9de8cb3010334cb66e4b00be52290b7f64eb102d6a2d224253ecb",
+      "bytes": 17176,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\install_autostart.sh",
+      "target": "board/deploy/autostart/install_autostart.sh",
+      "purpose": "SysV autostart source; stable /opt prefixes and package names",
+      "source_sha256": "6e068d4271c9fc6de24b622fdf754ebfb9700f21c1cac86d612846d370948c4f",
+      "target_sha256": "7a5e1084b29c5c332073810767335f4b40800ba47680f56452e7436916ea9387",
+      "bytes": 686,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\npu100.init",
+      "target": "board/deploy/autostart/npu100.init",
+      "purpose": "SysV autostart source; stable /opt prefixes and package names",
+      "source_sha256": "3737f603077fd7210b6e9822eff173cd30ac55354adee508c7b740bc4db280b2",
+      "target_sha256": "57df86910d9e5f34491a4d98b53904a8d9e245e7279cc7fc094421d40d0aa9dd",
+      "bytes": 500,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\module\\npu_driver_info",
+      "target": "board/deploy/autostart/module/npu_driver_info",
+      "purpose": "Exact final driver or INFO checker used by SysV service",
+      "source_sha256": "9c4c7510f58ddd0abce9f410f0358a7d3f6b4db9e18d2939e9b8b23c53fe1eae",
+      "target_sha256": "9c4c7510f58ddd0abce9f410f0358a7d3f6b4db9e18d2939e9b8b23c53fe1eae",
+      "bytes": 8316,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\module\\unified_npu.ko",
+      "target": "board/deploy/autostart/module/unified_npu.ko",
+      "purpose": "Exact final driver or INFO checker used by SysV service",
+      "source_sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+      "target_sha256": "0a47b3ed19ccf3cf1e70bfa62f6918db518f74f20f48f7c8573efd38ef929b30",
+      "bytes": 17364,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_AUTOSTART_20261102\\VALIDATION.json",
+      "target": "board/deploy/autostart/validation.json",
+      "purpose": "Unmodified original package validation; current packaging has separate verification",
+      "source_sha256": "7410f22a8696e9093fc45233cf8341db103ed7e24f0c8577ba7ec63cd5fecea1",
+      "target_sha256": "7410f22a8696e9093fc45233cf8341db103ed7e24f0c8577ba7ec63cd5fecea1",
+      "bytes": 12543,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\install_runtime.sh",
+      "target": "board/deploy/userspace/install_runtime.sh",
+      "purpose": "Install private userspace to stable /opt/npu100",
+      "source_sha256": "c494da2e4a1f5536f9230d6f8555b4b10489c9a9406ae06dbdf9b5f91aa70dda",
+      "target_sha256": "02254200bb5f5a2bd9043e220ddd7386d5da30855c6840c3a2aa5eff81d58cb3",
+      "bytes": 2205,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        },
+        {
+          "before": "archive adjacent to installer",
+          "after": "archive at board/linux/userspace/linux_userspace.tar.gz"
+        }
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\verify_after_boot.sh",
+      "target": "board/deploy/userspace/verify_after_boot.sh",
+      "purpose": "Read-only final boot and live device-tree contract checker",
+      "source_sha256": "ca9e1240886e00609c0c56172e8269be51379264cf89136433a82a66579f8562",
+      "target_sha256": "ca9e1240886e00609c0c56172e8269be51379264cf89136433a82a66579f8562",
+      "bytes": 1859,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_userspace_20261102\\runtime_check.py",
+      "target": "board/deploy/userspace/runtime_check.py",
+      "purpose": "Source helper used inside Linux userspace archive",
+      "source_sha256": "fc3e7483f3256b8fc3ac4c1951b760372d93a1c437407b2dc61c337926b186e4",
+      "target_sha256": "fc3e7483f3256b8fc3ac4c1951b760372d93a1c437407b2dc61c337926b186e4",
+      "bytes": 1227,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_userspace_20261102\\load_models_once.py",
+      "target": "board/deploy/userspace/load_models_once.py",
+      "purpose": "Source helper used inside Linux userspace archive",
+      "source_sha256": "80183499ed62d6bf33657dad56b3996db3b30a67fdd85074c4f30d99c40ad0ff",
+      "target_sha256": "80183499ed62d6bf33657dad56b3996db3b30a67fdd85074c4f30d99c40ad0ff",
+      "bytes": 5553,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_userspace_20261102\\npu100.sh",
+      "target": "board/deploy/userspace/npu100.sh",
+      "purpose": "Source helper used inside Linux userspace archive",
+      "source_sha256": "573b44884698090affe7ef3a8bcf048ec4fae0b6c84cfed61a527f777087309c",
+      "target_sha256": "1c9e335f792f70be1bf71251757ed064468cc5e6b5d4a287a7113dea15586fdf",
+      "bytes": 1699,
+      "modified": true,
+      "changes": [
+        {
+          "before": "/opt/npu100-autostart-20261102",
+          "after": "/opt/npu100-autostart"
+        },
+        {
+          "before": "/opt/npu100-20261102",
+          "after": "/opt/npu100"
+        },
+        {
+          "before": "npu100-userspace.tar.gz",
+          "after": "linux_userspace.tar.gz"
+        },
+        {
+          "before": "SHA256SUMS",
+          "after": "sha256sums"
+        },
+        {
+          "before": "FILES.sha256",
+          "after": "files.sha256"
+        },
+        {
+          "before": "README_CN.txt",
+          "after": "readme.md"
+        },
+        {
+          "before": "VALIDATION.json",
+          "after": "validation.json"
+        }
+      ]
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_userspace_20261102\\validate_pl.py",
+      "target": "board/deploy/userspace/validate_pl.py",
+      "purpose": "Source helper used inside Linux userspace archive",
+      "source_sha256": "94ecabf9ae8f89d1696dd58e64f6120d51ce97098f76b91021c95e2b1a796d23",
+      "target_sha256": "94ecabf9ae8f89d1696dd58e64f6120d51ce97098f76b91021c95e2b1a796d23",
+      "bytes": 3367,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\npu100-userspace.tar.gz",
+      "target": "board/linux/userspace/linux_userspace.tar.gz",
+      "purpose": "Private ARM Python and source-matched runtime; normalized deployment prefix",
+      "source_sha256": "ee256038dadb04fcf2d95d3f9a0e34891d26c2c4e0dcc5a7d8f896c83f281ded",
+      "target_sha256": "55b6e7d19a36c660dbf5c6a5f5059ddb574a748d877c6c58751ba549c8cfc397",
+      "bytes": 11075578,
+      "modified": true,
+      "transformed_members": [
+        {
+          "member": "camera.json",
+          "source_sha256": "a8900c0c33ae1b711ec22e897a08a019ed9a21d7a02771cfc8fbf72cffb56a04",
+          "target_sha256": "56867794cbe51d9e1833a4fcef07bc3a090858418c285f700571f00b53041b44"
+        },
+        {
+          "member": "npu100.sh",
+          "source_sha256": "573b44884698090affe7ef3a8bcf048ec4fae0b6c84cfed61a527f777087309c",
+          "target_sha256": "1c9e335f792f70be1bf71251757ed064468cc5e6b5d4a287a7113dea15586fdf"
+        }
+      ],
+      "changes": [
+        "Regenerated files.sha256 and normalized own deployment paths; vendor binaries and symlinks unchanged"
+      ]
+    },
+    {
+      "source": "D:\\PetaLinux_Installer\\NPU100_LINUX_RUNTIME_20261102\\npu100-userspace.tar.gz!python-runtime/PROVENANCE.json",
+      "target": "board/linux/userspace/python_packages.json",
+      "purpose": "Pinned private ARM Python packages, upstream URLs, hashes, version and licensing provenance",
+      "source_sha256": "0b2b9d65052022de7b16f726281059c7864601fca8e1a99eb09e0e0da1b780c5",
+      "target_sha256": "0b2b9d65052022de7b16f726281059c7864601fca8e1a99eb09e0e0da1b780c5",
+      "bytes": 14131,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "wsl://Ubuntu/home/dev/npu100_linux_build_20261102/kernel-output/Module.symvers",
+      "target": "board/linux/kernel/module.symvers",
+      "purpose": "Final kernel exported-symbol CRC table, not a substitute for compiling the matching kernel",
+      "source_sha256": "5ecd00489905f2c56a59cfa9ed4ee1b97ee5928b157de9a6d3b9be1e45b4ee96",
+      "target_sha256": "5ecd00489905f2c56a59cfa9ed4ee1b97ee5928b157de9a6d3b9be1e45b4ee96",
+      "bytes": 635127,
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": null,
+      "target": "board/linux/kernel/source.json",
+      "purpose": "Pinned kernel source and build identity",
+      "source_sha256": null,
+      "target_sha256": "03f91f6d6e49a8bdda9893ca0c094ffed4b1b65a29c9f62ec115d3904780999b",
+      "bytes": 620,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/deploy/autostart/readme.md",
+      "purpose": "SysV autostart file-level purpose and scope guide",
+      "source_sha256": null,
+      "target_sha256": "19a4500d56bfe78f8e895cedf6485055240cc9a26927060e099eb9c7431ec0ef",
+      "bytes": 1003,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/linux/driver/readme.md",
+      "purpose": "Driver artifact and helper reference",
+      "source_sha256": null,
+      "target_sha256": "0217c2f8049483040698edfe20d5e9cb894e97431c5390a4f9a3cdccd2e655d7",
+      "bytes": 888,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "docs/linux.md",
+      "purpose": "End-to-end Linux deployment and source-build guide",
+      "source_sha256": null,
+      "target_sha256": "678a8796b2617b1acaca03a7444e2cfa707c55f01ec8f9af6647414a7216b6ba",
+      "bytes": 7938,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "docs/linux_gaps.md",
+      "purpose": "Explicit Linux reproduction and board-evidence gaps",
+      "source_sha256": null,
+      "target_sha256": "f0ba682b62c04dc258ae1d21d14f2e4993539bb06159d04c0bdf627f0020d2bc",
+      "bytes": 1508,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/linux/rootfs/readme.md",
+      "purpose": "Placeholder explaining missing Linux base-system deliverable",
+      "source_sha256": null,
+      "target_sha256": "024701cfebf6347f0ca03cff850e47bbccd9187dcc92bb0df4a2f07483538e06",
+      "bytes": 118,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/linux/petalinux/readme.md",
+      "purpose": "Placeholder explaining missing Linux base-system deliverable",
+      "source_sha256": null,
+      "target_sha256": "024701cfebf6347f0ca03cff850e47bbccd9187dcc92bb0df4a2f07483538e06",
+      "bytes": 118,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "build/scripts/linux/build_software.sh",
+      "purpose": "Portable source-only Linux module, C bridge and INFO-tool build entry",
+      "source_sha256": null,
+      "target_sha256": "98b84d2df31463e8155fc2641abbdd36cdbf53af23df73dd4e5b7692c7359cb1",
+      "bytes": 985,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_autostart_20261102\\test_configure_autostart.py",
+      "target": "build/scripts/linux/verify_autostart_install.py",
+      "purpose": "Existing private installation fixture adapted to normalized package paths",
+      "source_sha256": "34650aea871379b64255ddb77aa61478df0e74f02fd1828c7cb798b42e9c397e",
+      "target_sha256": "335a2f54f3026c1b6e0f1afccd56890d90fbea399d53e45296ba851d82e94ed8",
+      "bytes": 10470,
+      "modified": true,
+      "changes": [
+        "Adapted fixture source paths, stable prefixes and checksum filenames; original assertions retained"
+      ]
+    },
+    {
+      "source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\verification\\linux_autostart_20261102\\test_service_private.py",
+      "target": "build/scripts/linux/verify_service.py",
+      "purpose": "Existing private service lifecycle fixture adapted to normalized package paths",
+      "source_sha256": "69299f736449009e7b9a69e2c581b69a09f8df46c19bd528c3765be9353558db",
+      "target_sha256": "2040f21b309e3bfb640e6d637193c71055d22f1f4120e8f20fc02ae646c3a26a",
+      "bytes": 13697,
+      "modified": true,
+      "changes": [
+        "Adapted fixture source paths, stable prefixes and checksum filenames; original assertions retained"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/deploy/autostart/files.sha256",
+      "purpose": "Normalized package internal checksum ledger",
+      "source_sha256": null,
+      "target_sha256": "6d6d5be12705b12fe5e28506917e5a5de0f9e354d64c7e780e61ea0a72618605",
+      "bytes": 666,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/deploy/autostart/sha256sums",
+      "purpose": "Normalized deployment package checksum ledger",
+      "source_sha256": null,
+      "target_sha256": "3b8add3292839594dde8d233de19b4c7968d5187e5d0c1a9de36eb3d53342aca",
+      "bytes": 745,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/linux/driver/sha256sums",
+      "purpose": "Normalized deployment package checksum ledger",
+      "source_sha256": null,
+      "target_sha256": "e5ceaf8d8e8e45ac0503616e3b7842d1e71eb418b0a51ef865d30fad3178f45e",
+      "bytes": 664,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "board/deploy/userspace/sha256sums",
+      "purpose": "Userspace installation script and archive checksum ledger",
+      "source_sha256": null,
+      "target_sha256": "cfd7a0924e0f436ecea0d70c68cb24de3c22a952e587dcb43bc5601e0d43584d",
+      "bytes": 609,
+      "modified": true,
+      "changes": [
+        "New packaging documentation or portable helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "build/scripts/linux/verify_userspace.py",
+      "purpose": "Private archive integrity, source identity and optional QEMU smoke test",
+      "source_sha256": null,
+      "target_sha256": "183f7de066cdf8e3a811081ac3b141cd1a1600dc7a57e5ae2566c0977cce7b32",
+      "bytes": 3741,
+      "modified": true,
+      "changes": [
+        "New portable packaging/validation helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "build/scripts/linux/repack_userspace.py",
+      "purpose": "Rebuild source-controlled runtime layer while retaining frozen third-party Python",
+      "source_sha256": null,
+      "target_sha256": "c8d6e1e961cd05bcf43a6460a791c0359f9b4a3f820b3a55131b3b3d86499055",
+      "bytes": 3305,
+      "modified": true,
+      "changes": [
+        "New portable packaging/validation helper"
+      ]
+    },
+    {
+      "source": null,
+      "target": "docs/linux_packaging_changes.md",
+      "purpose": "Explicit normalized-path adaptation list and retained board identity boundary",
+      "source_sha256": null,
+      "target_sha256": "a5a78e7ad05eaac6abec1433668877c8b3ea63e35381b18486855b9aecce0ab5",
+      "bytes": 1911,
+      "modified": true,
+      "changes": [
+        "New portable validation helper or packaging change guide"
+      ]
+    },
+    {
+      "source": null,
+      "target": "build/scripts/linux/verify_sources.py",
+      "purpose": "Private actual ARM C bridge/checker compilation and Python/Shell syntax validation",
+      "source_sha256": null,
+      "target_sha256": "ae87d0c8ac51b59c383ad668f5058e61e953b6e4b425e5f295a3d516b55af516",
+      "bytes": 2507,
+      "modified": true,
+      "changes": [
+        "New portable validation helper or packaging change guide"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/archive_changes.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "7663cd98db4a3d311ebc3a9009853b6242fe5f1eeeeaccec8e8852d730a0e3b4",
+      "bytes": 1058,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/autostart_install.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "feaad890cb745c673f00172e4e6bc3431a759ceb0d47d3cba7f53363c945170c",
+      "bytes": 2712,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/repack_validation.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "185bea375908ec660c7d7441adf90fa2ac753dfd03350b7eda207ea91640d539",
+      "bytes": 261,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/service_private_validation.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "1b29fe9e29929c94dbf7d625fd5d7a992bf4ac239226f7f78a74aab16725d199",
+      "bytes": 1268,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/source_validation.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "07caa35cf6a41e792b651ef6814638cfcc7aea588ee670185e99af9663fd7dfc",
+      "bytes": 1745,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/userspace_validation.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "455961c4211dd6aa67eec6e64d8bca22bba0a8b00737d5fcffbd64bbde72dc29",
+      "bytes": 818,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    },
+    {
+      "source": null,
+      "target": "evidence/linux/packaging/validation_summary.json",
+      "purpose": "Local packaging validation receipt; scope declared in JSON",
+      "source_sha256": null,
+      "target_sha256": "34d05ca7ec7918eb5c1d931bba933a14dd9281ef532f42968f778c86eadddc7d",
+      "bytes": 1392,
+      "modified": true,
+      "changes": [
+        "Generated by local packaging integrity, fixture or QEMU validation"
+      ]
+    }
+  ],
+  "original_sources_rechecked_unchanged": true,
+  "target_file_checks_passed": true
+}

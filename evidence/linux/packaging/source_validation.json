@@ -1,0 +1,39 @@
+{
+  "scope": "PACKAGED_SOURCE_SYNTAX_AND_PRIVATE_ARM_C_BUILD_NO_BOARD_ACCESS",
+  "result": "PASS",
+  "python_modules": [
+    "software/runtime/linux/linux_camera.py",
+    "software/runtime/linux/manifest.py",
+    "software/runtime/linux/npu_runtime.py",
+    "software/runtime/linux/pack_sd.py",
+    "software/runtime/linux/preflight.py",
+    "board/deploy/autostart/configure_autostart.py",
+    "board/deploy/autostart/service.py",
+    "board/deploy/userspace/load_models_once.py",
+    "board/deploy/userspace/runtime_check.py",
+    "board/deploy/userspace/validate_pl.py",
+    "build/scripts/linux/repack_userspace.py",
+    "build/scripts/linux/verify_autostart_install.py",
+    "build/scripts/linux/verify_service.py",
+    "build/scripts/linux/verify_sources.py",
+    "build/scripts/linux/verify_userspace.py"
+  ],
+  "shell_scripts": [
+    "board/deploy/autostart/install_autostart.sh",
+    "board/deploy/autostart/npu100.init",
+    "board/deploy/boot/verify_after_boot.sh",
+    "board/deploy/userspace/install_runtime.sh",
+    "board/deploy/userspace/npu100.sh",
+    "board/deploy/userspace/verify_after_boot.sh",
+    "board/linux/driver/check_driver.sh",
+    "board/linux/driver/replace_failed_driver.sh",
+    "build/scripts/linux/build_software.sh"
+  ],
+  "bridge_sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa",
+  "frozen_bridge_sha256": "ca191101c2f5dded38375b26841861d0ed9587695a8af06227180bcf495974fa",
+  "rebuilt_bridge_byte_identical": true,
+  "info_checker_sha256": "ad803936ab0af630ebd7439dfb41f867a4beac93cd0c9d50347d1d8876a3998a",
+  "driver_source_sha256": "79ddea7490dd4a522e61caf022184c9e82055350110ce2718405837b9b138f71",
+  "driver_module_rebuilt_in_this_check": false,
+  "hardware_opened": false
+}

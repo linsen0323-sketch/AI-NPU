@@ -1,0 +1,27 @@
+{
+  "scope": "ARCHIVE_MEMBER_IDENTITY_DIFF",
+  "source_archive_sha256": "ee256038dadb04fcf2d95d3f9a0e34891d26c2c4e0dcc5a7d8f896c83f281ded",
+  "target_archive_sha256": "55b6e7d19a36c660dbf5c6a5f5059ddb574a748d877c6c58751ba549c8cfc397",
+  "changes": [
+    {
+      "member": "FILES.sha256",
+      "source_sha256": "0ee0db8f0715f842b483530d0562d64ca2309d76629c131d9f0c0e1962c844d0",
+      "target_sha256": null
+    },
+    {
+      "member": "camera.json",
+      "source_sha256": "a8900c0c33ae1b711ec22e897a08a019ed9a21d7a02771cfc8fbf72cffb56a04",
+      "target_sha256": "56867794cbe51d9e1833a4fcef07bc3a090858418c285f700571f00b53041b44"
+    },
+    {
+      "member": "files.sha256",
+      "source_sha256": null,
+      "target_sha256": "bb2a5fec6f98ce5d3de5d004f3e268db8dcef46bb7ae820d7b1462bffe08cc8c"
+    },
+    {
+      "member": "npu100.sh",
+      "source_sha256": "573b44884698090affe7ef3a8bcf048ec4fae0b6c84cfed61a527f777087309c",
+      "target_sha256": "1c9e335f792f70be1bf71251757ed064468cc5e6b5d4a287a7113dea15586fdf"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "samples": 12,
+  "output_shape": [
+    1,
+    1344,
+    85
+  ],
+  "errors": [
+    {
+      "image_id": 139,
+      "max_abs": 177.13058471679688,
+      "mean_abs": 0.15053138136863708,
+      "probability_mean_abs": 0.0020796044263988733
+    },
+    {
+      "image_id": 285,
+      "max_abs": 59.755401611328125,
+      "mean_abs": 0.0815693661570549,
+      "probability_mean_abs": 0.0007804076303727925
+    },
+    {
+      "image_id": 632,
+      "max_abs": 76.6166000366211,
+      "mean_abs": 0.11181015521287918,
+      "probability_mean_abs": 0.0014835530892014503
+    },
+    {
+      "image_id": 724,
+      "max_abs": 211.70809936523438,
+      "mean_abs": 0.3334115147590637,
+      "probability_mean_abs": 0.0027699691709131002
+    },
+    {
+      "image_id": 776,
+      "max_abs": 101.0093994140625,
+      "mean_abs": 0.18589617311954498,
+      "probability_mean_abs": 0.0024435047525912523
+    },
+    {
+      "image_id": 785,
+      "max_abs": 226.81942749023438,
+      "mean_abs": 0.3110109865665436,
+      "probability_mean_abs": 0.002990423934534192
+    },
+    {
+      "image_id": 802,
+      "max_abs": 222.0694122314453,
+      "mean_abs": 0.2741338014602661,
+      "probability_mean_abs": 0.002684409264475107
+    },
+    {
+      "image_id": 872,
+      "max_abs": 59.25783157348633,
+      "mean_abs": 0.08333107084035873,
+      "probability_mean_abs": 0.001070212572813034
+    },
+    {
+      "image_id": 885,
+      "max_abs": 192.66893005371094,
+      "mean_abs": 0.33361929655075073,
+      "probability_mean_abs": 0.0028079459443688393
+    },
+    {
+      "image_id": 1000,
+      "max_abs": 184.1775665283203,
+      "mean_abs": 0.1633549928665161,
+      "probability_mean_abs": 0.002678867196664214
+    },
+    {
+      "image_id": 1268,
+      "max_abs": 190.6160125732422,
+      "mean_abs": 0.23073710501194,
+      "probability_mean_abs": 0.0025699231773614883
+    },
+    {
+      "image_id": 1296,
+      "max_abs": 112.497314453125,
+      "mean_abs": 0.1754595935344696,
+      "probability_mean_abs": 0.002254082588478923
+    }
+  ],
+  "reference": "FP32 convolution on QDQ values; not an integer execution proof"
+}

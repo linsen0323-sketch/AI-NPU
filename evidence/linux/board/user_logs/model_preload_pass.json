@@ -1,0 +1,67 @@
+{
+  "scope": "SD_TO_RESERVED_DDR_MODEL_STAGING_NO_INFERENCE",
+  "result": "MODEL_PRELOAD_PASS",
+  "bundle": "/home/petalinux/npu100_models",
+  "active_model": 0,
+  "resident_models": [
+    1,
+    3,
+    4
+  ],
+  "models": [
+    {
+      "id": 1,
+      "name": "resnet18_unified_160",
+      "file": "models/m1/model.bin",
+      "address": 335544320,
+      "address_hex": "0x14000000",
+      "bytes": 11325440,
+      "sha256": "ba2b28be5544bd582024d5dd578f6591a422e055819332161368dc61fbe4992d",
+      "crc32": 668973100,
+      "crc32_hex": "0x27dfb82c",
+      "ddr_readback": "PASS",
+      "verification": "production_Runtime.preload_DDR_SHA256_and_CRC32"
+    },
+    {
+      "id": 3,
+      "name": "yolox_s_a_256",
+      "file": "models/m3/model.bin",
+      "address": 402653184,
+      "address_hex": "0x18000000",
+      "bytes": 15888384,
+      "sha256": "876e7eccde1c1a5fc4ec7ab8f2ed0455379fa9de0d55e6e1b4f3d9bf9d708a2a",
+      "crc32": 3843170760,
+      "crc32_hex": "0xe51221c8",
+      "ddr_readback": "PASS",
+      "verification": "production_Runtime.preload_DDR_SHA256_and_CRC32"
+    },
+    {
+      "id": 4,
+      "name": "yolox_s_coco80_256",
+      "file": "coco80/model.bin",
+      "address": 452984832,
+      "address_hex": "0x1b000000",
+      "bytes": 15917056,
+      "sha256": "937a4c39bcb4598f36d7a6c27b1a53222f096b66c70b0f3c4582ffda77664bbf",
+      "crc32": 3646303270,
+      "crc32_hex": "0xd9562c26",
+      "ddr_readback": "PASS",
+      "verification": "production_Runtime.preload_DDR_SHA256_and_CRC32"
+    }
+  ],
+  "sd_preflight": {
+    "root": "/home/petalinux/npu100_models",
+    "models": [
+      1,
+      3,
+      4
+    ],
+    "integrity": "PASS"
+  },
+  "inference_started": false,
+  "model_switch_called": false,
+  "camera_start_requested": false,
+  "keys_read": false,
+  "admission_stopped": true,
+  "device_closed": true
+}

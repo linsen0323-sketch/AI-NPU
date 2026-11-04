@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "output_shape": [
+        1,
+        1344,
+        85
+      ],
+      "dtype": "torch.float32",
+      "output_min": 2.1896923835772186e-13,
+      "output_max": 271.7214050292969,
+      "bn_max_abs_error": 0.0030364990234375,
+      "bn_mean_abs_error": 1.3806348988509853e-06,
+      "input_contract": "FP32 NCHW BGR 0..255, top-left letterbox 114",
+      "output_contract": "FP32 decoded cx,cy,w,h, objectness and 80 class probabilities; NMS outside graph"
+    }
+  ],
+  "note": "256 BN parity smoke; full 5000-image accuracy is evaluated separately"
+}

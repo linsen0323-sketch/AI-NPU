@@ -1,0 +1,16 @@
+{
+  "scope": "isolated Git filters test; no repository initialized in submission",
+  "passed": true,
+  "files": {
+    "software/app/src/ai_camera_math.c": {
+      "raw_git_blob": "d215cfded675af1beccd63051319e5c2782a1d07",
+      "filtered_git_blob": "d215cfded675af1beccd63051319e5c2782a1d07",
+      "unchanged": true
+    },
+    "build/reports/implementation/timing_routed.rpt": {
+      "raw_git_blob": "e2cc6946fbc68174c982cdf994b02af6518bad97",
+      "filtered_git_blob": "e2cc6946fbc68174c982cdf994b02af6518bad97",
+      "unchanged": true
+    }
+  }
+}

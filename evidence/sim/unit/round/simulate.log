@@ -1,0 +1,20 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov  1 18:22:55 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/round_miter/xsim_script.tcl
+# xsim {round_miter} -autoloadwcfg -tclbatch {D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/run.tcl}
+Time resolution is 1 ps
+source D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/run.tcl
+## run 10 ms
+TEST_PASS round_miter narrow=175194 default96=175194 issued=175242 cycles=183308 resets=17 shifts=-128..127 seed=498175e3
+$finish called at time : 1466464 ns : File "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/round_pipe_candidate/tb_round_miter.sv" Line 99
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 228.172 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 12836 KB (Peak: 12836 KB), Simulation CPU Usage: 17062 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 18:23:15 2026...

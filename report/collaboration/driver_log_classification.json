@@ -1,0 +1,64 @@
+{
+  "scope": "OFFLINE_LOG_CLASSIFICATION_NO_HARDWARE_ACCESS",
+  "stages": {
+    "boot_dt": {
+      "status": "not_found",
+      "records": []
+    },
+    "driver_preflight": {
+      "status": "reported_pass",
+      "records": [
+        {
+          "line": 22,
+          "marker": "DRIVER_CHECK_OK"
+        },
+        {
+          "line": 42,
+          "marker": "DRIVER_CHECK_OK"
+        }
+      ]
+    },
+    "driver_info": {
+      "status": "reported_pass",
+      "records": [
+        {
+          "line": 51,
+          "marker": "DRIVER_INFO_PASS"
+        }
+      ]
+    },
+    "driver_loaded": {
+      "status": "reported_pass",
+      "records": [
+        {
+          "line": 53,
+          "marker": "DRIVER_LOAD_PASS"
+        }
+      ]
+    },
+    "pl_abi": {
+      "status": "not_found",
+      "records": []
+    },
+    "model_preload": {
+      "status": "not_found",
+      "records": []
+    },
+    "userspace_runtime": {
+      "status": "not_found",
+      "records": []
+    }
+  },
+  "errors_retained": [
+    {
+      "line": 114,
+      "text": "unified-npu 43c10000.npu-runtime: probe with driver unified-npu failed with error -34"
+    }
+  ],
+  "inference_and_video": "requires_separate_manual_evidence",
+  "limitations": [
+    "Markers are reports, not independent verification.",
+    "Historical failures and later passes may coexist across boots.",
+    "No hardware, timing or end-to-end correctness is tested."
+  ]
+}

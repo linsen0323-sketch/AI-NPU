@@ -1,0 +1,18 @@
+{
+  "model": "resnet18",
+  "package_format": "AIPKG3",
+  "engine_profile": 1,
+  "image_bytes": 17203200,
+  "workspace_bytes": 17154048,
+  "crc32": "0xFFB0304F",
+  "sha256": "a6574ea87a4ad9a52cc1f641fd645f5d7698cd072bbb810921fc9c26b1da330c",
+  "sections": {
+    "META": 41014,
+    "LEGACY_IMAGE": 17150976
+  },
+  "relocatable": true,
+  "load_to_ddr_verified_on_board": false,
+  "current_resnet_bitstream_compatible": false,
+  "binary_roundtrip_pass": true,
+  "legacy_payload_sha256": "9cfc64be75c5029749e46e05d935a08457e21c52dd82a148db4db04c6b3b1b9f"
+}

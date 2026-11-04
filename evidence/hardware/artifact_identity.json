@@ -1,0 +1,27 @@
+{
+  "project_name": "npu100",
+  "source_project": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.xpr",
+  "part": "xc7z020clg400-2",
+  "vivado": "2025.2",
+  "npu_clock_mhz": 100,
+  "original_final_run": "impl_display_fps125",
+  "renamed_portable_run": "impl_100mhz",
+  "run_bitstream_sha256": "68c6e35cdd67a38068556ad1dd9173ff9842849ba23edce2b1d8996cffdffb16",
+  "xsa_sha256": "7a2dfe2c3f3ebd71550c70cc47d62634c6acce1d986df99ae563f3889b3f3e3f",
+  "linux_source_xsa_sha256": "7a2dfe2c3f3ebd71550c70cc47d62634c6acce1d986df99ae563f3889b3f3e3f",
+  "xsa_embedded_bit_sha256": "68c6e35cdd67a38068556ad1dd9173ff9842849ba23edce2b1d8996cffdffb16",
+  "wns_ns": 0.047,
+  "whs_ns": 0.033,
+  "tns_ns": 0.0,
+  "ths_ns": 0.0,
+  "source_binding_limit": "Current project source file mtimes predate the final synthesis/run. This is supportive only: no contemporaneous per-source hash receipt exists. XSA and run bitstream are byte-matched; packaging records current source hashes and validates recreation, not bit-for-bit synthesis reproducibility.",
+  "routed_checkpoint_source": "D:\\AI_acceleration\\FPGA_Projects\\AI_NPU\\npu100\\project\\npu100.runs\\impl_display_fps125\\camera_720p30_top_routed.dcp",
+  "routed_checkpoint_sha256": "bd2f462d0841313b918dfe76b14b2d770b6c5e24dc0f708c916c6e79f4bc170f",
+  "routed_utilization": {
+    "lut": 46278,
+    "ff": 45385,
+    "bram_tiles": 91,
+    "dsp": 148,
+    "slices": 13299
+  }
+}

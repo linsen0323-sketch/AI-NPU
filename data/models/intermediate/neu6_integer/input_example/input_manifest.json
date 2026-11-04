@@ -1,0 +1,25 @@
+{
+  "name": "yolox_s_a",
+  "shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "dtype": "int32",
+  "fractional_bits": 16,
+  "offset": 0,
+  "source": "C:\\Users\\ii\\Desktop\\YoloX-S-1\\datasets\\NEU_PAPER80_CLEAN\\val2017\\scratches_105.jpg",
+  "original_hw": [
+    200,
+    200
+  ],
+  "letterbox_ratio": 3.2,
+  "letterbox_pad_xy": [
+    0,
+    0
+  ],
+  "bytes": 4915200,
+  "sha256": "55c94e0e14a433b0f818f347d4c0add71052286b737857a6c192fbe00c55fd5d",
+  "package_sha256": "a2ecbf2cd72a1360bff172686674d6957c8233407b5dec1eecf2ca20502a1cc0"
+}

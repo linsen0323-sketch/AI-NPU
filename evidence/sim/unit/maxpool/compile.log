@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/source/acceleration/unified_npu/rtl/npu_wide_math.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_wide_math
+INFO: [VRFC 10-311] analyzing module npu_math_port
+INFO: [VRFC 10-311] analyzing module npu_math_fabric
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/npu_maxpool_engine_before.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_maxpool_engine_before
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/npu_maxpool_engine.sv" into library work
+INFO: [VRFC 10-311] analyzing module npu_maxpool_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/AI_acceleration/FPGA_Projects/AI_NPU/npu100/verification/timing_closure_20261101_175338/maxpool_candidate/tb_maxpool_source_words.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_maxpool_source_words
+INFO: [VRFC 10-311] analyzing module tb_maxpool_source_words_bulk
+INFO: [VRFC 10-311] analyzing module tb_maxpool_source_words_scalar

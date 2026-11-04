@@ -1,0 +1,40 @@
+{
+  "filename": "petalinux-sdimage.wic",
+  "bytes": 6442455040,
+  "sha256": "32e62f825e076ab1a574f85d82a79a05f6b2c81dbf3043adf31138bce5d0d69a",
+  "included": false,
+  "download_url": null,
+  "availability": "Project-built PetaLinux SD image; the full WIC is excluded from this source submission",
+  "origin": {
+    "host_os": "Windows",
+    "virtualization": "Oracle VirtualBox",
+    "guest_os": "Ubuntu",
+    "build_tool": "AMD PetaLinux 2025.2",
+    "project": "navigator_linux",
+    "hardware_input": "Vivado exported XSA",
+    "workflow": [
+      "Install VirtualBox on Windows",
+      "Install Ubuntu in VirtualBox",
+      "Install and activate PetaLinux 2025.2",
+      "Import Vivado XSA and build the navigator_linux project",
+      "Deploy generated Linux system to SD and boot the board",
+      "Connect using VS Code Remote SSH over Ethernet",
+      "Deploy model bundle, native bridge, runtime and startup service"
+    ]
+  },
+  "tool_downloads": {
+    "virtualbox": {
+      "publisher": "Oracle",
+      "download_url": "https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html",
+      "platform": "Windows host"
+    },
+    "petalinux": {
+      "publisher": "AMD",
+      "version": "2025.2",
+      "download_url": "https://www.amd.com/en/support/downloads/adaptive-socs-and-fpgas/embedded-software.html",
+      "selection": "PetaLinux Tools 2025.2 installer",
+      "documentation_url": "https://docs.amd.com/r/2025.2-English/ug1144-petalinux-tools-reference-guide"
+    }
+  },
+  "rebuild_requirements": "Matching XSA and PetaLinux project configuration; complete project-spec/rootfs configuration is not included"
+}

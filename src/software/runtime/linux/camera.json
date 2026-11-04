@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "device": "/dev/unified-npu",
+  "bundle": "/home/petalinux/npu100_models",
+  "bridge": "/opt/npu100/app/libnpu_camera.so",
+  "socket": "/run/npu100/camera.sock",
+  "model": 3,
+  "auto_start": false,
+  "matched_view": true,
+  "keys_enabled": true,
+  "inference_timeout_seconds": 900,
+  "display": {
+    "confidence": 0.25,
+    "minimum_box_pixels": 6,
+    "nms": 0.65
+  }
+}

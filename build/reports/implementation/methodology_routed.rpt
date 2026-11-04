@@ -1,0 +1,398 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov  1 23:27:39 2026
+| Host         : LAPTOP-TKBH5FBB running 64-bit major release  (build 9200)
+| Command      : report_methodology -file camera_720p30_top_methodology_drc_routed.rpt -pb camera_720p30_top_methodology_drc_routed.pb -rpx camera_720p30_top_methodology_drc_routed.rpx
+| Design       : camera_720p30_top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 39
++-----------+----------+-------------------------------------------------+--------+
+| Rule      | Severity | Description                                     | Checks |
++-----------+----------+-------------------------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 9      |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 13     |
+| TIMING-18 | Warning  | Missing input or output delay                   | 13     |
+| RTGT-1    | Advisory | RAM retargeting possibility                     | 4      |
++-----------+----------+-------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell pixel_reset_sync[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pixel_reset_sync_reg[0]/CLR, pixel_reset_sync_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell u_camera/u_bus_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_camera/u_bus/stretch_count_reg[10]/CLR,
+u_camera/u_bus/stretch_count_reg[11]/CLR,
+u_camera/u_bus/stretch_count_reg[12]/CLR,
+u_camera/u_bus/stretch_count_reg[13]/CLR,
+u_camera/u_bus/stretch_count_reg[14]/CLR,
+u_camera/u_bus/stretch_count_reg[15]/CLR,
+u_camera/u_bus/stretch_count_reg[1]/CLR,
+u_camera/u_bus/stretch_count_reg[2]/CLR,
+u_camera/u_bus/stretch_count_reg[3]/CLR,
+u_camera/u_bus/stretch_count_reg[4]/CLR,
+u_camera/u_bus/stretch_count_reg[5]/CLR,
+u_camera/u_bus/stretch_count_reg[6]/CLR,
+u_camera/u_bus/stretch_count_reg[7]/CLR,
+u_camera/u_bus/stretch_count_reg[8]/CLR,
+u_camera/u_bus/stretch_count_reg[9]/CLR (the first 15 of 79 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell u_capture/stream_axi_sync[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_capture/stream_axi_sync_reg[0]/CLR, u_capture/stream_axi_sync_reg[1]/CLR,
+u_capture/stream_cam_sync_reg[0]/CLR, u_capture/stream_cam_sync_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_infer_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/ai_mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[2]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+u_system/video_system_i/mem_axi/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell sensor_status_sync_reg[1] in site SLICE_X62Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell sensor_status_sync_reg[2] in site SLICE_X60Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell sensor_status_sync_reg[3] in site SLICE_X59Y117 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/error_sync_reg[0] in site SLICE_X6Y48 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][12] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/error_sync_reg[1] in site SLICE_X9Y39 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][13] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/error_sync_reg[2] in site SLICE_X27Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][14] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/error_sync_reg[3] in site SLICE_X8Y38 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][15] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/status_sync_reg[2] in site SLICE_X9Y45 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/status_sync_reg[3] in site SLICE_X7Y47 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell u_capture/status_sync_reg[5] in site SLICE_X19Y42 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell video_status_sync_reg[0] in site SLICE_X57Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell video_status_sync_reg[1] in site SLICE_X53Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDCE cell video_status_sync_reg[2] in site SLICE_X51Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_system/video_system_i/control_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS5/syncstages_ff_reg[0][10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[0] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[1] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[2] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[3] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[4] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[5] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[6] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[7] relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on cam_href relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on cam_vsync relative to the rising and/or falling clock edge(s) of cam_pclk.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on cam_rst_n relative to the rising and/or falling clock edge(s) of sys_clk.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on cam_scl relative to the rising and/or falling clock edge(s) of sys_clk.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on cam_sda relative to the rising and/or falling clock edge(s) of sys_clk.
+Related violations: <none>
+
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 30 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_0_0,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_10_10,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_11_11,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_12_12,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_13_13,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_14_14,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_15_15,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_16_16,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_17_17,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_18_18,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_19_19,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_1_1,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_20_20,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_21_21,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_22_22
+ (the first 15 of 30 listed)
+Related violations: <none>
+
+RTGT-1#2 Advisory
+RAM retargeting possibility  
+Identified 30 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_32_32,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_33_33,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_34_34,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_35_35,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_36_36,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_37_37,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_38_38,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_39_39,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_40_40,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_41_41,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_42_42,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_43_43,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_44_44,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_45_45,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r1_0_15_46_46
+ (the first 15 of 30 listed)
+Related violations: <none>
+
+RTGT-1#3 Advisory
+RAM retargeting possibility  
+Identified 30 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_0_0,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_10_10,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_11_11,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_12_12,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_13_13,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_14_14,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_15_15,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_16_16,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_17_17,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_18_18,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_19_19,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_1_1,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_20_20,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_21_21,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_22_22
+ (the first 15 of 30 listed)
+Related violations: <none>
+
+RTGT-1#4 Advisory
+RAM retargeting possibility  
+Identified 30 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_32_32,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_33_33,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_34_34,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_35_35,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_36_36,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_37_37,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_38_38,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_39_39,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_40_40,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_41_41,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_42_42,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_43_43,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_44_44,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_45_45,
+u_system/video_system_i/ai_preprocess_0/inst/u_pipeline/u_graph/u_backend/u_dispatch/g_stream_copy.u_copy/repeat_row_reg_r2_0_15_46_46
+ (the first 15 of 30 listed)
+Related violations: <none>
+
+

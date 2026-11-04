@@ -1,0 +1,38 @@
+[Unit]
+Description=npu100 three-model camera inference and physical keys
+After=local-fs.target npu100-fpga-check.service
+Requires=npu100-fpga-check.service
+RequiresMountsFor=/home/petalinux/npu100_models
+ConditionPathExists=/dev/unified-npu
+# npu100-fpga-check is a board integration prerequisite. It must confirm the
+# bootloader-loaded PL/XSA/FCLK/reset identity BEFORE any NPU MMIO access.
+# Never run the prepared-tensor daemon alongside linux_camera.py.
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /opt/npu100/linux_camera.py --config /etc/npu100/camera.json serve
+WorkingDirectory=/opt/npu100
+RuntimeDirectory=npu100
+StateDirectory=npu100
+UMask=0077
+Restart=no
+# Owned cancel, snapshot drain and display fence can each take up to 60 s.
+TimeoutStopSec=200
+KillSignal=SIGTERM
+CapabilityBoundingSet=CAP_SYS_RAWIO
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=false
+PrivateTmp=yes
+PrivateDevices=no
+DevicePolicy=closed
+DeviceAllow=/dev/unified-npu rw
+ReadWritePaths=/run/npu100 /var/lib/npu100
+ReadOnlyPaths=/home/petalinux/npu100_models /opt/npu100 /etc/npu100
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+
+[Install]
+WantedBy=multi-user.target

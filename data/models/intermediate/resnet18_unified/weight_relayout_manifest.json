@@ -1,0 +1,191 @@
+[
+  {
+    "index": 0,
+    "opcode": "CONV",
+    "original_weight_offset": 5902400,
+    "original_weight_bytes": 25088,
+    "canonical_weight_pointer": 2147483648,
+    "canonical_weight_bytes": 9408,
+    "canonical_weight_sha256": "eb18a011be3931b08932f7deb8490b933637e007dca1921d3138beff14c0b340"
+  },
+  {
+    "index": 3,
+    "opcode": "CONV",
+    "original_weight_offset": 5928256,
+    "original_weight_bytes": 36864,
+    "canonical_weight_pointer": 2147493824,
+    "canonical_weight_bytes": 36864,
+    "canonical_weight_sha256": "d499c99cf2599f4f30834e7c01008fd17d0123e64dc949dbe5d7ed325dd6dc4c"
+  },
+  {
+    "index": 5,
+    "opcode": "CONV",
+    "original_weight_offset": 5965888,
+    "original_weight_bytes": 36864,
+    "canonical_weight_pointer": 2147531456,
+    "canonical_weight_bytes": 36864,
+    "canonical_weight_sha256": "22dfb61e61068d63f8d4e36262f9098d8f5bc1b7a08f8e26200463f278e1650a"
+  },
+  {
+    "index": 8,
+    "opcode": "CONV",
+    "original_weight_offset": 6003520,
+    "original_weight_bytes": 36864,
+    "canonical_weight_pointer": 2147569088,
+    "canonical_weight_bytes": 36864,
+    "canonical_weight_sha256": "25f6a8f7c3b08dec9a7a06976cf14d9774d8f05cce24dbbee8bae26c247b3b81"
+  },
+  {
+    "index": 10,
+    "opcode": "CONV",
+    "original_weight_offset": 6041152,
+    "original_weight_bytes": 36864,
+    "canonical_weight_pointer": 2147606720,
+    "canonical_weight_bytes": 36864,
+    "canonical_weight_sha256": "0eb52e578139bdc94c061068a582f79e2747ea694e36489604af28c14fb8f7f4"
+  },
+  {
+    "index": 13,
+    "opcode": "CONV",
+    "original_weight_offset": 6078784,
+    "original_weight_bytes": 73728,
+    "canonical_weight_pointer": 2147644352,
+    "canonical_weight_bytes": 73728,
+    "canonical_weight_sha256": "a51a6e80dbd93fd7525beecca87addfcf4ddb958bf9cf8dab865cd962a31f7bf"
+  },
+  {
+    "index": 14,
+    "opcode": "CONV",
+    "original_weight_offset": 6154048,
+    "original_weight_bytes": 8192,
+    "canonical_weight_pointer": 2147719616,
+    "canonical_weight_bytes": 8192,
+    "canonical_weight_sha256": "2d9133d4528561fe3c6eee90502745b88406d21c9947a74bd5a250bc0eb63a83"
+  },
+  {
+    "index": 16,
+    "opcode": "CONV",
+    "original_weight_offset": 6163776,
+    "original_weight_bytes": 147456,
+    "canonical_weight_pointer": 2147729344,
+    "canonical_weight_bytes": 147456,
+    "canonical_weight_sha256": "5b22b005414771c3821f6f478b219d8c8975056bfcd7e14ab709dc7cc8a09258"
+  },
+  {
+    "index": 19,
+    "opcode": "CONV",
+    "original_weight_offset": 6312768,
+    "original_weight_bytes": 147456,
+    "canonical_weight_pointer": 2147878336,
+    "canonical_weight_bytes": 147456,
+    "canonical_weight_sha256": "c40d205c85293c4779bc330ec9aed3f990ed394ac7d199a87d86892e3131d847"
+  },
+  {
+    "index": 21,
+    "opcode": "CONV",
+    "original_weight_offset": 6461760,
+    "original_weight_bytes": 147456,
+    "canonical_weight_pointer": 2148027328,
+    "canonical_weight_bytes": 147456,
+    "canonical_weight_sha256": "e934ac5f3a9e8a9051219994b2bffdb604ceda418e8ab323631105de35ea5eca"
+  },
+  {
+    "index": 24,
+    "opcode": "CONV",
+    "original_weight_offset": 6610752,
+    "original_weight_bytes": 294912,
+    "canonical_weight_pointer": 2148176320,
+    "canonical_weight_bytes": 294912,
+    "canonical_weight_sha256": "6149945ec1c8c19a75dcfa08e18171a7c4bd88ea83e92a72e6e4109c99525431"
+  },
+  {
+    "index": 25,
+    "opcode": "CONV",
+    "original_weight_offset": 6908736,
+    "original_weight_bytes": 32768,
+    "canonical_weight_pointer": 2148474304,
+    "canonical_weight_bytes": 32768,
+    "canonical_weight_sha256": "5684e9d4399f85a567ad249ab531dccc3d46d2c22c7267a60d8a632db86ae0f5"
+  },
+  {
+    "index": 27,
+    "opcode": "CONV",
+    "original_weight_offset": 6944576,
+    "original_weight_bytes": 589824,
+    "canonical_weight_pointer": 2148510144,
+    "canonical_weight_bytes": 589824,
+    "canonical_weight_sha256": "1244dd8c249512c8c65d78c809ffc12afd495c9ff302f63e88ff62092412a1c8"
+  },
+  {
+    "index": 30,
+    "opcode": "CONV",
+    "original_weight_offset": 7537472,
+    "original_weight_bytes": 589824,
+    "canonical_weight_pointer": 2149103040,
+    "canonical_weight_bytes": 589824,
+    "canonical_weight_sha256": "553019af8ef3398282fd2e9336460508266387657695b350983bdce9e4ccea79"
+  },
+  {
+    "index": 32,
+    "opcode": "CONV",
+    "original_weight_offset": 8130368,
+    "original_weight_bytes": 589824,
+    "canonical_weight_pointer": 2149695936,
+    "canonical_weight_bytes": 589824,
+    "canonical_weight_sha256": "dec4272ef6aea51234c14bb93df4fbb356f2f643822935ecd31ce8cb47dda79c"
+  },
+  {
+    "index": 35,
+    "opcode": "CONV",
+    "original_weight_offset": 8723264,
+    "original_weight_bytes": 1179648,
+    "canonical_weight_pointer": 2150288832,
+    "canonical_weight_bytes": 1179648,
+    "canonical_weight_sha256": "70880594a1fe53ed069f274c8a57a611acd22e0503c51afa0464f9ae7cdd2085"
+  },
+  {
+    "index": 36,
+    "opcode": "CONV",
+    "original_weight_offset": 9909056,
+    "original_weight_bytes": 131072,
+    "canonical_weight_pointer": 2151474624,
+    "canonical_weight_bytes": 131072,
+    "canonical_weight_sha256": "690a2688a88343435d2f1a1188a11affed2c1d580a6f7dec26d1f76c13ec99ec"
+  },
+  {
+    "index": 38,
+    "opcode": "CONV",
+    "original_weight_offset": 10046272,
+    "original_weight_bytes": 2359296,
+    "canonical_weight_pointer": 2151611840,
+    "canonical_weight_bytes": 2359296,
+    "canonical_weight_sha256": "1f88a2f116dd44e956e8d18a3d1c004a262a05f5d39e42a93319389ab7e91c9e"
+  },
+  {
+    "index": 41,
+    "opcode": "CONV",
+    "original_weight_offset": 12411712,
+    "original_weight_bytes": 2359296,
+    "canonical_weight_pointer": 2153977280,
+    "canonical_weight_bytes": 2359296,
+    "canonical_weight_sha256": "e06eb98c12cd55b3a03f88028bb3874639b6bd55abbe767dfda5cc14df2bdd7c"
+  },
+  {
+    "index": 43,
+    "opcode": "CONV",
+    "original_weight_offset": 14777152,
+    "original_weight_bytes": 2359296,
+    "canonical_weight_pointer": 2156342720,
+    "canonical_weight_bytes": 2359296,
+    "canonical_weight_sha256": "58b2ffd5fc0c1b65d75724d192e99c7307f851f38f995a3f1b88a88157e24a3e"
+  },
+  {
+    "index": 47,
+    "opcode": "LINEAR",
+    "original_weight_offset": 17142592,
+    "original_weight_bytes": 8192,
+    "canonical_weight_pointer": 2158708160,
+    "canonical_weight_bytes": 3072,
+    "canonical_weight_sha256": "e1ae64e2382d899d9e011813b7bd4a70ccdaa404bb0ae7c392d5151ef6394864"
+  }
+]
