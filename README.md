@@ -198,6 +198,6 @@ sudo reboot
 
 ## 授权与来源
 
-文件级许可证和第三方归属见 [license.md](license.md) 与 [第三方说明](docs/third_party.md)。项目自有代码的统一许可证尚待维护者确定；GPL 驱动、Xilinx 初始化文件、YOLOX 源码、模型权重和数据集分别遵循其原有授权，不能由一个仓库许可证替代。
-
-大文件由 `.gitattributes` 指定 Git LFS 管理；本仓库中的 SHA256 用于核对实体文件内容。
+项目自有且未另行标注许可证的原创代码采用 [MIT 许可证](LICENSE)。
+适用范围见 [许可证说明](license.md)，第三方来源见
+[第三方说明](docs/third_party.md)。已有单独授权声明的文件遵循其原有许可证。
