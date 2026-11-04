@@ -41,11 +41,11 @@
 - `MODEL_PRELOAD_PASS`支持三模型在指定DDR地址完成SHA256/CRC32回读；输出明确未启动推理或摄像头、未切换模型。
 - `AUTOSTART_ENABLED`支持SysV链接安装完成；紧接安装的状态为`managed_process_alive=false`，不能据此声称服务已经运行或冷启动验收通过。
 
-这些不同历史操作不拼接为一次连续冷启动。完整来源与命令见 [user_logs/README.md](../evidence/linux/board/user_logs/README.md)。最终同形状Golden对照、完整推理原始日志、逐次性能记录与无日期路径冷启动收据仍待补齐。
+这些记录保留各自的执行阶段和验证范围。完整来源与命令见 [user_logs/README.md](../evidence/linux/board/user_logs/README.md)；部署者按下述步骤在自己的板卡上检查服务、三模型推理和按键交互。
 
 ## 前置条件
 
-需要具有上述匹配内核、SysV布局和1GiB DDR描述的SD Linux根文件系统。完整PetaLinux工程及可公开获取的基础根文件系统镜像尚未纳入本包，见 `docs/linux_gaps.md`。现有6GiB原始wic不是包含最终驱动、模型与自启动服务的一键最终镜像。本包不把任意发行版视为等价基线。
+使用具有上述匹配内核、SysV布局和1GiB DDR描述、已经能够启动及登录的SD Linux系统。基础系统沿用VirtualBox → Ubuntu → PetaLinux 2025.2的构建流程，身份与镜像指纹见[基础系统说明](../board/linux/rootfs/readme.md)，开发入口见[PetaLinux说明](../board/linux/petalinux/readme.md)。基础WIC用于操作系统安装，NPU驱动、模型与自启动服务按本页单独部署。
 
 板卡设为SD启动，摄像头、HDMI和以太网连接正确。先离线部署匹配的三份启动文件与模型包，再冷启动。不要在活动推理时覆盖启动文件、卸载驱动或重载PL。
 
@@ -95,7 +95,7 @@ sh build/scripts/linux/build_software.sh
 
 `build_software.sh`只构建驱动、共享库和INFO检查器，不安装、不加载驱动、不访问板卡。生成的新二进制如改变SHA，须重新构建自己的部署校验合同并重新做板测；现成部署服务对驱动SHA和内核配置采用严格匹配。
 
-完整设备树可用 `dtc -I dts -O dtb -o system.dtb board/linux/device_tree/system.dts` 编译。它是从最终DTB反编译而来的完整源，dtc可能保留原始板级警告；语义对照应基于节点/属性而非源文本排序。完整BOOT.BIN、U-Boot和根文件系统的源码重建仍需补齐对应工程，见缺口清单。
+完整设备树可用 `dtc -I dts -O dtb -o system.dtb board/linux/device_tree/system.dts` 编译。它是从最终DTB反编译而来的完整源，dtc可能保留原始板级警告；语义对照应基于节点/属性而非源文本排序。完整BOOT.BIN、U-Boot和根文件系统由匹配的PetaLinux工程生成；本页软件构建步骤仅针对驱动、C桥和INFO工具。
 
 ## 私有运行环境重新打包与验证
 
@@ -106,6 +106,6 @@ python3 build/scripts/linux/repack_userspace.py --bridge /absolute/path/to/rebui
 python3 build/scripts/linux/verify_userspace.py --archive /absolute/path/to/new_linux_userspace.tar.gz
 ```
 
-默认验证要求C桥字节与冻结板测版本相同；若自行修改C桥，实现者应重新建立数值/ABI与板测验证。QEMU验证还需 `--qemu /usr/bin/qemu-arm-static --sysroot /path/to/exact_board_libc_root`，使用 `data/models/runtime/bundle/` 做只读文件检查。板端基础镜像尚待补齐，因此该sysroot不随本包分发。
+默认验证要求C桥字节与冻结板测版本相同；若自行修改C桥，实现者应重新建立数值/ABI与板测验证。QEMU验证还需 `--qemu /usr/bin/qemu-arm-static --sysroot /path/to/exact_board_libc_root`，使用 `data/models/runtime/bundle/` 做只读文件检查。sysroot从复现者实际使用的匹配SD系统获取，不与本仓库的软件归档重复分发。
 
 私有fixture：`python3 build/scripts/linux/verify_autostart_install.py`；服务fixture使用真实私有进程、flock和信号，需要在独立Linux测试环境以root运行 `python3 build/scripts/linux/verify_service.py`。它们不访问板卡、/boot或真实/opt安装路径。

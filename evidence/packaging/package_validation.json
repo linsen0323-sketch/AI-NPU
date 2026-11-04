@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at_utc": "2026-11-04T09:34:58.393234+00:00",
+  "checked_at_utc": "2026-11-04T10:47:46.347695+00:00",
   "integrity_pass": true,
   "python_syntax_pass": true,
   "protected_files": 690,
   "total_files": 694,
-  "bytes": 712348098,
+  "bytes": 712344730,
   "integrity_issues": [],
   "python_syntax_issues": [],
   "naming_exceptions": [
@@ -47,6 +47,11 @@
     {
       "path": "evidence/linux/board/user_logs/README.md",
       "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "LICENSE",
+      "component": "LICENSE",
       "reason": "tool_or_protocol_name"
     },
     {
@@ -116,6 +121,11 @@
     },
     {
       "path": "src/software/runtime/linux/README.md",
+      "component": "README.md",
+      "reason": "tool_or_protocol_name"
+    },
+    {
+      "path": "tools/README.md",
       "component": "README.md",
       "reason": "tool_or_protocol_name"
     }

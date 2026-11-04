@@ -10,6 +10,9 @@ from collections import Counter
 REPO=Path(__file__).resolve().parents[3]
 sys.dont_write_bytecode = True
 PREFIXES={'models/':'data/models/','host/':'src/host/','third_party/':'src/third_party/','software/':'src/software/'}
+RETIRED_DOCUMENTS = {
+    'docs/model_gaps.md': 'b9464759209dd4f405f254416536065f396b50836071397e70736bd22131bb2c',
+}
 
 
 def current_target(relative):
@@ -35,6 +38,14 @@ def check_historical_asset(entry, links, current_inventory):
     relative=current_target(historical)
     path=(REPO/relative).resolve()
     assert path.is_relative_to(REPO.resolve()),f'unsafe historical target: {historical}'
+    if relative in RETIRED_DOCUMENTS and not path.exists():
+        receipt_path = REPO/'evidence/packaging/documentation_cleanup.json'
+        receipt = json.loads(receipt_path.read_text('utf-8'))
+        retired = {row['path']: row for row in receipt['removed_documents']}
+        assert entry['target_sha256'] == RETIRED_DOCUMENTS[relative], 'retired document historical hash changed'
+        assert retired.get(relative, {}).get('before_sha256') == RETIRED_DOCUMENTS[relative], 'retired document receipt missing or changed'
+        assert relative not in current_inventory, 'retired document remains in current manifest'
+        return 'retired_document_receipt'
     assert path.is_file(),f'missing packaged file: {historical}'
     actual=digest(path)
     original=entry['target_sha256']
@@ -89,11 +100,14 @@ def verify():
     verified=0
     bases=Counter()
     for entry in copied:
-        bases[check_historical_asset(entry,links,current_inventory)]+=1
-        verified+=1
+        basis=check_historical_asset(entry,links,current_inventory)
+        bases[basis]+=1
+        if basis != 'retired_document_receipt':
+            verified+=1
     return dict(status='PASS',scope='local_file_integrity_and_binary_contract_only',
                 board_test_executed=False,inference_executed=False,models=checks,
                 packaged_files_verified=verified,verification_basis=dict(bases),
+                historical_document_entries_retired=bases['retired_document_receipt'],
                 historical_ledgers_modified=False)
 
 def main():

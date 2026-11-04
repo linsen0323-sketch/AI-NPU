@@ -62,7 +62,7 @@ python build/scripts/models/run_quantization.py --model coco80
 
 NEU输出位于`work/quantization/yolox_s_a`；COCO输出位于`work/quantization/coco80`。COCO数据默认放在`data/datasets/coco80`，也可设置`NPU_COCO_DATA`。校准采用原manifest的500张train2017图像、固定选取规则并与5000张val2017分离；原脚本可按来源URL下载校准JPEG。数据未齐时入口停止，不替换数据集。
 
-ResNet原FP32导出、重定点参数生成、QDQ转描述符工具已收录。但**最初FP32到QDQ的量化生成器未找到**，因此该一步保留现有QDQ和参数原件并列为待补，不用新算法替代。
+ResNet部署重建以已归档的QDQ ONNX和重定点参数为起点，沿用原有数值合同。原FP32导出、重定点参数生成和QDQ转描述符工具用于追溯对应阶段；上板验证直接使用冻结模型包，无需重新训练或量化。
 
 ## 编译和硬件布局
 
@@ -98,7 +98,7 @@ python -B build/scripts/models/rebuild_runtime_models.py --output <new-empty-dir
 
 ## 第三方与数据
 
-YOLOX两个本地源码快照分别对应NEU训练和COCO任务provenance，位于`src/third_party/yolox/{neu6,coco80}`，保留上游Apache-2.0许可证。第三方模型权重及NEU/COCO数据的再分发条件需结合原来源说明核对，不能由本项目许可证覆盖。完整数据集未复制；下载、授权和缺失说明见`docs/model_gaps.md`。
+YOLOX两个本地源码快照分别对应NEU训练和COCO任务provenance，位于`src/third_party/yolox/{neu6,coco80}`，保留上游Apache-2.0许可证。模型权重与NEU/COCO数据沿用各自来源和授权声明。完整训练数据集不随部署包分发；上板验证使用`data/models/runtime/bundle/`，训练数据布局与划分见`data/datasets/`。
 
 ## 旧主机参考CLI的边界
 

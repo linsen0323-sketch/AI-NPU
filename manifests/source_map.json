@@ -433,7 +433,7 @@
       "original_target": "board/linux/petalinux/readme.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "024701cfebf6347f0ca03cff850e47bbccd9187dcc92bb0df4a2f07483538e06",
+      "sha256": "0abdbca8e741e4f14f0ee1d433de65cc4264c81a6036fa0457eda90c80e5b889",
       "purpose": "Placeholder explaining missing Linux base-system deliverable",
       "modified": true,
       "record": "evidence/packaging/linux_files.json"
@@ -443,7 +443,7 @@
       "original_target": "board/linux/rootfs/readme.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "9182bf61bc59e619bf4c9d20a213ee64fb32d7c09a7b715abb78ae4d31bad45b",
+      "sha256": "f5955c5b668e29d6ac76a02cdda3aaee7fb84f519c148a3a26cc506c094ce1a4",
       "purpose": "Placeholder explaining missing Linux base-system deliverable",
       "modified": true,
       "record": "evidence/packaging/linux_files.json"
@@ -653,7 +653,7 @@
       "original_target": "build/scripts/models/verify_models.py",
       "source": null,
       "source_sha256": null,
-      "sha256": "798ba0c5e0924bdd602cc1c974b7bc5908fbd37159ea7ee9d91fec8f4ce39c28",
+      "sha256": "02961f6b312616f90e7166e9e18b9712c860b2a97773624c2b5dae5c25336c87",
       "purpose": "Read-only package identity and descriptor validation",
       "modified": true,
       "record": "evidence/packaging/models_files.json"
@@ -2063,7 +2063,7 @@
       "original_target": "docs/baremetal.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "85249eba4f877652de169899e37c80d226154465e10f13f76fc90b3b588140d0",
+      "sha256": "0f8e647872bbc9b37e4e6678ef0a8a762f084eaae46e64862664538c7322b700",
       "purpose": "Standalone application module meanings, portable Vitis build route and current Linux/standalone distinction",
       "modified": true,
       "record": "evidence/packaging/hardware_files.json"
@@ -2073,7 +2073,7 @@
       "original_target": "docs/hardware.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "d6f3709620c12e862de973fb32205e4ac59ae1d3339036838f451bea67410695",
+      "sha256": "dcfd7b637bfd9bfc9ce3a2265fa6f0e9fca23542472e40af87bbee9d0f1a46d1",
       "purpose": "Hardware architecture, exact source identity, portable rebuild instructions and final report boundaries",
       "modified": true,
       "record": "evidence/packaging/hardware_files.json"
@@ -2083,18 +2083,8 @@
       "original_target": "docs/linux.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "15349df9587240f9fa1b0b9544af3ab6de60fedacac11cf02c9f0d3ecc2f9367",
+      "sha256": "ea5136fa62bfc8c0e375bf3b89981249d13c72213f7092a7a803897916f25076",
       "purpose": "End-to-end Linux deployment and source-build guide",
-      "modified": true,
-      "record": "evidence/packaging/linux_files.json"
-    },
-    {
-      "path": "docs/linux_gaps.md",
-      "original_target": "docs/linux_gaps.md",
-      "source": null,
-      "source_sha256": null,
-      "sha256": "6401715631b2d36d599345b18c8b114f7a273dd3924643c1f90a71667a89eb11",
-      "purpose": "Explicit Linux reproduction and board-evidence gaps",
       "modified": true,
       "record": "evidence/packaging/linux_files.json"
     },
@@ -2109,21 +2099,11 @@
       "record": "evidence/packaging/linux_files.json"
     },
     {
-      "path": "docs/model_gaps.md",
-      "original_target": "docs/model_gaps.md",
-      "source": null,
-      "source_sha256": null,
-      "sha256": "b9464759209dd4f405f254416536065f396b50836071397e70736bd22131bb2c",
-      "purpose": "Explicit missing training/quantization/data/licensing/accuracy materials without fabricating results",
-      "modified": true,
-      "record": "evidence/packaging/models_files.json"
-    },
-    {
       "path": "docs/model_pipeline.md",
       "original_target": "docs/model_pipeline.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "f33e727c071625971a8f243ef1debc3181d055b94755e464f07bd412c477b10b",
+      "sha256": "f496e8fc38607ba04578294b5ca874a9b989958798597a44e987e06b26d37d04",
       "purpose": "End-to-end actual selected model lineage, reproducible commands and evidence boundaries",
       "modified": true,
       "record": "evidence/packaging/models_files.json"
@@ -2773,7 +2753,7 @@
       "original_target": "sim/rtl/readme.md",
       "source": null,
       "source_sha256": null,
-      "sha256": "6393a2e713395d48f8d783020a0ba50d953ad90c777e89761239e40b542ae61c",
+      "sha256": "a943e9cdb74f492508b68820b84c3bfd87219c6d8094bf2c85f2373b0efa6055",
       "purpose": "Truthful simulation scope and missing final-system regression coverage",
       "modified": true,
       "record": "evidence/packaging/hardware_files.json"

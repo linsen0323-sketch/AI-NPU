@@ -36,9 +36,3 @@ vitis -s build/scripts/baremetal/build_application.py
 该入口按本机 Vitis 2025.2 API 和官方示例编写并进行 Python 语法检查；整理阶段未执行 BSP 生成或 ELF 链接，因此不作为已通过的裸机构建证据。发布包不混入其他工程的 BSP、头文件或 ELF。
 
 当前应用的 `AI_CAMERA_LOAD_FROM_SD` 保留原始 `OFF` 配置，裸机模型参数原按 JTAG 预装；最终 Linux SD 加载由 Linux 运行时实现。启动时停止推理并默认选择 NEU6；KEY0/MIO12 选 ResNet，KEY1/MIO11 选 NEU6，KEY2/L14 选 COCO80，KEY3/K16 启停。
-
-## 待补材料
-
-- 从本发布包 XSA 生成并核对的 standalone BSP/ELF 构建回执。
-- 如需展示裸机独立运行，补充与本版 bit/XSA/模型匹配的运行日志；最终 Linux 验证另行归档。
-

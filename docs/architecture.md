@@ -41,5 +41,5 @@ flowchart LR
 - 模型训练来源、量化、编译与打包：model_pipeline.md
 - 当前PS共享算法与可选裸机入口：baremetal.md
 - Linux、SD、驱动、设备树及自启动：linux.md
-- 缺失材料与验证范围：missing_artifacts.md
+- [冻结产物上板部署与验收](reproduction.md)
 

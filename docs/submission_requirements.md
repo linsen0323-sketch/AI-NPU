@@ -8,9 +8,9 @@
 | 板端软件 | `src/software/` | PS共享算法、裸机支持、Linux驱动与生产运行时 |
 | 主机工具 | `src/host/`、`src/third_party/` | 训练、量化、编译与模型计划工具，以及保留原许可的第三方源码 |
 | 模型与数据合同 | `data/models/`、`data/` | 冻结权重/ONNX/DDR模型包、校准与划分清单、主机精度及性能汇总 |
-| 构建与实现 | `build/scripts/`、`build/reports/` | 可重建入口及最终资源、布线和时序报告；同版本成对优化前报告仍缺 |
+| 构建与实现 | `build/scripts/`、`build/reports/` | 硬件重建入口及最终资源、布线和时序报告 |
 | 部署产物 | `board/` | 匹配bit/XSA、启动文件、设备树、驱动、用户态与SysV服务 |
-| 仿真与验证 | `sim/`、`evidence/` | 已归档定向仿真、模型构造、Linux与文件身份记录；最终整网RTL/Golden仍需补齐 |
+| 仿真与验证 | `sim/`、`evidence/` | 已归档定向仿真、模型构造、Linux与文件身份记录；各记录保留对应验证范围 |
 | 设计与技术文档 | `report/design/`、`report/technical/`、`docs/` | 设计决策、软硬件分工、实现细节、验证范围及复现步骤 |
 | 协作与技能 | `report/collaboration/`、`skill/` | 真实公开摘录、纠错、Ross经验及两项可运行技能 |
 | 技术图示 | `report/figures/` | 系统结构、训练部署、计算映射、缓存、帧引用与Linux分层原理图 |
@@ -27,6 +27,6 @@
 
 ## 复现与维护
 
-复现入口见[reproduction.md](reproduction.md)，当前缺口见[missing_materials.md](missing_materials.md)，验证阶段对照见[requirement_matrix.md](requirement_matrix.md)。
+使用冻结产物上板验证的入口见[reproduction.md](reproduction.md)，验证阶段对照见[requirement_matrix.md](requirement_matrix.md)。
 
 硬件使用Vivado/Vitis 2025.2。板端采用自定义Linux驱动与RTL NPU，未使用PYNQ框架。根README提供目录职责对照；稳定文件名与相对路径用于跨平台构建。

@@ -15,13 +15,11 @@
 
 逐文件来源与SHA256见evidence/packaging/additional_files.json。生产RTL和最终三模型文件未被新搜索结果替换。
 
-## 排除与仍缺
+## 来源与采用边界
 
 - 较早的10/31硬件归档，其README、资源/时序及SOURCE ONLY软件状态不代表最终npu100；未将其RTL、BSP、bit/XSA复制进生产文件。
 - 检索到的display_fps boot.bif引用裸机fsbl/bit/elf，不能代替当前Linux BOOT.BIN构建链。
 - Copy桥和时间戳旧候选与当前DUT哈希不一致，其PASS没有列为本版仿真证据。
-- ResNet首次FP32到QDQ生成器、逐轮训练日志/曲线、最终160/256完整精度和整机原始板测证据仍未在这些目录找到。
-- 未找到匹配最终Linux的完整PetaLinux/Yocto工程、rootfs配方及FSBL/U-Boot生成配置。
 - 当前pip快照是新采集的环境记录，不能回填成过去训练/量化时的锁定回执。
 
 ## 提交目录适配

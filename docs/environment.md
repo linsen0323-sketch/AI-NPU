@@ -19,5 +19,5 @@ python tools/release_manifest.py --check
 
 ## 不随包复制的通用工具
 
-Vivado/Vitis 安装程序、完整 Python 虚拟环境、Linux 通用工具链、公共原始数据集及旧 SD 原始磁盘镜像。文档记录其获取或构建方式；需要维护者提供的特定生成工程列入 missing_materials.md。
+Vivado/Vitis安装程序、完整Python虚拟环境、Linux通用工具链、公共原始数据集及整卡WIC镜像由使用者按实际开发阶段准备。上板部署使用能够启动及登录的匹配SD Linux，来源与镜像身份见[基础系统说明](../board/linux/rootfs/readme.md)，然后按[复现步骤](reproduction.md)安装仓库中的启动文件、驱动、模型与服务。
 

@@ -8,8 +8,8 @@
 - src/software/runtime/linux/driver/unified_npu.c 第一行是 `SPDX-License-Identifier: GPL-2.0-only`，并含 `MODULE_LICENSE("GPL")`。根目录的 MIT 许可证不替代该文件已有的 GPL 声明。
 - board/hardware/ps7_init.c 首部带 Xilinx 版权及 MIT SPDX；ps7_init_gpl.c 首部是 Xilinx 版权及 GPL v2-or-later 文字。二者不是同一种授权，保留原文件声明。
 - src/third_party/yolox/neu6/license 和 coco80/license 保留 Apache-2.0 全文。第三方来源应给出处与快照身份，不用项目根目录说明覆盖原归属。
-- board/linux/userspace/python_packages.json 给出 Ubuntu ports 包来源、版本、下载地址及 SHA256。归档内含上游版权文件的事实已有原材料描述，最终打包时继续保留，不把私有运行环境误写为本队自研解释器。
-- data/ 中 NEU/COCO 标注、样例图像、模型权重的独立来源与授权范围尚待维护者确认；公开数据存在不自动代表可由本项目任意再许可。
+- board/linux/userspace/python_packages.json 给出 Ubuntu ports 包来源、版本、下载地址及 SHA256。归档内含上游版权文件的事实已有原材料描述，最终打包时继续保留，不将第三方解释器与运行环境表述为项目自研组件。
+- data/ 中 NEU/COCO 标注、样例图像及模型权重按各自来源和授权使用；根目录 MIT 不对第三方数据与权重作统一再许可。
 
 ## 协作公开范围
 

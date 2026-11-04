@@ -1,7 +1,7 @@
 {
   "scope": "LOCAL_STATIC_AND_DOCUMENT_QA_ONLY_NO_TRAINING_SIMULATION_SYNTHESIS_IMPLEMENTATION_OR_BOARD_ACCESS",
   "python_ast": {
-    "count": 202,
+    "count": 203,
     "pass": true,
     "failures": []
   },
@@ -57,7 +57,7 @@
     ]
   },
   "markdown_relative_links": {
-    "count": 89,
+    "count": 100,
     "pass": true,
     "failures": [],
     "excluded_upstream_documents": "src/third_party"
@@ -97,9 +97,9 @@
       19,
       20
     ],
-    "image_directory_private": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\neutral_render\\design_media_final",
+    "image_directory_private": "C:\\Users\\ii\\AppData\\Local\\Temp\\npu_open_source_20261104\\board_validation_cleanup\\render\\design",
     "format": "reference technical report",
-    "pdf_sha256": "2275627f8e9cfb7bbce596c1a181d92a45de0fac550e1daf8451e53e01eabf18",
+    "pdf_sha256": "0d75f6e5ffbd3c617342d8ff32abfdbfdd1f470b2c995f9898ccfede2041f329",
     "body_starts_page4": true,
     "toc_fits_page3": true
   },
@@ -121,7 +121,7 @@
     {
       "path": "report/design/design_report.pdf",
       "pages": 20,
-      "sha256": "2275627f8e9cfb7bbce596c1a181d92a45de0fac550e1daf8451e53e01eabf18",
+      "sha256": "0d75f6e5ffbd3c617342d8ff32abfdbfdd1f470b2c995f9898ccfede2041f329",
       "identity_text_or_metadata_matches": [],
       "page_images_visually_reviewed": [
         1,
@@ -150,7 +150,7 @@
     {
       "path": "report/technical/technical_report.pdf",
       "pages": 44,
-      "sha256": "7e541db67412cceeb926506b65f71149152a8e69007bbbc188d042866c55023b",
+      "sha256": "149dbdbb3fb2dc8e2e004ef79e19f7c778a5855dc999228449ab06799fc1c66b",
       "identity_text_or_metadata_matches": [],
       "page_images_visually_reviewed": [
         1,

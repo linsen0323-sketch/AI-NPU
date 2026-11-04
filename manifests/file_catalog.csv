@@ -1,7 +1,8 @@
 ﻿path,bytes,purpose,origin,source
 .gitattributes,838,项目入口或配置：.gitattributes,authored_or_generated,
 .gitignore,674,项目入口或配置：.gitignore,authored_or_generated,
-README.md,13609,项目入口或配置：README,authored_or_generated,
+LICENSE,1074,项目入口或配置：LICENSE,authored_or_generated,
+README.md,13178,项目入口或配置：README,authored_or_generated,
 board/boot/BOOT.BIN,5227556,"Matched Zynq FSBL, PL bitstream and bootloader boot image",copied,D:\PetaLinux_Installer\SD_UPDATE\BOOT.BIN
 board/boot/boot.scr,3830,Matched U-Boot boot script,copied,D:\PetaLinux_Installer\SD_UPDATE\boot.scr
 board/boot/image.ub,5087879,Final kernel FIT image with 256 MiB reserved DDR and runtime device tree,copied,D:\PetaLinux_Installer\NPU100_BOOT_UPDATE_20261102\image.ub
@@ -45,9 +46,9 @@ board/linux/driver/unified_npu_uapi.h,783,Linux内核与用户态共用的ioctl�
 board/linux/kernel/kernel.config,167968,Original running 6.12.40-xilinx kernel configuration extracted from SD kernel,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\linux_driver_build_20261102\kernel.config
 board/linux/kernel/module.symvers,635127,"Final kernel exported-symbol CRC table, not a substitute for compiling the matching kernel",copied,wsl://Ubuntu/home/dev/npu100_linux_build_20261102/kernel-output/Module.symvers
 board/linux/kernel/source.json,620,Pinned kernel source and build identity,adapted,
-board/linux/petalinux/readme.md,118,Placeholder explaining missing Linux base-system deliverable,adapted,
+board/linux/petalinux/readme.md,2448,Placeholder explaining missing Linux base-system deliverable,adapted,
 board/linux/rootfs/base_os_image.json,1699,板端部署文件：base os image,authored_or_generated,
-board/linux/rootfs/readme.md,801,Placeholder explaining missing Linux base-system deliverable,adapted,
+board/linux/rootfs/readme.md,1175,Placeholder explaining missing Linux base-system deliverable,adapted,
 board/linux/userspace/linux_userspace.tar.gz,11075578,Private ARM Python and source-matched runtime; normalized deployment prefix,adapted,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\npu100-userspace.tar.gz
 board/linux/userspace/python_packages.json,14131,"Pinned private ARM Python packages, upstream URLs, hashes, version and licensing provenance",copied,D:\PetaLinux_Installer\NPU100_LINUX_RUNTIME_20261102\npu100-userspace.tar.gz!python-runtime/PROVENANCE.json
 build/reports/implementation/bus_skew_routed.rpt,273873,Final implementation report; report header specifies design stage: bus_skew_routed.rpt,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.runs\impl_display_fps125\camera_720p30_top_bus_skew_routed.rpt
@@ -68,7 +69,7 @@ build/scripts/linux/verify_sources.py,2523,Private actual ARM C bridge/checker c
 build/scripts/linux/verify_userspace.py,3750,"Private archive integrity, source identity and optional QEMU smoke test; Validate the packaged ARM runtime privately; never opens a hardware device.",adapted,
 build/scripts/models/rebuild_runtime_models.py,3027,Portable deterministic reconstruction of final three DDR model binaries; Rebuild final DDR payloads from the packaged frozen compiler inputs.,adapted,
 build/scripts/models/run_quantization.py,1613,Portable entry for original NEU/COCO quantization stages; fails on missing data; Run the existing YOLOX PTQ workflows against separately acquired datasets.,adapted,
-build/scripts/models/verify_models.py,5158,Read-only package identity and descriptor validation; Validate packaged model identities and runtime descriptors; never access hardware.,adapted,
+build/scripts/models/verify_models.py,6116,Read-only package identity and descriptor validation; Validate packaged model identities and runtime descriptors; never access hardware.,adapted,
 build/scripts/vivado/build_bitstream.tcl,1092,"Explicit synthesis, implementation and bitstream entrypoint; not executed during packaging",adapted,
 build/scripts/vivado/create_project.tcl,7414,Portable final npu100 project recreation and BD/IP generation; never starts synthesis,adapted,
 build/scripts/vivado/export_hardware.tcl,737,Export a newly built npu100 XSA into build/work without overwriting validated board artifacts,adapted,
@@ -215,27 +216,23 @@ data/models/runtime/bundle/models/m3/model_config.tcl,614,Final SD three-model p
 data/reference/resnet18/verify_full_resnet18_int8.py,46534,"ResNet冻结整数Golden数值规格与比较实现; Byte-preserved original arithmetic Golden, retained for historical hash checks",copied,D:\AI\fpga_ai\tools\verify_full_resnet18_int8.py
 data/reference/system/.gitkeep,0,保留待补空目录；不代表已有验证结果,authored_or_generated,
 data/samples/neu6/scratches_105.jpg,12357,Frozen source image named by NEU deployment input manifest,copied,C:\Users\ii\Desktop\YoloX-S-1\datasets\NEU_PAPER80_CLEAN\val2017\scratches_105.jpg
-docs/additional_materials.md,2300,项目文档：additional materials,authored_or_generated,
-docs/architecture.md,1904,项目文档：architecture,authored_or_generated,
-docs/baremetal.md,3147,"Standalone application module meanings, portable Vitis build route and current Linux/standalone distinction",adapted,
-docs/environment.md,1151,项目文档：environment,authored_or_generated,
-docs/github.md,1805,项目文档：github,authored_or_generated,
-docs/hardware.md,5510,"Hardware architecture, exact source identity, portable rebuild instructions and final report boundaries",adapted,
+docs/additional_materials.md,2056,项目文档：additional materials,authored_or_generated,
+docs/architecture.md,1906,项目文档：architecture,authored_or_generated,
+docs/baremetal.md,2928,"Standalone application module meanings, portable Vitis build route and current Linux/standalone distinction",adapted,
+docs/environment.md,1304,项目文档：environment,authored_or_generated,
+docs/github.md,1944,项目文档：github,authored_or_generated,
+docs/hardware.md,5931,"Hardware architecture, exact source identity, portable rebuild instructions and final report boundaries",adapted,
 docs/hardware_modules.md,12485,项目文档：hardware modules,authored_or_generated,
-docs/license_and_privacy_review.md,2918,项目文档：license and privacy review,authored_or_generated,
-docs/linux.md,9005,End-to-end Linux deployment and source-build guide,adapted,
-docs/linux_gaps.md,1953,Explicit Linux reproduction and board-evidence gaps,adapted,
+docs/license_and_privacy_review.md,2903,项目文档：license and privacy review,authored_or_generated,
+docs/linux.md,9129,End-to-end Linux deployment and source-build guide,adapted,
 docs/linux_packaging_changes.md,1915,Explicit normalized-path adaptation list and retained board identity boundary,adapted,
-docs/missing_artifacts.md,307,项目文档：missing artifacts,authored_or_generated,
-docs/missing_materials.md,7463,项目文档：missing materials,authored_or_generated,
-docs/model_gaps.md,2816,Explicit missing training/quantization/data/licensing/accuracy materials without fabricating results,adapted,
-docs/model_pipeline.md,8443,"End-to-end actual selected model lineage, reproducible commands and evidence boundaries",adapted,
-docs/naming.md,1276,项目文档：naming,authored_or_generated,
-docs/optimization_decisions.md,4932,项目文档：optimization decisions,authored_or_generated,
-docs/reproduction.md,9807,项目文档：reproduction,authored_or_generated,
-docs/requirement_matrix.md,5776,项目文档：requirement matrix,authored_or_generated,
-docs/submission_requirements.md,2934,项目文档：submission requirements,authored_or_generated,
-docs/third_party.md,1266,项目文档：third party,authored_or_generated,
+docs/model_pipeline.md,8483,"End-to-end actual selected model lineage, reproducible commands and evidence boundaries",adapted,
+docs/naming.md,1288,项目文档：naming,authored_or_generated,
+docs/optimization_decisions.md,3787,项目文档：optimization decisions,authored_or_generated,
+docs/reproduction.md,10014,项目文档：reproduction,authored_or_generated,
+docs/requirement_matrix.md,5998,项目文档：requirement matrix,authored_or_generated,
+docs/submission_requirements.md,2862,项目文档：submission requirements,authored_or_generated,
+docs/third_party.md,1367,项目文档：third party,authored_or_generated,
 evidence/hardware/artifact_identity.json,1461,"Final npu100 project, bitstream, XSA and routed checkpoint identity receipt",adapted,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.xpr
 evidence/hardware/ip_status_recreated.rpt,13908,Vivado IP status for clean recreated npu100 project,adapted,
 evidence/hardware/original_video_system.bd,162826,Original final project BD snapshot; not used by portable build,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\project\npu100.srcs\sources_1\bd\video_system\video_system.bd
@@ -286,6 +283,7 @@ evidence/models/source_validation.json,285,验证证据或整理检查记录；�
 evidence/packaging/additional_files.json,34764,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/additional_search_audit.json,940,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/build_work_archive.json,49063,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/documentation_cleanup.json,1720,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/git_byte_preservation.json,570,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/hardware_files.json,70554,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/hardware_module_documentation.json,19861,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
@@ -294,7 +292,7 @@ evidence/packaging/layout_migration.json,153990,验证证据或整理检查记�
 evidence/packaging/layout_sync.json,1158,沿用现有src/hardware布局的引用适配记录,adapted,
 evidence/packaging/layout_validation.json,2827,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/linux_files.json,48948,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
-evidence/packaging/local_final_checks.json,4604,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
+evidence/packaging/local_final_checks.json,4611,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/models_files.json,146233,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/package_validation.json,,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
 evidence/packaging/skill_validation.json,394,验证证据或整理检查记录；按正文标注阶段解读,authored_or_generated,
@@ -330,12 +328,12 @@ evidence/sim/unit/wbuf/historical_result.json,2020,已保存的历史定向XSim�
 evidence/sim/unit/wbuf/historical_review.md,5655,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\review.md
 evidence/sim/unit/wbuf/simulate.log,104465,已保存的历史定向XSim证据；本次未重跑，不代表整网Golden,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\simulate.log
 evidence/sim/unit/wbuf/waveform.wdb,6993197,原始定向XSim波形；对应同目录历史日志，不代表整网仿真,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\verification\timing_closure_20261101_175338\wbuf_sim\project\wbuf_native.sim\sim_1\behav\xsim\tb_wbuf_native_behav.wdb
-license.md,514,项目入口或配置：license,authored_or_generated,
+license.md,374,项目入口或配置：license,authored_or_generated,
 manifests/file_catalog.csv,,项目入口或配置：file catalog,authored_or_generated,
 manifests/files.json,,项目入口或配置：files,authored_or_generated,
 manifests/files.sha256,,项目入口或配置：files,authored_or_generated,
-manifests/source_map.json,357458,项目入口或配置：source map,authored_or_generated,
-report/README.md,898,报告、展示材料或真实交互记录：README,authored_or_generated,
+manifests/source_map.json,356626,项目入口或配置：source map,authored_or_generated,
+report/README.md,947,报告、展示材料或真实交互记录：README,authored_or_generated,
 report/collaboration/README.md,2196,报告、展示材料或真实交互记录：README,authored_or_generated,
 report/collaboration/collaboration_record.md,10247,报告、展示材料或真实交互记录：collaboration record,authored_or_generated,
 report/collaboration/driver_log_classification.json,1484,报告、展示材料或真实交互记录：driver log classification,authored_or_generated,
@@ -346,8 +344,8 @@ report/collaboration/public_excerpts_metadata.json,1047,报告、展示材料或
 report/collaboration/skill_validation.json,1537,报告、展示材料或真实交互记录：skill validation,authored_or_generated,
 report/collaboration/user_log_validation.json,7913,报告、展示材料或真实交互记录：user log validation,authored_or_generated,
 report/design/.gitkeep,0,报告、展示材料或真实交互记录：.gitkeep,authored_or_generated,
-report/design/design_report.md,26503,报告、展示材料或真实交互记录：design report,authored_or_generated,
-report/design/design_report.pdf,877675,报告、展示材料或真实交互记录：design report,authored_or_generated,
+report/design/design_report.md,26029,报告、展示材料或真实交互记录：design report,authored_or_generated,
+report/design/design_report.pdf,874927,报告、展示材料或真实交互记录：design report,authored_or_generated,
 report/figures/.gitkeep,0,报告、展示材料或真实交互记录：.gitkeep,authored_or_generated,
 report/figures/README.md,755,报告、展示材料或真实交互记录：README,authored_or_generated,
 report/figures/frame_ownership.png,409516,报告、展示材料或真实交互记录：frame ownership,authored_or_generated,
@@ -357,8 +355,8 @@ report/figures/ping_pong_buffers.png,92448,报告、展示材料或真实交互�
 report/figures/system_architecture.png,681757,报告、展示材料或真实交互记录：system architecture,authored_or_generated,
 report/figures/training_deployment.png,549487,报告、展示材料或真实交互记录：training deployment,authored_or_generated,
 report/technical/README.md,441,报告、展示材料或真实交互记录：README,authored_or_generated,
-report/technical/technical_report.pdf,2815319,报告、展示材料或真实交互记录：technical report,authored_or_generated,
-sim/rtl/readme.md,982,Truthful simulation scope and missing final-system regression coverage,adapted,
+report/technical/technical_report.pdf,2815057,报告、展示材料或真实交互记录：technical report,authored_or_generated,
+sim/rtl/readme.md,1107,Truthful simulation scope and missing final-system regression coverage,adapted,
 sim/rtl/setup_simulations.tcl,816,Configure the two existing production-tree simulation tops without running them,adapted,
 sim/rtl/tb_ai_result_overlay.sv,10209,Existing production-tree RTL testbench; no new simulation result claimed; modules=tb_ai_result_overlay,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\acceleration\verification\tb_ai_result_overlay.sv
 sim/rtl/tb_ov5640_profile.sv,4432,Existing production-tree RTL testbench; no new simulation result claimed; modules=tb_ov5640_profile,copied,D:\AI_acceleration\FPGA_Projects\AI_NPU\npu100\source\verification\tb_ov5640_profile.sv
@@ -691,5 +689,7 @@ src/third_party/yolox/neu6/yolox/utils/mlflow_logger.py,19962,"YOLOX source snap
 src/third_party/yolox/neu6/yolox/utils/model_utils.py,5800,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\model_utils.py
 src/third_party/yolox/neu6/yolox/utils/setup_env.py,2752,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\setup_env.py
 src/third_party/yolox/neu6/yolox/utils/visualize.py,3727,YOLOX source snapshot; original Apache-2.0 license retained,copied,C:\Users\ii\Desktop\YoloX-S-1\yolox\utils\visualize.py
+tools/README.md,1600,项目的维护、清单或检查工具,authored_or_generated,
 tools/export_collaboration.py,3263,项目的维护、清单或检查工具; Export only user-visible dialogue from an explicitly selected local session.,authored_or_generated,
 tools/release_manifest.py,14585,项目的维护、清单或检查工具; Generate and verify a portable release inventory without vendor dependencies.,authored_or_generated,
+tools/verify_release.py,5774,项目的维护、清单或检查工具; Run the existing release/model static checks without FPGA tools or hardware.,authored_or_generated,

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "scope": "Deployment documentation maintenance; no hardware execution",
+  "removed_documents": [
+    {
+      "path": "docs/missing_materials.md",
+      "before_sha256": "4e94eaee54c189281a3b96a1d3487144a0650ff7eb39efd295492b6cf8ea1868",
+      "bytes": 7463,
+      "reason": "Removed materials-backlog document; release documentation now describes deployment using matching SD Linux and frozen artifacts"
+    },
+    {
+      "path": "docs/missing_artifacts.md",
+      "before_sha256": "4a54cd3561f7a6e8938dac5d5e9427418ab860cc3bb100f5f8ba638616edc840",
+      "bytes": 307,
+      "reason": "Removed materials-backlog document; release documentation now describes deployment using matching SD Linux and frozen artifacts"
+    },
+    {
+      "path": "docs/model_gaps.md",
+      "before_sha256": "b9464759209dd4f405f254416536065f396b50836071397e70736bd22131bb2c",
+      "bytes": 2816,
+      "reason": "Removed materials-backlog document; release documentation now describes deployment using matching SD Linux and frozen artifacts"
+    },
+    {
+      "path": "docs/linux_gaps.md",
+      "before_sha256": "6401715631b2d36d599345b18c8b114f7a273dd3924643c1f90a71667a89eb11",
+      "bytes": 1953,
+      "reason": "Removed materials-backlog document; release documentation now describes deployment using matching SD Linux and frozen artifacts"
+    }
+  ],
+  "frozen_source_models_and_board_artifacts_modified": false,
+  "historical_provenance_ledgers_modified": false,
+  "frozen_files_verified_unchanged": 512,
+  "new_static_entrypoint": "tools/verify_release.py",
+  "reports_updated": [
+    "report/design/design_report.pdf",
+    "report/technical/technical_report.pdf"
+  ]
+}

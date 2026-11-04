@@ -64,9 +64,16 @@ vivado -mode batch -source build/scripts/vivado/export_hardware.tcl
 
 本次整理已验证可在临时干净目录重建 npu100、解析模块引用、生成 BD/IP/wrapper；并比对原 BD 与重建 BD 的组件参数、端口、连接组与地址分配。未重跑综合、布局布线或上板。源文件当前哈希已记录；原构建没有同期逐源文件哈希清单，因此不声称已证明重新综合可生成逐字节相同的 bitstream。
 
-## 尚需补充
+## 从 Vivado 导出最终报告
 
-- 从本发布包执行一次完整综合、实现及重新上板的独立复现收据。
-- 最终版本覆盖全部算子和三份模型的 RTL/Golden 回归及波形材料。
-- 性能汇总见 `data/metrics/`；尚缺逐次原始计时和最终逐模型输出对照。
+打开生成已验证 bit/XSA 的工程，选择 **Open Implemented Design**，再在 Tcl Console 执行：
 
+```tcl
+set npu_report_dir [file normalize ./npu100_reports]
+file mkdir $npu_report_dir
+report_utilization -file [file join $npu_report_dir utilization_routed.rpt]
+report_utilization -hierarchical -file [file join $npu_report_dir utilization_hierarchical_routed.rpt]
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -file [file join $npu_report_dir timing_routed.rpt]
+```
+
+以上命令导出已打开的最终实现结果，不启动新的综合或实现。已有归档报告位于 `build/reports/implementation/`。

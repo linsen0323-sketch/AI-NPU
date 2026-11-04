@@ -14,7 +14,7 @@
 
 源代码、最终 bit/XSA、模型与运行环境的身份记录位于 [evidence](evidence/) 和 [manifests](manifests/)。既有功能已由维护者完成上板验证；归档中的原始日志、历史主机检查和此次整理校验分别标明范围。
 
-历史板端BOOT_DT、PL_ABI、三模型DDR回读及自启动安装输出已整理到[user_logs](evidence/linux/board/user_logs/README.md)。这些命令未在本次重跑：DDR回读没有执行推理，自启动安装后状态为`managed_process_alive=false`，不能据此声称当时服务已运行。完整推理/同形状Golden、连续冷启动和原始逐次性能记录仍待补档。
+历史板端BOOT_DT、PL_ABI、三模型DDR回读及自启动安装输出见[user_logs](evidence/linux/board/user_logs/README.md)。各记录保留原始命令与验证范围；部署者按下述流程在自己的板卡上检查预览、三模型推理与四键交互。
 
 ## 目录
 
@@ -26,13 +26,13 @@
 | [src/third_party](src/third_party/) | YOLOX 等第三方源码及原许可证 |
 | [data/models](data/models/) | 冻结 checkpoint、ONNX、量化参数、中间输入与最终 DDR 模型包 |
 | [data](data/) | 数据来源/划分/校准清单、精度记录、参考数据与测量汇总 |
-| [sim](sim/) | 模块 testbench、仿真入口及系统级验证位置 |
+| [sim](sim/) | 显示/摄像头测试入口及缓存、DMA、舍入、MaxPool定向测试材料 |
 | [build](build/) | 重建脚本及综合、实现、资源与时序报告 |
 | [board](board/) | 匹配 bit/XSA、启动文件、设备树、驱动、用户态归档与部署工具 |
 | [skill](skill/) | 发布完整性与 Linux NPU 分层验收两项可复用技能 |
 | [report](report/) | 设计报告、技术报告、技术原理图和协作记录 |
 | [evidence](evidence/) | 原始验证收据、硬件身份、源码核对与整理检查记录 |
-| [docs](docs/) | 架构、环境、构建、部署、模型流程、授权及材料缺口说明 |
+| [docs](docs/) | 架构、环境、构建、部署、模型流程及许可证说明 |
 | [manifests](manifests/) / [tools](tools/) | 文件用途、来源与 SHA256 清单，以及发布校验工具 |
 
 `build/work/` 是可再生目录，不作为源码交付。`README.md`、`SKILL.md`、`Makefile`、`BOOT.BIN`、`SHA256SUMS` 等保留工具或格式规定的名称。
@@ -50,7 +50,7 @@
 | YOLOX-S COCO80 | 55 s | 5.1 s | 1.6 s |
 | 各推理一张的合计 | 117 s | 11.0 s | 3.5 s |
 
-按合计时间计算，相对标量 C 约加速 **33.4 倍**，相对 NEON 双核约加速 **3.14 倍**。这些数值不等同于摄像头到 HDMI 的链路时延或新检测结果更新率。原始逐次计时日志尚未随包归档，详见 [材料缺口](docs/missing_materials.md)。
+按合计时间计算，相对标量 C 约加速 **33.4 倍**，相对 NEON 双核约加速 **3.14 倍**。这些数值为已确认的单图整网推理约值，不等同于摄像头到 HDMI 的链路时延或新检测结果更新率。
 
 最终 routed 报告为 LUT **46,278 / 53,200**、FF **45,385 / 106,400**、BRAM Tile **91 / 140**、DSP **148 / 220**、Slice **13,299 / 13,300**；100 MHz 下 WNS **+0.047 ns**、WHS **+0.033 ns**，TNS / THS 为零。结论限于归档约束；报告仍列出 5 个无 input-delay 的输入与 8 个无 output-delay 的输出，详见 [硬件说明](docs/hardware.md)。
 
@@ -58,7 +58,7 @@
 
 ## 复现流程
 
-可选择使用`board/`中的冻结产物部署，或先从源码重建硬件/自有软件。**基础系统仍有前置缺口：**完整PetaLinux/rootfs工程、匹配基础SD镜像的公共获取方式及BOOT启动组件生成配置尚未补齐，当前不能承诺仅凭空白SD卡从源码构建整机。基础镜像来源只归档元数据，详见[缺失材料](docs/missing_materials.md)。
+推荐使用`board/`中的配套冻结产物，在已能启动、联网的匹配SD Linux系统上完成安装与上板验证。基础系统沿用Windows → VirtualBox → Ubuntu → PetaLinux 2025.2 → SD启动的流程，来源与镜像指纹见[基础系统说明](board/linux/rootfs/readme.md)。本节以现有SD系统部署为主；硬件和自有软件的源码重建作为可选开发步骤。
 
 ### 1. 环境与完整性检查
 
@@ -70,8 +70,7 @@
 
 ```sh
 git lfs pull
-python tools/release_manifest.py --check
-python -B build/scripts/models/verify_models.py
+python -B tools/verify_release.py
 ```
 
 预期文件与模型合同检查通过。若文件缺失、内容是LFS指针或哈希不一致，先解决完整性问题再部署。[环境要求](docs/environment.md)记录各开发阶段的依赖。
@@ -95,7 +94,7 @@ vivado -mode batch -source build/scripts/vivado/build_bitstream.tcl
 vivado -mode batch -source build/scripts/vivado/export_hardware.tcl
 ```
 
-新XSA位于`build/work/hardware/npu100.xsa`，新报告位于`build/work/reports/`；检查最终routed的setup、hold、路由和约束提示。新产物不覆盖归档产物。**XSA不是可直接复制到SD启动分区的启动文件。**新硬件需重新生成匹配启动链、核对设备树/驱动/模型合同并建立新板测收据；当前缺失的BOOT生成环节见[硬件说明](docs/hardware.md)与[Linux说明](docs/linux.md)。下面部署步骤使用冻结的匹配整套产物。
+新XSA位于`build/work/hardware/npu100.xsa`，新报告位于`build/work/reports/`；检查最终routed的setup、hold、路由和约束提示。新产物不覆盖归档产物。**XSA不是可直接复制到SD启动分区的启动文件。**使用新硬件时，应在自己的PetaLinux工程中生成匹配启动文件并核对设备树、驱动和模型合同，见[基础系统构建说明](board/linux/petalinux/readme.md)。下面部署步骤使用冻结的匹配整套产物。
 
 ### 3. 准备匹配SD Linux、启动文件与模型
 
@@ -194,10 +193,10 @@ sudo reboot
 
 依次验证模型选择、分类及置信度、检测框、模型/耗时/结果更新率、停止后继续预览和再启动。COCO80完整类别保留在软件结果JSON；冻结PL的标签位宽有限，HDMI标签显示范围不等于80类检测头的计算范围。
 
-保存启动、驱动、PL ABI、DDR回读、三模型输出及按键过程的原始日志，并记录启动文件/驱动/模型哈希。用最终160/256/256相同输入配置进行Golden比较；性能分别记录标量C、NEON双核和本系统的相同计时范围。新路径`/opt/npu100`仍需独立冷启动收据，历史日期路径日志不能替代。更细的验证与未闭合环节见[复现文档](docs/reproduction.md)和[材料缺口](docs/missing_materials.md)。
+上板验收以启动检查、PL ABI、模型DDR回读、HDMI预览、三模型结果和四键操作为准。出现故障时保存首次输出与服务日志，按[复现文档](docs/reproduction.md)和[Linux说明](docs/linux.md)定位。性能对照采用上表已确认的同平台单图整网推理约值。
 
 ## 授权与来源
 
-项目自有且未另行标注许可证的原创代码采用 [MIT 许可证](LICENSE)。
-适用范围见 [许可证说明](license.md)，第三方来源见
-[第三方说明](docs/third_party.md)。已有单独授权声明的文件遵循其原有许可证。
+项目作者拥有版权且未另行标注许可证的原创代码采用 [MIT许可证](LICENSE)。适用范围见 [license.md](license.md)，第三方来源见 [第三方说明](docs/third_party.md)。已有单独许可证声明的文件及第三方内容分别遵循各自授权。
+
+大文件由 `.gitattributes` 指定 Git LFS 管理；本仓库中的 SHA256 用于核对实体文件内容。
